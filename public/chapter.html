@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning - ExamPrep Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* Disable right-click on video */
+    .video-container {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* Quiz Cards */
+    .quiz-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .quiz-card-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem;
+      background: var(--gray-50);
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--gray-200);
+      transition: var(--transition);
+    }
+    
+    .quiz-card-item:hover {
+      border-color: var(--primary);
+      background: white;
+    }
+    
+    .quiz-card-info h4 {
+      margin-bottom: 0.25rem;
+    }
+    
+    .quiz-card-info p {
+      color: var(--gray-500);
+      font-size: 0.875rem;
+      margin: 0;
+    }
+    
+    .quiz-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gray-500);
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    
+    /* Quiz Modal */
+    .quiz-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    
+    .quiz-modal-content {
+      background: white;
+      border-radius: var(--radius-xl);
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .quiz-modal-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--gray-200);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .quiz-modal-header h3 {
+      margin: 0;
+    }
+    
+    .quiz-modal-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--gray-500);
+      border-radius: var(--radius);
+    }
+    
+    .quiz-modal-close:hover {
+      background: var(--gray-100);
+      color: var(--gray-800);
+    }
+    
+    .quiz-modal-body {
+      padding: 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    
+    .quiz-modal-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--gray-200);
+      background: var(--gray-50);
+    }
+    
+    /* Progress Bar */
+    .quiz-progress {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .quiz-progress-bar {
+      flex: 1;
+      height: 8px;
+      background: var(--gray-200);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+    
+    .quiz-progress-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: var(--radius-full);
+      transition: width 0.3s ease;
+    }
+    
+    .quiz-progress-text {
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      white-space: nowrap;
+    }
+    
+    /* Single Question View */
+    .question-view {
+      text-align: center;
+    }
+    
+    .question-view .question-text {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    
+    .question-view .options-list {
+      text-align: left;
+    }
+    
+    .question-view .option-item {
+      padding: 1rem 1.25rem;
+    }
+    
+    /* Quiz Complete */
+    .quiz-complete {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    
+    .score-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: white;
+    }
+    
+    .score-circle .score-value {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    
+    .score-circle .score-label {
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          ExamPrep Pro
+        </a>
+        
+        <div class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/course" class="nav-link">Course</a>
+        </div>
+        
+        <div class="nav-user hidden" id="nav-user">
+          <a href="/course" class="btn btn-sm btn-primary">My Course</a>
+          <div class="user-avatar">U</div>
+          <button onclick="logout()" class="btn btn-sm btn-ghost">Logout</button>
+        </div>
+        
+        <div class="nav-auth" id="nav-auth">
+          <a href="/login" class="btn btn-ghost">Login</a>
+          <a href="/signup" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Learning Content -->
+  <main class="learning-page">
+    <div class="container">
+      <div class="learning-grid">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Chapter Title -->
+          <div id="chapter-header" class="mb-4">
+            <a href="/course" class="btn btn-ghost btn-sm mb-3" style="margin-left: -0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Back to Course
+            </a>
+            <h1 id="chapter-title">Loading...</h1>
+            <p id="chapter-description" class="mt-2" style="color: var(--gray-600);"></p>
+          </div>
+
+          <!-- Video Player -->
+          <div id="video-section">
+            <div class="video-container" oncontextmenu="return false;">
+              <div class="loading">
+                <div class="spinner"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PDFs Section -->
+          <div class="content-section" id="pdfs-section">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              Study Materials
+            </h3>
+            <div id="pdfs-list" class="pdf-list mt-3">
+              <div class="loading">
+                <div class="spinner"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quiz Section -->
+          <div class="quiz-section" id="quiz-section">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Chapter Quizzes
+            </h3>
+            <p style="color: var(--gray-600);" class="mt-2">Test your understanding with these practice quizzes</p>
+            
+            <div id="quiz-list" class="quiz-list mt-4">
+              <div class="loading">
+                <div class="spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-card card">
+            <div class="card-body">
+              <h4 class="sidebar-title">Course Chapters</h4>
+              <div id="chapter-nav" class="chapter-nav">
+                <div class="loading">
+                  <div class="spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Quiz Modal -->
+  <div id="quiz-modal" class="quiz-modal hidden">
+    <div class="quiz-modal-content">
+      <div class="quiz-modal-header">
+        <h3 id="quiz-modal-title">Quiz</h3>
+        <button class="quiz-modal-close" onclick="closeQuizModal()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="quiz-modal-body" id="quiz-modal-body">
+        <!-- Quiz content will be rendered here -->
+      </div>
+      <div class="quiz-modal-footer" id="quiz-modal-footer">
+        <!-- Footer buttons -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Locked Content Overlay -->
+  <div id="locked-overlay" class="hidden" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000; display: flex; align-items: center; justify-content: center;">
+    <div class="card" style="max-width: 500px; margin: 2rem; text-align: center;">
+      <div class="card-body" style="padding: 3rem;">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom: 1.5rem;">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        <h2>Chapter Locked</h2>
+        <p style="color: var(--gray-600); margin: 1rem 0 2rem;">This chapter is part of the premium course. Purchase the course to unlock all chapters, PDFs, and quizzes.</p>
+        <a href="/payment" class="btn btn-primary btn-lg">Unlock for ₹999</a>
+        <a href="/course" class="btn btn-ghost btn-lg mt-2">Back to Course</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: 4rem;">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 ExamPrep Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script src="/js/api.js"></script>
+  <script>
+    // Get chapter ID from URL
+    const pathParts = window.location.pathname.split('/');
+    const chapterId = pathParts[pathParts.length - 1];
+    
+    let chapterData = null;
+    let quizzesData = [];
+    let currentQuiz = null;
+    let currentQuestionIndex = 0;
+    let quizScore = 0;
+    let selectedAnswer = null;
+    let answerSubmitted = false;
+
+    async function loadChapter() {
+      try {
+        // Load chapter
+        const chapterResponse = await apiRequest(`/chapters/${chapterId}`);
+        chapterData = chapterResponse.chapter;
+        
+        // Check access
+        if (!chapterResponse.hasAccess) {
+          showLockedOverlay();
+          return;
+        }
+        
+        renderChapter();
+        
+        // Load quizzes
+        await loadQuizzes();
+        
+        // Load chapters for sidebar
+        loadChapterNav();
+      } catch (error) {
+        console.error('Error loading chapter:', error);
+        document.getElementById('chapter-header').innerHTML = `
+          <div class="alert alert-error">Failed to load chapter. <a href="/course">Back to Course</a></div>
+        `;
+      }
+    }
+
+    async function loadQuizzes() {
+      try {
+        const response = await apiRequest(`/chapters/${chapterId}/quizzes`);
+        quizzesData = response.quizzes || [];
+        renderQuizList();
+      } catch (e) {
+        document.getElementById('quiz-list').innerHTML = `
+          <p style="color: var(--gray-500);">No quizzes available for this chapter.</p>
+        `;
+      }
+    }
+
+    function renderQuizList() {
+      const container = document.getElementById('quiz-list');
+      
+      if (quizzesData.length === 0) {
+        container.innerHTML = '<p style="color: var(--gray-500);">No quizzes available for this chapter.</p>';
+        return;
+      }
+      
+      container.innerHTML = quizzesData.map(quiz => `
+        <div class="quiz-card-item" onclick="startQuiz('${quiz.id}')">
+          <div class="quiz-card-info">
+            <h4>${quiz.title}</h4>
+            <p>${quiz.description}</p>
+            <div class="quiz-card-meta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              ${quiz.questionCount} questions
+            </div>
+          </div>
+          <button class="btn btn-primary">
+            Start Quiz
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    async function startQuiz(quizId) {
+      try {
+        const response = await apiRequest(`/chapters/${chapterId}/quizzes/${quizId}`);
+        currentQuiz = response.quiz;
+        currentQuestionIndex = 0;
+        quizScore = 0;
+        selectedAnswer = null;
+        answerSubmitted = false;
+        
+        document.getElementById('quiz-modal-title').textContent = currentQuiz.title;
+        document.getElementById('quiz-modal').classList.remove('hidden');
+        
+        renderCurrentQuestion();
+      } catch (error) {
+        alert('Failed to load quiz. Please try again.');
+      }
+    }
+
+    function closeQuizModal() {
+      document.getElementById('quiz-modal').classList.add('hidden');
+      currentQuiz = null;
+    }
+
+    function renderCurrentQuestion() {
+      const question = currentQuiz.questions[currentQuestionIndex];
+      const totalQuestions = currentQuiz.questions.length;
+      const progress = ((currentQuestionIndex) / totalQuestions) * 100;
+      
+      const body = document.getElementById('quiz-modal-body');
+      body.innerHTML = `
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" style="width: ${progress}%"></div>
+          </div>
+          <div class="quiz-progress-text">Question ${currentQuestionIndex + 1} of ${totalQuestions}</div>
+        </div>
+        
+        <div class="question-view" id="question-view">
+          <div class="question-text">${question.question}</div>
+          <div class="options-list">
+            ${question.options.map(opt => `
+              <div class="option-item" data-option="${opt.id}" onclick="selectQuizOption('${opt.id}')">
+                <div class="option-radio"></div>
+                <div class="option-text">${opt.text}</div>
+                <div class="option-indicator"></div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+      
+      const footer = document.getElementById('quiz-modal-footer');
+      footer.innerHTML = `
+        <button class="btn btn-primary btn-block" id="submit-answer-btn" onclick="submitAnswer()" disabled>
+          Submit Answer
+        </button>
+      `;
+      
+      selectedAnswer = null;
+      answerSubmitted = false;
+    }
+
+    function selectQuizOption(optionId) {
+      if (answerSubmitted) return;
+      
+      selectedAnswer = optionId;
+      
+      // Update UI
+      const options = document.querySelectorAll('#question-view .option-item');
+      options.forEach(opt => {
+        if (opt.dataset.option === optionId) {
+          opt.classList.add('selected');
+        } else {
+          opt.classList.remove('selected');
+        }
+      });
+      
+      document.getElementById('submit-answer-btn').disabled = false;
+    }
+
+    async function submitAnswer() {
+      if (!selectedAnswer || answerSubmitted) return;
+      
+      answerSubmitted = true;
+      const btn = document.getElementById('submit-answer-btn');
+      btn.disabled = true;
+      btn.textContent = 'Checking...';
+      
+      try {
+        const result = await apiRequest(`/chapters/${chapterId}/quizzes/${currentQuiz.id}/check-answer`, {
+          method: 'POST',
+          body: JSON.stringify({
+            questionId: currentQuiz.questions[currentQuestionIndex].id,
+            answer: selectedAnswer
+          })
+        });
+        
+        if (result.isCorrect) {
+          quizScore++;
+        }
+        
+        showFeedback(result);
+      } catch (error) {
+        alert('Failed to check answer. Please try again.');
+        btn.disabled = false;
+        btn.textContent = 'Submit Answer';
+        answerSubmitted = false;
+      }
+    }
+
+    function showFeedback(result) {
+      const questionView = document.getElementById('question-view');
+      const options = questionView.querySelectorAll('.option-item');
+      
+      // Mark correct and incorrect options
+      options.forEach(opt => {
+        const optId = opt.dataset.option;
+        opt.style.cursor = 'default';
+        
+        if (optId === result.correctAnswer) {
+          opt.classList.add('correct');
+          opt.querySelector('.option-indicator').innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          `;
+        } else if (optId === result.userAnswer && !result.isCorrect) {
+          opt.classList.add('incorrect');
+          opt.querySelector('.option-indicator').innerHTML = `
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--danger)" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          `;
+        }
+      });
+      
+      // Show explanation
+      const explanationHtml = `
+        <div class="explanation ${result.isCorrect ? 'correct' : 'incorrect'}" style="margin-top: 1.5rem;">
+          <strong>${result.isCorrect ? '✓ Correct!' : '✗ Incorrect'}</strong><br>
+          ${result.explanation}
+        </div>
+      `;
+      questionView.insertAdjacentHTML('beforeend', explanationHtml);
+      
+      // Update footer button
+      const footer = document.getElementById('quiz-modal-footer');
+      const isLastQuestion = currentQuestionIndex >= currentQuiz.questions.length - 1;
+      
+      footer.innerHTML = `
+        <button class="btn btn-primary btn-block" onclick="${isLastQuestion ? 'showQuizComplete()' : 'nextQuestion()'}">
+          ${isLastQuestion ? 'See Results' : 'Next Question'}
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      `;
+    }
+
+    function nextQuestion() {
+      currentQuestionIndex++;
+      renderCurrentQuestion();
+    }
+
+    function showQuizComplete() {
+      const totalQuestions = currentQuiz.questions.length;
+      const percentage = Math.round((quizScore / totalQuestions) * 100);
+      
+      const body = document.getElementById('quiz-modal-body');
+      body.innerHTML = `
+        <div class="quiz-complete">
+          <div class="score-circle">
+            <div class="score-value">${percentage}%</div>
+            <div class="score-label">${quizScore}/${totalQuestions} correct</div>
+          </div>
+          <h2 style="margin-bottom: 0.5rem;">
+            ${percentage >= 70 ? 'Great Job!' : percentage >= 50 ? 'Good Effort!' : 'Keep Practicing!'}
+          </h2>
+          <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+            ${percentage >= 70 
+              ? 'You have a solid understanding of this material!' 
+              : percentage >= 50 
+                ? 'You\'re making progress. Review the topics you missed.' 
+                : 'Consider reviewing the chapter material before trying again.'}
+          </p>
+          <div style="margin-top: 1rem;">
+            ${percentage >= 70 
+              ? '<span class="badge badge-success" style="font-size: 0.875rem;">Quiz Passed!</span>' 
+              : '<span class="badge badge-warning" style="font-size: 0.875rem;">Try Again</span>'}
+          </div>
+        </div>
+      `;
+      
+      const footer = document.getElementById('quiz-modal-footer');
+      footer.innerHTML = `
+        <div style="display: flex; gap: 1rem;">
+          <button class="btn btn-outline" style="flex: 1;" onclick="closeQuizModal()">
+            Close
+          </button>
+          <button class="btn btn-primary" style="flex: 1;" onclick="retakeQuiz()">
+            Retake Quiz
+          </button>
+        </div>
+      `;
+    }
+
+    function retakeQuiz() {
+      currentQuestionIndex = 0;
+      quizScore = 0;
+      selectedAnswer = null;
+      answerSubmitted = false;
+      renderCurrentQuestion();
+    }
+
+    function showLockedOverlay() {
+      document.getElementById('locked-overlay').classList.remove('hidden');
+      document.getElementById('locked-overlay').style.display = 'flex';
+      
+      // Still show chapter info
+      if (chapterData) {
+        document.getElementById('chapter-title').textContent = `Chapter ${chapterData.order}: ${chapterData.title}`;
+        document.getElementById('chapter-description').textContent = chapterData.description;
+      }
+    }
+
+    function renderChapter() {
+      // Update title
+      document.title = `${chapterData.title} - ExamPrep Pro`;
+      document.getElementById('chapter-title').textContent = `Chapter ${chapterData.order}: ${chapterData.title}`;
+      document.getElementById('chapter-description').textContent = chapterData.description;
+      
+      // Render video
+      // Convert youtube.com/embed to youtube-nocookie.com/embed for privacy-enhanced mode
+      let videoSrc = chapterData.videoUrl;
+      if (videoSrc.includes('youtube.com/embed')) {
+        videoSrc = videoSrc.replace('youtube.com', 'youtube-nocookie.com');
+      }
+      
+      document.getElementById('video-section').innerHTML = `
+        <div class="video-container" oncontextmenu="return false;">
+          <iframe 
+            src="${videoSrc}?rel=0&modestbranding=1&enablejsapi=1" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+      
+      // Render PDFs
+      renderPDFs();
+    }
+
+    function renderPDFs() {
+      const container = document.getElementById('pdfs-list');
+      
+      if (!chapterData.pdfs || chapterData.pdfs.length === 0) {
+        container.innerHTML = '<p style="color: var(--gray-500);">No study materials for this chapter.</p>';
+        return;
+      }
+      
+      container.innerHTML = chapterData.pdfs.map(pdf => `
+        <div class="pdf-item">
+          <div class="pdf-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+          </div>
+          <div class="pdf-info">
+            <div class="pdf-title">${pdf.title}</div>
+            <div class="pdf-size">PDF Document</div>
+          </div>
+          <a href="${pdf.url}" download class="pdf-download" title="Download PDF">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      `).join('');
+    }
+
+    async function loadChapterNav() {
+      try {
+        const response = await apiRequest('/chapters');
+        const chapters = response.chapters;
+        
+        const container = document.getElementById('chapter-nav');
+        container.innerHTML = chapters.map(ch => `
+          <a href="${ch.isLocked ? '#' : `/chapter/${ch.id}`}" 
+             class="chapter-nav-item ${ch.id === chapterId ? 'active' : ''} ${ch.isLocked ? 'locked' : ''}"
+             ${ch.isLocked ? 'onclick="event.preventDefault(); alert(\'Please purchase the course to access this chapter.\');"' : ''}>
+            <div class="chapter-nav-icon">
+              ${ch.isLocked ? `
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              ` : ch.order}
+            </div>
+            <span style="flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+              ${ch.title}
+            </span>
+            ${ch.isFree ? '<span class="badge badge-free" style="font-size: 0.65rem;">FREE</span>' : ''}
+          </a>
+        `).join('');
+      } catch (error) {
+        console.error('Error loading chapter nav:', error);
+      }
+    }
+
+    // Disable right-click on video area
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.closest('.video-container')) {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeQuizModal();
+      }
+    });
+
+    // Close modal on backdrop click
+    document.getElementById('quiz-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeQuizModal();
+      }
+    });
+
+    // Initialize
+    loadChapter();
+  </script>
+</body>
+</html>
