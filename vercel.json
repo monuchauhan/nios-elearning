@@ -8,4 +8,4 @@
     { "source": "/course", "destination": "/course.html" },
     { "source": "/payment", "destination": "/payment.html" }
   ]
-}s
+}
