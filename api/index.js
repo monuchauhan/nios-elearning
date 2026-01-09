@@ -500,7 +500,7 @@ app.post('/api/chapters/:chapterId/quizzes/:quizId/save-result', authenticate, a
 // Get Razorpay key for frontend
 app.get('/api/payment/config', (req, res) => {
   res.json({
-    razorpayKeyId: process.env.RAZORPAY_KEY_ID || '',
+    keyId: process.env.RAZORPAY_KEY_ID || '',
     currency: course.currency,
     coursePrice: course.price
   });
