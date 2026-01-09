@@ -330,7 +330,7 @@
         const orderData = await orderResponse.json();
 
         // Get user info for prefill
-        const user = getCurrentUser();
+        const user = getUser();
 
         // Razorpay checkout options
         const options = {
