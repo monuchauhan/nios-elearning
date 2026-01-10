@@ -3,514 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson - ExamPrep Pro</title>
+  <title>ExamPrep Pro - Master Your Exam</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <style>
-    /* Disable content downloading */
-    .no-download {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      pointer-events: none;
-    }
-    
-    .protected-content {
-      position: relative;
-    }
-    
-    .protected-content::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: transparent;
-    }
-    
-    /* PDF Viewer Styles */
-    .pdf-viewer-container {
-      position: relative;
-      width: 100%;
-      height: 600px;
-      border: 1px solid var(--gray-200);
-      border-radius: 12px;
-      overflow: hidden;
-      margin-top: 1rem;
-      background: var(--gray-100);
-    }
-    
-    .pdf-viewer-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    
-    .pdf-viewer-overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50px;
-      height: 50px;
-      background: transparent;
-      z-index: 10;
-    }
-    
-    /* Audio player protection */
-    .audio-wrapper {
-      position: relative;
-    }
-    
-    .audio-player {
-      width: 100%;
-      margin-top: 0.5rem;
-    }
-    
-    /* Hide download button in audio player where possible */
-    audio::-webkit-media-controls-enclosure {
-      overflow: hidden;
-    }
-    
-    audio::-webkit-media-controls-panel {
-      width: calc(100% + 30px);
-    }
-    
-    .lesson-container {
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 2rem;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    
-    @media (max-width: 1024px) {
-      .lesson-container {
-        grid-template-columns: 1fr;
-      }
-    }
-    
-    .lesson-main {
-      min-width: 0;
-    }
-    
-    .lesson-sidebar {
-      position: sticky;
-      top: 100px;
-      height: fit-content;
-    }
-    
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.875rem;
-      color: var(--gray-500);
-      margin-bottom: 1rem;
-    }
-    
-    .breadcrumb a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-    
-    .breadcrumb a:hover {
-      text-decoration: underline;
-    }
-    
-    .lesson-title {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--gray-900);
-      margin-bottom: 0.5rem;
-    }
-    
-    .lesson-description {
-      color: var(--gray-600);
-      margin-bottom: 1.5rem;
-    }
-    
-    .material-section {
-      margin-bottom: 2rem;
-    }
-    
-    .material-section-title {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--gray-800);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--gray-200);
-    }
-    
-    .material-icon {
-      width: 28px;
-      height: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-    
-    .material-icon.video { background: #e5d4a1; }
-    .material-icon.audio { background: #d3dae2; }
-    .material-icon.pdf { background: #f5d4d1; }
-    .material-icon.quiz { background: #d1e7dd; }
-    
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%;
-      margin-bottom: 1rem;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #000;
-    }
-    
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      pointer-events: auto;
-    }
-    
-    /* Overlay to prevent right-click on video but allow play controls */
-    .video-container::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 60px;
-      height: 40px;
-      z-index: 5;
-      background: transparent;
-    }
-    
-    .video-list, .audio-list, .pdf-list, .quiz-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    
-    .material-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem;
-      background: white;
-      border: 1px solid var(--gray-200);
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    
-    .material-item:hover {
-      border-color: var(--primary);
-      box-shadow: 0 2px 12px rgba(30, 58, 95, 0.1);
-    }
-    
-    .material-item.active {
-      border-color: var(--primary);
-      background: rgba(30, 58, 95, 0.04);
-    }
-    
-    .material-item-icon {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      font-size: 1.25rem;
-      flex-shrink: 0;
-    }
-    
-    .material-item-icon.video { background: #e5d4a1; }
-    .material-item-icon.audio { background: #d3dae2; }
-    .material-item-icon.pdf { background: #f5d4d1; }
-    .material-item-icon.quiz { background: #d1e7dd; }
-    
-    .material-item-info {
-      flex: 1;
-      min-width: 0;
-    }
-    
-    .material-item-title {
-      font-weight: 500;
-      color: var(--gray-900);
-      margin-bottom: 0.25rem;
-    }
-    
-    .material-item-meta {
-      font-size: 0.8rem;
-      color: var(--gray-500);
-    }
-    
-    .audio-player {
-      width: 100%;
-      margin-top: 0.5rem;
-    }
-    
-    .sidebar-card {
-      background: white;
-      border: 1px solid var(--gray-200);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    
-    .sidebar-card-title {
-      font-weight: 600;
-      color: var(--gray-800);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--gray-200);
-    }
-    
-    .progress-info {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.875rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .progress-bar-lg {
-      height: 8px;
-      background: var(--gray-200);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-    
-    .progress-bar-lg .progress {
-      height: 100%;
-      background: var(--success);
-      border-radius: 4px;
-      transition: width 0.3s;
-    }
-    
-    .nav-buttons {
-      display: flex;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-    
-    .nav-buttons .btn {
-      flex: 1;
-    }
-    
-    /* Quiz Styles */
-    .quiz-container {
-      background: white;
-      border: 1px solid var(--gray-200);
-      border-radius: 12px;
-      padding: 1.5rem;
-    }
-    
-    .quiz-header {
-      margin-bottom: 1.5rem;
-    }
-    
-    .quiz-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    
-    .quiz-progress {
-      font-size: 0.875rem;
-      color: var(--gray-500);
-    }
-    
-    .question-card {
-      margin-bottom: 1.5rem;
-    }
-    
-    .question-text {
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-    
-    .options-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    
-    .option-btn {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1rem;
-      background: var(--gray-50);
-      border: 2px solid var(--gray-200);
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.2s;
-      text-align: left;
-      width: 100%;
-    }
-    
-    .option-btn:hover:not(:disabled) {
-      border-color: var(--primary);
-      background: rgba(30, 58, 95, 0.06);
-    }
-    
-    .option-btn.selected {
-      border-color: var(--primary);
-      background: rgba(30, 58, 95, 0.08);
-    }
-    
-    .option-btn.correct {
-      border-color: var(--success);
-      background: #d1e7dd;
-    }
-    
-    .option-btn.incorrect {
-      border-color: var(--danger);
-      background: #f5d4d1;
-    }
-    
-    .option-btn:disabled {
-      cursor: not-allowed;
-    }
-    
-    .option-marker {
-      width: 28px;
-      height: 28px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: white;
-      border: 2px solid var(--gray-300);
-      border-radius: 50%;
-      font-weight: 600;
-      font-size: 0.875rem;
-      flex-shrink: 0;
-    }
-    
-    .option-btn.selected .option-marker {
-      background: var(--primary);
-      border-color: var(--primary);
-      color: white;
-    }
-    
-    .option-btn.correct .option-marker {
-      background: var(--success);
-      border-color: var(--success);
-      color: white;
-    }
-    
-    .option-btn.incorrect .option-marker {
-      background: var(--danger);
-      border-color: var(--danger);
-      color: white;
-    }
-    
-    .explanation-box {
-      margin-top: 1rem;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-    }
-    
-    .explanation-box.correct {
-      background: #d1e7dd;
-      color: #1a4731;
-    }
-    
-    .explanation-box.incorrect {
-      background: #f5d4d1;
-      color: #8c2d25;
-    }
-    
-    .quiz-nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--gray-200);
-    }
-    
-    .quiz-score {
-      text-align: center;
-      padding: 2rem;
-    }
-    
-    .score-circle {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      font-weight: 700;
-    }
-    
-    .score-circle.excellent {
-      background: #d1e7dd;
-      color: #1a4731;
-    }
-    
-    .score-circle.good {
-      background: #e5d4a1;
-      color: #6d5a2a;
-    }
-    
-    .score-circle.needs-work {
-      background: #f5d4d1;
-      color: #8c2d25;
-    }
-    
-    .score-number {
-      font-size: 2rem;
-    }
-    
-    .score-label {
-      font-size: 0.875rem;
-    }
-    
-    .locked-overlay {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
-      text-align: center;
-      background: var(--gray-50);
-      border-radius: 12px;
-    }
-    
-    .locked-overlay svg {
-      width: 64px;
-      height: 64px;
-      color: var(--gray-400);
-      margin-bottom: 1.5rem;
-    }
-    
-    .locked-overlay h3 {
-      margin-bottom: 0.5rem;
-    }
-    
-    .locked-overlay p {
-      color: var(--gray-600);
-      margin-bottom: 1.5rem;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
@@ -528,7 +25,7 @@
         </a>
         
         <div class="nav-links">
-          <a href="/" class="nav-link">Home</a>
+          <a href="/" class="nav-link active">Home</a>
           <a href="/course" class="nav-link">Course</a>
         </div>
         
@@ -546,29 +43,232 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <div class="lesson-container">
-      <!-- Main Content Area -->
-      <div class="lesson-main">
-        <div id="lesson-content">
-          <div class="loading" style="padding: 4rem;">
-            <div class="spinner"></div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Master Your Exam with Confidence</h1>
+          <p class="hero-subtitle">
+            Comprehensive exam preparation course with video lessons, study materials, and practice quizzes. 
+            Join thousands of successful students who aced their exams with our proven methodology.
+          </p>
+          <div class="hero-cta">
+            <a href="/course" class="btn btn-lg" style="background: white; color: var(--primary);">
+              Start Learning
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#pricing" class="btn btn-lg btn-outline" style="border-color: white; color: white;">
+              View Pricing
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600" alt="Student studying" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Everything You Need to Succeed</h2>
+      <p class="section-subtitle">Our course is designed to give you the best preparation experience</p>
+      
+      <div class="features-grid">
+        <div class="card feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="23 7 16 12 23 17 23 7"></polygon>
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+            </svg>
+          </div>
+          <h4 class="feature-title">Video Lessons</h4>
+          <p class="feature-text">10+ hours of high-quality video content explaining every concept in detail</p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h4 class="feature-title">Study Materials</h4>
+          <p class="feature-text">Downloadable PDFs with notes, formulas, and practice worksheets</p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <h4 class="feature-title">Practice Quizzes</h4>
+          <p class="feature-text">MCQ quizzes after each chapter with detailed explanations</p>
+        </div>
+        
+        <div class="card feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <h4 class="feature-title">Lifetime Access</h4>
+          <p class="feature-text">One-time payment for unlimited access to all course content</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Learn Section -->
+  <section class="features" style="background: var(--white);">
+    <div class="container">
+      <h2 class="section-title">What You'll Learn</h2>
+      <p class="section-subtitle">By the end of this course, you will be able to</p>
+      
+      <div class="features-grid" style="max-width: 800px; margin: 0 auto;">
+        <div class="card" style="padding: 1.5rem;">
+          <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Master fundamental concepts and theories</span>
+          </div>
+        </div>
+        <div class="card" style="padding: 1.5rem;">
+          <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Solve complex problems with confidence</span>
+          </div>
+        </div>
+        <div class="card" style="padding: 1.5rem;">
+          <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Learn exam-taking strategies and time management</span>
+          </div>
+        </div>
+        <div class="card" style="padding: 1.5rem;">
+          <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Practice with real exam-style questions</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Simple, Transparent Pricing</h2>
+      <p class="section-subtitle">One-time payment, lifetime access</p>
       
-      <!-- Sidebar -->
-      <div class="lesson-sidebar" id="lesson-sidebar">
-        <!-- Will be populated by JS -->
+      <div class="pricing-card card">
+        <div class="card-body">
+          <span class="badge badge-success mb-3">Most Popular</span>
+          <h3>Complete Exam Prep Course</h3>
+          <div class="price">
+            <span class="price-currency">₹</span>
+            <span class="price-amount">999</span>
+            <span class="price-period">one-time</span>
+          </div>
+          
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>5 comprehensive chapters</span>
+            </div>
+            <div class="pricing-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>10+ hours of video content</span>
+            </div>
+            <div class="pricing-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>15+ downloadable PDFs</span>
+            </div>
+            <div class="pricing-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Practice quizzes with explanations</span>
+            </div>
+            <div class="pricing-feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Lifetime access</span>
+            </div>
+          </div>
+          
+          <a href="/course" class="btn btn-primary btn-lg btn-block">Get Started Now</a>
+          <p class="text-center mt-3" style="color: var(--gray-500); font-size: 0.875rem;">
+            Try Chapter 1 for free, no signup required!
+          </p>
+        </div>
       </div>
     </div>
-  </main>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">ExamPrep Pro</div>
+          <p class="footer-description">
+            Your trusted partner for exam preparation. We help students achieve their academic goals with quality education and proven study methods.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="/" class="footer-link">Home</a>
+            <a href="/course" class="footer-link">Course</a>
+            <a href="/login" class="footer-link">Login</a>
+            <a href="/signup" class="footer-link">Sign Up</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Support</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Help Center</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">FAQs</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>&copy; 2026 ExamPrep Pro. All rights reserved.</p>
       </div>
     </div>
@@ -576,573 +276,5 @@
 
   <script src="/js/auth.js"></script>
   <script src="/js/api.js"></script>
-  <script>
-    // Get sub-chapter ID from URL
-    const pathParts = window.location.pathname.split('/');
-    const subChapterId = pathParts[pathParts.length - 1];
-    
-    let lessonData = null;
-    let materialsData = null;
-    let currentVideo = null;
-    let currentQuiz = null;
-    let quizState = {
-      currentQuestion: 0,
-      answers: {},
-      score: 0,
-      completed: false
-    };
-
-    async function loadLesson() {
-      try {
-        const response = await fetch(`/api/subchapters/${subChapterId}`, {
-          headers: getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {}
-        });
-        
-        const data = await response.json();
-        
-        if (!data.hasAccess) {
-          renderLockedContent(data);
-          return;
-        }
-        
-        lessonData = data.subChapter;
-        materialsData = data.materials;
-        
-        document.title = `${lessonData.title} - ExamPrep Pro`;
-        renderLesson(data);
-        renderSidebar(data);
-        
-        // Auto-play first video if available
-        if (materialsData.videos && materialsData.videos.length > 0) {
-          playVideo(materialsData.videos[0]);
-        }
-      } catch (error) {
-        console.error('Error loading lesson:', error);
-        document.getElementById('lesson-content').innerHTML = `
-          <div class="alert alert-error">Failed to load lesson. Please refresh the page.</div>
-        `;
-      }
-    }
-
-    function renderLockedContent(data) {
-      document.getElementById('lesson-content').innerHTML = `
-        <div class="breadcrumb">
-          <a href="/course">Course</a>
-          <span>›</span>
-          <span>${data.parentChapter?.title || 'Chapter'}</span>
-          <span>›</span>
-          <span>${data.subChapter?.title || 'Lesson'}</span>
-        </div>
-        
-        <div class="locked-overlay">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-          </svg>
-          <h3>This Lesson is Locked</h3>
-          <p>Purchase the course to unlock all lessons, videos, PDFs, and quizzes.</p>
-          <a href="/payment" class="btn btn-primary btn-lg">Unlock Course for ₹999</a>
-        </div>
-      `;
-      
-      document.getElementById('lesson-sidebar').innerHTML = '';
-    }
-
-    function renderLesson(data) {
-      const content = document.getElementById('lesson-content');
-      
-      content.innerHTML = `
-        <div class="breadcrumb">
-          <a href="/course">Course</a>
-          <span>›</span>
-          <a href="/course">${data.parentChapter.title}</a>
-          <span>›</span>
-          <span>${lessonData.title}</span>
-        </div>
-        
-        <h1 class="lesson-title">${lessonData.title}</h1>
-        <p class="lesson-description">${lessonData.description}</p>
-        
-        <!-- Video Section -->
-        ${materialsData.videos && materialsData.videos.length > 0 ? `
-          <div class="material-section" id="video-section">
-            <h3 class="material-section-title">
-              <span class="material-icon video">📹</span>
-              Videos (${materialsData.videos.length})
-            </h3>
-            <div class="video-container" id="video-player">
-              <iframe 
-                src="${materialsData.videos[0].url}?rel=0&modestbranding=1" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="video-list">
-              ${materialsData.videos.map((video, i) => `
-                <div class="material-item ${i === 0 ? 'active' : ''}" onclick="playVideo(${JSON.stringify(video).replace(/"/g, '&quot;')}, this)" data-video-id="${video.id}">
-                  <div class="material-item-icon video">📹</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${video.title}</div>
-                    <div class="material-item-meta">${video.duration} • ${video.description}</div>
-                  </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        ` : ''}
-        
-        <!-- Audio Section -->
-        ${materialsData.audios && materialsData.audios.length > 0 ? `
-          <div class="material-section" id="audio-section">
-            <h3 class="material-section-title">
-              <span class="material-icon audio">🎧</span>
-              Audio Lectures (${materialsData.audios.length})
-            </h3>
-            <div class="audio-list">
-              ${materialsData.audios.map(audio => `
-                <div class="material-item">
-                  <div class="material-item-icon audio">🎧</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${audio.title}</div>
-                    <div class="material-item-meta">${audio.duration} • ${audio.description}</div>
-                    <div class="audio-wrapper">
-                      <audio class="audio-player" controls controlsList="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;">
-                        <source src="${audio.url}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                    </div>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        ` : ''}
-        
-        <!-- PDF Section -->
-        ${materialsData.pdfs && materialsData.pdfs.length > 0 ? `
-          <div class="material-section" id="pdf-section">
-            <h3 class="material-section-title">
-              <span class="material-icon pdf">📄</span>
-              Study Materials (${materialsData.pdfs.length})
-            </h3>
-            <div class="pdf-list">
-              ${materialsData.pdfs.map((pdf, index) => `
-                <div class="material-item" onclick="viewPdf('${pdf.url}', '${pdf.title}', ${index})">
-                  <div class="material-item-icon pdf">📄</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${pdf.title}</div>
-                    <div class="material-item-meta">${pdf.description}</div>
-                  </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>
-                </div>
-              `).join('')}
-            </div>
-            <div id="pdf-viewer-container" class="pdf-viewer-container hidden">
-              <div class="pdf-viewer-overlay"></div>
-              <iframe id="pdf-viewer" src="" oncontextmenu="return false;"></iframe>
-            </div>
-          </div>
-        ` : ''}
-        
-        <!-- Quiz Section -->
-        ${materialsData.quizzes && materialsData.quizzes.length > 0 ? `
-          <div class="material-section" id="quiz-section">
-            <h3 class="material-section-title">
-              <span class="material-icon quiz">📝</span>
-              Quizzes (${materialsData.quizzes.length})
-            </h3>
-            <div class="quiz-list">
-              ${materialsData.quizzes.map(quiz => `
-                <div class="material-item" onclick="startQuiz('${quiz.id}')">
-                  <div class="material-item-icon quiz">📝</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${quiz.title}</div>
-                    <div class="material-item-meta">${quiz.questionCount} questions • ${quiz.description}</div>
-                  </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-              `).join('')}
-            </div>
-            <div id="quiz-container" class="hidden mt-4"></div>
-          </div>
-        ` : ''}
-      `;
-    }
-
-    function renderSidebar(data) {
-      const sidebar = document.getElementById('lesson-sidebar');
-      
-      const totalMaterials = 
-        (materialsData.videos?.length || 0) + 
-        (materialsData.audios?.length || 0) + 
-        (materialsData.pdfs?.length || 0) + 
-        (materialsData.quizzes?.length || 0);
-      
-      sidebar.innerHTML = `
-        <div class="sidebar-card">
-          <h4 class="sidebar-card-title">Lesson Progress</h4>
-          <div class="progress-info">
-            <span>Materials</span>
-            <span>${totalMaterials} items</span>
-          </div>
-          <div class="progress-bar-lg">
-            <div class="progress" style="width: 0%"></div>
-          </div>
-          <div class="nav-buttons">
-            <button class="btn btn-primary btn-block" onclick="markComplete()">
-              Mark as Complete
-            </button>
-          </div>
-        </div>
-        
-        <div class="sidebar-card">
-          <h4 class="sidebar-card-title">Quick Navigation</h4>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            ${materialsData.videos?.length ? `
-              <a href="#video-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
-                📹 Videos (${materialsData.videos.length})
-              </a>
-            ` : ''}
-            ${materialsData.audios?.length ? `
-              <a href="#audio-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
-                🎧 Audio (${materialsData.audios.length})
-              </a>
-            ` : ''}
-            ${materialsData.pdfs?.length ? `
-              <a href="#pdf-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
-                📄 PDFs (${materialsData.pdfs.length})
-              </a>
-            ` : ''}
-            ${materialsData.quizzes?.length ? `
-              <a href="#quiz-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
-                📝 Quizzes (${materialsData.quizzes.length})
-              </a>
-            ` : ''}
-          </div>
-        </div>
-        
-        <div class="sidebar-card">
-          <h4 class="sidebar-card-title">Chapter: ${data.parentChapter.title}</h4>
-          <a href="/course" class="btn btn-ghost btn-block btn-sm">
-            ← Back to Course
-          </a>
-        </div>
-      `;
-    }
-
-    function playVideo(video, element) {
-      currentVideo = video;
-      const player = document.getElementById('video-player');
-      player.innerHTML = `
-        <iframe 
-          src="${video.url}?rel=0&modestbranding=1&autoplay=1" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      `;
-      
-      // Update active state
-      document.querySelectorAll('.video-list .material-item').forEach(item => {
-        item.classList.remove('active');
-      });
-      if (element) {
-        element.classList.add('active');
-      }
-    }
-
-    async function startQuiz(quizId) {
-      try {
-        const response = await fetch(`/api/subchapters/${subChapterId}/quizzes/${quizId}`, {
-          headers: getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {}
-        });
-        
-        const data = await response.json();
-        currentQuiz = data.quiz;
-        quizState = {
-          currentQuestion: 0,
-          answers: {},
-          score: 0,
-          completed: false
-        };
-        
-        const container = document.getElementById('quiz-container');
-        container.classList.remove('hidden');
-        renderQuizQuestion();
-        
-        // Scroll to quiz
-        container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } catch (error) {
-        console.error('Error loading quiz:', error);
-        alert('Failed to load quiz. Please try again.');
-      }
-    }
-
-    function renderQuizQuestion() {
-      const container = document.getElementById('quiz-container');
-      const question = currentQuiz.questions[quizState.currentQuestion];
-      const answered = quizState.answers[question.id] !== undefined;
-      
-      container.innerHTML = `
-        <div class="quiz-container">
-          <div class="quiz-header">
-            <h3 class="quiz-title">${currentQuiz.title}</h3>
-            <div class="quiz-progress">
-              Question ${quizState.currentQuestion + 1} of ${currentQuiz.questions.length}
-            </div>
-          </div>
-          
-          <div class="question-card">
-            <div class="question-text">${question.question}</div>
-            <div class="options-list">
-              ${question.options.map(option => {
-                let classes = 'option-btn';
-                const userAnswer = quizState.answers[question.id];
-                
-                if (answered) {
-                  if (option.id === userAnswer?.correctAnswer) {
-                    classes += ' correct';
-                  } else if (option.id === userAnswer?.userAnswer && !userAnswer?.isCorrect) {
-                    classes += ' incorrect';
-                  }
-                } else if (quizState.selectedOption === option.id) {
-                  classes += ' selected';
-                }
-                
-                return `
-                  <button class="${classes}" 
-                          onclick="selectOption('${option.id}')"
-                          ${answered ? 'disabled' : ''}>
-                    <span class="option-marker">${option.id.toUpperCase()}</span>
-                    <span>${option.text}</span>
-                  </button>
-                `;
-              }).join('')}
-            </div>
-            
-            ${answered && quizState.answers[question.id]?.explanation ? `
-              <div class="explanation-box ${quizState.answers[question.id].isCorrect ? 'correct' : 'incorrect'}">
-                <strong>${quizState.answers[question.id].isCorrect ? '✓ Correct!' : '✗ Incorrect'}</strong>
-                <p style="margin-top: 0.5rem;">${quizState.answers[question.id].explanation}</p>
-              </div>
-            ` : ''}
-          </div>
-          
-          <div class="quiz-nav">
-            <button class="btn btn-ghost" 
-                    onclick="prevQuestion()" 
-                    ${quizState.currentQuestion === 0 ? 'disabled' : ''}>
-              ← Previous
-            </button>
-            
-            ${quizState.currentQuestion === currentQuiz.questions.length - 1 ? `
-              <button class="btn btn-primary" onclick="finishQuiz()" ${!answered ? 'disabled' : ''}>
-                Finish Quiz
-              </button>
-            ` : `
-              <button class="btn btn-primary" onclick="nextQuestion()" ${!answered ? 'disabled' : ''}>
-                Next →
-              </button>
-            `}
-          </div>
-        </div>
-      `;
-    }
-
-    async function selectOption(optionId) {
-      const question = currentQuiz.questions[quizState.currentQuestion];
-      
-      if (quizState.answers[question.id]) return;
-      
-      quizState.selectedOption = optionId;
-      
-      try {
-        const response = await fetch(`/api/subchapters/${subChapterId}/quizzes/${currentQuiz.id}/check-answer`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            ...(getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {})
-          },
-          body: JSON.stringify({
-            questionId: question.id,
-            answer: optionId
-          })
-        });
-        
-        const result = await response.json();
-        quizState.answers[question.id] = result;
-        
-        if (result.isCorrect) {
-          quizState.score++;
-        }
-        
-        renderQuizQuestion();
-      } catch (error) {
-        console.error('Error checking answer:', error);
-      }
-    }
-
-    function nextQuestion() {
-      if (quizState.currentQuestion < currentQuiz.questions.length - 1) {
-        quizState.currentQuestion++;
-        quizState.selectedOption = null;
-        renderQuizQuestion();
-      }
-    }
-
-    function prevQuestion() {
-      if (quizState.currentQuestion > 0) {
-        quizState.currentQuestion--;
-        quizState.selectedOption = null;
-        renderQuizQuestion();
-      }
-    }
-
-    async function finishQuiz() {
-      quizState.completed = true;
-      
-      // Save result if logged in
-      if (isLoggedIn()) {
-        try {
-          await fetch(`/api/subchapters/${subChapterId}/quizzes/${currentQuiz.id}/save-result`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${getToken()}`
-            },
-            body: JSON.stringify({
-              score: quizState.score,
-              totalQuestions: currentQuiz.questions.length,
-              answers: quizState.answers
-            })
-          });
-        } catch (error) {
-          console.error('Error saving quiz result:', error);
-        }
-      }
-      
-      renderQuizScore();
-    }
-
-    function renderQuizScore() {
-      const container = document.getElementById('quiz-container');
-      const percentage = Math.round((quizState.score / currentQuiz.questions.length) * 100);
-      
-      let scoreClass = 'needs-work';
-      let message = 'Keep practicing!';
-      
-      if (percentage >= 80) {
-        scoreClass = 'excellent';
-        message = 'Excellent work!';
-      } else if (percentage >= 60) {
-        scoreClass = 'good';
-        message = 'Good job!';
-      }
-      
-      container.innerHTML = `
-        <div class="quiz-container">
-          <div class="quiz-score">
-            <div class="score-circle ${scoreClass}">
-              <span class="score-number">${percentage}%</span>
-              <span class="score-label">${quizState.score}/${currentQuiz.questions.length}</span>
-            </div>
-            <h3>${message}</h3>
-            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
-              You answered ${quizState.score} out of ${currentQuiz.questions.length} questions correctly.
-            </p>
-            <div class="flex gap-3" style="justify-content: center;">
-              <button class="btn btn-ghost" onclick="startQuiz('${currentQuiz.id}')">
-                Retake Quiz
-              </button>
-              <button class="btn btn-primary" onclick="document.getElementById('quiz-container').classList.add('hidden')">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-    async function markComplete() {
-      if (!isLoggedIn()) {
-        window.location.href = '/login?redirect=' + window.location.pathname;
-        return;
-      }
-      
-      try {
-        await fetch(`/api/subchapters/${subChapterId}/complete`, {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${getToken()}`
-          }
-        });
-        
-        alert('Lesson marked as complete!');
-      } catch (error) {
-        console.error('Error marking complete:', error);
-        alert('Failed to mark lesson as complete.');
-      }
-    }
-
-    // PDF Viewer function
-    function viewPdf(url, title, index) {
-      const container = document.getElementById('pdf-viewer-container');
-      const viewer = document.getElementById('pdf-viewer');
-      
-      // Use Google Docs viewer to prevent download (works for publicly accessible PDFs)
-      // For local/private PDFs, use direct embed with #toolbar=0
-      const viewerUrl = url.startsWith('http') 
-        ? `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`
-        : `${url}#toolbar=0&navpanes=0&scrollbar=1`;
-      
-      viewer.src = viewerUrl;
-      container.classList.remove('hidden');
-      
-      // Update active state on PDF items
-      document.querySelectorAll('.pdf-list .material-item').forEach((item, i) => {
-        item.classList.toggle('active', i === index);
-      });
-      
-      // Scroll to viewer
-      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-
-    // Content Protection - Disable right-click on protected content
-    document.addEventListener('contextmenu', function(e) {
-      if (e.target.closest('.pdf-viewer-container') || 
-          e.target.closest('.video-container') ||
-          e.target.closest('.audio-wrapper') ||
-          e.target.tagName === 'AUDIO' ||
-          e.target.tagName === 'VIDEO' ||
-          e.target.tagName === 'IFRAME') {
-        e.preventDefault();
-        return false;
-      }
-    });
-
-    // Disable keyboard shortcuts for saving/downloading
-    document.addEventListener('keydown', function(e) {
-      // Ctrl+S, Ctrl+Shift+S
-      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-        e.preventDefault();
-        return false;
-      }
-      // Ctrl+U (view source)
-      if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
-        e.preventDefault();
-        return false;
-      }
-    });
-
-    // Initialize
-    loadLesson();
-  </script>
 </body>
 </html>
