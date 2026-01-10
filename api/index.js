@@ -17,6 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-in-production';
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '';
 
 // Razorpay instance
 let razorpay = null;
@@ -218,6 +219,84 @@ app.get('/api/auth/me', authenticate, async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Server error' });
   }
+});
+
+// Google Sign-In
+app.post('/api/auth/google', async (req, res) => {
+  await ensureDb();
+  try {
+    const { credential } = req.body;
+    
+    if (!credential) {
+      return res.status(400).json({ error: 'Google credential required' });
+    }
+
+    // Verify Google token
+    // Decode the JWT token from Google (in production, verify with Google's public keys)
+    const tokenParts = credential.split('.');
+    if (tokenParts.length !== 3) {
+      return res.status(400).json({ error: 'Invalid Google credential' });
+    }
+
+    const payload = JSON.parse(Buffer.from(tokenParts[1], 'base64').toString());
+    
+    // Verify the token is for our app (if GOOGLE_CLIENT_ID is set)
+    if (GOOGLE_CLIENT_ID && payload.aud !== GOOGLE_CLIENT_ID) {
+      return res.status(400).json({ error: 'Invalid Google credential' });
+    }
+
+    // Check if token is expired
+    if (payload.exp * 1000 < Date.now()) {
+      return res.status(400).json({ error: 'Google credential expired' });
+    }
+
+    const { email, name, sub: googleId, picture } = payload;
+
+    if (!email) {
+      return res.status(400).json({ error: 'Email not provided by Google' });
+    }
+
+    // Check if user exists
+    let user = await userOps.findByEmail(email);
+
+    if (user) {
+      // User exists - update Google ID if not set
+      if (!user.googleId) {
+        await userOps.updateGoogleId(user.id, googleId);
+      }
+    } else {
+      // Create new user with Google account
+      const userId = uuidv4();
+      user = await userOps.createWithGoogle(userId, name || email.split('@')[0], email, googleId, picture);
+    }
+
+    // Generate JWT token
+    const token = jwt.sign(
+      { id: user.id, email: user.email, name: user.name },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+
+    res.json({
+      message: 'Google sign-in successful',
+      token,
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        mobile: user.mobile || null,
+        hasPurchased: user.hasPurchased
+      }
+    });
+  } catch (error) {
+    console.error('Google auth error:', error);
+    res.status(500).json({ error: 'Google authentication failed' });
+  }
+});
+
+// Get Google Client ID
+app.get('/api/auth/google-client-id', (req, res) => {
+  res.json({ clientId: GOOGLE_CLIENT_ID });
 });
 
 // ============== COURSE ROUTES ==============

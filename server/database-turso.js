@@ -31,12 +31,28 @@ async function initDatabase() {
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
       email TEXT UNIQUE NOT NULL,
-      mobile TEXT UNIQUE NOT NULL,
-      password TEXT NOT NULL,
+      mobile TEXT,
+      password TEXT,
+      google_id TEXT,
+      profile_picture TEXT,
       has_purchased INTEGER DEFAULT 0,
       created_at TEXT DEFAULT (datetime('now'))
     )
   `);
+
+  // Add google_id column if it doesn't exist (migration for existing databases)
+  try {
+    await database.execute(`ALTER TABLE users ADD COLUMN google_id TEXT`);
+  } catch (e) {
+    // Column already exists, ignore
+  }
+  try {
+    await database.execute(`ALTER TABLE users ADD COLUMN profile_picture TEXT`);
+  } catch (e) {
+    // Column already exists, ignore
+  }
+  // Make mobile nullable for Google sign-ups
+  // Note: SQLite doesn't support ALTER COLUMN, so we keep it as is
 
   // Create purchases table
   await database.execute(`
@@ -171,6 +187,51 @@ const userOps = {
       sql: 'UPDATE users SET has_purchased = ? WHERE id = ?',
       args: [hasPurchased ? 1 : 0, userId]
     });
+  },
+
+  async createWithGoogle(id, name, email, googleId, profilePicture) {
+    const database = getDatabase();
+    try {
+      await database.execute({
+        sql: 'INSERT INTO users (id, name, email, google_id, profile_picture) VALUES (?, ?, ?, ?, ?)',
+        args: [id, name, email.toLowerCase(), googleId, profilePicture || null]
+      });
+      return { id, name, email: email.toLowerCase(), mobile: null, hasPurchased: false, googleId, profilePicture };
+    } catch (error) {
+      if (error.message.includes('UNIQUE constraint failed')) {
+        throw new Error('Email already registered');
+      }
+      throw error;
+    }
+  },
+
+  async updateGoogleId(userId, googleId) {
+    const database = getDatabase();
+    await database.execute({
+      sql: 'UPDATE users SET google_id = ? WHERE id = ?',
+      args: [googleId, userId]
+    });
+  },
+
+  async findByGoogleId(googleId) {
+    const database = getDatabase();
+    const result = await database.execute({
+      sql: 'SELECT * FROM users WHERE google_id = ?',
+      args: [googleId]
+    });
+    if (result.rows.length === 0) return null;
+    const row = result.rows[0];
+    return {
+      id: row.id,
+      name: row.name,
+      email: row.email,
+      mobile: row.mobile,
+      password: row.password,
+      googleId: row.google_id,
+      profilePicture: row.profile_picture,
+      hasPurchased: row.has_purchased === 1,
+      createdAt: row.created_at
+    };
   }
 };
 
