@@ -9,6 +9,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <style>
+    /* Disable content downloading */
+    .no-download {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+    }
+    
+    .protected-content {
+      position: relative;
+    }
+    
+    .protected-content::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+    }
+    
+    /* PDF Viewer Styles */
+    .pdf-viewer-container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 1rem;
+      background: var(--gray-100);
+    }
+    
+    .pdf-viewer-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .pdf-viewer-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      z-index: 10;
+    }
+    
+    /* Audio player protection */
+    .audio-wrapper {
+      position: relative;
+    }
+    
+    .audio-player {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    
+    /* Hide download button in audio player where possible */
+    audio::-webkit-media-controls-enclosure {
+      overflow: hidden;
+    }
+    
+    audio::-webkit-media-controls-panel {
+      width: calc(100% + 30px);
+    }
+    
     .lesson-container {
       display: grid;
       grid-template-columns: 1fr 320px;
@@ -112,6 +182,19 @@
       width: 100%;
       height: 100%;
       border: none;
+      pointer-events: auto;
+    }
+    
+    /* Overlay to prevent right-click on video but allow play controls */
+    .video-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 60px;
+      height: 40px;
+      z-index: 5;
+      background: transparent;
     }
     
     .video-list, .audio-list, .pdf-list, .quiz-list {
@@ -625,10 +708,12 @@
                   <div class="material-item-info">
                     <div class="material-item-title">${audio.title}</div>
                     <div class="material-item-meta">${audio.duration} • ${audio.description}</div>
-                    <audio class="audio-player" controls>
-                      <source src="${audio.url}" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                    </audio>
+                    <div class="audio-wrapper">
+                      <audio class="audio-player" controls controlsList="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;">
+                        <source src="${audio.url}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                      </audio>
+                    </div>
                   </div>
                 </div>
               `).join('')}
@@ -644,20 +729,23 @@
               Study Materials (${materialsData.pdfs.length})
             </h3>
             <div class="pdf-list">
-              ${materialsData.pdfs.map(pdf => `
-                <div class="material-item" onclick="window.open('${pdf.url}', '_blank')">
+              ${materialsData.pdfs.map((pdf, index) => `
+                <div class="material-item" onclick="viewPdf('${pdf.url}', '${pdf.title}', ${index})">
                   <div class="material-item-icon pdf">📄</div>
                   <div class="material-item-info">
                     <div class="material-item-title">${pdf.title}</div>
                     <div class="material-item-meta">${pdf.description}</div>
                   </div>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
                 </div>
               `).join('')}
+            </div>
+            <div id="pdf-viewer-container" class="pdf-viewer-container hidden">
+              <div class="pdf-viewer-overlay"></div>
+              <iframe id="pdf-viewer" src="" oncontextmenu="return false;"></iframe>
             </div>
           </div>
         ` : ''}
@@ -1002,6 +1090,56 @@
         alert('Failed to mark lesson as complete.');
       }
     }
+
+    // PDF Viewer function
+    function viewPdf(url, title, index) {
+      const container = document.getElementById('pdf-viewer-container');
+      const viewer = document.getElementById('pdf-viewer');
+      
+      // Use Google Docs viewer to prevent download (works for publicly accessible PDFs)
+      // For local/private PDFs, use direct embed with #toolbar=0
+      const viewerUrl = url.startsWith('http') 
+        ? `https://docs.google.com/viewer?url=${encodeURIComponent(url)}&embedded=true`
+        : `${url}#toolbar=0&navpanes=0&scrollbar=1`;
+      
+      viewer.src = viewerUrl;
+      container.classList.remove('hidden');
+      
+      // Update active state on PDF items
+      document.querySelectorAll('.pdf-list .material-item').forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+      
+      // Scroll to viewer
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Content Protection - Disable right-click on protected content
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.closest('.pdf-viewer-container') || 
+          e.target.closest('.video-container') ||
+          e.target.closest('.audio-wrapper') ||
+          e.target.tagName === 'AUDIO' ||
+          e.target.tagName === 'VIDEO' ||
+          e.target.tagName === 'IFRAME') {
+        e.preventDefault();
+        return false;
+      }
+    });
+
+    // Disable keyboard shortcuts for saving/downloading
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+S, Ctrl+Shift+S
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        return false;
+      }
+      // Ctrl+U (view source)
+      if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
+        e.preventDefault();
+        return false;
+      }
+    });
 
     // Initialize
     loadLesson();
