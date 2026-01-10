@@ -8,7 +8,7 @@ const Razorpay = require('razorpay');
 const crypto = require('crypto');
 
 const { initDatabase, userOps, purchaseOps, progressOps, quizOps } = require('../server/database-turso');
-const { course, chapters, quizzes, coupons } = require('../server/data');
+const { course, chapters, subChapters, materials, coupons } = require('../server/data');
 
 const app = express();
 
@@ -226,6 +226,7 @@ app.get('/api/course', (req, res) => {
   res.json({ course });
 });
 
+// Get all chapters with sub-chapter counts
 app.get('/api/chapters', optionalAuth, async (req, res) => {
   await ensureDb();
   try {
@@ -239,17 +240,29 @@ app.get('/api/chapters', optionalAuth, async (req, res) => {
     }
 
     const chaptersWithAccess = chapters.map(chapter => {
-      const progress = userProgress.find(p => p.chapterId === chapter.id);
+      const chapterSubChapters = subChapters[chapter.id] || [];
+      const subChapterIds = chapterSubChapters.map(sc => sc.id);
+      const completedSubChapters = userProgress.filter(p => 
+        subChapterIds.includes(p.chapterId) && p.completed
+      ).length;
+      
+      // Calculate total duration from sub-chapters
+      const totalDuration = chapterSubChapters.reduce((acc, sc) => {
+        const mins = parseInt(sc.duration) || 0;
+        return acc + mins;
+      }, 0);
+
       return {
         id: chapter.id,
         title: chapter.title,
         description: chapter.description,
         order: chapter.order,
-        duration: chapter.duration,
+        icon: chapter.icon,
         isFree: chapter.isFree,
         isLocked: !chapter.isFree && !hasPurchased,
-        completed: progress?.completed || false,
-        lastAccessed: progress?.lastAccessed || null
+        subChapterCount: chapterSubChapters.length,
+        completedSubChapters,
+        totalDuration: totalDuration > 60 ? `${Math.floor(totalDuration/60)} hr ${totalDuration%60} min` : `${totalDuration} min`
       };
     });
 
@@ -260,6 +273,7 @@ app.get('/api/chapters', optionalAuth, async (req, res) => {
   }
 });
 
+// Get single chapter with its sub-chapters
 app.get('/api/chapters/:id', optionalAuth, async (req, res) => {
   await ensureDb();
   try {
@@ -270,34 +284,50 @@ app.get('/api/chapters/:id', optionalAuth, async (req, res) => {
     }
 
     let hasPurchased = false;
+    let userProgress = [];
+    
     if (req.user) {
       const user = await userOps.findById(req.user.id);
       hasPurchased = user?.hasPurchased || false;
-
-      // Update progress
-      await progressOps.updateProgress(req.user.id, chapter.id, false);
+      userProgress = await progressOps.getProgress(req.user.id);
     }
 
     const hasAccess = chapter.isFree || hasPurchased;
+    const chapterSubChapters = subChapters[chapter.id] || [];
 
-    if (!hasAccess) {
-      return res.json({
-        chapter: {
-          id: chapter.id,
-          title: chapter.title,
-          description: chapter.description,
-          order: chapter.order,
-          duration: chapter.duration,
-          isFree: chapter.isFree,
-          isLocked: true
-        },
-        hasAccess: false
-      });
-    }
+    // Add progress info to sub-chapters
+    const subChaptersWithProgress = chapterSubChapters.map(sc => {
+      const progress = userProgress.find(p => p.chapterId === sc.id);
+      const subMaterials = materials[sc.id] || { videos: [], audios: [], pdfs: [], quizzes: [] };
+      
+      return {
+        ...sc,
+        completed: progress?.completed || false,
+        lastAccessed: progress?.lastAccessed || null,
+        materialCounts: {
+          videos: subMaterials.videos?.length || 0,
+          audios: subMaterials.audios?.length || 0,
+          pdfs: subMaterials.pdfs?.length || 0,
+          quizzes: subMaterials.quizzes?.length || 0
+        }
+      };
+    });
 
     res.json({
-      chapter: { ...chapter, isLocked: false },
-      hasAccess: true
+      chapter: {
+        ...chapter,
+        isLocked: !hasAccess
+      },
+      subChapters: hasAccess ? subChaptersWithProgress : subChaptersWithProgress.map(sc => ({
+        id: sc.id,
+        title: sc.title,
+        description: sc.description,
+        order: sc.order,
+        duration: sc.duration,
+        materialCounts: sc.materialCounts,
+        isLocked: true
+      })),
+      hasAccess
     });
   } catch (error) {
     console.error('Chapter error:', error);
@@ -305,24 +335,117 @@ app.get('/api/chapters/:id', optionalAuth, async (req, res) => {
   }
 });
 
-// Mark chapter complete
-app.post('/api/chapters/:id/complete', authenticate, async (req, res) => {
+// Get sub-chapter with all materials
+app.get('/api/subchapters/:id', optionalAuth, async (req, res) => {
   await ensureDb();
   try {
-    const chapter = chapters.find(c => c.id === req.params.id);
-    if (!chapter) {
-      return res.status(404).json({ error: 'Chapter not found' });
+    // Find the sub-chapter
+    let subChapter = null;
+    let parentChapter = null;
+    
+    for (const chapterId of Object.keys(subChapters)) {
+      const found = subChapters[chapterId].find(sc => sc.id === req.params.id);
+      if (found) {
+        subChapter = found;
+        parentChapter = chapters.find(c => c.id === chapterId);
+        break;
+      }
+    }
+
+    if (!subChapter || !parentChapter) {
+      return res.status(404).json({ error: 'Sub-chapter not found' });
+    }
+
+    let hasPurchased = false;
+    if (req.user) {
+      const user = await userOps.findById(req.user.id);
+      hasPurchased = user?.hasPurchased || false;
+      
+      // Update progress
+      await progressOps.updateProgress(req.user.id, subChapter.id, false);
+    }
+
+    const hasAccess = parentChapter.isFree || hasPurchased;
+
+    if (!hasAccess) {
+      return res.json({
+        subChapter: {
+          id: subChapter.id,
+          title: subChapter.title,
+          description: subChapter.description,
+          order: subChapter.order,
+          duration: subChapter.duration,
+          isLocked: true
+        },
+        parentChapter: {
+          id: parentChapter.id,
+          title: parentChapter.title
+        },
+        materials: null,
+        hasAccess: false
+      });
+    }
+
+    const subMaterials = materials[subChapter.id] || { videos: [], audios: [], pdfs: [], quizzes: [] };
+    
+    // Remove answers from quizzes
+    const quizzesWithoutAnswers = (subMaterials.quizzes || []).map(quiz => ({
+      id: quiz.id,
+      title: quiz.title,
+      description: quiz.description,
+      questionCount: quiz.questions?.length || 0
+    }));
+
+    res.json({
+      subChapter: { ...subChapter, isLocked: false },
+      parentChapter: {
+        id: parentChapter.id,
+        title: parentChapter.title
+      },
+      materials: {
+        videos: subMaterials.videos || [],
+        audios: subMaterials.audios || [],
+        pdfs: subMaterials.pdfs || [],
+        quizzes: quizzesWithoutAnswers
+      },
+      hasAccess: true
+    });
+  } catch (error) {
+    console.error('Sub-chapter error:', error);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// Mark sub-chapter complete
+app.post('/api/subchapters/:id/complete', authenticate, async (req, res) => {
+  await ensureDb();
+  try {
+    // Find the sub-chapter and parent chapter
+    let subChapter = null;
+    let parentChapter = null;
+    
+    for (const chapterId of Object.keys(subChapters)) {
+      const found = subChapters[chapterId].find(sc => sc.id === req.params.id);
+      if (found) {
+        subChapter = found;
+        parentChapter = chapters.find(c => c.id === chapterId);
+        break;
+      }
+    }
+
+    if (!subChapter || !parentChapter) {
+      return res.status(404).json({ error: 'Sub-chapter not found' });
     }
 
     const user = await userOps.findById(req.user.id);
-    const hasAccess = chapter.isFree || user?.hasPurchased;
+    const hasAccess = parentChapter.isFree || user?.hasPurchased;
 
     if (!hasAccess) {
       return res.status(403).json({ error: 'Purchase required' });
     }
 
-    await progressOps.updateProgress(req.user.id, chapter.id, true);
-    res.json({ success: true, message: 'Chapter marked as completed' });
+    await progressOps.updateProgress(req.user.id, subChapter.id, true);
+    res.json({ success: true, message: 'Sub-chapter marked as completed' });
   } catch (error) {
     res.status(500).json({ error: 'Server error' });
   }
@@ -340,52 +463,43 @@ app.get('/api/progress', authenticate, async (req, res) => {
   }
 });
 
-// ============== QUIZ ROUTES ==============
+// ============== QUIZ ROUTES (Sub-chapter based) ==============
 
-app.get('/api/chapters/:id/quizzes', optionalAuth, async (req, res) => {
-  await ensureDb();
-  try {
-    const chapter = chapters.find(c => c.id === req.params.id);
-    if (!chapter) {
-      return res.status(404).json({ error: 'Chapter not found' });
+// Helper function to find quiz and its parent sub-chapter/chapter
+function findQuizContext(subChapterId, quizId) {
+  const subMaterials = materials[subChapterId];
+  if (!subMaterials || !subMaterials.quizzes) return null;
+  
+  const quiz = subMaterials.quizzes.find(q => q.id === quizId);
+  if (!quiz) return null;
+  
+  // Find parent sub-chapter and chapter
+  let subChapter = null;
+  let parentChapter = null;
+  
+  for (const chapterId of Object.keys(subChapters)) {
+    const found = subChapters[chapterId].find(sc => sc.id === subChapterId);
+    if (found) {
+      subChapter = found;
+      parentChapter = chapters.find(c => c.id === chapterId);
+      break;
     }
-
-    let hasPurchased = false;
-    if (req.user) {
-      const user = await userOps.findById(req.user.id);
-      hasPurchased = user?.hasPurchased || false;
-    }
-
-    const hasAccess = chapter.isFree || hasPurchased;
-    if (!hasAccess) {
-      return res.status(403).json({ error: 'Purchase required to access quizzes' });
-    }
-
-    const chapterQuizzes = quizzes[req.params.id];
-    if (!chapterQuizzes || chapterQuizzes.length === 0) {
-      return res.json({ quizzes: [] });
-    }
-
-    const quizzesList = chapterQuizzes.map(quiz => ({
-      id: quiz.id,
-      title: quiz.title,
-      description: quiz.description,
-      questionCount: quiz.questions.length
-    }));
-
-    res.json({ quizzes: quizzesList });
-  } catch (error) {
-    res.status(500).json({ error: 'Server error' });
   }
-});
+  
+  return { quiz, subChapter, parentChapter };
+}
 
-app.get('/api/chapters/:chapterId/quizzes/:quizId', optionalAuth, async (req, res) => {
+// Get quiz with questions (without answers)
+app.get('/api/subchapters/:subChapterId/quizzes/:quizId', optionalAuth, async (req, res) => {
   await ensureDb();
   try {
-    const chapter = chapters.find(c => c.id === req.params.chapterId);
-    if (!chapter) {
-      return res.status(404).json({ error: 'Chapter not found' });
+    const context = findQuizContext(req.params.subChapterId, req.params.quizId);
+    
+    if (!context) {
+      return res.status(404).json({ error: 'Quiz not found' });
     }
+    
+    const { quiz, subChapter, parentChapter } = context;
 
     let hasPurchased = false;
     if (req.user) {
@@ -393,25 +507,19 @@ app.get('/api/chapters/:chapterId/quizzes/:quizId', optionalAuth, async (req, re
       hasPurchased = user?.hasPurchased || false;
     }
 
-    const hasAccess = chapter.isFree || hasPurchased;
+    const hasAccess = parentChapter.isFree || hasPurchased;
     if (!hasAccess) {
       return res.status(403).json({ error: 'Purchase required to access quiz' });
-    }
-
-    const chapterQuizzes = quizzes[req.params.chapterId];
-    if (!chapterQuizzes) {
-      return res.status(404).json({ error: 'No quizzes found for this chapter' });
-    }
-
-    const quiz = chapterQuizzes.find(q => q.id === req.params.quizId);
-    if (!quiz) {
-      return res.status(404).json({ error: 'Quiz not found' });
     }
 
     const quizWithoutAnswers = {
       id: quiz.id,
       title: quiz.title,
       description: quiz.description,
+      subChapterId: subChapter.id,
+      subChapterTitle: subChapter.title,
+      chapterId: parentChapter.id,
+      chapterTitle: parentChapter.title,
       questions: quiz.questions.map(q => ({
         id: q.id,
         question: q.question,
@@ -425,13 +533,17 @@ app.get('/api/chapters/:chapterId/quizzes/:quizId', optionalAuth, async (req, re
   }
 });
 
-app.post('/api/chapters/:chapterId/quizzes/:quizId/check-answer', optionalAuth, async (req, res) => {
+// Check answer for a quiz question
+app.post('/api/subchapters/:subChapterId/quizzes/:quizId/check-answer', optionalAuth, async (req, res) => {
   await ensureDb();
   try {
-    const chapter = chapters.find(c => c.id === req.params.chapterId);
-    if (!chapter) {
-      return res.status(404).json({ error: 'Chapter not found' });
+    const context = findQuizContext(req.params.subChapterId, req.params.quizId);
+    
+    if (!context) {
+      return res.status(404).json({ error: 'Quiz not found' });
     }
+    
+    const { quiz, parentChapter } = context;
 
     let hasPurchased = false;
     if (req.user) {
@@ -439,19 +551,9 @@ app.post('/api/chapters/:chapterId/quizzes/:quizId/check-answer', optionalAuth, 
       hasPurchased = user?.hasPurchased || false;
     }
 
-    const hasAccess = chapter.isFree || hasPurchased;
+    const hasAccess = parentChapter.isFree || hasPurchased;
     if (!hasAccess) {
       return res.status(403).json({ error: 'Purchase required' });
-    }
-
-    const chapterQuizzes = quizzes[req.params.chapterId];
-    if (!chapterQuizzes) {
-      return res.status(404).json({ error: 'No quizzes found' });
-    }
-
-    const quiz = chapterQuizzes.find(q => q.id === req.params.quizId);
-    if (!quiz) {
-      return res.status(404).json({ error: 'Quiz not found' });
     }
 
     const { questionId, answer } = req.body;
@@ -468,21 +570,22 @@ app.post('/api/chapters/:chapterId/quizzes/:quizId/check-answer', optionalAuth, 
       userAnswer: answer,
       correctAnswer: question.correctAnswer,
       isCorrect,
-      explanation: question.explanations[answer]
+      explanation: question.explanation
     });
   } catch (error) {
     res.status(500).json({ error: 'Server error' });
   }
 });
 
-app.post('/api/chapters/:chapterId/quizzes/:quizId/save-result', authenticate, async (req, res) => {
+// Save quiz result
+app.post('/api/subchapters/:subChapterId/quizzes/:quizId/save-result', authenticate, async (req, res) => {
   await ensureDb();
   try {
     const { score, totalQuestions, answers } = req.body;
 
     await quizOps.saveResult(
       req.user.id,
-      req.params.chapterId,
+      req.params.subChapterId,
       req.params.quizId,
       score,
       totalQuestions,

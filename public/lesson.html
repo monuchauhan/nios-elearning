@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson - ExamPrep Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .lesson-container {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    @media (max-width: 1024px) {
+      .lesson-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .lesson-main {
+      min-width: 0;
+    }
+    
+    .lesson-sidebar {
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--gray-500);
+      margin-bottom: 1rem;
+    }
+    
+    .breadcrumb a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    .lesson-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 0.5rem;
+    }
+    
+    .lesson-description {
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+    
+    .material-section {
+      margin-bottom: 2rem;
+    }
+    
+    .material-section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--gray-200);
+    }
+    
+    .material-icon {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    
+    .material-icon.video { background: #fef3c7; }
+    .material-icon.audio { background: #dbeafe; }
+    .material-icon.pdf { background: #fee2e2; }
+    .material-icon.quiz { background: #d1fae5; }
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .video-list, .audio-list, .pdf-list, .quiz-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .material-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .material-item:hover {
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.1);
+    }
+    
+    .material-item.active {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+    
+    .material-item-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    
+    .material-item-icon.video { background: #fef3c7; }
+    .material-item-icon.audio { background: #dbeafe; }
+    .material-item-icon.pdf { background: #fee2e2; }
+    .material-item-icon.quiz { background: #d1fae5; }
+    
+    .material-item-info {
+      flex: 1;
+      min-width: 0;
+    }
+    
+    .material-item-title {
+      font-weight: 500;
+      color: var(--gray-900);
+      margin-bottom: 0.25rem;
+    }
+    
+    .material-item-meta {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+    }
+    
+    .audio-player {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    
+    .sidebar-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    
+    .sidebar-card-title {
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .progress-bar-lg {
+      height: 8px;
+      background: var(--gray-200);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .progress-bar-lg .progress {
+      height: 100%;
+      background: var(--success);
+      border-radius: 4px;
+      transition: width 0.3s;
+    }
+    
+    .nav-buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .nav-buttons .btn {
+      flex: 1;
+    }
+    
+    /* Quiz Styles */
+    .quiz-container {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    
+    .quiz-header {
+      margin-bottom: 1.5rem;
+    }
+    
+    .quiz-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .quiz-progress {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+    }
+    
+    .question-card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .question-text {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--gray-50);
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+      width: 100%;
+    }
+    
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+    
+    .option-btn.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+    
+    .option-btn.correct {
+      border-color: var(--success);
+      background: #d1fae5;
+    }
+    
+    .option-btn.incorrect {
+      border-color: var(--danger);
+      background: #fee2e2;
+    }
+    
+    .option-btn:disabled {
+      cursor: not-allowed;
+    }
+    
+    .option-marker {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 2px solid var(--gray-300);
+      border-radius: 50%;
+      font-weight: 600;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+    }
+    
+    .option-btn.selected .option-marker {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+    
+    .option-btn.correct .option-marker {
+      background: var(--success);
+      border-color: var(--success);
+      color: white;
+    }
+    
+    .option-btn.incorrect .option-marker {
+      background: var(--danger);
+      border-color: var(--danger);
+      color: white;
+    }
+    
+    .explanation-box {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .explanation-box.correct {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    
+    .explanation-box.incorrect {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    
+    .quiz-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--gray-200);
+    }
+    
+    .quiz-score {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .score-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-weight: 700;
+    }
+    
+    .score-circle.excellent {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    
+    .score-circle.good {
+      background: #fef3c7;
+      color: #92400e;
+    }
+    
+    .score-circle.needs-work {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    
+    .score-number {
+      font-size: 2rem;
+    }
+    
+    .score-label {
+      font-size: 0.875rem;
+    }
+    
+    .locked-overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+      background: var(--gray-50);
+      border-radius: 12px;
+    }
+    
+    .locked-overlay svg {
+      width: 64px;
+      height: 64px;
+      color: var(--gray-400);
+      margin-bottom: 1.5rem;
+    }
+    
+    .locked-overlay h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .locked-overlay p {
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          ExamPrep Pro
+        </a>
+        
+        <div class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/course" class="nav-link">Course</a>
+        </div>
+        
+        <div class="nav-user hidden" id="nav-user">
+          <a href="/course" class="btn btn-sm btn-primary">My Course</a>
+          <div class="user-avatar">U</div>
+          <button onclick="logout()" class="btn btn-sm btn-ghost">Logout</button>
+        </div>
+        
+        <div class="nav-auth" id="nav-auth">
+          <a href="/login" class="btn btn-ghost">Login</a>
+          <a href="/signup" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="lesson-container">
+      <!-- Main Content Area -->
+      <div class="lesson-main">
+        <div id="lesson-content">
+          <div class="loading" style="padding: 4rem;">
+            <div class="spinner"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="lesson-sidebar" id="lesson-sidebar">
+        <!-- Will be populated by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2026 ExamPrep Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script src="/js/api.js"></script>
+  <script>
+    // Get sub-chapter ID from URL
+    const pathParts = window.location.pathname.split('/');
+    const subChapterId = pathParts[pathParts.length - 1];
+    
+    let lessonData = null;
+    let materialsData = null;
+    let currentVideo = null;
+    let currentQuiz = null;
+    let quizState = {
+      currentQuestion: 0,
+      answers: {},
+      score: 0,
+      completed: false
+    };
+
+    async function loadLesson() {
+      try {
+        const response = await fetch(`/api/subchapters/${subChapterId}`, {
+          headers: getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {}
+        });
+        
+        const data = await response.json();
+        
+        if (!data.hasAccess) {
+          renderLockedContent(data);
+          return;
+        }
+        
+        lessonData = data.subChapter;
+        materialsData = data.materials;
+        
+        document.title = `${lessonData.title} - ExamPrep Pro`;
+        renderLesson(data);
+        renderSidebar(data);
+        
+        // Auto-play first video if available
+        if (materialsData.videos && materialsData.videos.length > 0) {
+          playVideo(materialsData.videos[0]);
+        }
+      } catch (error) {
+        console.error('Error loading lesson:', error);
+        document.getElementById('lesson-content').innerHTML = `
+          <div class="alert alert-error">Failed to load lesson. Please refresh the page.</div>
+        `;
+      }
+    }
+
+    function renderLockedContent(data) {
+      document.getElementById('lesson-content').innerHTML = `
+        <div class="breadcrumb">
+          <a href="/course">Course</a>
+          <span>›</span>
+          <span>${data.parentChapter?.title || 'Chapter'}</span>
+          <span>›</span>
+          <span>${data.subChapter?.title || 'Lesson'}</span>
+        </div>
+        
+        <div class="locked-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <h3>This Lesson is Locked</h3>
+          <p>Purchase the course to unlock all lessons, videos, PDFs, and quizzes.</p>
+          <a href="/payment" class="btn btn-primary btn-lg">Unlock Course for ₹999</a>
+        </div>
+      `;
+      
+      document.getElementById('lesson-sidebar').innerHTML = '';
+    }
+
+    function renderLesson(data) {
+      const content = document.getElementById('lesson-content');
+      
+      content.innerHTML = `
+        <div class="breadcrumb">
+          <a href="/course">Course</a>
+          <span>›</span>
+          <a href="/course">${data.parentChapter.title}</a>
+          <span>›</span>
+          <span>${lessonData.title}</span>
+        </div>
+        
+        <h1 class="lesson-title">${lessonData.title}</h1>
+        <p class="lesson-description">${lessonData.description}</p>
+        
+        <!-- Video Section -->
+        ${materialsData.videos && materialsData.videos.length > 0 ? `
+          <div class="material-section" id="video-section">
+            <h3 class="material-section-title">
+              <span class="material-icon video">📹</span>
+              Videos (${materialsData.videos.length})
+            </h3>
+            <div class="video-container" id="video-player">
+              <iframe 
+                src="${materialsData.videos[0].url}?rel=0&modestbranding=1" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-list">
+              ${materialsData.videos.map((video, i) => `
+                <div class="material-item ${i === 0 ? 'active' : ''}" onclick="playVideo(${JSON.stringify(video).replace(/"/g, '&quot;')}, this)" data-video-id="${video.id}">
+                  <div class="material-item-icon video">📹</div>
+                  <div class="material-item-info">
+                    <div class="material-item-title">${video.title}</div>
+                    <div class="material-item-meta">${video.duration} • ${video.description}</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+        
+        <!-- Audio Section -->
+        ${materialsData.audios && materialsData.audios.length > 0 ? `
+          <div class="material-section" id="audio-section">
+            <h3 class="material-section-title">
+              <span class="material-icon audio">🎧</span>
+              Audio Lectures (${materialsData.audios.length})
+            </h3>
+            <div class="audio-list">
+              ${materialsData.audios.map(audio => `
+                <div class="material-item">
+                  <div class="material-item-icon audio">🎧</div>
+                  <div class="material-item-info">
+                    <div class="material-item-title">${audio.title}</div>
+                    <div class="material-item-meta">${audio.duration} • ${audio.description}</div>
+                    <audio class="audio-player" controls>
+                      <source src="${audio.url}" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+        
+        <!-- PDF Section -->
+        ${materialsData.pdfs && materialsData.pdfs.length > 0 ? `
+          <div class="material-section" id="pdf-section">
+            <h3 class="material-section-title">
+              <span class="material-icon pdf">📄</span>
+              Study Materials (${materialsData.pdfs.length})
+            </h3>
+            <div class="pdf-list">
+              ${materialsData.pdfs.map(pdf => `
+                <div class="material-item" onclick="window.open('${pdf.url}', '_blank')">
+                  <div class="material-item-icon pdf">📄</div>
+                  <div class="material-item-info">
+                    <div class="material-item-title">${pdf.title}</div>
+                    <div class="material-item-meta">${pdf.description}</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+        
+        <!-- Quiz Section -->
+        ${materialsData.quizzes && materialsData.quizzes.length > 0 ? `
+          <div class="material-section" id="quiz-section">
+            <h3 class="material-section-title">
+              <span class="material-icon quiz">📝</span>
+              Quizzes (${materialsData.quizzes.length})
+            </h3>
+            <div class="quiz-list">
+              ${materialsData.quizzes.map(quiz => `
+                <div class="material-item" onclick="startQuiz('${quiz.id}')">
+                  <div class="material-item-icon quiz">📝</div>
+                  <div class="material-item-info">
+                    <div class="material-item-title">${quiz.title}</div>
+                    <div class="material-item-meta">${quiz.questionCount} questions • ${quiz.description}</div>
+                  </div>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </div>
+              `).join('')}
+            </div>
+            <div id="quiz-container" class="hidden mt-4"></div>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    function renderSidebar(data) {
+      const sidebar = document.getElementById('lesson-sidebar');
+      
+      const totalMaterials = 
+        (materialsData.videos?.length || 0) + 
+        (materialsData.audios?.length || 0) + 
+        (materialsData.pdfs?.length || 0) + 
+        (materialsData.quizzes?.length || 0);
+      
+      sidebar.innerHTML = `
+        <div class="sidebar-card">
+          <h4 class="sidebar-card-title">Lesson Progress</h4>
+          <div class="progress-info">
+            <span>Materials</span>
+            <span>${totalMaterials} items</span>
+          </div>
+          <div class="progress-bar-lg">
+            <div class="progress" style="width: 0%"></div>
+          </div>
+          <div class="nav-buttons">
+            <button class="btn btn-primary btn-block" onclick="markComplete()">
+              Mark as Complete
+            </button>
+          </div>
+        </div>
+        
+        <div class="sidebar-card">
+          <h4 class="sidebar-card-title">Quick Navigation</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            ${materialsData.videos?.length ? `
+              <a href="#video-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
+                📹 Videos (${materialsData.videos.length})
+              </a>
+            ` : ''}
+            ${materialsData.audios?.length ? `
+              <a href="#audio-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
+                🎧 Audio (${materialsData.audios.length})
+              </a>
+            ` : ''}
+            ${materialsData.pdfs?.length ? `
+              <a href="#pdf-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
+                📄 PDFs (${materialsData.pdfs.length})
+              </a>
+            ` : ''}
+            ${materialsData.quizzes?.length ? `
+              <a href="#quiz-section" class="btn btn-ghost btn-sm" style="justify-content: flex-start;">
+                📝 Quizzes (${materialsData.quizzes.length})
+              </a>
+            ` : ''}
+          </div>
+        </div>
+        
+        <div class="sidebar-card">
+          <h4 class="sidebar-card-title">Chapter: ${data.parentChapter.title}</h4>
+          <a href="/course" class="btn btn-ghost btn-block btn-sm">
+            ← Back to Course
+          </a>
+        </div>
+      `;
+    }
+
+    function playVideo(video, element) {
+      currentVideo = video;
+      const player = document.getElementById('video-player');
+      player.innerHTML = `
+        <iframe 
+          src="${video.url}?rel=0&modestbranding=1&autoplay=1" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      
+      // Update active state
+      document.querySelectorAll('.video-list .material-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      if (element) {
+        element.classList.add('active');
+      }
+    }
+
+    async function startQuiz(quizId) {
+      try {
+        const response = await fetch(`/api/subchapters/${subChapterId}/quizzes/${quizId}`, {
+          headers: getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {}
+        });
+        
+        const data = await response.json();
+        currentQuiz = data.quiz;
+        quizState = {
+          currentQuestion: 0,
+          answers: {},
+          score: 0,
+          completed: false
+        };
+        
+        const container = document.getElementById('quiz-container');
+        container.classList.remove('hidden');
+        renderQuizQuestion();
+        
+        // Scroll to quiz
+        container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (error) {
+        console.error('Error loading quiz:', error);
+        alert('Failed to load quiz. Please try again.');
+      }
+    }
+
+    function renderQuizQuestion() {
+      const container = document.getElementById('quiz-container');
+      const question = currentQuiz.questions[quizState.currentQuestion];
+      const answered = quizState.answers[question.id] !== undefined;
+      
+      container.innerHTML = `
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <h3 class="quiz-title">${currentQuiz.title}</h3>
+            <div class="quiz-progress">
+              Question ${quizState.currentQuestion + 1} of ${currentQuiz.questions.length}
+            </div>
+          </div>
+          
+          <div class="question-card">
+            <div class="question-text">${question.question}</div>
+            <div class="options-list">
+              ${question.options.map(option => {
+                let classes = 'option-btn';
+                const userAnswer = quizState.answers[question.id];
+                
+                if (answered) {
+                  if (option.id === userAnswer?.correctAnswer) {
+                    classes += ' correct';
+                  } else if (option.id === userAnswer?.userAnswer && !userAnswer?.isCorrect) {
+                    classes += ' incorrect';
+                  }
+                } else if (quizState.selectedOption === option.id) {
+                  classes += ' selected';
+                }
+                
+                return `
+                  <button class="${classes}" 
+                          onclick="selectOption('${option.id}')"
+                          ${answered ? 'disabled' : ''}>
+                    <span class="option-marker">${option.id.toUpperCase()}</span>
+                    <span>${option.text}</span>
+                  </button>
+                `;
+              }).join('')}
+            </div>
+            
+            ${answered && quizState.answers[question.id]?.explanation ? `
+              <div class="explanation-box ${quizState.answers[question.id].isCorrect ? 'correct' : 'incorrect'}">
+                <strong>${quizState.answers[question.id].isCorrect ? '✓ Correct!' : '✗ Incorrect'}</strong>
+                <p style="margin-top: 0.5rem;">${quizState.answers[question.id].explanation}</p>
+              </div>
+            ` : ''}
+          </div>
+          
+          <div class="quiz-nav">
+            <button class="btn btn-ghost" 
+                    onclick="prevQuestion()" 
+                    ${quizState.currentQuestion === 0 ? 'disabled' : ''}>
+              ← Previous
+            </button>
+            
+            ${quizState.currentQuestion === currentQuiz.questions.length - 1 ? `
+              <button class="btn btn-primary" onclick="finishQuiz()" ${!answered ? 'disabled' : ''}>
+                Finish Quiz
+              </button>
+            ` : `
+              <button class="btn btn-primary" onclick="nextQuestion()" ${!answered ? 'disabled' : ''}>
+                Next →
+              </button>
+            `}
+          </div>
+        </div>
+      `;
+    }
+
+    async function selectOption(optionId) {
+      const question = currentQuiz.questions[quizState.currentQuestion];
+      
+      if (quizState.answers[question.id]) return;
+      
+      quizState.selectedOption = optionId;
+      
+      try {
+        const response = await fetch(`/api/subchapters/${subChapterId}/quizzes/${currentQuiz.id}/check-answer`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {})
+          },
+          body: JSON.stringify({
+            questionId: question.id,
+            answer: optionId
+          })
+        });
+        
+        const result = await response.json();
+        quizState.answers[question.id] = result;
+        
+        if (result.isCorrect) {
+          quizState.score++;
+        }
+        
+        renderQuizQuestion();
+      } catch (error) {
+        console.error('Error checking answer:', error);
+      }
+    }
+
+    function nextQuestion() {
+      if (quizState.currentQuestion < currentQuiz.questions.length - 1) {
+        quizState.currentQuestion++;
+        quizState.selectedOption = null;
+        renderQuizQuestion();
+      }
+    }
+
+    function prevQuestion() {
+      if (quizState.currentQuestion > 0) {
+        quizState.currentQuestion--;
+        quizState.selectedOption = null;
+        renderQuizQuestion();
+      }
+    }
+
+    async function finishQuiz() {
+      quizState.completed = true;
+      
+      // Save result if logged in
+      if (isLoggedIn()) {
+        try {
+          await fetch(`/api/subchapters/${subChapterId}/quizzes/${currentQuiz.id}/save-result`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${getToken()}`
+            },
+            body: JSON.stringify({
+              score: quizState.score,
+              totalQuestions: currentQuiz.questions.length,
+              answers: quizState.answers
+            })
+          });
+        } catch (error) {
+          console.error('Error saving quiz result:', error);
+        }
+      }
+      
+      renderQuizScore();
+    }
+
+    function renderQuizScore() {
+      const container = document.getElementById('quiz-container');
+      const percentage = Math.round((quizState.score / currentQuiz.questions.length) * 100);
+      
+      let scoreClass = 'needs-work';
+      let message = 'Keep practicing!';
+      
+      if (percentage >= 80) {
+        scoreClass = 'excellent';
+        message = 'Excellent work!';
+      } else if (percentage >= 60) {
+        scoreClass = 'good';
+        message = 'Good job!';
+      }
+      
+      container.innerHTML = `
+        <div class="quiz-container">
+          <div class="quiz-score">
+            <div class="score-circle ${scoreClass}">
+              <span class="score-number">${percentage}%</span>
+              <span class="score-label">${quizState.score}/${currentQuiz.questions.length}</span>
+            </div>
+            <h3>${message}</h3>
+            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+              You answered ${quizState.score} out of ${currentQuiz.questions.length} questions correctly.
+            </p>
+            <div class="flex gap-3" style="justify-content: center;">
+              <button class="btn btn-ghost" onclick="startQuiz('${currentQuiz.id}')">
+                Retake Quiz
+              </button>
+              <button class="btn btn-primary" onclick="document.getElementById('quiz-container').classList.add('hidden')">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    async function markComplete() {
+      if (!isLoggedIn()) {
+        window.location.href = '/login?redirect=' + window.location.pathname;
+        return;
+      }
+      
+      try {
+        await fetch(`/api/subchapters/${subChapterId}/complete`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${getToken()}`
+          }
+        });
+        
+        alert('Lesson marked as complete!');
+      } catch (error) {
+        console.error('Error marking complete:', error);
+        alert('Failed to mark lesson as complete.');
+      }
+    }
+
+    // Initialize
+    loadLesson();
+  </script>
+</body>
+</html>
