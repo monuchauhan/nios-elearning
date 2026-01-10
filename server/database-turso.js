@@ -192,13 +192,17 @@ const userOps = {
   async createWithGoogle(id, name, email, googleId, profilePicture) {
     const database = getDatabase();
     try {
+      // Use empty string for mobile to avoid UNIQUE constraint issues with NULL
+      // Generate a placeholder mobile that won't conflict
+      const placeholderMobile = `google_${id.substring(0, 8)}`;
       await database.execute({
-        sql: 'INSERT INTO users (id, name, email, google_id, profile_picture) VALUES (?, ?, ?, ?, ?)',
-        args: [id, name, email.toLowerCase(), googleId, profilePicture || null]
+        sql: 'INSERT INTO users (id, name, email, mobile, google_id, profile_picture) VALUES (?, ?, ?, ?, ?, ?)',
+        args: [id, name, email.toLowerCase(), placeholderMobile, googleId, profilePicture || null]
       });
       return { id, name, email: email.toLowerCase(), mobile: null, hasPurchased: false, googleId, profilePicture };
     } catch (error) {
-      if (error.message.includes('UNIQUE constraint failed')) {
+      console.error('createWithGoogle error:', error);
+      if (error.message && error.message.includes('UNIQUE constraint failed')) {
         throw new Error('Email already registered');
       }
       throw error;

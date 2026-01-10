@@ -232,22 +232,44 @@ app.post('/api/auth/google', async (req, res) => {
     }
 
     // Verify Google token
-    // Decode the JWT token from Google (in production, verify with Google's public keys)
+    // Decode the JWT token from Google
     const tokenParts = credential.split('.');
     if (tokenParts.length !== 3) {
-      return res.status(400).json({ error: 'Invalid Google credential' });
+      return res.status(400).json({ error: 'Invalid Google credential format' });
     }
 
-    const payload = JSON.parse(Buffer.from(tokenParts[1], 'base64').toString());
+    // Base64 URL decode (Google uses URL-safe base64)
+    let payloadBase64 = tokenParts[1];
+    // Replace URL-safe characters and add padding
+    payloadBase64 = payloadBase64.replace(/-/g, '+').replace(/_/g, '/');
+    while (payloadBase64.length % 4) {
+      payloadBase64 += '=';
+    }
+    
+    let payload;
+    try {
+      payload = JSON.parse(Buffer.from(payloadBase64, 'base64').toString('utf8'));
+    } catch (decodeError) {
+      console.error('Failed to decode Google token:', decodeError);
+      return res.status(400).json({ error: 'Failed to decode Google credential' });
+    }
+
+    console.log('Google payload:', { email: payload.email, name: payload.name, aud: payload.aud });
     
     // Verify the token is for our app (if GOOGLE_CLIENT_ID is set)
     if (GOOGLE_CLIENT_ID && payload.aud !== GOOGLE_CLIENT_ID) {
-      return res.status(400).json({ error: 'Invalid Google credential' });
+      console.error('Client ID mismatch. Expected:', GOOGLE_CLIENT_ID, 'Got:', payload.aud);
+      return res.status(400).json({ error: 'Google credential not valid for this application' });
     }
 
     // Check if token is expired
     if (payload.exp * 1000 < Date.now()) {
       return res.status(400).json({ error: 'Google credential expired' });
+    }
+
+    // Verify issuer
+    if (payload.iss !== 'accounts.google.com' && payload.iss !== 'https://accounts.google.com') {
+      return res.status(400).json({ error: 'Invalid Google credential issuer' });
     }
 
     const { email, name, sub: googleId, picture } = payload;
@@ -290,7 +312,9 @@ app.post('/api/auth/google', async (req, res) => {
     });
   } catch (error) {
     console.error('Google auth error:', error);
-    res.status(500).json({ error: 'Google authentication failed' });
+    // Return more specific error message
+    const errorMessage = error.message || 'Google authentication failed';
+    res.status(500).json({ error: errorMessage });
   }
 });
 
