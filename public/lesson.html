@@ -593,20 +593,48 @@
     };
 
     async function loadLesson() {
+      // Validate subChapterId
+      if (!subChapterId || subChapterId === 'lesson') {
+        document.getElementById('lesson-content').innerHTML = `
+          <div class="alert alert-error">
+            Invalid lesson URL. Please select a lesson from the course page.
+            <br><br>
+            <a href="/course" class="btn btn-primary btn-sm">← Back to Course</a>
+          </div>
+        `;
+        return;
+      }
+      
       try {
         const response = await fetch(`/api/subchapters/${subChapterId}`, {
           headers: getToken() ? { 'Authorization': `Bearer ${getToken()}` } : {}
         });
         
-        const data = await response.json();
+        const text = await response.text();
+        let data;
+        
+        try {
+          data = JSON.parse(text);
+        } catch (parseError) {
+          console.error('JSON parse error:', parseError, 'Response:', text);
+          throw new Error('Invalid response from server');
+        }
+        
+        if (!response.ok) {
+          throw new Error(data.error || `Server error: ${response.status}`);
+        }
         
         if (!data.hasAccess) {
           renderLockedContent(data);
           return;
         }
         
+        if (!data.subChapter) {
+          throw new Error('Sub-chapter data not found');
+        }
+        
         lessonData = data.subChapter;
-        materialsData = data.materials;
+        materialsData = data.materials || { videos: [], audios: [], pdfs: [], quizzes: [] };
         
         document.title = `${lessonData.title} - ExamPrep Pro`;
         renderLesson(data);
@@ -619,7 +647,11 @@
       } catch (error) {
         console.error('Error loading lesson:', error);
         document.getElementById('lesson-content').innerHTML = `
-          <div class="alert alert-error">Failed to load lesson. Please refresh the page.</div>
+          <div class="alert alert-error">
+            Failed to load lesson: ${error.message}
+            <br><br>
+            <a href="/course" class="btn btn-primary btn-sm">← Back to Course</a>
+          </div>
         `;
       }
     }
