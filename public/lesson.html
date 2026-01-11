@@ -193,34 +193,7 @@
     }
     
     .lesson-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
       margin-bottom: 1.5rem;
-    }
-    
-    .lesson-header-left {
-      flex: 1;
-    }
-    
-    .back-to-course {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: var(--secondary);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: all 0.2s;
-      flex-shrink: 0;
-    }
-    
-    .back-to-course:hover {
-      background: #b8983d;
-      transform: translateX(-2px);
     }
     
     .breadcrumb {
@@ -235,10 +208,27 @@
     .breadcrumb a {
       color: var(--primary);
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
     }
     
     .breadcrumb a:hover {
       text-decoration: underline;
+    }
+    
+    .breadcrumb .back-link {
+      color: var(--gray-600);
+      font-weight: 500;
+    }
+    
+    .breadcrumb .back-link:hover {
+      color: var(--primary);
+    }
+    
+    .breadcrumb .separator {
+      color: var(--gray-300);
+      margin: 0 0.25rem;
     }
     
     .lesson-title {
@@ -909,20 +899,19 @@
       
       content.innerHTML = `
         <div class="lesson-header">
-          <div class="lesson-header-left">
-            <div class="breadcrumb">
-              <span>${data.parentChapter.title}</span>
-              <span>›</span>
-              <span>${lessonData.title}</span>
-            </div>
-            <h1 class="lesson-title">${lessonData.title}</h1>
+          <div class="breadcrumb">
+            <a href="/course" class="back-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              Course
+            </a>
+            <span class="separator">›</span>
+            <span>${data.parentChapter.title}</span>
+            <span class="separator">›</span>
+            <span>${lessonData.title}</span>
           </div>
-          <a href="/course" class="back-to-course">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
-            </svg>
-            Back to Course
-          </a>
+          <h1 class="lesson-title">${lessonData.title}</h1>
         </div>
         
         <!-- Video Section -->
@@ -1164,13 +1153,6 @@
               </a>
             ` : ''}
           </div>
-        </div>
-        
-        <div class="sidebar-card">
-          <h4 class="sidebar-card-title">Chapter: ${data.parentChapter.title}</h4>
-          <a href="/course" class="btn btn-ghost btn-block btn-sm">
-            ← Back to Course
-          </a>
         </div>
       `;
     }
