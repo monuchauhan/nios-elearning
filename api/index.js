@@ -660,20 +660,41 @@ app.post('/api/subchapters/:subChapterId/quizzes/:quizId/check-answer', optional
     }
 
     const { questionId, answer } = req.body;
-    const question = quiz.questions.find(q => q.id === questionId);
+    const question = quiz.questions.find(q => q.id === questionId || q.id === String(questionId));
 
     if (!question) {
       return res.status(404).json({ error: 'Question not found' });
     }
 
-    const isCorrect = answer === question.correctAnswer;
+    // Handle new format with correct_answer (string match) or old format with correctAnswer (option id)
+    const isCorrect = question.correct_answer 
+      ? answer === question.correct_answer 
+      : answer === question.correctAnswer;
+    
+    // Get the correct answer text
+    const correctAnswer = question.correct_answer || question.correctAnswer;
+    
+    // Get explanation - new format has explanations object, old format has single explanation
+    let explanation = '';
+    if (question.explanations) {
+      // Find which option number was selected
+      const optionIndex = question.options.indexOf(answer);
+      const optionKey = `Option ${optionIndex + 1}`;
+      explanation = question.explanations[optionKey] || '';
+    } else {
+      explanation = question.explanation || '';
+    }
+    
+    // Get page reference if available
+    const pageReference = question.page_reference || null;
 
     res.json({
       questionId,
       userAnswer: answer,
-      correctAnswer: question.correctAnswer,
+      correctAnswer,
       isCorrect,
-      explanation: question.explanation
+      explanation,
+      pageReference
     });
   } catch (error) {
     res.status(500).json({ error: 'Server error' });

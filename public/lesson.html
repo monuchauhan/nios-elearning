@@ -625,7 +625,7 @@
     
     .explanation-box {
       margin-top: 1rem;
-      padding: 1rem;
+      padding: 1rem 1.25rem;
       border-radius: 8px;
       font-size: 0.9rem;
     }
@@ -633,11 +633,48 @@
     .explanation-box.correct {
       background: #d1e7dd;
       color: #1a4731;
+      border-left: 4px solid #198754;
     }
     
     .explanation-box.incorrect {
       background: #f5d4d1;
       color: #8c2d25;
+      border-left: 4px solid #dc3545;
+    }
+    
+    .explanation-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .correct-answer-text {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+    
+    .explanation-text {
+      margin: 0.5rem 0 0 0;
+      line-height: 1.5;
+    }
+    
+    .page-reference {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      background: rgba(0,0,0,0.08);
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
+    .page-reference svg {
+      opacity: 0.7;
     }
     
     .quiz-nav {
@@ -1187,6 +1224,15 @@
       const container = document.getElementById('quiz-container');
       const question = currentQuiz.questions[quizState.currentQuestion];
       const answered = quizState.answers[question.id] !== undefined;
+      const userAnswerData = quizState.answers[question.id];
+      
+      // Handle both old format (objects with id/text) and new format (string array)
+      const options = question.options.map((opt, idx) => {
+        if (typeof opt === 'string') {
+          return { id: opt, text: opt, marker: String.fromCharCode(65 + idx) }; // A, B, C, D
+        }
+        return { id: opt.id, text: opt.text, marker: opt.id.toUpperCase() };
+      });
       
       container.innerHTML = `
         <div class="quiz-container">
@@ -1200,14 +1246,13 @@
           <div class="question-card">
             <div class="question-text">${question.question}</div>
             <div class="options-list">
-              ${question.options.map(option => {
+              ${options.map(option => {
                 let classes = 'option-btn';
-                const userAnswer = quizState.answers[question.id];
                 
                 if (answered) {
-                  if (option.id === userAnswer?.correctAnswer) {
+                  if (option.id === userAnswerData?.correctAnswer) {
                     classes += ' correct';
-                  } else if (option.id === userAnswer?.userAnswer && !userAnswer?.isCorrect) {
+                  } else if (option.id === userAnswerData?.userAnswer && !userAnswerData?.isCorrect) {
                     classes += ' incorrect';
                   }
                 } else if (quizState.selectedOption === option.id) {
@@ -1216,19 +1261,31 @@
                 
                 return `
                   <button class="${classes}" 
-                          onclick="selectOption('${option.id}')"
+                          onclick="selectOption('${option.id.replace(/'/g, "\\'")}')"
                           ${answered ? 'disabled' : ''}>
-                    <span class="option-marker">${option.id.toUpperCase()}</span>
+                    <span class="option-marker">${option.marker}</span>
                     <span>${option.text}</span>
                   </button>
                 `;
               }).join('')}
             </div>
             
-            ${answered && quizState.answers[question.id]?.explanation ? `
-              <div class="explanation-box ${quizState.answers[question.id].isCorrect ? 'correct' : 'incorrect'}">
-                <strong>${quizState.answers[question.id].isCorrect ? '✓ Correct!' : '✗ Incorrect'}</strong>
-                <p style="margin-top: 0.5rem;">${quizState.answers[question.id].explanation}</p>
+            ${answered && userAnswerData ? `
+              <div class="explanation-box ${userAnswerData.isCorrect ? 'correct' : 'incorrect'}">
+                <div class="explanation-header">
+                  <strong>${userAnswerData.isCorrect ? '✓ Correct!' : '✗ Incorrect'}</strong>
+                  ${!userAnswerData.isCorrect ? `<span class="correct-answer-text">Correct answer: ${userAnswerData.correctAnswer}</span>` : ''}
+                </div>
+                ${userAnswerData.explanation ? `<p class="explanation-text">${userAnswerData.explanation}</p>` : ''}
+                ${userAnswerData.pageReference ? `
+                  <div class="page-reference">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>Reference: Page ${userAnswerData.pageReference}</span>
+                  </div>
+                ` : ''}
               </div>
             ` : ''}
           </div>

@@ -259,28 +259,40 @@ const materials = {
         description: 'Test your understanding of the course structure',
         questions: [
           {
-            id: 'q1',
+            id: 1,
             question: 'What is the primary goal of this course?',
             options: [
-              { id: 'a', text: 'To teach programming' },
-              { id: 'b', text: 'To prepare students for the exam' },
-              { id: 'c', text: 'To learn a new language' },
-              { id: 'd', text: 'To get a job' }
+              'To teach programming',
+              'To prepare students for the exam',
+              'To learn a new language',
+              'To get a job'
             ],
-            correctAnswer: 'b',
-            explanation: 'This course is specifically designed to help you prepare for and pass your exam with comprehensive study materials.'
+            correct_answer: 'To prepare students for the exam',
+            page_reference: 5,
+            explanations: {
+              'Option 1': 'Incorrect. This course focuses on exam preparation, not programming.',
+              'Option 2': 'Correct. This course is specifically designed to help you prepare for and pass your exam with comprehensive study materials.',
+              'Option 3': 'Incorrect. Language learning is not the focus of this course.',
+              'Option 4': 'Incorrect. While passing exams may help with jobs, the primary goal is exam preparation.'
+            }
           },
           {
-            id: 'q2',
+            id: 2,
             question: 'What materials are included in each sub-chapter?',
             options: [
-              { id: 'a', text: 'Only videos' },
-              { id: 'b', text: 'Videos, audios, PDFs, and quizzes' },
-              { id: 'c', text: 'Only text content' },
-              { id: 'd', text: 'Only quizzes' }
+              'Only videos',
+              'Videos, audios, PDFs, and quizzes',
+              'Only text content',
+              'Only quizzes'
             ],
-            correctAnswer: 'b',
-            explanation: 'Each sub-chapter contains a variety of learning materials including videos, audio lectures, PDF notes, and interactive quizzes.'
+            correct_answer: 'Videos, audios, PDFs, and quizzes',
+            page_reference: 8,
+            explanations: {
+              'Option 1': 'Incorrect. Videos are included but not the only material available.',
+              'Option 2': 'Correct. Each sub-chapter contains a variety of learning materials including videos, audio lectures, PDF notes, and interactive quizzes.',
+              'Option 3': 'Incorrect. The course includes multimedia content, not just text.',
+              'Option 4': 'Incorrect. Quizzes are one component among several types of materials.'
+            }
           }
         ]
       }
@@ -365,16 +377,22 @@ const materials = {
         description: 'Check your understanding of study techniques',
         questions: [
           {
-            id: 'q1',
+            id: 1,
             question: 'What is the recommended study approach?',
             options: [
-              { id: 'a', text: 'Study only the night before' },
-              { id: 'b', text: 'Consistent daily practice' },
-              { id: 'c', text: 'Read notes once and never review' },
-              { id: 'd', text: 'Only watch videos without practice' }
+              'Study only the night before',
+              'Consistent daily practice',
+              'Read notes once and never review',
+              'Only watch videos without practice'
             ],
-            correctAnswer: 'b',
-            explanation: 'Consistent daily practice helps reinforce learning and improves long-term retention.'
+            correct_answer: 'Consistent daily practice',
+            page_reference: 12,
+            explanations: {
+              'Option 1': 'Incorrect. Last-minute cramming leads to poor retention and increased stress.',
+              'Option 2': 'Correct. Consistent daily practice helps reinforce learning and improves long-term retention.',
+              'Option 3': 'Incorrect. Regular review is essential for moving information to long-term memory.',
+              'Option 4': 'Incorrect. Passive watching without active practice is less effective for learning.'
+            }
           }
         ]
       }
