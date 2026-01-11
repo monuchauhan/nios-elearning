@@ -5,7 +5,7 @@ const course = {
   "id": "nios-deled",
   "title": "NIOS D.El.Ed Complete Course",
   "description": "Comprehensive preparation course for NIOS Diploma in Elementary Education. Includes video lectures in Hindi & English, audio podcasts, study materials, and practice quizzes.",
-  "price": 999,
+  "price": 699,
   "currency": "INR",
   "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
   "features": [
@@ -144,14 +144,14 @@ const materials = {
         "id": "vid-sub-501-1-en",
         "title": "Block 1: Elementary Education in India - A Retrospective (English)",
         "description": "Video lecture in English",
-        "url": "https://youtu.be/mOr3C9-A40A",
+        "url": "https://www.youtube.com/watch?v=mOr3C9-A40A",
         "language": "english"
       },
       {
         "id": "vid-sub-501-1-hi",
         "title": "Block 1: Elementary Education in India - A Retrospective (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://youtu.be/_rLVUDW-I7s",
+        "url": "https://www.youtube.com/watch?v=_rLVUDW-I7s",
         "language": "hindi"
       }
     ],
@@ -553,14 +553,14 @@ const materials = {
         "id": "vid-sub-501-2-en",
         "title": "Block 2: Elementary Education in India in the Cotemporary Context-I (English)",
         "description": "Video lecture in English",
-        "url": "https://youtu.be/N_a7O3QVC1E",
+        "url": "https://www.youtube.com/watch?v=N_a7O3QVC1E",
         "language": "english"
       },
       {
         "id": "vid-sub-501-2-hi",
         "title": "Block 2: Elementary Education in India in the Cotemporary Context-I (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://youtu.be/EMT-oWa4v_M",
+        "url": "https://www.youtube.com/watch?v=EMT-oWa4v_M",
         "language": "hindi"
       }
     ],
@@ -962,14 +962,14 @@ const materials = {
         "id": "vid-sub-501-3-en",
         "title": "Block 3: Elementary Education in India in the Cotemporary Context-II (English)",
         "description": "Video lecture in English",
-        "url": "https://youtu.be/vJSFRe3MWL8",
+        "url": "https://www.youtube.com/watch?v=vJSFRe3MWL8",
         "language": "english"
       },
       {
         "id": "vid-sub-501-3-hi",
         "title": "Block 3: Elementary Education in India in the Cotemporary Context-II (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://youtu.be/jTXJRkU-UBQ",
+        "url": "https://www.youtube.com/watch?v=jTXJRkU-UBQ",
         "language": "hindi"
       }
     ],
