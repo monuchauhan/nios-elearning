@@ -350,10 +350,6 @@
       color: white;
     }
     
-    .video-lang-tab .lang-flag {
-      font-size: 1.1rem;
-    }
-    
     .material-icon {
       width: 28px;
       height: 28px;
@@ -897,6 +893,14 @@
       const englishVideos = videos.filter((v, i) => i % 2 === 0);
       const hindiVideos = videos.filter((v, i) => i % 2 === 1);
       
+      // Store video URLs for language switching
+      if (englishVideos.length > 0) {
+        videoUrls.english = englishVideos[0].url;
+      }
+      if (hindiVideos.length > 0) {
+        videoUrls.hindi = hindiVideos[0].url;
+      }
+      
       content.innerHTML = `
         <div class="lesson-header">
           <div class="breadcrumb">
@@ -920,7 +924,7 @@
             <div class="material-section-header" onclick="toggleSection(this)">
               <h3 class="material-section-title">
                 <span class="material-icon video">📹</span>
-                Videos (${englishVideos.length})
+                Videos
               </h3>
               <svg class="section-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -931,10 +935,10 @@
                 ${hindiVideos.length > 0 ? `
                   <div class="video-language-tabs">
                     <button class="video-lang-tab active" onclick="switchVideoLanguage('english', this)" data-lang="english">
-                      <span class="lang-flag">🇬🇧</span> English
+                      English
                     </button>
                     <button class="video-lang-tab" onclick="switchVideoLanguage('hindi', this)" data-lang="hindi">
-                      <span class="lang-flag">🇮🇳</span> हिंदी
+                      Hindi
                     </button>
                   </div>
                 ` : ''}
@@ -947,34 +951,6 @@
                       allowfullscreen>
                     </iframe>
                   </div>
-                </div>
-                <div class="video-list" id="video-list-english">
-                  ${englishVideos.map((video, i) => `
-                    <div class="material-item ${i === 0 ? 'active' : ''}" onclick="playVideoByUrl('${video.url}', '${video.title.replace(/'/g, "\\'")}', this)" data-video-id="${video.id}">
-                      <div class="material-item-icon video">📹</div>
-                      <div class="material-item-info">
-                        <div class="material-item-title">${video.title}</div>
-                        <div class="material-item-meta">${video.duration} • ${video.description}</div>
-                      </div>
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                      </svg>
-                    </div>
-                  `).join('')}
-                </div>
-                <div class="video-list hidden" id="video-list-hindi">
-                  ${hindiVideos.map((video, i) => `
-                    <div class="material-item" onclick="playVideoByUrl('${video.url}', '${video.title.replace(/'/g, "\\'")}', this)" data-video-id="${video.id}">
-                      <div class="material-item-icon video">📹</div>
-                      <div class="material-item-info">
-                        <div class="material-item-title">${video.title}</div>
-                        <div class="material-item-meta">${video.duration} • ${video.description}</div>
-                      </div>
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                      </svg>
-                    </div>
-                  `).join('')}
                 </div>
               </div>
             </div>
@@ -1163,7 +1139,8 @@
       section.classList.toggle('expanded');
     }
     
-    // Switch video language
+    // Store video URLs for language switching
+    let videoUrls = { english: '', hindi: '' };
     let currentVideoLang = 'english';
     
     function switchVideoLanguage(lang, tabElement) {
@@ -1177,60 +1154,10 @@
       });
       tabElement.classList.add('active');
       
-      // Show/hide video lists
-      const englishList = document.getElementById('video-list-english');
-      const hindiList = document.getElementById('video-list-hindi');
-      
-      if (lang === 'english') {
-        englishList.classList.remove('hidden');
-        hindiList.classList.add('hidden');
-        // Play first English video
-        const firstItem = englishList.querySelector('.material-item');
-        if (firstItem) {
-          firstItem.click();
-        }
-      } else {
-        englishList.classList.add('hidden');
-        hindiList.classList.remove('hidden');
-        // Play first Hindi video
-        const firstItem = hindiList.querySelector('.material-item');
-        if (firstItem) {
-          firstItem.click();
-        }
-      }
-    }
-    
-    // Play video by URL
-    function playVideoByUrl(url, title, element) {
+      // Switch video source
       const iframe = document.getElementById('video-iframe');
-      iframe.src = `${url}?rel=0&modestbranding=1&autoplay=1`;
-      
-      // Update active state in current list
-      const parentList = element.closest('.video-list');
-      parentList.querySelectorAll('.material-item').forEach(item => {
-        item.classList.remove('active');
-      });
-      element.classList.add('active');
-    }
-
-    function playVideo(video, element) {
-      currentVideo = video;
-      const player = document.getElementById('video-player');
-      player.innerHTML = `
-        <iframe 
-          id="video-iframe"
-          src="${video.url}?rel=0&modestbranding=1&autoplay=1" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
-          allowfullscreen>
-        </iframe>
-      `;
-      
-      // Update active state
-      document.querySelectorAll('.video-list .material-item').forEach(item => {
-        item.classList.remove('active');
-      });
-      if (element) {
-        element.classList.add('active');
+      if (iframe && videoUrls[lang]) {
+        iframe.src = `${videoUrls[lang]}?rel=0&modestbranding=1`;
       }
     }
 
