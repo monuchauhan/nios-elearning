@@ -208,15 +208,25 @@ const subChapters = {
 };
 
 // Materials for each sub-chapter (videos, audios, PDFs, quizzes)
+// Videos are paired: English first, Hindi second for each topic
 const materials = {
   'sub-1-1': {
     videos: [
       {
-        id: 'vid-1-1-1',
-        title: 'Welcome to the Course',
+        id: 'vid-1-1-1-en',
+        title: 'Welcome to the Course (English)',
         description: 'Introduction by the instructor',
         url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        duration: '8 min'
+        duration: '8 min',
+        language: 'english'
+      },
+      {
+        id: 'vid-1-1-1-hi',
+        title: 'कोर्स में आपका स्वागत है (Hindi)',
+        description: 'प्रशिक्षक द्वारा परिचय',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        duration: '8 min',
+        language: 'hindi'
       }
     ],
     audios: [
@@ -279,11 +289,20 @@ const materials = {
   'sub-1-2': {
     videos: [
       {
-        id: 'vid-1-2-1',
-        title: 'Navigating the Course',
+        id: 'vid-1-2-1-en',
+        title: 'Navigating the Course (English)',
         description: 'How to find and access all course materials',
         url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        duration: '5 min'
+        duration: '5 min',
+        language: 'english'
+      },
+      {
+        id: 'vid-1-2-1-hi',
+        title: 'कोर्स को नेविगेट करना (Hindi)',
+        description: 'सभी कोर्स सामग्री कैसे खोजें और एक्सेस करें',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        duration: '5 min',
+        language: 'hindi'
       }
     ],
     audios: [],
@@ -300,11 +319,20 @@ const materials = {
   'sub-1-3': {
     videos: [
       {
-        id: 'vid-1-3-1',
-        title: 'Effective Study Techniques',
+        id: 'vid-1-3-1-en',
+        title: 'Effective Study Techniques (English)',
         description: 'Proven methods for better retention',
         url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        duration: '12 min'
+        duration: '12 min',
+        language: 'english'
+      },
+      {
+        id: 'vid-1-3-1-hi',
+        title: 'प्रभावी अध्ययन तकनीक (Hindi)',
+        description: 'बेहतर स्मृति के लिए सिद्ध तरीके',
+        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+        duration: '12 min',
+        language: 'hindi'
       }
     ],
     audios: [

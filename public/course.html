@@ -15,6 +15,13 @@
       margin-bottom: 1rem;
       overflow: hidden;
       background: white;
+      transition: all 0.3s ease;
+    }
+    
+    .chapter-accordion.open {
+      border-color: var(--primary);
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 4px 16px rgba(30, 58, 95, 0.15);
     }
     
     .chapter-header {
@@ -22,12 +29,16 @@
       align-items: center;
       padding: 1.25rem;
       cursor: pointer;
-      transition: background 0.2s;
+      transition: all 0.2s;
       gap: 1rem;
     }
     
     .chapter-header:hover {
       background: var(--gray-50);
+    }
+    
+    .chapter-accordion.open .chapter-header {
+      background: linear-gradient(135deg, rgba(30, 58, 95, 0.06) 0%, rgba(201, 169, 98, 0.06) 100%);
     }
     
     .chapter-icon {
@@ -40,6 +51,11 @@
       background: var(--gray-100);
       border-radius: 10px;
       flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    
+    .chapter-accordion.open .chapter-icon {
+      background: rgba(30, 58, 95, 0.1);
     }
     
     .chapter-info {
@@ -50,8 +66,13 @@
     .chapter-title {
       font-weight: 600;
       font-size: 1.1rem;
-      color: var(--gray-900);
+      color: var(--gray-600);
       margin-bottom: 0.25rem;
+      transition: color 0.2s;
+    }
+    
+    .chapter-accordion.open .chapter-title {
+      color: var(--primary);
     }
     
     .chapter-meta {
@@ -83,11 +104,14 @@
       justify-content: center;
       border-radius: 8px;
       background: var(--gray-100);
-      transition: transform 0.3s, background 0.2s;
+      color: var(--gray-400);
+      transition: transform 0.3s, background 0.2s, color 0.2s;
     }
     
     .chapter-accordion.open .chapter-toggle {
       transform: rotate(180deg);
+      background: rgba(30, 58, 95, 0.1);
+      color: var(--primary);
     }
     
     .chapter-content {
@@ -95,11 +119,12 @@
       overflow: hidden;
       transition: max-height 0.3s ease-out;
       background: var(--gray-50);
-      border-top: 1px solid var(--gray-200);
+      border-top: 0px solid var(--gray-200);
     }
     
     .chapter-accordion.open .chapter-content {
       max-height: 1000px;
+      border-top: 1px solid var(--gray-200);
     }
     
     .chapter-accordion.locked .chapter-header {

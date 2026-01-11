@@ -223,19 +223,119 @@
     }
     
     .material-section {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      transition: all 0.3s ease;
+    }
+    
+    .material-section.expanded {
+      border-color: var(--primary);
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 4px 12px rgba(30, 58, 95, 0.12);
+    }
+    
+    .material-section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      background: var(--gray-50);
+      cursor: pointer;
+      transition: all 0.2s;
+      user-select: none;
+    }
+    
+    .material-section-header:hover {
+      background: var(--gray-100);
+    }
+    
+    .material-section.expanded .material-section-header {
+      background: linear-gradient(135deg, rgba(30, 58, 95, 0.08) 0%, rgba(201, 169, 98, 0.08) 100%);
+      border-bottom: 1px solid var(--gray-200);
     }
     
     .material-section-title {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
-      color: var(--gray-800);
+      color: var(--gray-600);
+      margin: 0;
+      transition: color 0.2s;
+    }
+    
+    .material-section.expanded .material-section-title {
+      color: var(--primary);
+    }
+    
+    .section-toggle-icon {
+      transition: transform 0.3s;
+      color: var(--gray-400);
+      background: var(--gray-100);
+      border-radius: 6px;
+      padding: 4px;
+    }
+    
+    .material-section.expanded .section-toggle-icon {
+      transform: rotate(180deg);
+      color: var(--primary);
+      background: rgba(30, 58, 95, 0.1);
+    }
+    
+    .material-section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    
+    .material-section.expanded .material-section-content {
+      max-height: 2000px;
+    }
+    
+    .material-section-inner {
+      padding: 1.25rem;
+      background: white;
+    }
+    
+    /* Video Language Tabs */
+    .video-language-tabs {
+      display: flex;
+      gap: 0.5rem;
       margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--gray-200);
+    }
+    
+    .video-lang-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--gray-600);
+      transition: all 0.2s;
+    }
+    
+    .video-lang-tab:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    
+    .video-lang-tab.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+    
+    .video-lang-tab .lang-flag {
+      font-size: 1.1rem;
     }
     
     .material-icon {
@@ -253,12 +353,16 @@
     .material-icon.pdf { background: #f5d4d1; }
     .material-icon.quiz { background: #d1e7dd; }
     
+    .video-player-wrapper {
+      max-width: 720px;
+    }
+    
     .video-container {
       position: relative;
       width: 100%;
-      padding-top: 56.25%;
-      margin-bottom: 1rem;
-      border-radius: 12px;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      margin-bottom: 0.75rem;
+      border-radius: 10px;
       overflow: hidden;
       background: #000;
     }
@@ -271,6 +375,13 @@
       height: 100%;
       border: none;
       pointer-events: auto;
+    }
+    
+    .video-title-display {
+      font-size: 0.9rem;
+      color: var(--gray-700);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
     }
     
     /* Overlay to prevent right-click on video but allow play controls */
@@ -288,7 +399,8 @@
     .video-list, .audio-list, .pdf-list, .quiz-list {
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
     }
     
     .material-item {
@@ -771,6 +883,11 @@
     function renderLesson(data) {
       const content = document.getElementById('lesson-content');
       
+      // Group videos by language (assume videos come in pairs: English first, Hindi second)
+      const videos = materialsData.videos || [];
+      const englishVideos = videos.filter((v, i) => i % 2 === 0);
+      const hindiVideos = videos.filter((v, i) => i % 2 === 1);
+      
       content.innerHTML = `
         <div class="breadcrumb">
           <a href="/course">Course</a>
@@ -784,32 +901,69 @@
         <p class="lesson-description">${lessonData.description}</p>
         
         <!-- Video Section -->
-        ${materialsData.videos && materialsData.videos.length > 0 ? `
-          <div class="material-section" id="video-section">
-            <h3 class="material-section-title">
-              <span class="material-icon video">📹</span>
-              Videos (${materialsData.videos.length})
-            </h3>
-            <div class="video-container" id="video-player">
-              <iframe 
-                src="${materialsData.videos[0].url}?rel=0&modestbranding=1" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
+        ${videos.length > 0 ? `
+          <div class="material-section expanded" id="video-section">
+            <div class="material-section-header" onclick="toggleSection(this)">
+              <h3 class="material-section-title">
+                <span class="material-icon video">📹</span>
+                Videos (${englishVideos.length})
+              </h3>
+              <svg class="section-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
             </div>
-            <div class="video-list">
-              ${materialsData.videos.map((video, i) => `
-                <div class="material-item ${i === 0 ? 'active' : ''}" onclick="playVideo(${JSON.stringify(video).replace(/"/g, '&quot;')}, this)" data-video-id="${video.id}">
-                  <div class="material-item-icon video">📹</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${video.title}</div>
-                    <div class="material-item-meta">${video.duration} • ${video.description}</div>
+            <div class="material-section-content">
+              <div class="material-section-inner">
+                ${hindiVideos.length > 0 ? `
+                  <div class="video-language-tabs">
+                    <button class="video-lang-tab active" onclick="switchVideoLanguage('english', this)" data-lang="english">
+                      <span class="lang-flag">🇬🇧</span> English
+                    </button>
+                    <button class="video-lang-tab" onclick="switchVideoLanguage('hindi', this)" data-lang="hindi">
+                      <span class="lang-flag">🇮🇳</span> हिंदी
+                    </button>
                   </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
+                ` : ''}
+                <div class="video-player-wrapper">
+                  <div class="video-title-display" id="current-video-title">${englishVideos[0]?.title || 'Video'}</div>
+                  <div class="video-container" id="video-player">
+                    <iframe 
+                      id="video-iframe"
+                      src="${englishVideos[0]?.url || ''}?rel=0&modestbranding=1" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+                      allowfullscreen>
+                    </iframe>
+                  </div>
                 </div>
-              `).join('')}
+                <div class="video-list" id="video-list-english">
+                  ${englishVideos.map((video, i) => `
+                    <div class="material-item ${i === 0 ? 'active' : ''}" onclick="playVideoByUrl('${video.url}', '${video.title.replace(/'/g, "\\'")}', this)" data-video-id="${video.id}">
+                      <div class="material-item-icon video">📹</div>
+                      <div class="material-item-info">
+                        <div class="material-item-title">${video.title}</div>
+                        <div class="material-item-meta">${video.duration} • ${video.description}</div>
+                      </div>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                  `).join('')}
+                </div>
+                <div class="video-list hidden" id="video-list-hindi">
+                  ${hindiVideos.map((video, i) => `
+                    <div class="material-item" onclick="playVideoByUrl('${video.url}', '${video.title.replace(/'/g, "\\'")}', this)" data-video-id="${video.id}">
+                      <div class="material-item-icon video">📹</div>
+                      <div class="material-item-info">
+                        <div class="material-item-title">${video.title}</div>
+                        <div class="material-item-meta">${video.duration} • ${video.description}</div>
+                      </div>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
             </div>
           </div>
         ` : ''}
@@ -817,26 +971,35 @@
         <!-- Audio Section -->
         ${materialsData.audios && materialsData.audios.length > 0 ? `
           <div class="material-section" id="audio-section">
-            <h3 class="material-section-title">
-              <span class="material-icon audio">🎧</span>
-              Audio Lectures (${materialsData.audios.length})
-            </h3>
-            <div class="audio-list">
-              ${materialsData.audios.map(audio => `
-                <div class="material-item">
-                  <div class="material-item-icon audio">🎧</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${audio.title}</div>
-                    <div class="material-item-meta">${audio.duration} • ${audio.description}</div>
-                    <div class="audio-wrapper">
-                      <audio class="audio-player" controls controlsList="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;">
-                        <source src="${audio.url}" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
+            <div class="material-section-header" onclick="toggleSection(this)">
+              <h3 class="material-section-title">
+                <span class="material-icon audio">🎧</span>
+                Audio Lectures (${materialsData.audios.length})
+              </h3>
+              <svg class="section-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="material-section-content">
+              <div class="material-section-inner">
+                <div class="audio-list">
+                  ${materialsData.audios.map(audio => `
+                    <div class="material-item">
+                      <div class="material-item-icon audio">🎧</div>
+                      <div class="material-item-info">
+                        <div class="material-item-title">${audio.title}</div>
+                        <div class="material-item-meta">${audio.duration} • ${audio.description}</div>
+                        <div class="audio-wrapper">
+                          <audio class="audio-player" controls controlsList="nodownload noplaybackrate" disablepictureinpicture oncontextmenu="return false;">
+                            <source src="${audio.url}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                          </audio>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  `).join('')}
                 </div>
-              `).join('')}
+              </div>
             </div>
           </div>
         ` : ''}
@@ -844,39 +1007,48 @@
         <!-- PDF Section -->
         ${materialsData.pdfs && materialsData.pdfs.length > 0 ? `
           <div class="material-section" id="pdf-section">
-            <h3 class="material-section-title">
-              <span class="material-icon pdf">📄</span>
-              Study Materials (${materialsData.pdfs.length})
-            </h3>
-            <div class="pdf-list">
-              ${materialsData.pdfs.map((pdf, index) => `
-                <div class="material-item" onclick="viewPdf('${pdf.url}', '${pdf.title}', ${index})">
-                  <div class="material-item-icon pdf">📄</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${pdf.title}</div>
-                    <div class="material-item-meta">${pdf.description}</div>
-                  </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>
-                </div>
-              `).join('')}
+            <div class="material-section-header" onclick="toggleSection(this)">
+              <h3 class="material-section-title">
+                <span class="material-icon pdf">📄</span>
+                Study Materials (${materialsData.pdfs.length})
+              </h3>
+              <svg class="section-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
             </div>
-            <div id="pdf-viewer-container" class="pdf-viewer-container hidden fullscreen">
-              <div class="pdf-viewer-toolbar">
-                <button class="pdf-toggle-btn" onclick="togglePdfFullscreen()" title="Exit Fullscreen">
-                  <svg id="pdf-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
-                  </svg>
-                </button>
-                <button class="pdf-close-btn" onclick="closePdfViewer()" title="Close PDF">
-                  ✕
-                </button>
-              </div>
-              <div class="pdf-viewer-overlay"></div>
-              <div class="pdf-iframe-wrapper">
-                <iframe id="pdf-viewer" src="" oncontextmenu="return false;" allow="fullscreen" allowfullscreen></iframe>
+            <div class="material-section-content">
+              <div class="material-section-inner">
+                <div class="pdf-list">
+                  ${materialsData.pdfs.map((pdf, index) => `
+                    <div class="material-item" onclick="viewPdf('${pdf.url}', '${pdf.title}', ${index})">
+                      <div class="material-item-icon pdf">📄</div>
+                      <div class="material-item-info">
+                        <div class="material-item-title">${pdf.title}</div>
+                        <div class="material-item-meta">${pdf.description}</div>
+                      </div>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </div>
+                  `).join('')}
+                </div>
+                <div id="pdf-viewer-container" class="pdf-viewer-container hidden fullscreen">
+                  <div class="pdf-viewer-toolbar">
+                    <button class="pdf-toggle-btn" onclick="togglePdfFullscreen()" title="Exit Fullscreen">
+                      <svg id="pdf-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+                      </svg>
+                    </button>
+                    <button class="pdf-close-btn" onclick="closePdfViewer()" title="Close PDF">
+                      ✕
+                    </button>
+                  </div>
+                  <div class="pdf-viewer-overlay"></div>
+                  <div class="pdf-iframe-wrapper">
+                    <iframe id="pdf-viewer" src="" oncontextmenu="return false;" allow="fullscreen" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -885,25 +1057,34 @@
         <!-- Quiz Section -->
         ${materialsData.quizzes && materialsData.quizzes.length > 0 ? `
           <div class="material-section" id="quiz-section">
-            <h3 class="material-section-title">
-              <span class="material-icon quiz">📝</span>
-              Quizzes (${materialsData.quizzes.length})
-            </h3>
-            <div class="quiz-list">
-              ${materialsData.quizzes.map(quiz => `
-                <div class="material-item" onclick="startQuiz('${quiz.id}')">
-                  <div class="material-item-icon quiz">📝</div>
-                  <div class="material-item-info">
-                    <div class="material-item-title">${quiz.title}</div>
-                    <div class="material-item-meta">${quiz.questionCount} questions • ${quiz.description}</div>
-                  </div>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </div>
-              `).join('')}
+            <div class="material-section-header" onclick="toggleSection(this)">
+              <h3 class="material-section-title">
+                <span class="material-icon quiz">📝</span>
+                Quizzes (${materialsData.quizzes.length})
+              </h3>
+              <svg class="section-toggle-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
             </div>
-            <div id="quiz-container" class="hidden mt-4"></div>
+            <div class="material-section-content">
+              <div class="material-section-inner">
+                <div class="quiz-list">
+                  ${materialsData.quizzes.map(quiz => `
+                    <div class="material-item" onclick="startQuiz('${quiz.id}')">
+                      <div class="material-item-icon quiz">📝</div>
+                      <div class="material-item-info">
+                        <div class="material-item-title">${quiz.title}</div>
+                        <div class="material-item-meta">${quiz.questionCount} questions • ${quiz.description}</div>
+                      </div>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                  `).join('')}
+                </div>
+                <div id="quiz-container" class="hidden mt-4"></div>
+              </div>
+            </div>
           </div>
         ` : ''}
       `;
@@ -970,16 +1151,84 @@
       `;
     }
 
+    // Toggle section expand/collapse
+    function toggleSection(header) {
+      const section = header.closest('.material-section');
+      section.classList.toggle('expanded');
+    }
+    
+    // Switch video language
+    let currentVideoLang = 'english';
+    
+    function switchVideoLanguage(lang, tabElement) {
+      if (lang === currentVideoLang) return;
+      
+      currentVideoLang = lang;
+      
+      // Update tab active state
+      document.querySelectorAll('.video-lang-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      tabElement.classList.add('active');
+      
+      // Show/hide video lists
+      const englishList = document.getElementById('video-list-english');
+      const hindiList = document.getElementById('video-list-hindi');
+      
+      if (lang === 'english') {
+        englishList.classList.remove('hidden');
+        hindiList.classList.add('hidden');
+        // Play first English video
+        const firstItem = englishList.querySelector('.material-item');
+        if (firstItem) {
+          firstItem.click();
+        }
+      } else {
+        englishList.classList.add('hidden');
+        hindiList.classList.remove('hidden');
+        // Play first Hindi video
+        const firstItem = hindiList.querySelector('.material-item');
+        if (firstItem) {
+          firstItem.click();
+        }
+      }
+    }
+    
+    // Play video by URL
+    function playVideoByUrl(url, title, element) {
+      const iframe = document.getElementById('video-iframe');
+      const titleDisplay = document.getElementById('current-video-title');
+      
+      iframe.src = `${url}?rel=0&modestbranding=1&autoplay=1`;
+      if (titleDisplay) {
+        titleDisplay.textContent = title;
+      }
+      
+      // Update active state in current list
+      const parentList = element.closest('.video-list');
+      parentList.querySelectorAll('.material-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      element.classList.add('active');
+    }
+
     function playVideo(video, element) {
       currentVideo = video;
       const player = document.getElementById('video-player');
       player.innerHTML = `
         <iframe 
+          id="video-iframe"
           src="${video.url}?rel=0&modestbranding=1&autoplay=1" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
           allowfullscreen>
         </iframe>
       `;
+      
+      // Update title display
+      const titleDisplay = document.getElementById('current-video-title');
+      if (titleDisplay) {
+        titleDisplay.textContent = video.title;
+      }
       
       // Update active state
       document.querySelectorAll('.video-list .material-item').forEach(item => {
