@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment - ExamPrep Pro</title>
+  <title>Payment - NIOS D.El.Ed Prep</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
           </div>
-          ExamPrep Pro
+          NIOS D.El.Ed Prep
         </a>
         
         <div class="nav-links">
@@ -131,28 +131,22 @@
               
               <div class="order-summary">
                 <div class="order-item">
-                  <span>Complete Exam Prep Course</span>
-                  <span id="original-price">₹999</span>
+                  <span>NIOS D.El.Ed Complete Course</span>
+                  <span id="original-price" style="text-decoration: line-through; color: var(--gray-400);">₹699</span>
                 </div>
-                <div class="order-item hidden" id="discount-row">
-                  <span style="color: var(--success);">Discount</span>
-                  <span style="color: var(--success);" id="discount-amount">-₹0</span>
+                <div class="order-item" id="discount-row">
+                  <span style="color: var(--success);">45% Launch Discount</span>
+                  <span style="color: var(--success);" id="discount-amount">-₹310</span>
                 </div>
                 <div class="order-item order-total">
                   <span>Total</span>
-                  <span id="total-price">₹999</span>
+                  <span id="total-price">₹389</span>
                 </div>
               </div>
               
-              <!-- Coupon Section -->
-              <div class="coupon-section">
-                <label class="form-label">Have a coupon code?</label>
-                <div class="coupon-input-group">
-                  <input type="text" id="coupon-code" class="form-input" placeholder="Enter code">
-                  <button type="button" class="btn btn-outline" onclick="applyCoupon()" id="apply-coupon-btn">Apply</button>
-                </div>
-                <div id="coupon-message" class="mt-2"></div>
-                <p class="form-hint mt-2">Try: LAUNCH50 for 50% off</p>
+              <!-- No Refund Notice -->
+              <div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 0.75rem; margin: 1rem 0; font-size: 0.8rem; color: #92400e;">
+                <strong>⚠️ No Refund Policy:</strong> All purchases are final. Please review the free content before purchasing.
               </div>
               
               <!-- What's Included -->
@@ -163,25 +157,31 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    5 comprehensive chapters
+                    3 complete courses (501, 502, 503)
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    10+ hours of video content
+                    Video lectures in Hindi & English
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    15+ downloadable PDFs
+                    Audio podcasts for each block
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    Practice quizzes with explanations
+                    20+ downloadable PDF study materials
+                  </li>
+                  <li class="flex items-center gap-2 mb-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    200+ quiz questions with explanations
                   </li>
                   <li class="flex items-center gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
@@ -202,7 +202,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <p>&copy; 2026 ExamPrep Pro. All rights reserved.</p>
+        <p>&copy; 2026 NIOS D.El.Ed Prep. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -210,10 +210,10 @@
   <script src="/js/auth.js"></script>
   <script src="/js/api.js"></script>
   <script>
-    let originalPrice = 999;
-    let currentPrice = 999;
-    let discount = 0;
-    let appliedCoupon = null;
+    let originalPrice = 699;
+    let currentPrice = 389;
+    let discount = 310;
+    let appliedCoupon = 'LAUNCH45';
 
     // Check if user is logged in
     async function checkAuthAndPurchase() {
@@ -337,7 +337,7 @@
           key: razorpayKeyId,
           amount: orderData.amount,
           currency: orderData.currency,
-          name: 'ExamPrep Pro',
+          name: 'NIOS D.El.Ed Prep',
           description: 'Complete Exam Prep Course',
           order_id: orderData.orderId,
           handler: async function(response) {
