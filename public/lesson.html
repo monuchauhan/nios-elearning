@@ -920,17 +920,34 @@
     function renderLesson(data) {
       const content = document.getElementById('lesson-content');
       
-      // Group videos by language (assume videos come in pairs: English first, Hindi second)
-      const videos = materialsData.videos || [];
-      const englishVideos = videos.filter((v, i) => i % 2 === 0);
-      const hindiVideos = videos.filter((v, i) => i % 2 === 1);
+      // Helper function to convert YouTube URL to embed format
+      function getEmbedUrl(url) {
+        if (!url) return '';
+        // Convert youtube.com/watch?v=ID to youtube.com/embed/ID
+        const watchMatch = url.match(/youtube\.com\/watch\?v=([^&]+)/);
+        if (watchMatch) {
+          return `https://www.youtube.com/embed/${watchMatch[1]}`;
+        }
+        // Convert youtu.be/ID to youtube.com/embed/ID
+        const shortMatch = url.match(/youtu\.be\/([^?]+)/);
+        if (shortMatch) {
+          return `https://www.youtube.com/embed/${shortMatch[1]}`;
+        }
+        // Already embed format or other URL
+        return url;
+      }
       
-      // Store video URLs for language switching
+      // Group videos by language property
+      const videos = materialsData.videos || [];
+      const englishVideos = videos.filter(v => v.language === 'english');
+      const hindiVideos = videos.filter(v => v.language === 'hindi');
+      
+      // Store video URLs for language switching (converted to embed format)
       if (englishVideos.length > 0) {
-        videoUrls.english = englishVideos[0].url;
+        videoUrls.english = getEmbedUrl(englishVideos[0].url);
       }
       if (hindiVideos.length > 0) {
-        videoUrls.hindi = hindiVideos[0].url;
+        videoUrls.hindi = getEmbedUrl(hindiVideos[0].url);
       }
       
       content.innerHTML = `
@@ -951,7 +968,7 @@
         </div>
         
         <!-- Video Section -->
-        ${videos.length > 0 ? `
+        ${(videoUrls.english || videoUrls.hindi) ? `
           <div class="material-section expanded" id="video-section">
             <div class="material-section-header" onclick="toggleSection(this)">
               <h3 class="material-section-title">
@@ -964,7 +981,7 @@
             </div>
             <div class="material-section-content">
               <div class="material-section-inner">
-                ${hindiVideos.length > 0 ? `
+                ${(videoUrls.english && videoUrls.hindi) ? `
                   <div class="video-language-tabs">
                     <button class="video-lang-tab active" onclick="switchVideoLanguage('english', this)" data-lang="english">
                       English
@@ -978,7 +995,7 @@
                   <div class="video-container" id="video-player">
                     <iframe 
                       id="video-iframe"
-                      src="${englishVideos[0]?.url || ''}?rel=0&modestbranding=1" 
+                      src="${videoUrls.english || videoUrls.hindi}?rel=0&modestbranding=1" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
                       allowfullscreen>
                     </iframe>
