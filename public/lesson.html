@@ -844,11 +844,6 @@
         document.title = `${lessonData.title} - ExamPrep Pro`;
         renderLesson(data);
         renderSidebar(data);
-        
-        // Auto-play first video if available
-        if (materialsData.videos && materialsData.videos.length > 0) {
-          playVideo(materialsData.videos[0]);
-        }
       } catch (error) {
         console.error('Error loading lesson:', error);
         document.getElementById('lesson-content').innerHTML = `
