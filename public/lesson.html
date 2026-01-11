@@ -192,13 +192,44 @@
       height: fit-content;
     }
     
+    .lesson-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    
+    .lesson-header-left {
+      flex: 1;
+    }
+    
+    .back-to-course {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--secondary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+    
+    .back-to-course:hover {
+      background: #b8983d;
+      transform: translateX(-2px);
+    }
+    
     .breadcrumb {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       font-size: 0.875rem;
       color: var(--gray-500);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
     
     .breadcrumb a {
@@ -214,12 +245,7 @@
       font-size: 1.75rem;
       font-weight: 700;
       color: var(--gray-900);
-      margin-bottom: 0.5rem;
-    }
-    
-    .lesson-description {
-      color: var(--gray-600);
-      margin-bottom: 1.5rem;
+      margin-bottom: 0;
     }
     
     .material-section {
@@ -375,13 +401,6 @@
       height: 100%;
       border: none;
       pointer-events: auto;
-    }
-    
-    .video-title-display {
-      font-size: 0.9rem;
-      color: var(--gray-700);
-      margin-bottom: 0.5rem;
-      font-weight: 500;
     }
     
     /* Overlay to prevent right-click on video but allow play controls */
@@ -889,16 +908,22 @@
       const hindiVideos = videos.filter((v, i) => i % 2 === 1);
       
       content.innerHTML = `
-        <div class="breadcrumb">
-          <a href="/course">Course</a>
-          <span>›</span>
-          <a href="/course">${data.parentChapter.title}</a>
-          <span>›</span>
-          <span>${lessonData.title}</span>
+        <div class="lesson-header">
+          <div class="lesson-header-left">
+            <div class="breadcrumb">
+              <span>${data.parentChapter.title}</span>
+              <span>›</span>
+              <span>${lessonData.title}</span>
+            </div>
+            <h1 class="lesson-title">${lessonData.title}</h1>
+          </div>
+          <a href="/course" class="back-to-course">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back to Course
+          </a>
         </div>
-        
-        <h1 class="lesson-title">${lessonData.title}</h1>
-        <p class="lesson-description">${lessonData.description}</p>
         
         <!-- Video Section -->
         ${videos.length > 0 ? `
@@ -925,7 +950,6 @@
                   </div>
                 ` : ''}
                 <div class="video-player-wrapper">
-                  <div class="video-title-display" id="current-video-title">${englishVideos[0]?.title || 'Video'}</div>
                   <div class="video-container" id="video-player">
                     <iframe 
                       id="video-iframe"
@@ -1197,12 +1221,7 @@
     // Play video by URL
     function playVideoByUrl(url, title, element) {
       const iframe = document.getElementById('video-iframe');
-      const titleDisplay = document.getElementById('current-video-title');
-      
       iframe.src = `${url}?rel=0&modestbranding=1&autoplay=1`;
-      if (titleDisplay) {
-        titleDisplay.textContent = title;
-      }
       
       // Update active state in current list
       const parentList = element.closest('.video-list');
@@ -1223,12 +1242,6 @@
           allowfullscreen>
         </iframe>
       `;
-      
-      // Update title display
-      const titleDisplay = document.getElementById('current-video-title');
-      if (titleDisplay) {
-        titleDisplay.textContent = video.title;
-      }
       
       // Update active state
       document.querySelectorAll('.video-list .material-item').forEach(item => {
