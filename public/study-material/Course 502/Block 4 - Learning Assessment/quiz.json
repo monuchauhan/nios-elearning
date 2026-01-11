@@ -1,0 +1,275 @@
+{
+  "quiz_title": "Block 4: Learning Assessment - Pedagogic Processes Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best defines the process of 'Evaluation' as described in the sources?",
+      "options": [
+        "The process of quantifying attributes or dimensions of an object through numbers.",
+        "Obtaining information relative to a specific known objective or goal.",
+        "A value judgment based on quantitative and/or qualitative information collected over time.",
+        "The use of standardized achievement tests to rank students within a state."
+      ],
+      "correct_answer": "A value judgment based on quantitative and/or qualitative information collected over time.",
+      "page_reference": 34,
+      "explanations": {
+        "Option 1": "Incorrect. This describes 'Measurement', which focuses specifically on quantitative description.",
+        "Option 2": "Incorrect. This describes 'Assessment', which is the collection of data relative to goals.",
+        "Option 3": "Correct. Evaluation involves bringing meaning to collected data through interpretation and reflection to make a judgment.",
+        "Option 4": "Incorrect. While standardized tests are a tool, they do not define the holistic process of evaluation."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Ms. Sheila provides regular qualitative feedback to her students during the lesson to help them identify their own strengths and weaknesses. Which type of assessment is she primarily using?",
+      "options": [
+        "Summative Assessment",
+        "Formative Assessment",
+        "Norm-referenced Assessment",
+        "Standardized Achievement Testing"
+      ],
+      "correct_answer": "Formative Assessment",
+      "page_reference": 45,
+      "explanations": {
+        "Option 1": "Incorrect. Summative assessment 'sums up' development at a particular time, usually for grading/ranking at the end of a course.",
+        "Option 2": "Correct. Formative assessment is an on-going process used during instruction to monitor progress and provide feedback in a non-threatening environment.",
+        "Option 3": "Incorrect. Norm-referenced assessment compares a student's performance against a group norm or standard rather than focusing on individual growth feedback.",
+        "Option 4": "Incorrect. Standardized testing is typically used for large-scale summative purposes and is not intended for daily classroom feedback."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In Situation 3 of Unit 14, students write a description, discuss the criteria for assessment beforehand, and then grade their own work. This is an example of:",
+      "options": [
+        "Assessment OF Learning",
+        "Assessment FOR Learning",
+        "Assessment AS Learning",
+        "Summative Evaluation"
+      ],
+      "correct_answer": "Assessment AS Learning",
+      "page_reference": 102,
+      "explanations": {
+        "Option 1": "Incorrect. Assessment OF learning usually occurs at the end of a unit to judge the product of learning.",
+        "Option 2": "Incorrect. While similar, Assessment FOR learning is primarily teacher-led to modify instruction.",
+        "Option 3": "Correct. Assessment AS learning is entirely student-controlled, where students utilize assessment criteria to monitor and improve their own learning process.",
+        "Option 4": "Incorrect. Summative evaluation is a product-oriented process at the terminal stage, not a learning-process tool for students."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What does the 'SMART' acronym stand for in the context of formulating expected learning outcomes?",
+      "options": [
+        "Standardized, Measurable, Achievable, Realistic, Time-bound",
+        "Specific, Measurable, Achievable, Realistic, Time-bound",
+        "Subjective, Meaningful, Assessment-based, Realistic, Trained",
+        "Simple, Measurable, Active, Reliable, Trackable"
+      ],
+      "correct_answer": "Specific, Measurable, Achievable, Realistic, Time-bound",
+      "page_reference": 36,
+      "explanations": {
+        "Option 1": "Incorrect. The first 'S' stands for 'Specific', not 'Standardized'.",
+        "Option 2": "Correct. Learning outcomes must be SMART to make assessment easy and accurate.",
+        "Option 3": "Incorrect. Outcomes should be objective and specific, not subjective.",
+        "Option 4": "Incorrect. These are not the terms used in the source to define SMART objectives."
+      }
+    },
+    {
+      "id": 5,
+      "question": "A teacher wants to check if a student knows how to use an atlas before beginning a unit on Indian states. This is defined as:",
+      "options": [
+        "Summative Assessment",
+        "Initial or Diagnostic Assessment",
+        "Placement Evaluation",
+        "Restricted Response Testing"
+      ],
+      "correct_answer": "Initial or Diagnostic Assessment",
+      "page_reference": 114,
+      "explanations": {
+        "Option 1": "Incorrect. Summative assessment occurs at the end of learning, not before it starts.",
+        "Option 2": "Correct. Diagnostic assessment is made before learning commences to determine what a student does and does not know.",
+        "Option 3": "Incorrect. Placement evaluation is the beginning of instruction for placement, whereas diagnostic is for identifying gaps in current learning.",
+        "Option 4": "Incorrect. This refers to a type of essay item, not a phase of assessment."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which type of test item allows the student the MOST freedom to select pertinent facts and organize their own response style?",
+      "options": [
+        "Restricted Response type items",
+        "Objective type items",
+        "Extended Response type items",
+        "Matching type items"
+      ],
+      "correct_answer": "Extended Response type items",
+      "page_reference": 192,
+      "explanations": {
+        "Option 1": "Incorrect. Restricted response items control the length, content, or scope of the answer.",
+        "Option 2": "Incorrect. Objective items limit responses to a single word, number, or selection.",
+        "Option 3": "Correct. Extended response items permit students to decide which facts are most pertinent and select their own style of organization.",
+        "Option 4": "Incorrect. Matching items are a form of objective selection-type tests."
+      }
+    },
+    {
+      "id": 7,
+      "question": "According to the sources, why are 'Open-ended Items' considered superior to objective types for assessing 'meaning making'?",
+      "options": [
+        "They are easier to score objectively without bias.",
+        "They have unique and definite answers that prevent confusion.",
+        "They eliminate the effects of rote learning and promote divergent thinking.",
+        "They take less time for the student to complete during an exam."
+      ],
+      "correct_answer": "They eliminate the effects of rote learning and promote divergent thinking.",
+      "page_reference": 226,
+      "explanations": {
+        "Option 1": "Incorrect. Open-ended items are actually harder to score because they have multiple correct paths.",
+        "Option 2": "Incorrect. Closed-ended (objective) items have definite answers; open-ended items do not.",
+        "Option 3": "Correct. Open-ended items create scope for assessing if a student is able to draw meaning rather than just reciting memorized facts.",
+        "Option 4": "Incorrect. Objective items generally take less time to answer."
+      }
+    },
+    {
+      "id": 8,
+      "question": "A teacher notices a student has become irregular in attendance. She decides to conduct an in-depth investigation into the student's family background and previous experiences. This is called:",
+      "options": [
+        "Anecdotal Record",
+        "Case Study",
+        "Portfolio Assessment",
+        "Rating Scale"
+      ],
+      "correct_answer": "Case Study",
+      "page_reference": 254,
+      "explanations": {
+        "Option 1": "Incorrect. Anecdotal records are descriptions of specific important events in a student's life, not necessarily a holistic study.",
+        "Option 2": "Correct. Case studies are in-depth investigations of an individual to determine the background and characteristics of children with problems.",
+        "Option 3": "Incorrect. A portfolio is a collection of student work pieces selected for a purpose.",
+        "Option 4": "Incorrect. A rating scale is a tool to assign numerals to observed traits."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Under CCE, 'Scholastic' aspects primarily include:",
+      "options": [
+        "Personal-Social Qualities and Attitudes",
+        "Co-Curricular Activities like debate and music",
+        "Subject-specific areas like Math, Science, and Language",
+        "Health and Physical Education"
+      ],
+      "correct_answer": "Subject-specific areas like Math, Science, and Language",
+      "page_reference": 69,
+      "explanations": {
+        "Option 1": "Incorrect. These are categorized under 'Co-Scholastic' aspects.",
+        "Option 2": "Incorrect. These are 'Co-Scholastic' or 'Co-curricular' activities.",
+        "Option 3": "Correct. Scholastic aspects refer to specific subject knowledge areas.",
+        "Option 4": "Incorrect. This is a co-scholastic area."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What is the primary difference between a 'Mistake' and an 'Error' as defined in Unit 16?",
+      "options": [
+        "Errors are caused by misjudgment; mistakes are deviations from accuracy.",
+        "Errors simply happen (deviations); mistakes involve human action/fault like carelessness.",
+        "Mistakes are made in scholastic areas; errors are made in co-scholastic areas.",
+        "There is no functional difference; the terms are used synonymously."
+      ],
+      "correct_answer": "Errors simply happen (deviations); mistakes involve human action/fault like carelessness.",
+      "page_reference": 333,
+      "explanations": {
+        "Option 1": "Incorrect. This reverses the definitions provided in the source.",
+        "Option 2": "Correct. An error is a deviation from accuracy, while a mistake is an error specifically caused by a fault like misjudgment or forgetfulness.",
+        "Option 3": "Incorrect. The source does not distinguish these terms based on subject matter.",
+        "Option 4": "Incorrect. The text provides a specific distinction between the two in the model answers section."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Which stakeholder requires assessment records to monitor the quality of education across a cluster or district and effectiveness of interventions?",
+      "options": [
+        "Parents",
+        "Counsellors",
+        "Planners and Administrators",
+        "The individual student"
+      ],
+      "correct_answer": "Planners and Administrators",
+      "page_reference": 277,
+      "explanations": {
+        "Option 1": "Incorrect. Parents need records to understand their child's specific strengths and weaknesses.",
+        "Option 2": "Incorrect. Counsellors use records to address individual roadblocks in learning performance.",
+        "Option 3": "Correct. Planners and administrators use recording to examine input effectiveness and monitor systemic quality.",
+        "Option 4": "Incorrect. Students use records for self-motivation and goal-setting."
+      }
+    },
+    {
+      "id": 12,
+      "question": "In the construction of a 'Multiple Choice Item', the incorrect options provided are technically known as:",
+      "options": [
+        "Stems",
+        "Distracters",
+        "Restricted options",
+        "Selection keys"
+      ],
+      "correct_answer": "Distracters",
+      "page_reference": 208,
+      "explanations": {
+        "Option 1": "Incorrect. The 'stem' is the statement of the problem itself.",
+        "Option 2": "Correct. The correct alternative is the answer, and the remaining alternatives are distracters.",
+        "Option 3": "Incorrect. This is not the technical term used in the text.",
+        "Option 4": "Incorrect. This is not the technical term used in the text."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Why are teacher-made tests considered more useful for formative assessment than standardized tests?",
+      "options": [
+        "They are constructed by specialists and tried out on large groups.",
+        "They follow a strict process of standardization and uniform interpretation.",
+        "They are well-adapted to local curriculum and outcomes set by the teacher.",
+        "They are only used for terminal examinations and ranking students."
+      ],
+      "correct_answer": "They are well-adapted to local curriculum and outcomes set by the teacher.",
+      "page_reference": 164,
+      "explanations": {
+        "Option 1": "Incorrect. This describes standardized tests.",
+        "Option 2": "Incorrect. This describes standardized tests, which have limited use in daily monitoring.",
+        "Option 3": "Correct. Teacher-made tests allow for immediate feedback and focus on specific objectives relevant to that specific class.",
+        "Option 4": "Incorrect. Standardized tests are used for ranking; teacher-made tests are better for monitoring progress."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which of the following is an example of an 'Objective Selection Type' item?",
+      "options": [
+        "A short answer question asking for the name of a capital city.",
+        "A completion item with a blank space at the end.",
+        "A Multiple Choice Item.",
+        "An oral question during a classroom discussion."
+      ],
+      "correct_answer": "A Multiple Choice Item.",
+      "page_reference": 201,
+      "explanations": {
+        "Option 1": "Incorrect. This is a 'supply' type where the student must recall and provide the word.",
+        "Option 2": "Incorrect. This is a 'supply' type where the student provides a word to complete a statement.",
+        "Option 3": "Correct. Multiple choice is a 'selection' type because the student chooses the answer from given alternatives.",
+        "Option 4": "Incorrect. Oral questions are based on mode of response, not the structured selection of options."
+      }
+    },
+    {
+      "id": 15,
+      "question": "What is the primary function of a 'Blue Print' or 'Table of Specifications' in test construction?",
+      "options": [
+        "To provide a script for the teacher to read during the test.",
+        "A two-way arrangement of course content and course objectives to ensure coverage.",
+        "To list the names of students and their previous marks.",
+        "To standardize the scoring for extended response items."
+      ],
+      "correct_answer": "A two-way arrangement of course content and course objectives to ensure coverage.",
+      "page_reference": 177,
+      "explanations": {
+        "Option 1": "Incorrect. It is a planning tool, not a script.",
+        "Option 2": "Correct. A blue print maps contents against objectives (knowledge, understanding, application, skill) to ensure a balanced test.",
+        "Option 3": "Incorrect. This describes a marks register.",
+        "Option 4": "Incorrect. A scoring key is used for standardization of scoring."
+      }
+    }
+  ]
+}

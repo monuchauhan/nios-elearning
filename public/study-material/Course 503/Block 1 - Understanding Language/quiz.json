@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Course 503 Block 1: Understanding Language Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How do linguists generally define language according to the sources?",
+      "options": [
+        "A means of communication used by ordinary people.",
+        "A pairing of a grammar and a dictionary.",
+        "A biological instinct with no structural rules.",
+        "A static set of rules that exists before speakers."
+      ],
+      "correct_answer": "A pairing of a grammar and a dictionary.",
+      "page_reference": 8,
+      "explanations": {
+        "Option 1": "Incorrect. This is how 'ordinary people' recognize language, not the specific definition attributed to linguists in the text.",
+        "Option 2": "Correct. The text states that linguists generally look at language as a pairing of a grammar and a dictionary.",
+        "Option 3": "Incorrect. While humans have an innate faculty, linguists see language as having organized structural levels (sounds, words, grammar).",
+        "Option 4": "Incorrect. The source emphasizes that there is no language without speakers and that grammars cannot be made unless speakers exist first."
+      }
+    },
+    {
+      "id": 2,
+      "question": "In the Hindi sound system, what is the rule for a word starting with a consonant cluster beginning with the sound /p/?",
+      "options": [
+        "It can cluster with any other consonant in the Hindi alphabet.",
+        "It can only cluster with vowels, never other consonants.",
+        "It can only cluster with /y/, /r/, /l/, and /v/.",
+        "It must be followed by at least two vowels."
+      ],
+      "correct_answer": "It can only cluster with /y/, /r/, /l/, and /v/.",
+      "page_reference": 19,
+      "explanations": {
+        "Option 1": "Incorrect. The text provides specific phonological rules that restrict combinations; not all consonants can cluster.",
+        "Option 2": "Incorrect. Consonant clusters exist in Hindi, as shown in the examples like 'smriti'.",
+        "Option 3": "Correct. Rule 1 states that if a word starts with a cluster where the first consonant is /p/, it can only cluster with /y, r, l, v/.",
+        "Option 4": "Incorrect. The rule pertains to the consonants following /p/ in a cluster, not the number of vowels."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Which of the following describes the 'holophrastic' stage in child language acquisition?",
+      "options": [
+        "The stringing together of vowels like 'uuuu' and 'iiii'.",
+        "The use of a single word to function as a whole phrase or sentence.",
+        "The stage where children use telegraphic messages with only content words.",
+        "The repetition of consonant-vowel clusters like 'ba-ba-ga-ga'."
+      ],
+      "correct_answer": "The use of a single word to function as a whole phrase or sentence.",
+      "page_reference": 155,
+      "explanations": {
+        "Option 1": "Incorrect. This describes the 'Cooing' stage which occurs around 6 weeks.",
+        "Option 2": "Correct. The one-word stage is called holophrastic because a single word (like 'mam mam') expresses a complex thought or request.",
+        "Option 3": "Incorrect. This describes the 'Telegraphic' stage which occurs during the two-word stage or later.",
+        "Option 4": "Incorrect. This describes 'Babbling' which occurs around 6 to 10 months."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What is the primary function of 'Learning' (conscious knowledge) in Krashen’s theory of Second Language Acquisition?",
+      "options": [
+        "It is responsible for initiating all utterances and ensuring fluency.",
+        "It acts as a 'Monitor' or editor to make changes after an utterance is produced.",
+        "It is the only way children acquire their first language at home.",
+        "It replaces the need for natural communication in a classroom."
+      ],
+      "correct_answer": "It acts as a 'Monitor' or editor to make changes after an utterance is produced.",
+      "page_reference": 174,
+      "explanations": {
+        "Option 1": "Incorrect. Acquisition, not learning, 'initiates' utterances and is responsible for fluency.",
+        "Option 2": "Correct. Krashen states that Learning has only one function: as a Monitor or editor to check and correct form.",
+        "Option 3": "Incorrect. First language is 'acquired' subconsciously in a natural environment, not 'learnt' through conscious rules.",
+        "Option 4": "Incorrect. The text emphasizes that acquisition through communication is still vital for second language proficiency."
+      }
+    },
+    {
+      "id": 5,
+      "question": "According to the sources, why is the process of language standardization often associated with social exploitation?",
+      "options": [
+        "Because it makes the language too difficult for anyone to speak.",
+        "Because the variety chosen as 'standard' is usually the one spoken by those with political and corporate power.",
+        "Because dictionaries and grammars are expensive to produce.",
+        "Because it forces all speakers to learn at least five different dialects."
+      ],
+      "correct_answer": "Because the variety chosen as 'standard' is usually the one spoken by those with political and corporate power.",
+      "page_reference": 33,
+      "explanations": {
+        "Option 1": "Incorrect. Standardization aims for a uniform variety, not necessarily an impossible one.",
+        "Option 2": "Correct. The sources state that standardization is related to exploitation because those with power make the decisions on which variety is 'standard'.",
+        "Option 3": "Incorrect. While dictionaries are mentioned as part of the process, the 'exploitation' aspect refers to power dynamics.",
+        "Option 4": "Incorrect. Standardization usually promotes one variety over others, rather than forcing the use of many dialects."
+      }
+    },
+    {
+      "id": 6,
+      "question": "What does the 'Dichotic Listening Test' demonstrate regarding language processing in the brain?",
+      "options": [
+        "That the right hemisphere is the primary language center for most people.",
+        "That humans hear different languages better in their left ear.",
+        "That the left hemisphere is the language center for the majority of people.",
+        "That both hemispheres process sounds at the exact same speed."
+      ],
+      "correct_answer": "That the left hemisphere is the language center for the majority of people.",
+      "page_reference": 139,
+      "explanations": {
+        "Option 1": "Incorrect. The right hemisphere is generally not the language center; sounds sent there take longer to process as they must travel to the left hemisphere.",
+        "Option 2": "Incorrect. Most people repeat words played in the right ear more accurately because it connects directly to the left hemisphere.",
+        "Option 3": "Correct. The test shows that words from the right ear are processed faster because they go directly to the left hemisphere (the language center).",
+        "Option 4": "Incorrect. The test proves there is a delay when sounds are processed by the non-language-dominant hemisphere."
+      }
+    },
+    {
+      "id": 7,
+      "question": "How many languages are currently listed in the 8th Schedule of the Indian Constitution?",
+      "options": [
+        "14",
+        "18",
+        "22",
+        "1600"
+      ],
+      "correct_answer": "22",
+      "page_reference": 84,
+      "explanations": {
+        "Option 1": "Incorrect. This was the original number in 1950.",
+        "Option 2": "Incorrect. The count increased past 18 with the 92nd amendment in 2003.",
+        "Option 3": "Correct. Through various amendments (21st, 71st, and 92nd), the total reached 22 scheduled languages.",
+        "Option 4": "Incorrect. This is the approximate number of total languages spoken in India, not the constitutional schedule list."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which area of the brain, when damaged, is specifically associated with problems in speech production?",
+      "options": [
+        "Wernicke’s area",
+        "The brain stem",
+        "Broca’s area",
+        "The right hemisphere"
+      ],
+      "correct_answer": "Broca’s area",
+      "page_reference": 140,
+      "explanations": {
+        "Option 1": "Incorrect. Damage to Wernicke's area is associated with problems in speech 'comprehension'.",
+        "Option 2": "Incorrect. The brain stem controls basic life functions like breathing and heartbeats.",
+        "Option 3": "Correct. The text explicitly states that damage to Broca's area causes problems in speech production.",
+        "Option 4": "Incorrect. For most, the right hemisphere is not the primary center for speech production."
+      }
+    },
+    {
+      "id": 9,
+      "question": "What is the 'Critical Period' for language acquisition mentioned in the sources?",
+      "options": [
+        "The first 3 months of life.",
+        "The time between 2 to 14 years when acquisition is effortless.",
+        "The period after age 20 when one begins to learn grammar rules.",
+        "The time it takes to graduate from a language lab."
+      ],
+      "correct_answer": "The time between 2 to 14 years when acquisition is effortless.",
+      "page_reference": 145,
+      "explanations": {
+        "Option 1": "Incorrect. Cooing and babbling start early, but the critical period for full acquisition is much longer.",
+        "Option 2": "Correct. The critical period is described as a time (roughly 2-14 years) set by nature for effortless acquisition.",
+        "Option 3": "Incorrect. After this period (puberty), language acquisition becomes more difficult, especially pronunciation.",
+        "Option 4": "Incorrect. This is a biological/developmental phase, not a school-based timeframe."
+      }
+    },
+    {
+      "id": 10,
+      "question": "The 'Three-Language Formula' suggests that the FIRST language taught in school should be:",
+      "options": [
+        "English",
+        "Hindi",
+        "The mother tongue or regional language",
+        "Sanskrit"
+      ],
+      "correct_answer": "The mother tongue or regional language",
+      "page_reference": 108,
+      "explanations": {
+        "Option 1": "Incorrect. English is usually the second or third language in this formula.",
+        "Option 2": "Incorrect. Hindi is only the first language if it is the mother tongue/regional language of that state.",
+        "Option 3": "Correct. The formula states the first language should be the mother tongue or regional language.",
+        "Option 4": "Incorrect. Sanskrit is often chosen as a classical language but not generally the 'first' language."
+      }
+    },
+    {
+      "id": 11,
+      "question": "From a linguistic point of view, what is the difference between a 'language' and a 'dialect'?",
+      "options": [
+        "Languages have a grammar, while dialects do not.",
+        "Languages have a script, while dialects are only spoken.",
+        "There is no linguistic difference; both are rule-governed.",
+        "Languages are spoken by millions, whereas dialects are only for families."
+      ],
+      "correct_answer": "There is no linguistic difference; both are rule-governed.",
+      "page_reference": 89,
+      "explanations": {
+        "Option 1": "Incorrect. The text states that both have their own grammar and are rule-governed.",
+        "Option 2": "Incorrect. Any language can be written in any script; script is not a defining linguistic factor.",
+        "Option 3": "Correct. Linguistically, there is no difference; the distinction is social and political, based on power.",
+        "Option 4": "Incorrect. Number of speakers is a common misconception, not a linguistic reality."
+      }
+    },
+    {
+      "id": 12,
+      "question": "What characterizes 'Telegraphic Speech' in the two-word stage of child language?",
+      "options": [
+        "Lengthy sentences with complex grammar.",
+        "The use of mostly content words like 'doodh' or 'mama' without function words.",
+        "Repeated strings of nonsense syllables.",
+        "Correct use of all plural markers and past tense endings."
+      ],
+      "correct_answer": "The use of mostly content words like 'doodh' or 'mama' without function words.",
+      "page_reference": 157,
+      "explanations": {
+        "Option 1": "Incorrect. This occurs much later in development.",
+        "Option 2": "Correct. It is called telegraphic because it lacks 'little words' (postpositions, auxiliary verbs) and focuses on words carrying meaning.",
+        "Option 3": "Incorrect. This describes the babbling stage.",
+        "Option 4": "Incorrect. Children in this stage typically omit plural endings and word endings."
+      }
+    },
+    {
+      "id": 13,
+      "question": "In the context of Indian English, what does the use of words like 'prepone' or 'pin-drop silence' represent?",
+      "options": [
+        "Errors caused by a lack of education.",
+        "Interference that must be corrected by British teachers.",
+        "Natural adaptations of English to the Indian socio-cultural context.",
+        "Direct translations from Sanskrit that are grammatically wrong."
+      ],
+      "correct_answer": "Natural adaptations of English to the Indian socio-cultural context.",
+      "page_reference": 184,
+      "explanations": {
+        "Option 1": "Incorrect. These are widely understood and recognized features of a distinct variety of English.",
+        "Option 2": "Incorrect. The text argues against calling these 'interference' and sees them as natural processes of language contact.",
+        "Option 3": "Correct. These are examples of how the environment and culture influence the development of a regional variety of English.",
+        "Option 4": "Incorrect. While influenced by local languages, they are creative coinages (like 'prepone') rather than just 'wrong' translations."
+      }
+    },
+    {
+      "id": 14,
+      "question": "What is the 'Samavay' method mentioned in relation to the Wardha Scheme (1937)?",
+      "options": [
+        "The translation of Sanskrit texts into English.",
+        "An integration method where education is linked with a handicraft.",
+        "A strict military-style discipline for schools.",
+        "A method of teaching only through audio-lingual drills."
+      ],
+      "correct_answer": "An integration method where education is linked with a handicraft.",
+      "page_reference": 58,
+      "explanations": {
+        "Option 1": "Incorrect. The Wardha scheme focused on basic education for the masses.",
+        "Option 2": "Correct. Under this scheme, education was integrated with a handicraft via the Samavay method.",
+        "Option 3": "Incorrect. This is not mentioned as part of the scheme's pedagogical structure.",
+        "Option 4": "Incorrect. The Audio-lingual method is a separate, much later linguistic approach."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Which language teaching method prioritizes 'communication in context' and uses chapters like 'At the railway station'?",
+      "options": [
+        "Grammar Translation Method",
+        "Direct Method",
+        "Communicative Method",
+        "Audio Lingual Method"
+      ],
+      "correct_answer": "Communicative Method",
+      "page_reference": 197,
+      "explanations": {
+        "Option 1": "Incorrect. This method focuses on memorizing rules and translating literature.",
+        "Option 2": "Incorrect. This method emphasizes speaking without translation but not necessarily specific social contexts.",
+        "Option 3": "Correct. The Communicative method is based on socio-linguistics and teaching language appropriate to specific social contexts.",
+        "Option 4": "Incorrect. This method uses repetitive drills and dialogues to form habits."
+      }
+    },
+    {
+      "id": 16,
+      "question": "According to the sources, why do children sometimes regress and use 'goed' instead of 'went'?",
+      "options": [
+        "They have forgotten the correct word due to lack of practice.",
+        "They are imitating adults who speak incorrectly.",
+        "They have internalized a rule for the past tense and are over-generalizing it.",
+        "They are confusing English with their first language."
+      ],
+      "correct_answer": "They have internalized a rule for the past tense and are over-generalizing it.",
+      "page_reference": 158,
+      "explanations": {
+        "Option 1": "Incorrect. They often knew 'went' earlier; the change indicates a new cognitive step, not memory loss.",
+        "Option 2": "Incorrect. Adults rarely say 'goed'; the child creates this form based on a rule.",
+        "Option 3": "Correct. The use of 'goed' is evidence that the child has discovered the '-ed' rule and is applying it logically (over-generalization).",
+        "Option 4": "Incorrect. This occurs even in monolingual children acquiring English as their first language."
+      }
+    },
+    {
+      "id": 17,
+      "question": "What does Article 351 of the Indian Constitution state regarding the Hindi language?",
+      "options": [
+        "It declares Hindi as the National Language of India.",
+        "It mandates that Hindi must be the only medium of instruction in all schools.",
+        "It states the Union must promote the spread and development of Hindi.",
+        "It forbids the use of English in any government office."
+      ],
+      "correct_answer": "It states the Union must promote the spread and development of Hindi.",
+      "page_reference": 82,
+      "explanations": {
+        "Option 1": "Incorrect. The Constitution says nothing about a 'National Language'.",
+        "Option 2": "Incorrect. Medium of instruction is often the regional language or mother tongue.",
+        "Option 3": "Correct. Article 351 specifically tasks the Union to promote the spread of Hindi as a medium of expression.",
+        "Option 4": "Incorrect. English is an associate official language under the Official Language Act."
+      }
+    },
+    {
+      "id": 18,
+      "question": "In the study of 'India as a Linguistic Area', what is an 'Echo Word'?",
+      "options": [
+        "A word that repeats exactly to mean 'every' (e.g., ghar-ghar).",
+        "A second 'extra' word with no independent meaning (e.g., caay-vaay).",
+        "A word that sounds like its meaning (e.g., buzz).",
+        "A word borrowed directly from English into Hindi."
+      ],
+      "correct_answer": "A second 'extra' word with no independent meaning (e.g., caay-vaay).",
+      "page_reference": 74,
+      "explanations": {
+        "Option 1": "Incorrect. These are 'Reduplicated' words.",
+        "Option 2": "Correct. Echo words involve a second meaningless word that sounds like the first and refers to accompanying items.",
+        "Option 3": "Incorrect. This refers to onomatopoeia, not the specific linguistic feature discussed.",
+        "Option 4": "Incorrect. Borrowing is different from the structural feature of echo-formation found across Indian language families."
+      }
+    },
+    {
+      "id": 19,
+      "question": "According to the sources, what is 'comprehensible input' in second language acquisition?",
+      "options": [
+        "Giving children a dictionary to memorize every day.",
+        "Using language that children can understand while providing a slight challenge.",
+        "Strictly using only the child's first language in the classroom.",
+        "Testing children on grammar rules before they are allowed to speak."
+      ],
+      "correct_answer": "Using language that children can understand while providing a slight challenge.",
+      "page_reference": 170,
+      "explanations": {
+        "Option 1": "Incorrect. Memorization is not 'comprehensible input'.",
+        "Option 2": "Correct. It refers to using language children understand, delivered in meaningful contexts that allow them to meet new linguistic challenges.",
+        "Option 3": "Incorrect. The goal is to provide input in the 'target' (second) language.",
+        "Option 4": "Incorrect. Krashen's theory suggests speaking fluency 'emerges' from input rather than being taught via rules first."
+      }
+    },
+    {
+      "id": 20,
+      "question": "How did the 1963 Official Language Act change the status of English in India?",
+      "options": [
+        "It removed English as an official language entirely.",
+        "It made English the only official language for the judiciary.",
+        "It permanently made English the associate official language.",
+        "It required all regional languages to use the Roman script."
+      ],
+      "correct_answer": "It permanently made English the associate official language.",
+      "page_reference": 81,
+      "explanations": {
+        "Option 1": "Incorrect. It extended the use of English indefinitely.",
+        "Option 2": "Incorrect. Hindi and English both have official status at various levels.",
+        "Option 3": "Correct. Initially, English was only given status for 15 years, but the 1963 Act made it permanent.",
+        "Option 4": "Incorrect. Script requirements for regional languages are not part of this act."
+      }
+    }
+  ]
+}

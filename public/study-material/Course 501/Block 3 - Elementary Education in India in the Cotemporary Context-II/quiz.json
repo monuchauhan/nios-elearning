@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Elementary Education in India: Contemporary Context (Course 501, Block 3)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the Jomtien Conference (1990), at what stage of life does learning begin?",
+      "options": [
+        "At the age of three (Pre-school)",
+        "At birth",
+        "Upon entering Primary School (age 6)",
+        "In the adolescent years"
+      ],
+      "correct_answer": "At birth",
+      "page_reference": 18,
+      "explanations": {
+        "Option 1": "Incorrect. While early childhood care is a priority, the conference specifies an earlier start.",
+        "Option 2": "Correct. Under the thrust 'Broadening the means and scope of basic education,' the sources state that 'Learning begins at birth.'",
+        "Option 3": "Incorrect. Primary schooling is the main delivery system, but learning is stated to begin much earlier.",
+        "Option 4": "Incorrect. Basic learning needs apply to all ages, beginning from birth."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which group of countries accounts for more than 50 percent of the world’s population and met in 2000 to review EFA progress?",
+      "options": [
+        "G-7 Countries",
+        "South Asian Region countries",
+        "E-9 Countries",
+        "Developing Countries"
+      ],
+      "correct_answer": "E-9 Countries",
+      "page_reference": 30,
+      "explanations": {
+        "Option 1": "Incorrect. G-7 is a group of advanced economies not defined by the 50% population metric in this context.",
+        "Option 2": "Incorrect. While the South Asian region is discussed, the specific 50% population group is the E-9.",
+        "Option 3": "Correct. The E-9 countries (Bangladesh, Brazil, China, Egypt, India, Indonesia, Mexico, Nigeria, and Pakistan) account for over half the world's population.",
+        "Option 4": "Incorrect. This is a broad category, whereas E-9 is the specific group cited."
+      }
+    },
+    {
+      "id": 3,
+      "question": "John Dewey identified three key components of the reflective process. Which of the following is NOT one of them?",
+      "options": [
+        "Open-mindedness",
+        "Responsibility",
+        "Whole-heartedness",
+        "Critical Pedagogy"
+      ],
+      "correct_answer": "Critical Pedagogy",
+      "page_reference": 130,
+      "explanations": {
+        "Option 1": "Incorrect. This is one of Dewey's three components, referring to looking at teaching critically.",
+        "Option 2": "Incorrect. This is one of Dewey's components, involving understanding the effects of teaching.",
+        "Option 3": "Incorrect. This is one of Dewey's components, meaning approaching work with enthusiasm.",
+        "Option 4": "Correct. Critical pedagogy is a broader educational movement mentioned in Unit 8, but it is not one of Dewey's three specific components of reflection."
+      }
+    },
+    {
+      "id": 4,
+      "question": "In Donald Schon's concept of reflective practice, what does 'Reflection-in-action' refer to?",
+      "options": [
+        "Analyzing successes and failures after a lesson is finished",
+        "Designing future lessons based on past research",
+        "The ability to think about what we are doing while we are doing it",
+        "Studying for a teaching diploma"
+      ],
+      "correct_answer": "The ability to think about what we are doing while we are doing it",
+      "page_reference": 134,
+      "explanations": {
+        "Option 1": "Incorrect. This describes 'Reflection-on-action.'",
+        "Option 2": "Incorrect. This describes 'Reflection-for-action.'",
+        "Option 3": "Correct. Reflection-in-action happens while the action occurs, allowing teachers to adjust based on current learner needs.",
+        "Option 4": "Incorrect. This is a formal educational process, not the specific act of reflection defined by Schon."
+      }
+    },
+    {
+      "id": 5,
+      "question": "The 'Nali-Kali' model of multi-level learning in Karnataka is cited as an effective strategy for which of the following?",
+      "options": [
+        "Improving technical skills in urban students",
+        "Preventing the segregation of SC children by grouping them by learning levels",
+        "Providing residential facilities for ST students",
+        "Training teachers in ICT use"
+      ],
+      "correct_answer": "Preventing the segregation of SC children by grouping them by learning levels",
+      "page_reference": 152,
+      "explanations": {
+        "Option 1": "Incorrect. The model is discussed in the context of social barriers and primary education.",
+        "Option 2": "Correct. It allows children to sit in groups based on learning levels rather than caste or gender, breaking social barriers.",
+        "Option 3": "Incorrect. Ashram schools are the models discussed for ST residential education.",
+        "Option 4": "Incorrect. ICT is discussed in the Academic Support System section, not the Nali-Kali model."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which international document first proclaimed the right of the child to education in 1942?",
+      "options": [
+        "Universal Declaration of Human Rights",
+        "Charter of the United Nations",
+        "Salamanca Statement",
+        "Dakar Framework for Action"
+      ],
+      "correct_answer": "Charter of the United Nations",
+      "page_reference": 192,
+      "explanations": {
+        "Option 1": "Incorrect. This was adopted in 1948.",
+        "Option 2": "Correct. The sources state the first international declaration to proclaim the right to education was the Charter of the United Nations in 1942.",
+        "Option 3": "Incorrect. This was produced in 1994 regarding special needs.",
+        "Option 4": "Incorrect. This was produced in 2000."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What is the primary focus of the 'Savitribai Phule Parent Adoption Scheme' in Maharashtra?",
+      "options": [
+        "Adopting orphans into teaching families",
+        "Helping tribal parents find jobs",
+        "Providing financial aid to help girls stay in school",
+        "Training parents to teach their own children"
+      ],
+      "correct_answer": "Providing financial aid to help girls stay in school",
+      "page_reference": 14,
+      "explanations": {
+        "Option 1": "Incorrect. The scheme involves financial support, not physical adoption.",
+        "Option 2": "Incorrect. The focus is on the student's education, not parental employment.",
+        "Option 3": "Correct. Society members 'adopt' a girl by providing financial help (minimum 30 rupees a month) to continue her education.",
+        "Option 4": "Incorrect. This is not a parental training scheme."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which agency has been assisting the 'Shiksha Karmi Project' in Rajasthan since 1987?",
+      "options": [
+        "UNESCO",
+        "World Bank",
+        "DFID",
+        "SIDA"
+      ],
+      "correct_answer": "SIDA",
+      "page_reference": 49,
+      "explanations": {
+        "Option 1": "Incorrect. UNESCO supports EFA generally but is not the specific agency named for this project.",
+        "Option 2": "Incorrect. The World Bank supports EFA across 90 countries but not specifically this project in Rajasthan.",
+        "Option 3": "Incorrect. DFID focuses on Bihar, MP, Orissa, and West Bengal.",
+        "Option 4": "Correct. The Swedish International Development Cooperation Agency (SIDA) has assisted the Shiksha Karmi Project since 1987."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Which Article of the Constitution of India protects children from being forced by economic necessity to enter occupations unsuited to their age?",
+      "options": [
+        "Article 21A",
+        "Article 24",
+        "Article 39(e)",
+        "Article 46"
+      ],
+      "correct_answer": "Article 39(e)",
+      "page_reference": 204,
+      "explanations": {
+        "Option 1": "Incorrect. This relates to the right to free and compulsory elementary education.",
+        "Option 2": "Incorrect. This prohibits hazardous employment under the age of 14.",
+        "Option 3": "Correct. Article 39(e) specifically protects children from being forced into occupations unsuited to their strength or age.",
+        "Option 4": "Incorrect. This relates to protecting weaker sections from social injustice."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Under the SSA framework, what is the allocated amount per disabled child per year for inclusive education activities?",
+      "options": [
+        "Rs. 500",
+        "Rs. 1200",
+        "Rs. 3000",
+        "Rs. 5000"
+      ],
+      "correct_answer": "Rs. 1200",
+      "page_reference": 199,
+      "explanations": {
+        "Option 1": "Incorrect. The sources state a higher amount.",
+        "Option 2": "Correct. The SSA framework provides Rs. 1200 per disabled child per year for planning Inclusive Education activities.",
+        "Option 3": "Incorrect. This is higher than the stated norm.",
+        "Option 4": "Incorrect. This is significantly higher than the stated norm."
+      }
+    },
+    {
+      "id": 11,
+      "question": "The UNESCO report on Education for the 21st Century mentions four 'pillars' of education. Which of the following is NOT one of them?",
+      "options": [
+        "Learning to know",
+        "Learning to do",
+        "Learning to compete",
+        "Learning to live together"
+      ],
+      "correct_answer": "Learning to compete",
+      "page_reference": 50,
+      "explanations": {
+        "Option 1": "Incorrect. This is one of the four pillars.",
+        "Option 2": "Incorrect. This is one of the four pillars.",
+        "Option 3": "Correct. The four pillars are learning to know, do, be, and live together. 'Learning to compete' is not one of them.",
+        "Option 4": "Incorrect. This is the fourth pillar mentioned."
+      }
+    },
+    {
+      "id": 12,
+      "question": "What is the primary rationale for the Stage 2 Teacher Education (Class I to VIII) according to the NCFTE?",
+      "options": [
+        "To teach children how to find jobs immediately",
+        "To manage the transition from concrete operational stage to abstract reasoning",
+        "To focus exclusively on vocational training",
+        "To prepare teachers for university-level instruction"
+      ],
+      "correct_answer": "To manage the transition from concrete operational stage to abstract reasoning",
+      "page_reference": 100,
+      "explanations": {
+        "Option 1": "Incorrect. The focus is on pedagogical development, not immediate job placement.",
+        "Option 2": "Correct. This stage covers the age range that transitions from concrete thinking to abstract reasoning, requiring specific strategies.",
+        "Option 3": "Incorrect. The sources focus on elementary education, not just vocational training.",
+        "Option 4": "Incorrect. The framework is for elementary teachers, not university professors."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Which initiative aims to provide quality education in small remote villages through free knowledge resources via the World Wide Web?",
+      "options": [
+        "Operation Blackboard",
+        "OER4S (Open Educational Resource for Schools)",
+        "SOPT",
+        "PMOST"
+      ],
+      "correct_answer": "OER4S (Open Educational Resource for Schools)",
+      "page_reference": 184,
+      "explanations": {
+        "Option 1": "Incorrect. This was a 1986 scheme for school infrastructure.",
+        "Option 2": "Correct. The OER4S project aims to design open educational resources available via the web for remote village schools.",
+        "Option 3": "Incorrect. This was an orientation program for primary teachers.",
+        "Option 4": "Incorrect. This was a mass orientation program for school teachers."
+      }
+    },
+    {
+      "id": 14,
+      "question": "What does the term 'Inclusive Education' mean according to UNESCO?",
+      "options": [
+        "Teaching only gifted students in special classes",
+        "A process of responding to the diversity of needs and reducing exclusion",
+        "Separating children with disabilities into special schools",
+        "Standardizing all students to learn at the same pace"
+      ],
+      "correct_answer": "A process of responding to the diversity of needs and reducing exclusion",
+      "page_reference": 190,
+      "explanations": {
+        "Option 1": "Incorrect. This is the opposite of the inclusive philosophy.",
+        "Option 2": "Correct. It is a process of addressing diversity and increasing participation while reducing exclusion.",
+        "Option 3": "Incorrect. Inclusive education aims to place learners in normal classrooms, not separate them.",
+        "Option 4": "Incorrect. It emphasizes identifying individual learning styles rather than standardizing everyone."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Which pedagogical principle is facilitated by involving Panchayati Raj Institutions (PRIs) in education?",
+      "options": [
+        "Moving from the unknown to the known",
+        "Moving from the local to the global",
+        "Moving from the abstract to the concrete",
+        "Reducing teacher accountability"
+      ],
+      "correct_answer": "Moving from the local to the global",
+      "page_reference": 72,
+      "explanations": {
+        "Option 1": "Incorrect. The principle is 'known to the unknown.'",
+        "Option 2": "Correct. Decentralization through PRIs highlights local environment, facilitating the move from local to global.",
+        "Option 3": "Incorrect. The principle is 'concrete to abstract.'",
+        "Option 4": "Incorrect. PRIs actually aim to make teachers more accountable."
+      }
+    },
+    {
+      "id": 16,
+      "question": "What is 'Samavay', as mentioned in the context of the Wardha Scheme (1937)?",
+      "options": [
+        "A type of school uniform",
+        "An integration method where education is linked with a handicraft",
+        "A ritual for starting school",
+        "A term for a headmaster"
+      ],
+      "correct_answer": "An integration method where education is linked with a handicraft",
+      "page_reference": 58,
+      "explanations": {
+        "Option 1": "Incorrect. It is a pedagogical method.",
+        "Option 2": "Correct. Education integrated with a handicraft was to be imparted through the Samavay method.",
+        "Option 3": "Incorrect. This describes rituals like 'Upanayan' mentioned in earlier units.",
+        "Option 4": "Incorrect. This is not a title for personnel."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Which agency focuses on ensuring gender equality and eliminating disparities for the most disadvantaged children globally?",
+      "options": [
+        "World Bank",
+        "DFID",
+        "UNICEF",
+        "UNESCO"
+      ],
+      "correct_answer": "UNICEF",
+      "page_reference": 43,
+      "explanations": {
+        "Option 1": "Incorrect. The World Bank focuses on primary access and learning output across many countries.",
+        "Option 2": "Incorrect. DFID focuses on reducing extreme poverty in specific partnership countries like India.",
+        "Option 3": "Correct. UNICEF focuses on the rights of every child, gender equality, and disadvantaged children (excluded/vulnerable).",
+        "Option 4": "Incorrect. UNESCO focuses on understanding through education, science, and culture to promote peace."
+      }
+    },
+    {
+      "id": 18,
+      "question": "What is the 'Zero Rejection Policy' in the context of Children with Special Needs (CWSN)?",
+      "options": [
+        "No child should be rejected from a specialized hospital",
+        "No child with special needs should be deprived of the right to education",
+        "Teachers must not reject any curriculum changes",
+        "Parents cannot reject school assignments"
+      ],
+      "correct_answer": "No child with special needs should be deprived of the right to education",
+      "page_reference": 164,
+      "explanations": {
+        "Option 1": "Incorrect. The policy applies specifically to the educational right within the SSA framework.",
+        "Option 2": "Correct. SSA adopted this policy to ensure every child, regardless of disability degree, receives education.",
+        "Option 3": "Incorrect. This is not related to the policy definition.",
+        "Option 4": "Incorrect. This is not related to the policy definition."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Which group of children are considered 'more vulnerable' and require special attention according to the sources?",
+      "options": [
+        "Children of educated urban professionals",
+        "Children living in gated communities",
+        "Homeless children and child beggars",
+        "Children attending elite private schools"
+      ],
+      "correct_answer": "Homeless children and child beggars",
+      "page_reference": 202,
+      "explanations": {
+        "Option 1": "Incorrect. These children are generally considered advantaged.",
+        "Option 2": "Incorrect. These children are generally considered advantaged.",
+        "Option 3": "Correct. The list of vulnerable children includes homeless, migrant, working children, child beggars, and those affected by conflict/disasters.",
+        "Option 4": "Incorrect. These children are generally considered advantaged."
+      }
+    },
+    {
+      "id": 20,
+      "question": "According to Boud, Keogh, and Walker (1985), reflection is an activity where people 'recapture their experience' through three aspects. Which of the following is one of those aspects?",
+      "options": [
+        "Ignoring obstructive feelings",
+        "Recalling salient events",
+        "Focusing only on technical success",
+        "Comparing themselves to colleagues"
+      ],
+      "correct_answer": "Recalling salient events",
+      "page_reference": 132,
+      "explanations": {
+        "Option 1": "Incorrect. The aspect is 'attending to' feelings, using helpful ones and 'removing or containing' (not just ignoring) obstructive ones.",
+        "Option 2": "Correct. This is the aspect of 'Returning to experience.'",
+        "Option 3": "Incorrect. Evaluation involves re-examining the intent and knowledge, not just technical success.",
+        "Option 4": "Incorrect. This is not listed as one of the three core aspects of their reflection model."
+      }
+    }
+  ]
+}

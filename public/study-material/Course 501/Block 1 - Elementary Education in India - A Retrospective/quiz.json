@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Elementary Education in India: A Retrospective (Course 501, Block 1)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In ancient Indian education, what was referred to as the 'Third Eye' of an individual?",
+      "options": [
+        "The Guru",
+        "Knowledge",
+        "Spirituality",
+        "Self-discipline"
+      ],
+      "correct_answer": "Knowledge",
+      "page_reference": 13,
+      "explanations": {
+        "Option 1": "Incorrect. The Guru was the father figure and head of the Gurukul, but not specifically the 'third eye'.",
+        "Option 2": "Correct. According to the sources, knowledge was considered the 'Third eye' giving insights into all affairs of life.",
+        "Option 3": "Incorrect. Spirituality was a goal of education, but the 'third eye' metaphor specifically applies to knowledge.",
+        "Option 4": "Incorrect. Self-discipline was a part of student life, but not the 'third eye'."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which system of education originated in ancient India where pupils (sons of teachers or senior students) acted as teachers?",
+      "options": [
+        "Gurukul System",
+        "Madhu-kari System",
+        "Sneh Monitorial System",
+        "Upanayan Sanskar"
+      ],
+      "correct_answer": "Sneh Monitorial System",
+      "page_reference": 24,
+      "explanations": {
+        "Option 1": "Incorrect. This refers to the boarding school environment where students lived with the Guru.",
+        "Option 2": "Incorrect. Madhu-kari refers to the practice of begging alms to support the Gurukul.",
+        "Option 3": "Correct. The Sneh monitorial system is a contribution of ancient India where senior or abler students were inducted as teachers.",
+        "Option 4": "Incorrect. This was the ritual performed at the start of a child's education."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Lord Macaulay's 'Downward Filtration Theory' primarily aimed to:",
+      "options": [
+        "Educate the entire mass of the Indian population directly.",
+        "Promote Sanskrit and Arabic as the primary media of instruction.",
+        "Create a class of individuals Indian in blood but English in tastes to act as interpreters.",
+        "Eliminate the influence of the British ruling class on education."
+      ],
+      "correct_answer": "Create a class of individuals Indian in blood but English in tastes to act as interpreters.",
+      "page_reference": 42,
+      "explanations": {
+        "Option 1": "Incorrect. Macaulay explicitly stated it was 'impossible' to attempt to educate the body of the people directly.",
+        "Option 2": "Incorrect. Macaulay rejected native languages in favor of English.",
+        "Option 3": "Correct. He aimed to form a class who would be interpreters between the British and the millions they governed.",
+        "Option 4": "Incorrect. The theory actually strengthened the cultural influence of the British ruling class."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which historical document is considered the 'Magna Carta of Education' in India?",
+      "options": [
+        "Macaulay’s Minute (1835)",
+        "Wood’s Dispatch (1854)",
+        "Hunter Commission Report (1882)",
+        "Sargent Report (1944)"
+      ],
+      "correct_answer": "Wood’s Dispatch (1854)",
+      "page_reference": 45,
+      "explanations": {
+        "Option 1": "Incorrect. While influential, it is not referred to as the Magna Carta.",
+        "Option 2": "Correct. Wood’s Dispatch of 1854 is considered the 'Magna Carta of Education' in India as it provided a comprehensive organizational structure.",
+        "Option 3": "Incorrect. This commission focused on implementing previous reforms and vocationalization.",
+        "Option 4": "Incorrect. This was a post-war plan for educational development."
+      }
+    },
+    {
+      "id": 5,
+      "question": "The first attempt to diversify school curriculum and introduce commercial/vocational streams was made by which commission?",
+      "options": [
+        "Universities Commission (1902)",
+        "Sadler Commission (1917)",
+        "Hunter Commission (1882)",
+        "Sapru Committee (1934)"
+      ],
+      "correct_answer": "Hunter Commission (1882)",
+      "page_reference": 51,
+      "explanations": {
+        "Option 1": "Incorrect. This commission focused on university administration and curriculum.",
+        "Option 2": "Incorrect. Sadler focused on Intermediate colleges and the +2 stage.",
+        "Option 3": "Correct. The Hunter Commission was the first attempt to diversify high school education into university-prep and vocational streams.",
+        "Option 4": "Incorrect. While it advocated for vocational education to solve unemployment, it was not the first attempt."
+      }
+    },
+    {
+      "id": 6,
+      "question": "The concept of 'Intermediate Colleges' or the seed of the modern '+2' stage was suggested by:",
+      "options": [
+        "Hartog Committee",
+        "Sadler Commission",
+        "Abbot-Wood Report",
+        "Wood’s Dispatch"
+      ],
+      "correct_answer": "Sadler Commission",
+      "page_reference": 53,
+      "explanations": {
+        "Option 1": "Incorrect. Hartog focused on the dominance of Matriculation and recommended diversified middle school curricula.",
+        "Option 2": "Correct. Sadler suggested the creation of Intermediate colleges for instruction in Arts, Science, and Medicine.",
+        "Option 3": "Incorrect. This report led to the creation of Polytechnics.",
+        "Option 4": "Incorrect. Wood's Dispatch focused on the overall system of graded schools."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which type of institution came into existence as a direct result of the Abbot-Wood Report of 1937?",
+      "options": [
+        "Intermediate Colleges",
+        "Universities",
+        "Polytechnics",
+        "Basic Schools"
+      ],
+      "correct_answer": "Polytechnics",
+      "page_reference": 56,
+      "explanations": {
+        "Option 1": "Incorrect. These were suggested by the Sadler Commission.",
+        "Option 2": "Incorrect. The first three were established following Wood's Dispatch.",
+        "Option 3": "Correct. As a result of the Abbot-Wood Report recommendations, a new type of technical institution called the Polytechnic came into existence.",
+        "Option 4": "Incorrect. These were part of the Wardha Scheme/Basic Education."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Under the Wardha Scheme (1937), what was the central 'integration method' used for instruction?",
+      "options": [
+        "Filtration",
+        "Samavay",
+        "Upanayan",
+        "Monastery training"
+      ],
+      "correct_answer": "Samavay",
+      "page_reference": 58,
+      "explanations": {
+        "Option 1": "Incorrect. This refers to Macaulay's Downward Filtration theory.",
+        "Option 2": "Correct. Education integrated with a handicraft was to be imparted through the 'Samavay' (integration) method.",
+        "Option 3": "Incorrect. This is an ancient religious ritual.",
+        "Option 4": "Incorrect. This relates to Buddhist centers of learning."
+      }
+    },
+    {
+      "id": 9,
+      "question": "The Sargent Report (1944) visualized universal, compulsory, and free primary education for which age group?",
+      "options": [
+        "3 to 6 years",
+        "6 to 11 years",
+        "6 to 14 years",
+        "11 to 14 years"
+      ],
+      "correct_answer": "6 to 14 years",
+      "page_reference": 60,
+      "explanations": {
+        "Option 1": "Incorrect. This was the age group for pre-primary education in the report.",
+        "Option 2": "Incorrect. This was specifically the 'junior basic' stage.",
+        "Option 3": "Correct. It visualized universal, free basic education for children between ages 6-11 (junior) and 11-14 (senior).",
+        "Option 4": "Incorrect. This was specifically the 'senior basic' stage."
+      }
+    },
+    {
+      "id": 10,
+      "question": "The University Grants Commission (UGC) was established following the recommendations of which commission?",
+      "options": [
+        "Mudaliar Commission",
+        "Kothari Commission",
+        "Radhakrishnan Commission",
+        "Yashpal Committee"
+      ],
+      "correct_answer": "Radhakrishnan Commission",
+      "page_reference": 78,
+      "explanations": {
+        "Option 1": "Incorrect. Mudaliar focused on secondary education.",
+        "Option 2": "Incorrect. Kothari provided a comprehensive national policy for all levels.",
+        "Option 3": "Correct. The Radhakrishnan Commission (1948-49) recommended the establishment of the UGC to coordinate higher education.",
+        "Option 4": "Incorrect. Yashpal focused on reducing curriculum load for school children."
+      }
+    },
+    {
+      "id": 11,
+      "question": "According to the Mudaliar Commission (1952), Primary Teacher Training Institutions should be under the control of:",
+      "options": [
+        "The Universities",
+        "A separate Board",
+        "NCERT",
+        "Local Village Committees"
+      ],
+      "correct_answer": "A separate Board",
+      "page_reference": 81,
+      "explanations": {
+        "Option 1": "Incorrect. Universities were meant to recognize and affiliate Secondary Teacher Training Institutions.",
+        "Option 2": "Correct. The commission recommended Primary Teacher Training Institutions be under the control of a separate board.",
+        "Option 3": "Incorrect. NCERT was established later in 1961.",
+        "Option 4": "Incorrect. While VECs exist, they were not the designated control body for teacher training according to this report."
+      }
+    },
+    {
+      "id": 12,
+      "question": "The 'Common School System' (CSS) was a primary recommendation of which commission to promote social integration?",
+      "options": [
+        "Radhakrishnan Commission",
+        "Mudaliar Commission",
+        "Durgabai Deshmukh Committee",
+        "Kothari Commission"
+      ],
+      "correct_answer": "Kothari Commission",
+      "page_reference": 88,
+      "explanations": {
+        "Option 1": "Incorrect. This commission dealt with university education.",
+        "Option 2": "Incorrect. This commission dealt with secondary education.",
+        "Option 3": "Incorrect. This focused on women's education.",
+        "Option 4": "Correct. The Kothari Commission advocated for a common school system of public education to promote national integration."
+      }
+    },
+    {
+      "id": 13,
+      "question": "The Yashpal Committee (1992) suggested that in primary classes, textbooks should be treated as:",
+      "options": [
+        "The personal property of the student.",
+        "School property to be left at the school.",
+        "Items to be purchased individually for home study.",
+        "Optional reference material only."
+      ],
+      "correct_answer": "School property to be left at the school.",
+      "page_reference": 94,
+      "explanations": {
+        "Option 1": "Incorrect. This increases the burden of carrying heavy bags.",
+        "Option 2": "Correct. The committee felt textbooks should be school property so children do not need to carry them daily.",
+        "Option 3": "Incorrect. The committee explicitly argued against the need for individual purchase and daily transport.",
+        "Option 4": "Incorrect. They were meant to be utilized but managed differently to reduce physical load."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which National Policy on Education introduced 'Operation Black Board' for Universal Elementary Education?",
+      "options": [
+        "NPE 1968",
+        "NPE 1986",
+        "NPE 1992",
+        "NCF 2005"
+      ],
+      "correct_answer": "NPE 1986",
+      "page_reference": 105,
+      "explanations": {
+        "Option 1": "Incorrect. 1968 focused on the initial radical restructuring and language formulas.",
+        "Option 2": "Correct. Operation Black Board was a salient feature of the National Policy of Education (1986).",
+        "Option 3": "Incorrect. 1992 was a modification/POA for the 1986 policy.",
+        "Option 4": "Incorrect. This is a curriculum framework, not a standalone policy."
+      }
+    },
+    {
+      "id": 15,
+      "question": "According to the NCF 2005, the approach to planning lessons should move away from 'Herbartian' plans toward:",
+      "options": [
+        "Rote memorization",
+        "Behaviorist conditioning",
+        "Constructivist pedagogy",
+        "Teacher-centric lectures"
+      ],
+      "correct_answer": "Constructivist pedagogy",
+      "page_reference": 117,
+      "explanations": {
+        "Option 1": "Incorrect. The NCF specifically aims to shift away from rote methods.",
+        "Option 2": "Incorrect. This is not the paradigm advocated by the framework.",
+        "Option 3": "Correct. NCF 2005 recommends planning activities that challenge children to think through constructivist pedagogy.",
+        "Option 4": "Incorrect. The framework emphasizes child-centered learning."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Article 21A, which makes education a fundamental right for children aged 6-14, was added by which amendment?",
+      "options": [
+        "42nd Amendment",
+        "73rd Amendment",
+        "86th Amendment",
+        "92nd Amendment"
+      ],
+      "correct_answer": "86th Amendment",
+      "page_reference": 150,
+      "explanations": {
+        "Option 1": "Incorrect. This was the 'Mini Constitution' but not the source of Article 21A.",
+        "Option 2": "Incorrect. This related to Panchayati Raj.",
+        "Option 3": "Correct. The 86th Amendment Act, 2002 incorporated Article 21A into the Constitution.",
+        "Option 4": "Incorrect. This related to language inclusions."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Under the RTE Act 2009, no child shall be denied admission to a school due to:",
+      "options": [
+        "Lack of age proof",
+        "Admission after the last date",
+        "Lack of previous school records",
+        "All of the above"
+      ],
+      "correct_answer": "All of the above",
+      "page_reference": 154,
+      "explanations": {
+        "Option 1": "Incorrect only because it is one of several protections; the Act explicitly forbids denial for lack of age proof.",
+        "Option 2": "Incorrect only because it is one of several; admission must be given even after the last date.",
+        "Option 3": "Incorrect only because it is one of several; previous records/transfer certificates should not block entry.",
+        "Option 4": "Correct. The RTE Act ensures that lack of age proof, late admission, and other barriers do not prevent a child's right to education."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Which national institution acts as the principal institutional agency for developing school curriculum and teacher training at the center?",
+      "options": [
+        "SCERT",
+        "DIET",
+        "NCERT",
+        "SIEMAT"
+      ],
+      "correct_answer": "NCERT",
+      "page_reference": 197,
+      "explanations": {
+        "Option 1": "Incorrect. This is the state-level counterpart.",
+        "Option 2": "Incorrect. This is a district-level agency.",
+        "Option 3": "Correct. NCERT (established 1961) is the national body advising the center on school education and curriculum.",
+        "Option 4": "Incorrect. This focuses on educational management and training at the state level."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the primary role of the District Institute of Education and Training (DIET)?",
+      "options": [
+        "Formulating national education policies.",
+        "Allocating funds to the State universities.",
+        "Planning, implementing, and monitoring pedagogical activities at the district level.",
+        "Acting as the representative of UNESCO in India."
+      ],
+      "correct_answer": "Planning, implementing, and monitoring pedagogical activities at the district level.",
+      "page_reference": 223,
+      "explanations": {
+        "Option 1": "Incorrect. This is done by the MHRD/NCERT/NPE.",
+        "Option 2": "Incorrect. This is largely the role of the UGC/State governments.",
+        "Option 3": "Correct. DIET is the agency for planning, implementing, and monitoring Pedagogical activities in the district.",
+        "Option 4": "Incorrect. DIET is a local government institution."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Cluster Resource Centers (CRCs) are established to break the isolation of which group of teachers?",
+      "options": [
+        "University Professors",
+        "Rural Elementary Teachers",
+        "Secondary School Principals",
+        "Private Vocational Instructors"
+      ],
+      "correct_answer": "Rural Elementary Teachers",
+      "page_reference": 236,
+      "explanations": {
+        "Option 1": "Incorrect. Universities have different support structures.",
+        "Option 2": "Correct. CRCs break the isolation of rural teachers and pupils by providing a sharing platform within a group of schools.",
+        "Option 3": "Incorrect. While they have BRCs, the cluster concept is highly emphasized for elementary rural settings in the text.",
+        "Option 4": "Incorrect. They primarily support the state-run elementary system."
+      }
+    }
+  ]
+}

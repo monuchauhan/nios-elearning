@@ -1,0 +1,347 @@
+{
+  "quiz_title": "Block 3: Language Learning in the Classroom Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which literary device identifies unlike objects with each other to underscore a unique similarity, such as calling a camel 'the ship of the desert'?",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Alliteration",
+        "Personification"
+      ],
+      "correct_answer": "Metaphor",
+      "page_reference": 8,
+      "explanations": {
+        "Simile": "Incorrect. Simile compares two things using connecting elements like 'as' or 'like' (e.g., 'as pretty as moon').",
+        "Metaphor": "Correct. A metaphor identifies unlike objects with each other to underscore a similarity without using 'like' or 'as'.",
+        "Alliteration": "Incorrect. Alliteration refers to the repetition of the same consonant or vowel sounds in a line.",
+        "Personification": "Incorrect. Personification involves representing nature or animals as human beings."
+      }
+    },
+    {
+      "id": 2,
+      "question": "According to the sources, why are reference books like dictionaries and encyclopedias NOT considered 'true literature'?",
+      "options": [
+        "Because they do not provide detailed information.",
+        "Because they lack aesthetic and universal dimensions.",
+        "Because they are written by subject specialists.",
+        "Because children find them too difficult to read."
+      ],
+      "correct_answer": "Because they lack aesthetic and universal dimensions.",
+      "page_reference": 21,
+      "explanations": {
+        "Option 1": "Incorrect. Informative literature provides very detailed and complete information.",
+        "Option 2": "Correct. True literature (Creative/Imaginative) must have social, aesthetic, and universal dimensions; informative texts lack the latter two.",
+        "Option 3": "Incorrect. The authorship does not determine the classification; the objective and dimension of the text do.",
+        "Option 4": "Incorrect. While some may be difficult, the primary reason is their lack of aesthetic qualities."
+      }
+    },
+    {
+      "id": 4,
+      "question": "In the context of children's literature, which of the following is a criterion for selecting a text for the classroom?",
+      "options": [
+        "The protagonist must always be a child.",
+        "The text should be a literal translation from a foreign language.",
+        "The ideas and language must be easily accessible to the child.",
+        "The story must avoid complex thoughts or emotions."
+      ],
+      "correct_answer": "The ideas and language must be easily accessible to the child.",
+      "page_reference": 25,
+      "explanations": {
+        "Option 1": "Incorrect. The source notes that even if the hero is a child, the ideas might be too complex for a child to understand (e.g., 'Idgah').",
+        "Option 2": "Incorrect. Poetry, a major form of literature, is cited as being the most difficult to translate.",
+        "Option 3": "Correct. Language and ideas need to be at a level that is accessible to the age of the children in the class.",
+        "Option 4": "Incorrect. Literature can and should challenge imagination and develop sensitivity, but it must remain accessible."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which form of literature is written specifically on the basis of memory and requires the author to have been personally associated with the subject?",
+      "options": [
+        "Autobiography",
+        "Biography",
+        "Memoir",
+        "Travelogue"
+      ],
+      "correct_answer": "Memoir",
+      "page_reference": 35,
+      "explanations": {
+        "Autobiography": "Incorrect. An autobiography is a person writing about events from their own life as the protagonist.",
+        "Biography": "Incorrect. A biography is a writer writing about another person.",
+        "Memoir": "Correct. A memoir is based on memory and requires the writer to have been personally associated with the incident or person described.",
+        "Travelogue": "Incorrect. A travelogue describes incidents and scenes encountered during travels."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Historically, which language teaching method was based on rote-learning noun/verb paradigms and translating texts between L1 and the target language?",
+      "options": [
+        "Need-based model",
+        "Cognitive language teaching",
+        "Grammar translation method",
+        "Personality development format"
+      ],
+      "correct_answer": "Grammar translation method",
+      "page_reference": 42,
+      "explanations": {
+        "Option 1": "Incorrect. This model replaced literature teaching between 1940-1960 focus on utility.",
+        "Option 2": "Incorrect. This method assumes children have innate abilities and should be helped through challenging texts.",
+        "Option 3": "Correct. The grammar translation method relied on rote paradigms and translation between the first and target languages.",
+        "Option 4": "Incorrect. This is a format for using literature in a class, not a historical pedagogical method."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Stephen Krashen's distinction between 'acquisition' and 'learning' implies that 'acquisition' refers to:",
+      "options": [
+        "Formal tutoring in a school setting.",
+        "Internalizing rules in natural settings like home or the street.",
+        "Explaining the explicit rules of grammar using a specimen.",
+        "Memorizing a list of words from a glossary."
+      ],
+      "correct_answer": "Internalizing rules in natural settings like home or the street.",
+      "page_reference": 48,
+      "explanations": {
+        "Option 1": "Incorrect. This describes 'learning'.",
+        "Option 2": "Correct. Acquisition refers to the automatic process of learning languages in natural, untutored settings.",
+        "Option 3": "Incorrect. This is a feature of formal school-based 'learning'.",
+        "Option 4": "Incorrect. This is a characteristic of 'tutored' settings."
+      }
+    },
+    {
+      "id": 8,
+      "question": "What is the primary difference between a 'lesson plan' and a general 'teaching plan' as described in Unit 8?",
+      "options": [
+        "There is no difference; they are synonymous.",
+        "Lesson plans are only used by teachers with weak subject knowledge.",
+        "A lesson plan relates the text to the day-to-day living context of the children.",
+        "A teaching plan focuses on the child while a lesson plan focuses on the syllabus."
+      ],
+      "correct_answer": "A lesson plan relates the text to the day-to-day living context of the children.",
+      "page_reference": 81,
+      "explanations": {
+        "Option 1": "Incorrect. The unit emphasizes the distinction between simple teaching and structured lesson planning.",
+        "Option 2": "Incorrect. Even teachers with strong subject holds make mental session plans; formal planning is for effective upbringing of children.",
+        "Option 3": "Correct. Planning must relate the context of day-to-day living to the lesson to make learning effective.",
+        "Option 4": "Incorrect. The sources argue for child-centric lesson plans."
+      }
+    },
+    {
+      "id": 9,
+      "question": "According to the sources, why is it acceptable for a child to use their home language (like Bhojpuri) in a school classroom?",
+      "options": [
+        "Because it is easier for the teacher to grade.",
+        "Because the child should be allowed to use languages they know in the early stages.",
+        "Because it helps children avoid learning the standard medium of instruction.",
+        "Because modern textbooks are written in local dialects only."
+      ],
+      "correct_answer": "Because the child should be allowed to use languages they know in the early stages.",
+      "page_reference": 95,
+      "explanations": {
+        "Option 1": "Incorrect. Grading is not the primary reason cited.",
+        "Option 2": "Correct. The text explicitly states that children must be allowed to use their home languages in the early stages to facilitate growth.",
+        "Option 3": "Incorrect. The goal is to move progressively toward the standard language, not avoid it.",
+        "Option 4": "Incorrect. Textbooks are often in a standard language (like Hindi), but the pedagogy allows for L1 use."
+      }
+    },
+    {
+      "id": 10,
+      "question": "The concept of 'Error Analysis' in Unit 8 suggests that teachers should treat mistakes as:",
+      "options": [
+        "Pathologies to be eradicated immediately.",
+        "Signs of ignorance that require punishment.",
+        "Opportunities to understand why the child made the mistake.",
+        "Irrelevant as long as the syllabus is completed."
+      ],
+      "correct_answer": "Opportunities to understand why the child made the mistake.",
+      "page_reference": 104,
+      "explanations": {
+        "Option 1": "Incorrect. The source states 'Errors are not pathologies to be eradicated.'",
+        "Option 2": "Incorrect. Teachers should not simply strike out answers with red ink.",
+        "Option 3": "Correct. Teachers should analyze why the child made the mistake and plan to remove the error from the knowledge base.",
+        "Option 4": "Incorrect. Completion of the syllabus without specific learning objectives being realized is considered useless."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In Model Lesson One (Tulika's Class), why did Tulika ask children to predict the end of the story?",
+      "options": [
+        "To save time because she hadn't finished reading the story.",
+        "To check if the children had already read the book at home.",
+        "To develop prediction skills and engage their imagination.",
+        "To allow the teacher to decide the easiest ending to teach."
+      ],
+      "correct_answer": "To develop prediction skills and engage their imagination.",
+      "page_reference": 112,
+      "explanations": {
+        "Option 1": "Incorrect. It was a planned part of her day-wise teaching process.",
+        "Option 2": "Incorrect. The context states children there have little exposure to books.",
+        "Option 3": "Correct. Her objectives included letting children predict the end to develop linguistic and cognitive engagement.",
+        "Option 4": "Incorrect. The activity is for student development, not teacher convenience."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is considered a 'Teaching Aid' rather than a 'Teaching-Learning Material' (TLM) based on the user focus?",
+      "options": [
+        "A language card that children use to build their own stories.",
+        "An expensive thermocol model that only the teacher can touch.",
+        "Pebbles collected by children to practice counting.",
+        "A worksheet that children use to explore different word categories."
+      ],
+      "correct_answer": "An expensive thermocol model that only the teacher can touch.",
+      "page_reference": 200,
+      "explanations": {
+        "Option 1": "Incorrect. This is a TLM because children have access to it and use it to think.",
+        "Option 2": "Correct. If children are to stay away from it for fear of damage, it is a teaching aid used only by the teacher.",
+        "Option 3": "Incorrect. This is a TLM because children interact with and use it to construct knowledge.",
+        "Option 4": "Incorrect. Worksheets are for the learner's use."
+      }
+    },
+    {
+      "id": 13,
+      "question": "What quality makes educational material 'good' for a primary classroom according to Unit 9?",
+      "options": [
+        "It must be expensive and electronic to ensure modern standards.",
+        "It should be permanent and kept in the Principal's office for display.",
+        "It should be safe for children to explore and potentially break without fear.",
+        "It should be complex enough that only the teacher can explain its use."
+      ],
+      "correct_answer": "It should be safe for children to explore and potentially break without fear.",
+      "page_reference": 210,
+      "explanations": {
+        "Option 1": "Incorrect. The 'illusion' is that expensive/electronic material is better; the sources argue for interactive materials.",
+        "Option 2": "Incorrect. Material for display in the office does not help the teaching-learning process.",
+        "Option 3": "Correct. Materials should allow children to manipulate and experiment without fear of spoiling them.",
+        "Option 4": "Incorrect. Materials should help children make their own logical formulations."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Unit 9 provides an example of using a 'cubical dice' for many purposes. What mathematical concept can be taught by placing the cube repeatedly on paper?",
+      "options": [
+        "Multiplication tables",
+        "Area",
+        "Percentage",
+        "Division"
+      ],
+      "correct_answer": "Area",
+      "page_reference": 218,
+      "explanations": {
+        "Option 1": "Incorrect. Not mentioned in the specific cube-on-paper activity context.",
+        "Option 2": "Correct. Seeing how many cubes cover a paper gives an idea of the area of the paper.",
+        "Option 3": "Incorrect. This is a more abstract concept not linked to this activity.",
+        "Option 4": "Incorrect. While dice can be used for math, this specific activity is for area."
+      }
+    },
+    {
+      "id": 15,
+      "question": "In the categorisation of language materials, which of the following is considered 'Oral Material'?",
+      "options": [
+        "Workbooks",
+        "Library newspapers",
+        "Tape recorder recordings",
+        "Alphabet cards"
+      ],
+      "correct_answer": "Tape recorder recordings",
+      "page_reference": 229,
+      "explanations": {
+        "Option 1": "Incorrect. This is written material.",
+        "Option 2": "Incorrect. This is written material.",
+        "Option 3": "Correct. Oral materials reach children via devices like radio, tape recorders, or CD players.",
+        "Option 4": "Incorrect. These are written/visual materials."
+      }
+    },
+    {
+      "id": 16,
+      "question": "What does the 'Present Process of Assessment' typically lead to in children, as illustrated by the stories of Mayank and Neelam?",
+      "options": [
+        "Enhanced creativity and independence.",
+        "Tension, insecurity, and feelings of being insulted.",
+        "A better understanding of the gaps in teacher pedagogy.",
+        "Accurate measurement of logical reasoning skills."
+      ],
+      "correct_answer": "Tension, insecurity, and feelings of being insulted.",
+      "page_reference": 261,
+      "explanations": {
+        "Option 1": "Incorrect. The current system is criticized for destroying imagination.",
+        "Option 2": "Correct. The sources state that conventional assessment leads to worry, tension, and a feeling of being insulted.",
+        "Option 3": "Incorrect. That is what assessment 'should' do, but not what the 'present' process does.",
+        "Option 4": "Incorrect. It mostly tests memory and reproduction of text."
+      }
+    },
+    {
+      "id": 17,
+      "question": "According to Unit 10, when should 'accuracy' and 'correctness' in language become a major focus in assessment?",
+      "options": [
+        "From the first day of Class 1.",
+        "Throughout the primary stage.",
+        "After the primary stage.",
+        "Only during university education."
+      ],
+      "correct_answer": "After the primary stage.",
+      "page_reference": 273,
+      "explanations": {
+        "Option 1": "Incorrect. Early focus on errors produces fear.",
+        "Option 2": "Incorrect. At the primary stage, fluency takes precedence over accuracy.",
+        "Option 3": "Correct. The text states accuracy can come later, and correctness and fluency are balanced after the primary stage.",
+        "Option 4": "Incorrect. It starts after primary, not university."
+      }
+    },
+    {
+      "id": 18,
+      "question": "In the modernized process of 'Dictation' for language learning, what is the role of the first step?",
+      "options": [
+        "Children write every word the teacher says as fast as possible.",
+        "Children only listen to the text to understand its content and mental preparation.",
+        "Children identify and correct their peers' mistakes.",
+        "Children memorize the paragraph before writing it."
+      ],
+      "correct_answer": "Children only listen to the text to understand its content and mental preparation.",
+      "page_reference": 288,
+      "explanations": {
+        "Option 1": "Incorrect. That occurs in later steps.",
+        "Option 2": "Correct. In Step 1, learners must only listen rather than write to prepare mentally.",
+        "Option 3": "Incorrect. Modern dictation encourages learners to identify their own mistakes in Step 3.",
+        "Option 4": "Incorrect. The goal is listening comprehension, not rote memory."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is a 'Cloze Test' primarily used for in language assessment?",
+      "options": [
+        "To test if a child can draw pictures based on a story.",
+        "To measure levels of proficiency by asking children to fill deleted words in a text.",
+        "To see how many poems a child can recite from memory.",
+        "To assess if the teacher has completed the syllabus on time."
+      ],
+      "correct_answer": "To measure levels of proficiency by asking children to fill deleted words in a text.",
+      "page_reference": 293,
+      "explanations": {
+        "Option 1": "Incorrect. That is an 'Expression' activity.",
+        "Option 2": "Correct. A cloze test involves removing words at regular intervals and having children fill in the blanks using context.",
+        "Option 3": "Incorrect. This measures memory, while cloze tests measure proficiency and comprehension.",
+        "Option 4": "Incorrect. Cloze tests are student-focused assessment tools."
+      }
+    },
+    {
+      "id": 20,
+      "question": "When assessing a script written for a drama, which of the following is a main point of assessment?",
+      "options": [
+        "Whether the student used exactly the same words as the original text.",
+        "Whether the handwriting is perfect and cursive.",
+        "Whether the dialogues are simple, crisp, and interesting.",
+        "Whether the student included at least 10 characters."
+      ],
+      "correct_answer": "Whether the dialogues are simple, crisp, and interesting.",
+      "page_reference": 304,
+      "explanations": {
+        "Option 1": "Incorrect. Students are encouraged to use words other than the original text.",
+        "Option 2": "Incorrect. Handwriting is not the primary point for drama assessment.",
+        "Option 3": "Correct. Main points include clear explanation of ideas and simple, crisp dialogues.",
+        "Option 4": "Incorrect. Quantity of characters is not a measure of language ability."
+      }
+    }
+  ]
+}

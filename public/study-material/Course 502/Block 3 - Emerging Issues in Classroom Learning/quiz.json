@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Block 3: Emerging Issues in Classroom Learning - Pedagogic Processes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the context of integrated learning, what is the defining characteristic of 'Interdisciplinary Integration'?",
+      "options": [
+        "Knowledge and skills of the same subject are connected together.",
+        "Subject area outcomes remain distinct but are connected through a common theme.",
+        "Interdependent or common knowledge and skills from more than one subject are integrated.",
+        "Students' day-to-day experiences are connected to subjects through project-based learning."
+      ],
+      "correct_answer": "Interdependent or common knowledge and skills from more than one subject are integrated.",
+      "page_reference": 7,
+      "explanations": {
+        "Option 1": "Incorrect. This describes 'Intra-disciplinary Integration' or integration within a single subject area.",
+        "Option 2": "Incorrect. This describes 'Multidisciplinary Integration' where subject boundaries remain distinct.",
+        "Option 3": "Correct. Interdisciplinary integration involves common concepts and skills socially constructed across disciplines.",
+        "Option 4": "Incorrect. This describes 'Trans-disciplinary Integration' which focuses on real-life contexts and student questions."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is considered a 'Situating Tool' in Information Communication Technology (ICT)?",
+      "options": [
+        "Multimedia encyclopedias and the World Wide Web.",
+        "Web authoring applications and Mind tools.",
+        "Simulation, games, and virtual reality.",
+        "Electronic bulletin boards and teleconferencing."
+      ],
+      "correct_answer": "Simulation, games, and virtual reality.",
+      "page_reference": 64,
+      "explanations": {
+        "Option 1": "Incorrect. These are 'Informative Tools' used for collecting data.",
+        "Option 2": "Incorrect. These are 'Constructive Tools' used for generating and manipulating knowledge.",
+        "Option 3": "Correct. Situating tools place students in an environment where they get 'nearly direct experience' through models of real situations.",
+        "Option 4": "Incorrect. These are 'Communicative Tools' used for interaction beyond physical barriers."
+      }
+    },
+    {
+      "id": 3,
+      "question": "According to the sources, why is educating a girl child considered to have a higher return in terms of economic growth?",
+      "options": [
+        "Educated girls are more likely to work longer hours than educated men.",
+        "There is a direct association between higher levels of girls' education and lower fertility rates.",
+        "Girls generally outperform boys in mathematical reasoning in primary schools.",
+        "Educated girls are the only ones who can maintain a clean home environment."
+      ],
+      "correct_answer": "There is a direct association between higher levels of girls' education and lower fertility rates.",
+      "page_reference": 31,
+      "explanations": {
+        "Option 1": "Incorrect. While education influences the amount of time women work, the source links economic growth specifically to fertility rates.",
+        "Option 2": "Correct. Research shows lower fertility rates, linked to girls' education, lead to higher economic growth, whereas boys' education has no such direct link.",
+        "Option 3": "Incorrect. The sources state that myths about boys being better at math are not confirmed by research.",
+        "Option 4": "Incorrect. While educated girls can improve home environments, this is not the specific reason cited for macro-economic growth."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What is the primary function of the 'Control Unit' (CU) in a computer system?",
+      "options": [
+        "Performing addition, subtraction, and logical comparisons.",
+        "Storing data and instructions permanently for future use.",
+        "Acting as a supervisor to determine the sequence of program execution.",
+        "Converting human-readable data into electronic signals."
+      ],
+      "correct_answer": "Acting as a supervisor to determine the sequence of program execution.",
+      "page_reference": 79,
+      "explanations": {
+        "Option 1": "Incorrect. This is the function of the Arithmetic Logical Unit (ALU).",
+        "Option 2": "Incorrect. This is the function of the Storage Unit or Memory.",
+        "Option 3": "Correct. The CU coordinates all operations, interprets instructions, and manages the flow of data.",
+        "Option 4": "Incorrect. This is generally the function of Input Devices like the keyboard."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Under the Sarva Shiksha Abhiyan (SSA), the NPEGEL scheme is specifically intended for:",
+      "options": [
+        "Boys in urban slums with low literacy rates.",
+        "Children with special needs (CWSN) in tribal areas.",
+        "The 'most difficult to reach' girls in educationally backward blocks.",
+        "Minority groups requiring religious education modernization."
+      ],
+      "correct_answer": "The 'most difficult to reach' girls in educationally backward blocks.",
+      "page_reference": 35,
+      "explanations": {
+        "Option 1": "Incorrect. NPEGEL is a gender-distinct component for girls.",
+        "Option 2": "Incorrect. While SSA covers CWSN, NPEGEL is specifically for girls' elementary education.",
+        "Option 3": "Correct. It provides additional support in blocks where rural female literacy is below the national average.",
+        "Option 4": "Incorrect. This refers to different minority education initiatives, not NPEGEL."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which CAL (Computer Assisted Learning) mode is best suited for life-like situations where risks can be taken without real-world consequences?",
+      "options": [
+        "Drill and Practice Session.",
+        "Tutorial Mode.",
+        "Simulation.",
+        "Data Analysis."
+      ],
+      "correct_answer": "Simulation.",
+      "page_reference": 89,
+      "explanations": {
+        "Option 1": "Incorrect. This is a question-answer format for memorizing facts.",
+        "Option 2": "Incorrect. This involves small segments of info followed by questions to transmit knowledge.",
+        "Option 3": "Correct. Simulations present imitations of processes (like water supply systems) that are too dangerous or costly to investigate in reality.",
+        "Option 4": "Incorrect. This is used for interpreting experimental data in numerical or graphical form."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What identifying feature is typical of a child with 'Learning Disabilities' according to the sources?",
+      "options": [
+        "Frequent reddening of eyes and holding books close to the face.",
+        "Deformity in limbs and difficulty in sitting or moving objects.",
+        "Poor academic achievement and too much reliance on concrete objects.",
+        "Frequent requests for teachers to repeat instructions and watching faces carefully."
+      ],
+      "correct_answer": "Poor academic achievement and too much reliance on concrete objects.",
+      "page_reference": 42,
+      "explanations": {
+        "Option 1": "Incorrect. These are identifying features of Visually Impaired children.",
+        "Option 2": "Incorrect. These are identifying features of Loco-motor Impaired children.",
+        "Option 3": "Correct. Learning disabled children often display poor self-confidence and difficulty understanding abstract concepts.",
+        "Option 4": "Incorrect. These are identifying features of Hearing Impaired children."
+      }
+    },
+    {
+      "id": 8,
+      "question": "In the systematic model for ICT integration, what does the 'ABCD' model for learning objectives stand for?",
+      "options": [
+        "Analysis, Behavior, Context, Degree.",
+        "Audience, Behavior, Condition, Degree.",
+        "Assessment, Background, Content, Delivery.",
+        "Access, Benchmarking, Collaboration, Development."
+      ],
+      "correct_answer": "Audience, Behavior, Condition, Degree.",
+      "page_reference": 69,
+      "explanations": {
+        "Option 1": "Incorrect. 'A' stands for Audience and 'C' stands for Condition.",
+        "Option 2": "Correct. A: Audience (who); B: Behavior (observable action); C: Condition (under what circumstances); D: Degree (accuracy level).",
+        "Option 3": "Incorrect. This does not match the model defined in the text.",
+        "Option 4": "Incorrect. These are general terms but not part of the ABCD objective model."
+      }
+    },
+    {
+      "id": 9,
+      "question": "According to the sources, why is 'Mother Tongue' (Home Language) crucial for beginners in school?",
+      "options": [
+        "It is the only language that should ever be used in tribal schools.",
+        "Concepts are best understood and literacy skills are more efficiently transferred to a second language.",
+        "Teachers are legally prohibited from using any other language in class I.",
+        "It prevents students from ever needing to learn the standard state language."
+      ],
+      "correct_answer": "Concepts are best understood and literacy skills are more efficiently transferred to a second language.",
+      "page_reference": 48,
+      "explanations": {
+        "Option 1": "Incorrect. The source advocates for Mother Tongue as a starting point, not the only language forever.",
+        "Option 2": "Correct. Solid foundations in MT develop stronger literacy in other languages and allow for efficient skill transfer.",
+        "Option 3": "Incorrect. While recommended, the text highlights the problem that standard language is often used incorrectly as the medium.",
+        "Option 4": "Incorrect. Multilingual education aims for a transition to second and national languages in a phased manner."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which type of computer is described as the fastest, most expensive, and used for tasks like weather forecasting?",
+      "options": [
+        "Microcomputer.",
+        "Mini Computer.",
+        "Mainframe.",
+        "Supercomputer."
+      ],
+      "correct_answer": "Supercomputer.",
+      "page_reference": 83,
+      "explanations": {
+        "Option 1": "Incorrect. This is the lowest end of the range, like a personal PC.",
+        "Option 2": "Incorrect. This supports multiple users and large volumes of data for organizations.",
+        "Option 3": "Incorrect. Used for centralized databases in banking and insurance.",
+        "Option 4": "Correct. Supercomputers use multiprocessing to interconnect hundreds of microprocessors for complex scientific tasks."
+      }
+    },
+    {
+      "id": 11,
+      "question": "What is the primary difference between a 'Non-Integrated' and 'Integrated' textbook?",
+      "options": [
+        "Non-integrated books use pictures; integrated books do not.",
+        "Non-integrated is based on subject-specific content; integrated is based on real-life themes.",
+        "Integrated books are for teachers only; non-integrated are for students.",
+        "There is no difference; they are synonymous."
+      ],
+      "correct_answer": "Non-integrated is based on subject-specific content; integrated is based on real-life themes.",
+      "page_reference": 20,
+      "explanations": {
+        "Option 1": "Incorrect. Integrated textbooks are 'profusely illustrated' with pictures and diagrams.",
+        "Option 2": "Correct. Non-integrated books follow logical subject order, while integrated books center around familiar themes like 'Market' or 'Water'.",
+        "Option 3": "Incorrect. Integrated textbooks are primarily intended for facilitating learning for the students.",
+        "Option 4": "Incorrect. The text explicitly contrasts the two styles."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which stage of ICT integration involves 'transforming' the learning situation through specialized tools?",
+      "options": [
+        "First Stage (Emerging).",
+        "Second Stage (Applying).",
+        "Third Stage (Infusing).",
+        "Fourth Stage (Transforming)."
+      ],
+      "correct_answer": "Fourth Stage (Transforming).",
+      "page_reference": 69,
+      "explanations": {
+        "Option 1": "Incorrect. This stage involves discovering basic functions and ICT literacy.",
+        "Option 2": "Incorrect. This involves learning how to use tools in different disciplines.",
+        "Option 3": "Incorrect. This involves recognizing when to use specific tools to achieve particular project goals.",
+        "Option 4": "Correct. This is a new way of approaching teaching where the learning situation itself is transformed."
+      }
+    },
+    {
+      "id": 13,
+      "question": "In a 'Multi-lingual Classroom' (MLE), what is a 'Theme Web' used for?",
+      "options": [
+        "To track the internet browsing history of students.",
+        "To map integrated concepts and socio-cultural knowledge under a single theme.",
+        "To identify the racial background of every student in the class.",
+        "To create a spider-diagram of all the hardware components of a computer."
+      ],
+      "correct_answer": "To map integrated concepts and socio-cultural knowledge under a single theme.",
+      "page_reference": 55,
+      "explanations": {
+        "Option 1": "Incorrect. This relates to web usage, not the MLE pedagogical tool.",
+        "Option 2": "Correct. A theme web (e.g., on 'Water') maps Geography, Science, and Language concepts alongside folk songs or local knowledge.",
+        "Option 3": "Incorrect. While MLE recognizes diversity, the 'web' is a curriculum tool, not a demographic list.",
+        "Option 4": "Incorrect. This is unrelated to the MLE pedagogical strategy."
+      }
+    },
+    {
+      "id": 14,
+      "question": "According to the sources, which component of ICT refers specifically to the 'hardware and software of information collection'?",
+      "options": [
+        "Information and Communication Infrastructure (ICI).",
+        "Information Technology (IT).",
+        "Communication Technology (CT).",
+        "Multimedia Authoring."
+      ],
+      "correct_answer": "Information Technology (IT).",
+      "page_reference": 62,
+      "explanations": {
+        "Option 1": "Incorrect. ICI refers to physical telecommunication systems like networks and satellite systems.",
+        "Option 2": "Correct. IT refers to the hardware and software for storage, processing, and presentation.",
+        "Option 3": "Incorrect. CT refers to dissemination tools like email, chatting, and telephones.",
+        "Option 4": "Incorrect. This is a specific tool, not a broad component of ICT definition."
+      }
+    },
+    {
+      "id": 15,
+      "question": "What is 'Total Physical Response' (TPR) primarily used for in a classroom?",
+      "options": [
+        "Assessing the physical fitness of tribal students.",
+        "A 'listen and do' activity to develop second language through physical commands.",
+        "Punishing students who do not follow classroom rules.",
+        "Teaching the internal biology of the human body."
+      ],
+      "correct_answer": "A 'listen and do' activity to develop second language through physical commands.",
+      "page_reference": 57,
+      "explanations": {
+        "Option 1": "Incorrect. It is a language acquisition strategy, not a fitness test.",
+        "Option 2": "Correct. TPR uses commands like 'Stand up' or 'Touch your nose' to help students acquire meaning in a second language through action.",
+        "Option 3": "Incorrect. It is a pedagogical tool for learning, not discipline.",
+        "Option 4": "Incorrect. While it uses the body, the goal is linguistic transition, not anatomical education."
+      }
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between 'The Internet' and 'The Web' according to Unit 12?",
+      "options": [
+        "The Internet is a software; The Web is the hardware.",
+        "The Internet is a decentralized network of computers; The Web is a collection of documents accessed via the network.",
+        "They are exactly the same thing and used interchangeably.",
+        "The Internet only contains text; The Web contains only videos."
+      ],
+      "correct_answer": "The Internet is a decentralized network of computers; The Web is a collection of documents accessed via the network.",
+      "page_reference": 86,
+      "explanations": {
+        "Option 1": "Incorrect. Both involve software and hardware components, but the distinction is network vs. content.",
+        "Option 2": "Correct. The internet is the infrastructure; the web comprises the content/documents resided on servers.",
+        "Option 3": "Incorrect. The text states they are closely related but not exactly the same.",
+        "Option 4": "Incorrect. Both can handle various media formats."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is an example of 'Trans-disciplinary Integration'?",
+      "options": [
+        "Linking 'Family' and 'Neighborhood' in a class II EVS lesson.",
+        "Combining reading and writing skills through storytelling.",
+        "Project-based learning where students tackle a local problem using disciplinary skills.",
+        "A theme like 'Water' connecting Science and History."
+      ],
+      "correct_answer": "Project-based learning where students tackle a local problem using disciplinary skills.",
+      "page_reference": 8,
+      "explanations": {
+        "Option 1": "Incorrect. This is Intradisciplinary (within subject area).",
+        "Option 2": "Incorrect. This is also Intradisciplinary.",
+        "Option 3": "Correct. Trans-disciplinary focuses on real-life contexts and student-led questions often through projects.",
+        "Option 4": "Incorrect. This is Multidisciplinary."
+      }
+    },
+    {
+      "id": 18,
+      "question": "What are the three components of the 'Systematic Model' for ICT integration plan?",
+      "options": [
+        "Apathy, Bias, Comparison.",
+        "Problem Statement, Technology Required, Rationale.",
+        "Hardware, Software, Infrastructure.",
+        "Emerging, Applying, Transforming."
+      ],
+      "correct_answer": "Problem Statement, Technology Required, Rationale.",
+      "page_reference": 70,
+      "explanations": {
+        "Option 1": "Incorrect. These are negative social factors discussed in Unit 10.",
+        "Option 2": "Correct. The model starts with a Problem Statement, followed by Technology Required, Rationale, and Strategies.",
+        "Option 3": "Incorrect. These are components of the computer itself.",
+        "Option 4": "Incorrect. These are the stages of ICT development for teachers/students."
+      }
+    },
+    {
+      "id": 19,
+      "question": "How does the source suggest dealing with the 'mismatch' between home and school environments for tribal children?",
+      "options": [
+        "Replacing tribal culture with state-standardized culture immediately.",
+        "Ignoring the home language to ensure students learn the state language faster.",
+        "Using socio-cultural components and folk materials in the teaching-learning process.",
+        "Enrolling all tribal children in residential schools far from their families."
+      ],
+      "correct_answer": "Using socio-cultural components and folk materials in the teaching-learning process.",
+      "page_reference": 50,
+      "explanations": {
+        "Option 1": "Incorrect. Mainstreaming should not come at the cost of tribal cultural identity.",
+        "Option 2": "Incorrect. Less or no use of mother tongue is cited as a major cause of failure.",
+        "Option 3": "Correct. Integrating local knowledge, folk stories, and songs makes the environment meaningful and pleasurable for tribal children.",
+        "Option 4": "Incorrect. While residential schools are a strategy for access, the pedagogic solution centers on cultural integration."
+      }
+    },
+    {
+      "id": 20,
+      "question": "In the 'Reflective Culture' of assessment, the primary emphasis is on:",
+      "options": [
+        "Choice-response formats like Multiple-Choice and True/False.",
+        "Mastery of intended concepts through drill and practice.",
+        "Self-assessment and peer-assessment reflecting both process and product.",
+        "Standardized testing conducted only at the end of the year."
+      ],
+      "correct_answer": "Self-assessment and peer-assessment reflecting both process and product.",
+      "page_reference": 72,
+      "explanations": {
+        "Option 1": "Incorrect. This belongs to the 'Testing Culture'.",
+        "Option 2": "Incorrect. This is also characteristic of 'Testing Culture'.",
+        "Option 3": "Correct. Reflective culture focuses on cognitive, social, and meta-cognitive competencies through active participation.",
+        "Option 4": "Incorrect. Testing culture is time-restricted; reflective culture offers flexibility."
+      }
+    }
+  ]
+}

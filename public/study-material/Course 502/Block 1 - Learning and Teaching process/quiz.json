@@ -1,0 +1,545 @@
+{
+  "quiz_title": "Comprehensive Pedagogy Quiz: Learning and Teaching Processes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the text, what fundamentally distinguishes observational learning from simple imitation?",
+      "options": [
+        "Imitation requires more cognitive rehearsal than observational learning.",
+        "Observational learning is the exact reproduction of a model's behavior.",
+        "Observational learning involves thinking, judging, and understanding potential consequences.",
+        "Imitation is only used by children to learn language."
+      ],
+      "correct_answer": "Observational learning involves thinking, judging, and understanding potential consequences.",
+      "page_reference": 11,
+      "explanations": {
+        "Imitation requires more cognitive rehearsal than observational learning.": "Incorrect. The source states that observational learning is more complex because it requires cognitive representation, storage, and mental rehearsal.",
+        "Observational learning is the exact reproduction of a model's behavior.": "Incorrect. The text explicitly says learning through observation is NOT the exact reproduction of a model’s behavior.",
+        "Observational learning involves thinking, judging, and understanding potential consequences.": "Correct. The text defines observational learning as a process where we think and judge the consequences of our actions rather than just copying.",
+        "Imitation is only used by children to learn language.": "Incorrect. While it is a key method for children to learn language, imitation is also used for cultural norms and behaviors throughout life."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which factor describes developmental changes that are relatively independent of environmental influence and are closely related to heredity?",
+      "options": [
+        "Learning",
+        "Maturation",
+        "Motivation",
+        "Socialization"
+      ],
+      "correct_answer": "Maturation",
+      "page_reference": 5,
+      "explanations": {
+        "Learning": "Incorrect. Learning is shaped primarily by an individual's interaction with the immediate environment.",
+        "Maturation": "Correct. Maturation describes changes that are relatively independent of environmental influence and assumed to be closely related to heredity.",
+        "Motivation": "Incorrect. Motivation is an internal or external force that sustains and directs activity toward a goal.",
+        "Socialization": "Incorrect. Socialization is heavily dependent on environment and interaction, whereas maturation is biological."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In a 'teacher-dominated' classroom, what is the primary role of the students?",
+      "options": [
+        "To be co-constructors of knowledge.",
+        "To be passive and obedient to the teacher's instructions.",
+        "To actively plan classroom activities.",
+        "To use trial and error to discover concepts."
+      ],
+      "correct_answer": "To be passive and obedient to the teacher's instructions.",
+      "page_reference": 3,
+      "explanations": {
+        "To be co-constructors of knowledge.": "Incorrect. This describes the Constructivist Approach, where students build their own knowledge.",
+        "To be passive and obedient to the teacher's instructions.": "Correct. In traditional teacher-dominated settings, the teacher plans everything and students are expected to be passive and obedient.",
+        "To actively plan classroom activities.": "Incorrect. This is a hallmark of Learner-Centered or Activity-Based approaches.",
+        "To use trial and error to discover concepts.": "Incorrect. Trial and Error is a specific learning process, but teacher-dominated classrooms focus on transmitting fixed facts rather than discovery."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which type of motivation results in high-quality learning because it is driven by interest in the task itself?",
+      "options": [
+        "Extrinsic Motivation",
+        "Intrinsic Motivation",
+        "Vicarious Reinforcement",
+        "Social Reinforcement"
+      ],
+      "correct_answer": "Intrinsic Motivation",
+      "page_reference": 7,
+      "explanations": {
+        "Extrinsic Motivation": "Incorrect. This involves performing an activity to attain an external outcome, such as grades or avoiding punishment.",
+        "Intrinsic Motivation": "Correct. This motivation exists within the individual and is based on taking pleasure in the activity itself, resulting in high-quality learning and creativity.",
+        "Vicarious Reinforcement": "Incorrect. This refers to imitating behavior because someone else was observed being rewarded for it.",
+        "Social Reinforcement": "Incorrect. This is a form of external reward (praise) often used to strengthen imitations."
+      }
+    },
+    {
+      "id": 5,
+      "question": "According to Bandura, which process involves storing information through symbols and mental images for later use?",
+      "options": [
+        "Attention Process",
+        "Retention Process",
+        "Motor Reproduction Process",
+        "Motivational Process"
+      ],
+      "correct_answer": "Retention Process",
+      "page_reference": 12,
+      "explanations": {
+        "Attention Process": "Incorrect. This involves focusing on the significant features of the behavior to be learned.",
+        "Retention Process": "Correct. Retention is the ability to store information as visuals in memory and mentally rehearse sequences.",
+        "Motor Reproduction Process": "Incorrect. This is the transformation of mental rehearsals into physical practice and actions.",
+        "Motivational Process": "Incorrect. This refers to the necessity of having an incentive or self-motivation to perform the learned behavior."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which law of learning states that responses followed by a satisfying state of affairs are more likely to be learned?",
+      "options": [
+        "Law of Exercise",
+        "Law of Readiness",
+        "Law of Effect",
+        "Law of Disuse"
+      ],
+      "correct_answer": "Law of Effect",
+      "page_reference": 13,
+      "explanations": {
+        "Law of Exercise": "Incorrect. This law states that repetition of an activity helps a student retain it longer.",
+        "Law of Readiness": "Incorrect. This law states that learning is effective only when the student is prepared physically and mentally.",
+        "Law of Effect": "Correct. This law states that behavior followed by satisfying consequences is learned easily, while those followed by annoying states are forgotten.",
+        "Law of Disuse": "Incorrect. This is a component of the Law of Exercise where lack of use weakens a connection."
+      }
+    },
+    {
+      "id": 7,
+      "question": "In the 'Constructivist Approach,' knowledge is acquired through:",
+      "options": [
+        "Passive reception from the teacher.",
+        "Active construction by the student based on adaptation.",
+        "Memorization of bit-sized facts.",
+        "Strict adherence to textbook exercises."
+      ],
+      "correct_answer": "Active construction by the student based on adaptation.",
+      "page_reference": 29,
+      "explanations": {
+        "Passive reception from the teacher.": "Incorrect. The approach assumes knowledge is NOT passively received from the environment.",
+        "Active construction by the student based on adaptation.": "Correct. Knowledge is built by students as they adapt to and modify their experiences of the world.",
+        "Memorization of bit-sized facts.": "Incorrect. This describes 'Banking Education' in traditional teacher-centered models.",
+        "Strict adherence to textbook exercises.": "Incorrect. This describes the Subject-Centered approach."
+      }
+    },
+    {
+      "id": 8,
+      "question": "According to Piaget, during which stage do children development the ability of 'conservation'?",
+      "options": [
+        "Sensorimotor (0–2 years)",
+        "Pre-operational (2–7 years)",
+        "Concrete Operations (7–11/12 years)",
+        "Formal Operations (11/12–15 years)"
+      ],
+      "correct_answer": "Concrete Operations (7–11/12 years)",
+      "page_reference": 26,
+      "explanations": {
+        "Sensorimotor (0–2 years)": "Incorrect. Intelligence is related to motor activities and immediate sensory experiences.",
+        "Pre-operational (2–7 years)": "Incorrect. Children in this stage generally show an inability to conserve quantity despite changes in form.",
+        "Concrete Operations (7–11/12 years)": "Correct. It is during this stage that children realize quantity remains the same despite form changes.",
+        "Formal Operations (11/12–15 years)": "Incorrect. This stage involves abstract and hypothetical thinking beyond concrete objects."
+      }
+    },
+    {
+      "id": 9,
+      "question": "In Skinner's 'Operant Conditioning,' how is 'Negative Reinforcement' defined?",
+      "options": [
+        "Applying a painful stimulus to stop behavior.",
+        "Removing an unpleasant stimulus to strengthen behavior.",
+        "Providing a reward like praise or high grades.",
+        "Ignoring a student to stop an undesirable behavior."
+      ],
+      "correct_answer": "Removing an unpleasant stimulus to strengthen behavior.",
+      "page_reference": 23,
+      "explanations": {
+        "Applying a painful stimulus to stop behavior.": "Incorrect. This is the definition of punishment, which Skinner differentiates from reinforcement.",
+        "Removing an unpleasant stimulus to strengthen behavior.": "Correct. Negative reinforcement provides relief by removing an aversive stimulus to strengthen desired behavior.",
+        "Providing a reward like praise or high grades.": "Incorrect. This is positive reinforcement.",
+        "Ignoring a student to stop an undesirable behavior.": "Incorrect. While ignoring (extinction) can be used, it is not the definition of negative reinforcement."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Who is credited with originating 'Discovery Learning' and its inquiry-based instruction?",
+      "options": [
+        "Ivan Pavlov",
+        "B.F. Skinner",
+        "Jerome Bruner",
+        "E.L. Thorndike"
+      ],
+      "correct_answer": "Jerome Bruner",
+      "page_reference": 15,
+      "explanations": {
+        "Ivan Pavlov": "Incorrect. Pavlov is associated with Classical Conditioning.",
+        "B.F. Skinner": "Incorrect. Skinner is associated with Operant Conditioning.",
+        "Jerome Bruner": "Correct. Bruner originated discovery learning in the 1960s, emphasizing finding information for oneself.",
+        "E.L. Thorndike": "Incorrect. Thorndike developed Trial and Error and the Laws of Learning."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In the Problem Solving Method, what is the role of a hypothesis?",
+      "options": [
+        "It is a final proven fact.",
+        "It is a possible solution formulated based on the nature of the problem.",
+        "It is a set of instructions given by the teacher.",
+        "It is a memorized rule from the textbook."
+      ],
+      "correct_answer": "It is a possible solution formulated based on the nature of the problem.",
+      "page_reference": 19,
+      "explanations": {
+        "It is a final proven fact.": "Incorrect. A hypothesis is a tentative idea that must be tested and verified.",
+        "It is a possible solution formulated based on the nature of the problem.": "Correct. Problem solving involves formulating and testing hypotheses to reach a solution.",
+        "It is a set of instructions given by the teacher.": "Incorrect. Hypotheses are generated by the student as they analyze and synthesize a problem.",
+        "It is a memorized rule from the textbook.": "Incorrect. Traditional subject-centered learning uses textbooks, but problem solving encourages critical thinking over memorization."
+      }
+    },
+    {
+      "id": 12,
+      "question": "According to the text, why do different children perceive the same event differently?",
+      "options": [
+        "Some have better memory capacity.",
+        "Perception is a function of previous experiences, assumptions, and needs.",
+        "The teacher has not provided the correct meaning yet.",
+        "They are not following the prescribed syllabus."
+      ],
+      "correct_answer": "Perception is a function of previous experiences, assumptions, and needs.",
+      "page_reference": 20,
+      "explanations": {
+        "Some have better memory capacity.": "Incorrect. While memory is related, the text specifically attributes perception differences to a combination of experience and purpose.",
+        "Perception is a function of previous experiences, assumptions, and needs.": "Correct. We assign meanings to what we perceive based on our past experiences and our current purposes.",
+        "The teacher has not provided the correct meaning yet.": "Incorrect. In the 'Meaning Making' context, the student is the creator of meaning, not the teacher.",
+        "They are not following the prescribed syllabus.": "Incorrect. Traditional syllabus-driven teaching assumes all students see objects the same way, but meaning-making contradicts this."
+      }
+    },
+    {
+      "id": 13,
+      "question": "In Pavlov's 'Classical Conditioning,' which of the following is the 'Conditioned Stimulus'?",
+      "options": [
+        "Food",
+        "Salivation in response to food",
+        "The bell/buzzer after pairing with food",
+        "Hunger"
+      ],
+      "correct_answer": "The bell/buzzer after pairing with food",
+      "page_reference": 22,
+      "explanations": {
+        "Food": "Incorrect. Food is the unconditioned stimulus (UCS).",
+        "Salivation in response to food": "Incorrect. This is the unconditioned response (UCR).",
+        "The bell/buzzer after pairing with food": "Correct. The bell becomes the conditioned stimulus (CS) after repeated pairing with the unconditioned stimulus.",
+        "Hunger": "Incorrect. Hunger is the internal drive state of the animal."
+      }
+    },
+    {
+      "id": 14,
+      "question": "According to Vygotsky, 'Inner Speech' appears after what age?",
+      "options": [
+        "Before age 3",
+        "Ages 3–7",
+        "Above 7 years",
+        "Only in adulthood"
+      ],
+      "correct_answer": "Above 7 years",
+      "page_reference": 27,
+      "explanations": {
+        "Before age 3": "Incorrect. This stage is Social (External) Speech used to control others.",
+        "Ages 3–7": "Incorrect. This is Egocentric Speech, spoken out loud to control self.",
+        "Above 7 years": "Correct. Inner speech involves unspoken verbalizations that control thought and behavior.",
+        "Only in adulthood": "Incorrect. Vygotsky identifies it as a developmental stage in childhood."
+      }
+    },
+    {
+      "id": 15,
+      "question": "In the scenario where Ms. Seema has students bring plants and work in groups, which approach is being used?",
+      "options": [
+        "Teacher-centered approach",
+        "Subject-centered approach",
+        "Learner-centered approach",
+        "Banking Education"
+      ],
+      "correct_answer": "Learner-centered approach",
+      "page_reference": 3,
+      "explanations": {
+        "Teacher-centered approach": "Incorrect. Ms. Seema facilitates rather than dominating every classroom action.",
+        "Subject-centered approach": "Incorrect. The focus is on active engagement rather than strict textbook delivery.",
+        "Learner-centered approach": "Correct. Students were actively engaged in activities (labeling, drawing, group work) rather than being passive receivers.",
+        "Banking Education": "Incorrect. This is another term for teacher-centered transmission of bit-sized facts."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Which characteristic of learning states that it is not restricted to school but is a lifelong process?",
+      "options": [
+        "Learning is goal-directed.",
+        "Learning is continuous.",
+        "Learning is individualistic.",
+        "Learning is transferable."
+      ],
+      "correct_answer": "Learning is continuous.",
+      "page_reference": 4,
+      "explanations": {
+        "Learning is goal-directed.": "Incorrect. This means humans set goals to achieve through learning.",
+        "Learning is continuous.": "Correct. Every human being tries to change behavior and thinking continuously from childhood through life.",
+        "Learning is individualistic.": "Incorrect. This refers to the pace of learning differing between individuals.",
+        "Learning is transferable.": "Incorrect. This means learning in one situation can help solve problems in another."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Which type of models for imitation include historical figures like Gandhi or Mother Teresa?",
+      "options": [
+        "Direct Models",
+        "Symbolic Models",
+        "Peer Models",
+        "Exemplary Models"
+      ],
+      "correct_answer": "Symbolic Models",
+      "page_reference": 9,
+      "explanations": {
+        "Direct Models": "Incorrect. These are people with whom the child has direct contact, like parents or teachers.",
+        "Symbolic Models": "Correct. These are historical or mythological figures with whom the child has no direct contact.",
+        "Peer Models": "Incorrect. These are contemporaries or classmates (not specifically listed but implied in social groupings).",
+        "Exemplary Models": "Incorrect. While great figures are exemplary, the text uses 'Symbolic' specifically for those with no direct contact."
+      }
+    },
+    {
+      "id": 18,
+      "question": "What does Thorndike's 'Law of Exercise' encompass?",
+      "options": [
+        "Satisfying and annoying consequences.",
+        "Maturation and heredity.",
+        "Law of Use and Law of Disuse.",
+        "Prior knowledge and meaning-making."
+      ],
+      "correct_answer": "Law of Use and Law of Disuse.",
+      "page_reference": 13,
+      "explanations": {
+        "Satisfying and annoying consequences.": "Incorrect. This is the Law of Effect.",
+        "Maturation and heredity.": "Incorrect. These are developmental factors affecting learning readiness.",
+        "Law of Use and Law of Disuse.": "Correct. The Law of Use strengthens connections through repetition; Disuse weakens them.",
+        "Prior knowledge and meaning-making.": "Incorrect. This is a characteristic of constructivist and meaning-making approaches."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Paulo Freire called the process of teachers transmitting 'bits of knowledge' to passive students:",
+      "options": [
+        "Inquiry Education",
+        "Banking Education",
+        "Holistic Education",
+        "Democratic Education"
+      ],
+      "correct_answer": "Banking Education",
+      "page_reference": 37,
+      "explanations": {
+        "Inquiry Education": "Incorrect. This describes the discovery method.",
+        "Banking Education": "Correct. Freire used this term for the teacher-centered model where students simply 'store' knowledge.",
+        "Holistic Education": "Incorrect. This refers to all-round development (cognitive, socio-emotional, etc.).",
+        "Democratic Education": "Incorrect. This is associated with learner-centered climates where learners have control."
+      }
+    },
+    {
+      "id": 20,
+      "question": "In the Subject-Centered approach, what is considered the primary source and 'be all and end all' of classroom activities?",
+      "options": [
+        "The Library",
+        "The Community",
+        "The Textbook",
+        "Field Trips"
+      ],
+      "correct_answer": "The Textbook",
+      "page_reference": 40,
+      "explanations": {
+        "The Library": "Incorrect. Not identified as the primary source in this specific traditional model.",
+        "The Community": "Incorrect. Real-life community situations are rarely taken into account in this approach.",
+        "The Textbook": "Correct. The textbook becomes an embodiment of the syllabus and is treated as the methodical guide to be memorized.",
+        "Field Trips": "Incorrect. These are characteristics of constructivist and learner-centered approaches."
+      }
+    },
+    {
+      "id": 21,
+      "question": "How is a 'competency' defined in outcome-based education?",
+      "options": [
+        "A temporary change in interest.",
+        "A clearly defined and measurable activity accomplished by an individual.",
+        "The act of listening to a teacher's lecture.",
+        "An accidental discovery during play."
+      ],
+      "correct_answer": "A clearly defined and measurable activity accomplished by an individual.",
+      "page_reference": 46,
+      "explanations": {
+        "A temporary change in interest.": "Incorrect. Competencies are relatively permanent and specific abilities.",
+        "A clearly defined and measurable activity accomplished by an individual.": "Correct. Competencies must be achievable, measurable, and communicable.",
+        "The act of listening to a teacher's lecture.": "Incorrect. This is a passive student role.",
+        "An accidental discovery during play.": "Incorrect. Competencies are targeted, structured outcomes."
+      }
+    },
+    {
+      "id": 22,
+      "question": "The method of 'Plan-Teach-Test-Reteach-Retest' was recommended for attaining:",
+      "options": [
+        "Classical Conditioning",
+        "Minimum Levels of Learning (MLLs)",
+        "Banking Education",
+        "Heuristic discovery"
+      ],
+      "correct_answer": "Minimum Levels of Learning (MLLs)",
+      "page_reference": 49,
+      "explanations": {
+        "Classical Conditioning": "Incorrect. This involves stimulus-response pairing.",
+        "Minimum Levels of Learning (MLLs)": "Correct. This cyclical method ensured mastery of competencies before moving to the next level.",
+        "Banking Education": "Incorrect. This is a one-way transmission model.",
+        "Heuristic discovery": "Incorrect. This method places children in the attitude of a discoverer."
+      }
+    },
+    {
+      "id": 23,
+      "question": "Which school of constructivism, based on Piaget, stresses that knowledge is actively constructed and is a process of adaptation?",
+      "options": [
+        "Social Constructivism",
+        "Radical Constructivism",
+        "Mechanical Constructivism",
+        "Traditional Constructivism"
+      ],
+      "correct_answer": "Radical Constructivism",
+      "page_reference": 54,
+      "explanations": {
+        "Social Constructivism": "Incorrect. This is based on Vygotsky and emphasizes social interaction and culture.",
+        "Radical Constructivism": "Correct. Based on Piaget, it stresses that coming to know is a process of individual adaptation.",
+        "Mechanical Constructivism": "Incorrect. Not a term used in the text.",
+        "Traditional Constructivism": "Incorrect. Not a term used in the text."
+      }
+    },
+    {
+      "id": 24,
+      "question": "Which method of teaching proceeds from particular events to generalized conclusions?",
+      "options": [
+        "Deductive Method",
+        "Inductive Method",
+        "Lecture Method",
+        "Demonstration Method"
+      ],
+      "correct_answer": "Inductive Method",
+      "page_reference": 69,
+      "explanations": {
+        "Deductive Method": "Incorrect. This proceeds from general formulae to particular facts.",
+        "Inductive Method": "Correct. In this method, one arrives at a generalization through concrete cases and similarities.",
+        "Lecture Method": "Incorrect. This involves transmission of whole content by the teacher.",
+        "Demonstration Method": "Incorrect. This involves showing experiments to explain concepts."
+      }
+    },
+    {
+      "id": 25,
+      "question": "Professor Henry Edward Armstrong introduced which method that places children in the 'attitude of a discoverer'?",
+      "options": [
+        "Lecture Method",
+        "Play-way Method",
+        "Heuristic Method",
+        "Problem-Solving Method"
+      ],
+      "correct_answer": "Heuristic Method",
+      "page_reference": 85,
+      "explanations": {
+        "Lecture Method": "Incorrect. This is teacher-centered.",
+        "Play-way Method": "Incorrect. This centers on natural instincts like play.",
+        "Heuristic Method": "Correct. Also known as the 'Discovery Method,' it involves children finding out solutions themselves.",
+        "Problem-Solving Method": "Incorrect. While related, the specific term linked to Armstrong is 'Heuristic'."
+      }
+    },
+    {
+      "id": 26,
+      "question": "Which principle of the Play-way method suggests learning is easier and sustainable when it provides joy?",
+      "options": [
+        "Principle of Responsibility",
+        "Principle of Pleasure",
+        "Principle of Natural Instincts",
+        "Principle of Activity"
+      ],
+      "correct_answer": "Principle of Pleasure",
+      "page_reference": 74,
+      "explanations": {
+        "Principle of Responsibility": "Incorrect. This refers to self-imposed discipline during group play.",
+        "Principle of Pleasure": "Correct. Anything that gives pleasure is easily learned and avoids feeling like a 'load'.",
+        "Principle of Natural Instincts": "Incorrect. This identifies play as the natural expression of needs.",
+        "Principle of Activity": "Incorrect. This emphasizes active involvement over passive listening."
+      }
+    },
+    {
+      "id": 27,
+      "question": "In Kolb's learning styles, which style relies on intuition and prefers a 'hands-on' practical approach?",
+      "options": [
+        "Diverging",
+        "Assimilating",
+        "Converging",
+        "Accommodating"
+      ],
+      "correct_answer": "Accommodating",
+      "page_reference": 96,
+      "explanations": {
+        "Diverging": "Incorrect. This style prefers to watch, gather information, and use imagination.",
+        "Assimilating": "Incorrect. This style focuses on ideas and abstract conceptualization.",
+        "Converging": "Incorrect. This style focuses on technical tasks and finding solutions to practical issues through logic.",
+        "Accommodating": "Correct. These learners prefer practical, experiential approaches and rely on intuition rather than logic."
+      }
+    },
+    {
+      "id": 28,
+      "question": "What is an instructional goal of Cooperative Learning in addition to academic achievement?",
+      "options": [
+        "Student isolation.",
+        "Acceptance of diversity and social skill development.",
+        "Individual competitive advantage.",
+        "Strict adherence to lectures."
+      ],
+      "correct_answer": "Acceptance of diversity and social skill development.",
+      "page_reference": 103,
+      "explanations": {
+        "Student isolation.": "Incorrect. Cooperative learning is built on small groups.",
+        "Acceptance of diversity and social skill development.": "Correct. It aims for academic achievement, social growth, and accepting differences.",
+        "Individual competitive advantage.": "Incorrect. Reward systems are group-oriented rather than individualistic.",
+        "Strict adherence to lectures.": "Incorrect. It involves active team study and project work."
+      }
+    },
+    {
+      "id": 29,
+      "question": "Which element of cooperative learning ensures each member feels responsible for the group's success?",
+      "options": [
+        "Positive Interdependence",
+        "Individual Accountability",
+        "Group Processing",
+        "Social Skills"
+      ],
+      "correct_answer": "Positive Interdependence",
+      "page_reference": 104,
+      "explanations": {
+        "Positive Interdependence": "Correct. Students must believe they are responsible for their learning and that of their group.",
+        "Individual Accountability": "Incorrect. This ensures each student demonstrates mastery of the content.",
+        "Group Processing": "Incorrect. This involves the group assessing its own effectiveness.",
+        "Social Skills": "Incorrect. These are tools like leadership and communication needed for cooperation."
+      }
+    },
+    {
+      "id": 30,
+      "question": "What is a key difference between Collaborative and Cooperative learning regarding teacher authority?",
+      "options": [
+        "In Cooperative learning, the teacher transfers all authority to the group.",
+        "In Collaborative learning, the teacher transfers all authority to the group.",
+        "Collaborative learning requires strict teacher monitoring of results.",
+        "Cooperative learning is an open-ended dialogue without teacher guidance."
+      ],
+      "correct_answer": "In Collaborative learning, the teacher transfers all authority to the group.",
+      "page_reference": 107,
+      "explanations": {
+        "In Cooperative learning, the teacher transfers all authority to the group.": "Incorrect. In cooperative learning, authority remains with the teacher.",
+        "In Collaborative learning, the teacher transfers all authority to the group.": "Correct. Once the task is set, it is up to the group to plan and perform independently.",
+        "Collaborative learning requires strict teacher monitoring of results.": "Incorrect. Collaborative learning focuses on qualitative student conversation and self-governance.",
+        "Cooperative learning is an open-ended dialogue without teacher guidance.": "Incorrect. Cooperative learning is often used for approaching mastery of fundamental knowledge with teacher guidance."
+      }
+    }
+  ]
+}

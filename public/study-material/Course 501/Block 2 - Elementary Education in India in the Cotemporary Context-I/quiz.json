@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Course 501 Block 2: Strategies, Planning, and Management of UEE",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the sources, what is the specific definition of 'Universalization of education'?",
+      "options": [
+        "Ensuring every child in India follows a uniform national curriculum.",
+        "Availability of education everywhere according to the specific needs of children and place.",
+        "The mandatory enrollment of children in government-run schools only.",
+        "A system where the Central Government manages all school-level decisions."
+      ],
+      "correct_answer": "Availability of education everywhere according to the specific needs of children and place.",
+      "page_reference": 4,
+      "explanations": {
+        "Option 1": "Incorrect. While curriculum is important, the definition focuses on accessibility and local needs.",
+        "Option 2": "Correct. The sources explicitly define UEE as availability based on specific child and situational needs.",
+        "Option 3": "Incorrect. UEE includes formal and non-formal modes, not just government schools.",
+        "Option 4": "Incorrect. The sources advocate for decentralization rather than total central management."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of 'Sakhar Shalas' (Sugar Schools) in Maharashtra?",
+      "options": [
+        "To provide vocational training in sugar production to older students.",
+        "To act as permanent residential schools for tribal children.",
+        "To provide continuation of schooling for children of migrant sugar cane cutters.",
+        "To serve as research centers for agricultural education."
+      ],
+      "correct_answer": "To provide continuation of schooling for children of migrant sugar cane cutters.",
+      "page_reference": 3,
+      "explanations": {
+        "Option 1": "Incorrect. These schools focus on primary education, not industrial vocational training.",
+        "Option 2": "Incorrect. Ashram Shalas are the residential schools for tribal children, not Sakhar Shalas.",
+        "Option 3": "Correct. They are 'second semester schools' designed to prevent drop-outs when families migrate for the crushing season.",
+        "Option 4": "Incorrect. Their goal is ensuring the fundamental right to elementary education for migrant laborers."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In the context of enrollment indicators, what does a Gross Enrollment Ratio (GER) above 100 percent typically indicate?",
+      "options": [
+        "That the school has more teachers than required by the pupil-teacher ratio.",
+        "An error in data collection by the District Education Officer.",
+        "The inclusion of overage or underage children in the primary school system.",
+        "That all children of the specific primary school age are successfully enrolled."
+      ],
+      "correct_answer": "The inclusion of overage or underage children in the primary school system.",
+      "page_reference": 24,
+      "explanations": {
+        "Option 1": "Incorrect. GER is a measure of student enrollment, not teacher staffing.",
+        "Option 2": "Incorrect. While data errors can occur, the source explains a GER over 100% as a standard statistical phenomenon.",
+        "Option 3": "Correct. Values above 100% signify that children outside the standard primary age range are enrolled, often due to late entry or retention.",
+        "Option 4": "Incorrect. This is the definition of a Net Enrollment Ratio (NER) reaching 100%, not GER."
+      }
+    },
+    {
+      "id": 4,
+      "question": "The 'Lok Jumbish' project in Rajasthan is primarily characterized as a:",
+      "options": [
+        "Teacher training mission focused on digital literacy.",
+        "People’s movement for 'Education for All' with emphasis on girls.",
+        "Central government scheme to replace local Panchayati Raj systems.",
+        "World Bank project focusing exclusively on infrastructure in urban slums."
+      ],
+      "correct_answer": "People’s movement for 'Education for All' with emphasis on girls.",
+      "page_reference": 9,
+      "explanations": {
+        "Option 1": "Incorrect. While it has support structures, its core identity is a community movement.",
+        "Option 2": "Correct. Launched in 1992, it focuses on girls' education and people's mobilization.",
+        "Option 3": "Incorrect. It involves block-level management and supports local government structures.",
+        "Option 4": "Incorrect. It was supported by the Swedish International Development Authority (SIDA), not primarily the World Bank."
+      }
+    },
+    {
+      "id": 5,
+      "question": "How did the 'Shiksha Karmi Project' address the issue of teacher absenteeism in remote villages?",
+      "options": [
+        "By installing biometric attendance systems in all single-teacher schools.",
+        "By closing single-teacher schools and moving students to urban centers.",
+        "By substituting the primary teacher with a team of two trained local residents.",
+        "By increasing the salary of teachers who worked in distant areas."
+      ],
+      "correct_answer": "By substituting the primary teacher with a team of two trained local residents.",
+      "page_reference": 11,
+      "explanations": {
+        "Option 1": "Incorrect. The project relied on community selection and local personnel rather than electronic monitoring.",
+        "Option 2": "Incorrect. The project aimed to provide services within the rural habitations themselves.",
+        "Option 3": "Correct. The Shiksha Karmi (educational workers) are local residents who receive special training to function as effective teachers.",
+        "Option 4": "Incorrect. The strategy was centered on local staffing and community accountability, not just salary incentives."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Under the 'Savitribai Phule Parent Adoption Scheme' in Maharashtra, what is the specific intervention?",
+      "options": [
+        "Parents are required to adopt an out-of-school child to get tax benefits.",
+        "Society members 'adopt' a girl to provide financial help for her to stay in school.",
+        "The government adopts the parents of talented students to provide them employment.",
+        "Teachers adopt the village council to manage the school's budget."
+      ],
+      "correct_answer": "Society members 'adopt' a girl to provide financial help for her to stay in school.",
+      "page_reference": 14,
+      "explanations": {
+        "Option 1": "Incorrect. The scheme is for individuals to support students, not a mandatory parent requirement.",
+        "Option 2": "Correct. Financial help of minimum thirty rupees a month is given by society members/officers to help girls continue up to 7th Std.",
+        "Option 3": "Incorrect. The financial aid goes toward the girl's education, not parental employment.",
+        "Option 4": "Incorrect. It is a social support scheme for preventing girl child drop-outs due to poverty."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which program is described as the largest education project in the world aimed at 'district-specific planning'?",
+      "options": [
+        "Operation Blackboard",
+        "Bihar Education Project (BEP)",
+        "District Primary Education Programme (DPEP)",
+        "UP Basic Education Project (UP-BEP)"
+      ],
+      "correct_answer": "District Primary Education Programme (DPEP)",
+      "page_reference": 18,
+      "explanations": {
+        "Option 1": "Incorrect. Operation Blackboard was a scheme for basic facilities, not a district-specific planning project.",
+        "Option 2": "Incorrect. BEP is a state-level project, though comprehensive.",
+        "Option 3": "Correct. Launched in 1994, DPEP emphasizes decentralized management and district-specific planning.",
+        "Option 4": "Incorrect. UP-BEP was limited to specific targeted districts in Uttar Pradesh."
+      }
+    },
+    {
+      "id": 8,
+      "question": "What is the role of 'Muktangan' within the Lok Jumbish activities?",
+      "options": [
+        "A residential course for out-of-school girls in the 15+ age group.",
+        "A program specifically for tribal children in the Kishnenganj block.",
+        "A non-formal education program for working children in urban areas.",
+        "An awareness program for the health of pregnant mothers."
+      ],
+      "correct_answer": "A program specifically for tribal children in the Kishnenganj block.",
+      "page_reference": 10,
+      "explanations": {
+        "Option 1": "Incorrect. That describes 'Mahila Shikshan Vihar'.",
+        "Option 2": "Correct. Muktangan is specifically cited as a program for tribal children in the Khandela Cluster.",
+        "Option 3": "Incorrect. That describes 'Sahaj Shiksha Kendra'.",
+        "Option 4": "Incorrect. While Lok Jumbish has health components, Muktangan is a specific tribal education initiative."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an 'essential feature' of the Sarva Shiksha Abhiyan (SSA)?",
+      "options": [
+        "It is a centralized program with no role for state governments.",
+        "It provides a clear time frame for achieving UEE objectives.",
+        "It focuses only on children aged 14 to 18 years.",
+        "It discourages public-private partnerships in education."
+      ],
+      "correct_answer": "It provides a clear time frame for achieving UEE objectives.",
+      "page_reference": 29,
+      "explanations": {
+        "Option 1": "Incorrect. SSA is a partnership between the center, states, and local governments.",
+        "Option 2": "Correct. A hallmark of SSA is its time-bound mission mode for achieving UEE.",
+        "Option 3": "Incorrect. It is designed for children in the age group of 6-14 years.",
+        "Option 4": "Incorrect. SSA explicitly provides opportunities for Public Private Partnership (PPP)."
+      }
+    },
+    {
+      "id": 10,
+      "question": "As per the financial norms of SSA, what was the sharing arrangement between the Central and State governments during the Tenth (X) Plan?",
+      "options": [
+        "85:15",
+        "50:50",
+        "75:25",
+        "100:0 (Fully Central)"
+      ],
+      "correct_answer": "75:25",
+      "page_reference": 33,
+      "explanations": {
+        "Option 1": "Incorrect. This was the ratio during the IX Plan.",
+        "Option 2": "Incorrect. This is the ratio for the period following the X Plan.",
+        "Option 3": "Correct. The Tenth Plan explicitly stipulated a 75:25 sharing arrangement.",
+        "Option 4": "Incorrect. SSA always involves a state contribution over and above their existing investment."
+      }
+    },
+    {
+      "id": 11,
+      "question": "What nutritional requirement was mandated for Mid-Day Meals by the Supreme Court order in 2001?",
+      "options": [
+        "1000 calories and 50 grams of protein.",
+        "Minimum 300 calories and 8-12 grams of protein.",
+        "Only 3 kg of wheat per month regardless of nutritional content.",
+        "Free milk and fruit for every child in secondary school."
+      ],
+      "correct_answer": "Minimum 300 calories and 8-12 grams of protein.",
+      "page_reference": 37,
+      "explanations": {
+        "Option 1": "Incorrect. These values are significantly higher than the mandated minimum.",
+        "Option 2": "Correct. The court directed that meals must contain at least 300 calories and 8-12g of protein for 200 days.",
+        "Option 3": "Incorrect. This was the old 'dry ration' scheme which the court order replaced with cooked meals.",
+        "Option 4": "Incorrect. The scheme primarily targets primary and upper primary children, not secondary school."
+      }
+    },
+    {
+      "id": 12,
+      "question": "In a 'Decentralized' education system, where is the substantial power for decision-making located?",
+      "options": [
+        "In the hands of the National Education Ministry only.",
+        "At the local, district, or school level.",
+        "Exclusively within international funding agencies like the World Bank.",
+        "At the state capital with no input from villages."
+      ],
+      "correct_answer": "At the local, district, or school level.",
+      "page_reference": 44,
+      "explanations": {
+        "Option 1": "Incorrect. This describes a 'Centralized' system.",
+        "Option 2": "Correct. Decentralization entrusts power to district/village authorities to make teachers and schools responsive to local needs.",
+        "Option 3": "Incorrect. While agencies provide aid, they do not hold the statutory decision-making power in a decentralized system.",
+        "Option 4": "Incorrect. Decentralization specifically shifts focus away from the state capital to the community level."
+      }
+    },
+    {
+      "id": 13,
+      "question": "What is the core principle of 'Micro-Planning' at the grass-roots level?",
+      "options": [
+        "Creating small-scale maps using satellite imagery.",
+        "Reducing the school budget to the smallest possible amount.",
+        "Participation of beneficiaries and local people in identifying needs and preparing plans.",
+        "Limiting education to only the most gifted children in a village."
+      ],
+      "correct_answer": "Participation of beneficiaries and local people in identifying needs and preparing plans.",
+      "page_reference": 47,
+      "explanations": {
+        "Option 1": "Incorrect. While school mapping is a tool, micro-planning is a collaborative social process.",
+        "Option 2": "Incorrect. It is about mobilizing and creating more resources, not just cutting costs.",
+        "Option 3": "Correct. Micro-planning means identifying needs and generating resources through local cooperative action.",
+        "Option 4": "Incorrect. It is intended to ensure all children, including the disadvantaged, receive quality education."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which body is responsible for preparing a 'School Development Plan' as per the RTE Act?",
+      "options": [
+        "The District Primary Education Officer (DEO).",
+        "The School Management Committee (SMC).",
+        "The State Implementation Society.",
+        "The National Council for Teacher Education (NCTE)."
+      ],
+      "correct_answer": "The School Management Committee (SMC).",
+      "page_reference": 64,
+      "explanations": {
+        "Option 1": "Incorrect. The DEO consolidates school plans into a District Plan.",
+        "Option 2": "Correct. The SMC must prepare a 3-year plan comprising three annual sub-plans before the end of the financial year.",
+        "Option 3": "Incorrect. The Society receives and manages the flow of funds at the state level.",
+        "Option 4": "Incorrect. The NCTE sets standards for teacher qualifications."
+      }
+    },
+    {
+      "id": 15,
+      "question": "What is 'School Net' in the context of UEE management?",
+      "options": [
+        "A physical net used to protect school buildings from debris.",
+        "An ICT-based network connecting schools, authorities, and parents for sharing resources.",
+        "A system of school buses used for tribal areas.",
+        "A safety net of insurance for teachers."
+      ],
+      "correct_answer": "An ICT-based network connecting schools, authorities, and parents for sharing resources.",
+      "page_reference": 70,
+      "explanations": {
+        "Option 1": "Incorrect. It is a technological management tool.",
+        "Option 2": "Correct. It is an internationally recognized generic name for ICT-based e-management of school systems.",
+        "Option 3": "Incorrect. That would fall under transport schemes.",
+        "Option 4": "Incorrect. It focuses on information management, communication, and capacity building."
+      }
+    },
+    {
+      "id": 16,
+      "question": "What is the composition of parents/guardians in a School Management Committee (SMC) as mandated by the RTE Act?",
+      "options": [
+        "25% of the total strength.",
+        "50% of the total strength.",
+        "75% of the total strength.",
+        "10% of the total strength."
+      ],
+      "correct_answer": "75% of the total strength.",
+      "page_reference": 64,
+      "explanations": {
+        "Option 1": "Incorrect. 25% is reserved for elected members, teachers, and local educationists.",
+        "Option 2": "Incorrect. The law requires a significantly higher majority of parents to ensure community ownership.",
+        "Option 3": "Correct. 75% of the SMC strength must be from amongst parents or guardians of children.",
+        "Option 4": "Incorrect. Small parent representation would defeat the purpose of decentralized governance."
+      }
+    },
+    {
+      "id": 17,
+      "question": "During the 'Appraisal' phase of a district plan, what is primarily being investigated?",
+      "options": [
+        "The physical fitness of the District Education Officer.",
+        "Whether the proposed plans are financially, technically, and socially viable.",
+        "The architectural beauty of new school buildings.",
+        "The political affiliation of the Village Education Committee."
+      ],
+      "correct_answer": "Whether the proposed plans are financially, technically, and socially viable.",
+      "page_reference": 58,
+      "explanations": {
+        "Option 1": "Incorrect. Appraisal is a scrutiny of the plan's feasibility, not personnel health.",
+        "Option 2": "Correct. Appraisal involves checking data validity, justification of needs, and technical/financial do-ability.",
+        "Option 3": "Incorrect. While infrastructure is a component, appraisal is a wider holistic evaluation of the strategy.",
+        "Option 4": "Incorrect. The source emphasizes data-based and transparent planning rather than political vetting."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Which official is specifically responsible for initiating campaigns to register the birth of all children to maintain accurate records?",
+      "options": [
+        "The Block Resource Centre (BRC) trainer.",
+        "The District Elementary Education Officer (DEO).",
+        "The NGO volunteer.",
+        "The Minister of Human Resource Development."
+      ],
+      "correct_answer": "The District Elementary Education Officer (DEO).",
+      "page_reference": 56,
+      "explanations": {
+        "Option 1": "Incorrect. BRC staff primarily provide academic and curricular support to teachers.",
+        "Option 2": "Correct. Birth registration is part of the DEO's responsibility to maintain records of all children up to 18.",
+        "Option 3": "Incorrect. While NGOs help in awareness, the statutory record-keeping responsibility rests with the DEO.",
+        "Option 4": "Incorrect. This is a district-level administrative function, not a direct ministerial task."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the 'Village Education Register' (VER)?",
+      "options": [
+        "A list of teachers' attendance and salary details.",
+        "A record of each boy and girl of all families in the village and their educational status.",
+        "A directory of all sugar factories in the district.",
+        "A register of visitors to the school."
+      ],
+      "correct_answer": "A record of each boy and girl of all families in the village and their educational status.",
+      "page_reference": 21,
+      "explanations": {
+        "Option 1": "Incorrect. This would be a service or salary register.",
+        "Option 2": "Correct. The VER conveys the educational situation of every child in the village and is used for monitoring.",
+        "Option 3": "Incorrect. This is unrelated to the pedagogical management of UEE.",
+        "Option 4": "Incorrect. The register is a tool for planning and ensuring 100% enrollment, not just a visitor log."
+      }
+    },
+    {
+      "id": 20,
+      "question": "According to the RTE Act, what must a school do regarding children from 'weaker sections'?",
+      "options": [
+        "Admit them but hold their classes in the evenings.",
+        "Admit them and ensure they are not segregated or discriminated against in any manner.",
+        "Direct them to special tribal schools only.",
+        "Admit them only if they pass an entrance screening test."
+      ],
+      "correct_answer": "Admit them and ensure they are not segregated or discriminated against in any manner.",
+      "page_reference": 66,
+      "explanations": {
+        "Option 1": "Incorrect. The Act forbids holding their classes at different places or timings.",
+        "Option 2": "Correct. Schools must admit children from disadvantaged groups and provide equal access to all facilities and entitlements.",
+        "Option 3": "Incorrect. The neighborhood school mandate applies to everyone.",
+        "Option 4": "Incorrect. The RTE Act explicitly bans the screening of children before admission."
+      }
+    }
+  ]
+}
