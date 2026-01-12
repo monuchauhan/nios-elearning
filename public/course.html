@@ -400,13 +400,6 @@
                     </svg>
                     ${chapter.subChapterCount} lessons
                   </span>
-                  <span class="chapter-meta-item">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    ${chapter.totalDuration}
-                  </span>
                   ${!chapter.isLocked && chapter.completedSubChapters > 0 ? `
                     <span class="chapter-meta-item" style="color: var(--success);">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -510,13 +503,6 @@
           <div class="subchapter-info">
             <div class="subchapter-title">${sub.title}</div>
             <div class="subchapter-meta">
-              <span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle;">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                ${sub.duration}
-              </span>
               ${sub.materialCounts ? `
                 ${sub.materialCounts.videos > 0 ? `<span class="material-badge video">📹 ${sub.materialCounts.videos}</span>` : ''}
                 ${sub.materialCounts.audios > 0 ? `<span class="material-badge audio">🎧 ${sub.materialCounts.audios}</span>` : ''}
