@@ -370,14 +370,14 @@ const materials = {
         "id": "vid-sub-501-1-en",
         "title": "Block 1: Elementary Education in India - A Retrospective (English)",
         "description": "Video lecture in English",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=mOr3C9-A40A",
         "language": "english"
       },
       {
         "id": "vid-sub-501-1-hi",
         "title": "Block 1: Elementary Education in India - A Retrospective (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=_rLVUDW-I7s",
         "language": "hindi"
       }
     ],
@@ -779,14 +779,14 @@ const materials = {
         "id": "vid-sub-501-2-en",
         "title": "Block 2: Elementary Education in India in the Cotemporary Context-I (English)",
         "description": "Video lecture in English",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=N_a7O3QVC1E",
         "language": "english"
       },
       {
         "id": "vid-sub-501-2-hi",
         "title": "Block 2: Elementary Education in India in the Cotemporary Context-I (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=EMT-oWa4v_M",
         "language": "hindi"
       }
     ],
@@ -1188,14 +1188,14 @@ const materials = {
         "id": "vid-sub-501-3-en",
         "title": "Block 3: Elementary Education in India in the Cotemporary Context-II (English)",
         "description": "Video lecture in English",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=vJSFRe3MWL8",
         "language": "english"
       },
       {
         "id": "vid-sub-501-3-hi",
         "title": "Block 3: Elementary Education in India in the Cotemporary Context-II (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=jTXJRkU-UBQ",
         "language": "hindi"
       }
     ],
@@ -1597,14 +1597,14 @@ const materials = {
         "id": "vid-sub-502-1-en",
         "title": "Block 1: Learning and Teaching process (English)",
         "description": "Video lecture in English",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=gFtUcg-Gu6g",
         "language": "english"
       },
       {
         "id": "vid-sub-502-1-hi",
         "title": "Block 1: Learning and Teaching process (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=-HZGtCzT3Fw",
         "language": "hindi"
       }
     ],
@@ -2186,14 +2186,14 @@ const materials = {
         "id": "vid-sub-502-2-en",
         "title": "Block 2: Management of Learning-Teaching Process (English)",
         "description": "Video lecture in English",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=SJ57NuY8ALQ",
         "language": "english"
       },
       {
         "id": "vid-sub-502-2-hi",
         "title": "Block 2: Management of Learning-Teaching Process (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "",
+        "url": "https://www.youtube.com/watch?v=gSp-43krcDA",
         "language": "hindi"
       }
     ],
