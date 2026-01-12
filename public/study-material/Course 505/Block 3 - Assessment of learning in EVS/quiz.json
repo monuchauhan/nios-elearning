@@ -1,0 +1,365 @@
+{
+  "quiz_title": "D.El.Ed Course 505: Block 3 - Assessment, Reporting and Remediation in EVS",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary difference between 'assessment of learning' and 'assessment for learning'?",
+      "options": [
+        "Assessment of learning is for remediation; assessment for learning is for grading.",
+        "Assessment of learning records the depth of learning; assessment for learning is used to plan further activities.",
+        "Assessment of learning is informal; assessment for learning is always formal.",
+        "There is no difference; they are interchangeable terms."
+      ],
+      "correct_answer": "Assessment of learning records the depth of learning; assessment for learning is used to plan further activities.",
+      "page_reference": 15,
+      "explanations": {
+        "Assessment of learning is for remediation; assessment for learning is for grading.": "This is reversed; assessment for learning is synonymous with remediation.",
+        "Assessment of learning records the depth of learning; assessment for learning is used to plan further activities.": "The sources state that recording depth of learning is assessment 'of' learning, while using that info to plan further activities is assessment 'for' learning.",
+        "Assessment of learning is informal; assessment for learning is always formal.": "Both can be formal or informal; the distinction lies in the purpose (recording vs. planning).",
+        "There is no difference; they are interchangeable terms.": "The sources clearly distinguish between the two based on whether the goal is reporting results or enhancing future learning."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which feature of a good assessment tool ensures it 'accurately and consistently' evaluates a student's performance?",
+      "options": [
+        "Validity",
+        "Flexibility",
+        "Reliability",
+        "Fairness"
+      ],
+      "correct_answer": "Reliability",
+      "page_reference": 17,
+      "explanations": {
+        "Validity": "Validity refers to how appropriate and useful the results are for making decisions about achievement.",
+        "Flexibility": "Flexibility allows the tool to be relevant in a range of teaching-learning contexts.",
+        "Reliability": "A test is reliable if it accurately and consistently evaluates a student's performance; factors like ambiguous questions can threaten this.",
+        "Fairness": "Fairness ensures no student is disadvantaged and considers individual personalities."
+      }
+    },
+    {
+      "id": 3,
+      "question": "According to the 'rule of thumb' for test timing, how much time should be allotted for each multiple-choice item?",
+      "options": [
+        "One-half minute",
+        "One minute",
+        "Two minutes",
+        "Five minutes"
+      ],
+      "correct_answer": "One minute",
+      "page_reference": 18,
+      "explanations": {
+        "One-half minute": "This is the suggested time for true-false tests.",
+        "One minute": "The sources suggest one minute per item for multiple-choice tests.",
+        "Two minutes": "This is the suggested time for short-answer questions requiring a few sentences.",
+        "Five minutes": "This exceeds the suggested 'rule of thumb' for multiple-choice items provided in the sources."
+      }
+    },
+    {
+      "id": 4,
+      "question": "If a teacher observes a student scaring birds during a field visit and immediately uses the moment to explain the birds' role in the ecosystem, this is an example of:",
+      "options": [
+        "Summative Assessment",
+        "Formative Assessment",
+        "Investigative Testing",
+        "Standardized Testing"
+      ],
+      "correct_answer": "Formative Assessment",
+      "page_reference": 8,
+      "explanations": {
+        "Summative Assessment": "Summative assessment occurs at the end of a unit to measure total learning.",
+        "Formative Assessment": "Formative assessment provides timely feedback and allows for immediate remedial action to remove obstacles in learning.",
+        "Investigative Testing": "Investigative testing is a detailed study to analyze causes of learning difficulties after a unit is complete.",
+        "Standardized Testing": "The sources emphasize personalized EVS assessment over rigid standardized norms."
+      }
+    },
+    {
+      "id": 5,
+      "question": "What is the primary purpose of 'Investigative Testing' in EVS?",
+      "options": [
+        "To rank students based on their intelligence.",
+        "To provide a general grade at the end of the semester.",
+        "To analyze individual performance and determine the causes of learning difficulties.",
+        "To replace the need for formative assessment."
+      ],
+      "correct_answer": "To analyze individual performance and determine the causes of learning difficulties.",
+      "page_reference": 72,
+      "explanations": {
+        "To rank students based on their intelligence.": "The sources state assessment is not meant to rank children against each other.",
+        "To provide a general grade at the end of the semester.": "This is the role of summative achievement tests.",
+        "To analyze individual performance and determine the causes of learning difficulties.": "The sources define investigative testing as an individually driven task designed to find causes of difficulty.",
+        "To replace the need for formative assessment.": "It is a supplementary tool used to address gaps found after general assessments."
+      }
+    },
+    {
+      "id": 6,
+      "question": "In the context of reporting student progress, a 'Portfolio' should ideally contain:",
+      "options": [
+        "Only the student's highest-scored test papers.",
+        "A collection of actual work done by the child over the year, including drawings and crafts.",
+        "Only the teacher's formal grades and attendance records.",
+        "A list of textbooks the child has read."
+      ],
+      "correct_answer": "A collection of actual work done by the child over the year, including drawings and crafts.",
+      "page_reference": 66,
+      "explanations": {
+        "Only the student's highest-scored test papers.": "The sources state that all kinds of work, not only the best work, should be included.",
+        "A collection of actual work done by the child over the year, including drawings and crafts.": "Portfolios collect drawings, leaves, greeting cards, and craft work to show varied abilities.",
+        "Only the teacher's formal grades and attendance records.": "Actual work is preferred over just test scores in a portfolio.",
+        "A list of textbooks the child has read.": "While reading is part of learning, a portfolio showcases the student's *output* and creations."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a recognized limitation of 'Oral Techniques' for assessment?",
+      "options": [
+        "They do not provide immediate feedback.",
+        "They cannot evaluate communication skills.",
+        "They do not automatically generate a written record.",
+        "They can only be used for one child at a time."
+      ],
+      "correct_answer": "They do not automatically generate a written record.",
+      "page_reference": 24,
+      "explanations": {
+        "They do not provide immediate feedback.": "Actually, oral tests provide immediate feedback.",
+        "They cannot evaluate communication skills.": "They are specifically noted for evaluating communication skills.",
+        "They do not automatically generate a written record.": "The sources identify the lack of a written record as a limitation of oral techniques.",
+        "They can only be used for one child at a time.": "The sources state a large number of children can be examined at one time through oral methods."
+      }
+    },
+    {
+      "id": 8,
+      "question": "The purpose of 'Sociometry' in a classroom setting is to:",
+      "options": [
+        "Measure the biological growth of students.",
+        "Understand student interrelations, friendship patterns, and subgroups.",
+        "Calculate the physical distance students travel to school.",
+        "Assess mathematical skills in geometry."
+      ],
+      "correct_answer": "Understand student interrelations, friendship patterns, and subgroups.",
+      "page_reference": 120,
+      "explanations": {
+        "Measure the biological growth of students.": "Sociometry deals with social relations, not biological growth.",
+        "Understand student interrelations, friendship patterns, and subgroups.": "The sources describe sociometry as a tool to help teachers understand patterns of subgroups, cliques, and friendships.",
+        "Calculate the physical distance students travel to school.": "This is unrelated to the social purpose of sociometry.",
+        "Assess mathematical skills in geometry.": "Despite the similar-sounding name, sociometry is a peer assessment tool for social structures."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Why is the reliability of 'Essay Tests' often compromised?",
+      "options": [
+        "Because they take too little time to construct.",
+        "Because students cannot express their personality in them.",
+        "Because of subjectivity or inconsistencies in grading.",
+        "Because they encourage guessing."
+      ],
+      "correct_answer": "Because of subjectivity or inconsistencies in grading.",
+      "page_reference": 27,
+      "explanations": {
+        "Because they take too little time to construct.": "The sources say they take less time to construct, but this is an advantage, not a reliability threat.",
+        "Because students cannot express their personality in them.": "Actually, essay tests allow students to express their personality.",
+        "Because of subjectivity or inconsistencies in grading.": "The sources explicitly state reliability is compromised by subjectivity in grading.",
+        "Because they encourage guessing.": "Objective Recognition Type tests encourage guessing, but essay tests make guessing difficult."
+      }
+    },
+    {
+      "id": 10,
+      "question": "A 'Rating Scale' expresses opinions or judgments regarding a situation on a scale that is:",
+      "options": [
+        "Only quantitative.",
+        "Only qualitative.",
+        "Either quantitative or qualitative.",
+        "Based strictly on chronological age."
+      ],
+      "correct_answer": "Either quantitative or qualitative.",
+      "page_reference": 36,
+      "explanations": {
+        "Only quantitative.": "Rating scales can also be qualitative.",
+        "Only qualitative.": "Rating scales can also be quantitative.",
+        "Either quantitative or qualitative.": "The sources define rating scales as expressions of judgment expressed quantitatively or qualitatively.",
+        "Based strictly on chronological age.": "Rating scales are based on identified factors of behavior or performance, not age."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Continuous and Comprehensive Evaluation (CCE) in EVS means evaluation should happen:",
+      "options": [
+        "Only through a year-end exam.",
+        "On a round-the-year basis including various abilities.",
+        "Strictly through written tests to ensure objectivity.",
+        "Only when a child commits a serious mistake."
+      ],
+      "correct_answer": "On a round-the-year basis including various abilities.",
+      "page_reference": 106,
+      "explanations": {
+        "Only through a year-end exam.": "CCE is explicitly an alternative to year-end-only exams.",
+        "On a round-the-year basis including various abilities.": "The sources state CCE means evaluation on a round-the-year basis to fill gaps in learning.",
+        "Strictly through written tests to ensure objectivity.": "The sources suggest using oral, written, and performance modes to be comprehensive.",
+        "Only when a child commits a serious mistake.": "CCE is a continuous process meant for all students to ensure flow of learning."
+      }
+    },
+    {
+      "id": 12,
+      "question": "According to the sources, what is 'Remediation' also known as?",
+      "options": [
+        "Assessment of learning",
+        "Summative Evaluation",
+        "Assessment for learning",
+        "Formal testing"
+      ],
+      "correct_answer": "Assessment for learning",
+      "page_reference": 48,
+      "explanations": {
+        "Assessment of learning": "This is for reporting depth of learning.",
+        "Summative Evaluation": "This is end-of-unit testing.",
+        "Assessment for learning": "The sources explicitly state that 'assessment for learning' is otherwise known as 'Remediation'.",
+        "Formal testing": "Remediation can be informal activities planned to enhance learning."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a 'Recognition Type' objective item?",
+      "options": [
+        "Filling in a blank without a word bank.",
+        "True/False questions.",
+        "Naming a shrub on the school campus.",
+        "Providing the percentage of nitrogen in the air."
+      ],
+      "correct_answer": "True/False questions.",
+      "page_reference": 28,
+      "explanations": {
+        "Filling in a blank without a word bank.": "This is a completion type item requiring higher-level memory.",
+        "True/False questions.": "The sources list True/False as a kind of Recognition Type item.",
+        "Naming a shrub on the school campus.": "This is a Recall Type item testing retention of facts.",
+        "Providing the percentage of nitrogen in the air.": "This is a Recall Type item testing previously learned facts."
+      }
+    },
+    {
+      "id": 14,
+      "question": "How does an 'Investigative Test' differ from an 'Achievement Test'?",
+      "options": [
+        "Achievement tests cover smaller areas of content.",
+        "Investigative tests are less detailed.",
+        "In an investigative test, each learning point has several items forming a subtest.",
+        "There is no difference between them."
+      ],
+      "correct_answer": "In an investigative test, each learning point has several items forming a subtest.",
+      "page_reference": 74,
+      "explanations": {
+        "Achievement tests cover smaller areas of content.": "Achievement tests generally cover large portions of content.",
+        "Investigative tests are less detailed.": "Investigative tests are actually more detailed, based on a smaller area.",
+        "In an investigative test, each learning point has several items forming a subtest.": "The sources specify that investigative tests clusters items into subtests for each learning point.",
+        "There is no difference between them.": "The sources state they differ 'markedly' in sampling and detail."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Effective reporting of assessment results should focus on:",
+      "options": [
+        "Comparing students against each other to foster competition.",
+        "Conveying only general remarks like 'Good' or 'Very Good'.",
+        "Highlighting both strengths and weaknesses while being student-centered.",
+        "Keeping parents away from the process to avoid pressure."
+      ],
+      "correct_answer": "Highlighting both strengths and weaknesses while being student-centered.",
+      "page_reference": 58,
+      "explanations": {
+        "Comparing students against each other to foster competition.": "The sources say assessment is not for comparing children.",
+        "Conveying only general remarks like 'Good' or 'Very Good'.": "General remarks tell little about progress; specific remarks are needed.",
+        "Highlighting both strengths and weaknesses while being student-centered.": "The sources emphasize that reporting should be fair, student-centered, and project strengths/weaknesses.",
+        "Keeping parents away from the process to avoid pressure.": "The sources state reporting should actively involve parents."
+      }
+    },
+    {
+      "id": 16,
+      "question": "In the 'Correcting Mock Answers' variation of an essay test, students are required to:",
+      "options": [
+        "Write a new essay from scratch.",
+        "Memorize the teacher's answers.",
+        "Edit, correct, expand, or refute intellectually flawed answers.",
+        "Translate an essay into another language."
+      ],
+      "correct_answer": "Edit, correct, expand, or refute intellectually flawed answers.",
+      "page_reference": 33,
+      "explanations": {
+        "Write a new essay from scratch.": "This is a standard essay test; mock answers are a specific variation.",
+        "Memorize the teacher's answers.": "The goal is critical analysis, not memorization.",
+        "Edit, correct, expand, or refute intellectually flawed answers.": "The sources describe this technique as providing flawed answers for children to edit and refute.",
+        "Translate an essay into another language.": "This is a language skill, not the EVS comprehension goal of this technique."
+      }
+    },
+    {
+      "id": 17,
+      "question": "What is a 'Cumulative Anecdotal Record'?",
+      "options": [
+        "A collection of test scores over five years.",
+        "A diary of significant and interesting details of student behavior accumulated over time.",
+        "A record of all the books a student has borrowed from the library.",
+        "A medical record of student health."
+      ],
+      "correct_answer": "A diary of significant and interesting details of student behavior accumulated over time.",
+      "page_reference": 121,
+      "explanations": {
+        "A collection of test scores over five years.": "Anecdotal records focus on behavior and incidents, not just scores.",
+        "A diary of significant and interesting details of student behavior accumulated over time.": "The sources define it as accumulated notings of significant behavior/incidents noted by the teacher.",
+        "A record of all the books a student has borrowed from the library.": "This is a library log, not an anecdotal behavior record.",
+        "A medical record of student health.": "While health is important, anecdotal records cover social and cognitive behavior."
+      }
+    },
+    {
+      "id": 18,
+      "question": "If a student has trouble getting started with an assignment, the sources suggest trying:",
+      "options": [
+        "Giving them a higher difficulty task to challenge them.",
+        "Providing a cue to begin work or using peer support.",
+        "Assigning them to work alone in a quiet room.",
+        "Ignoring the behavior to see if they self-start."
+      ],
+      "correct_answer": "Providing a cue to begin work or using peer support.",
+      "page_reference": 79,
+      "explanations": {
+        "Giving them a higher difficulty task to challenge them.": "The sources suggest sequencing with easier tasks first.",
+        "Providing a cue to begin work or using peer support.": "The sources list giving a cue and using peer support as alternative activities for students who struggle to start.",
+        "Assigning them to work alone in a quiet room.": "If a student has trouble working independently, they may need more support, not isolation.",
+        "Ignoring the behavior to see if they self-start.": "Corrective teaching involves active guidance and checking progress often."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What does a 'Valid' assessment mean in the context of EVS?",
+      "options": [
+        "It is relevant to the EVS objectives and learning experiences provided.",
+        "It always produces the same score regardless of the grader.",
+        "It is printed on high-quality paper.",
+        "It is completed in exactly thirty minutes."
+      ],
+      "correct_answer": "It is relevant to the EVS objectives and learning experiences provided.",
+      "page_reference": 116,
+      "explanations": {
+        "It is relevant to the EVS objectives and learning experiences provided.": "The sources define valid assessment as one relevant to objectives and learning experiences.",
+        "It always produces the same score regardless of the grader.": "This refers to Reliability, not Validity.",
+        "It is printed on high-quality paper.": "Physical quality does not define pedagogical validity.",
+        "It is completed in exactly thirty minutes.": "This is a timing rule of thumb, not the definition of validity."
+      }
+    },
+    {
+      "id": 20,
+      "question": "In the case study regarding 'Anaemia', how did the teacher Salim apply corrective teaching?",
+      "options": [
+        "He gave a surprise written test the next day.",
+        "He ignored the group that didn't understand.",
+        "He organized an expert lecture by a doctor and showed a film.",
+        "He asked the students to read the textbook again."
+      ],
+      "correct_answer": "He organized an expert lecture by a doctor and showed a film.",
+      "page_reference": 83,
+      "explanations": {
+        "He gave a surprise written test the next day.": "Testing without remediation doesn't address the learning gap.",
+        "He ignored the group that didn't understand.": "Corrective teaching requires tailoring activities to suit identified needs.",
+        "He organized an expert lecture by a doctor and showed a film.": "The sources describe Salim inviting a doctor and showing a film as counteractive teaching to strengthen learning.",
+        "He asked the students to read the textbook again.": "Salim used methods different from those employed earlier to be more effective."
+      }
+    }
+  ]
+}

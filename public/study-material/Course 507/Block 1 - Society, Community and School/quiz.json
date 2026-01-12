@@ -1,0 +1,365 @@
+{
+  "quiz_title": "D.El.Ed Course 507: Block 1 - Society, Community and School",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The term 'society' is rooted in the Latin word 'societas'. What is the literal meaning of this root word?",
+      "options": [
+        "A set of rules",
+        "Friend and ally",
+        "A fixed territory",
+        "Legal authority"
+      ],
+      "correct_answer": "Friend and ally",
+      "page_reference": 3,
+      "explanations": {
+        "A set of rules": "While society involves rules (norms), this is not the etymological meaning of the Latin root.",
+        "Friend and ally": "The sources explicitly state that 'societas' means friend and ally, describing a relation or interaction among a group.",
+        "A fixed territory": "This describes a 'community' more specifically, rather than the root of 'society'.",
+        "Legal authority": "Legal authority is a function of political institutions within a society, not the root meaning of the word itself."
+      }
+    },
+    {
+      "id": 2,
+      "question": "In social relations, which of the following is considered a 'secondary relative'?",
+      "options": [
+        "Mother",
+        "Brother",
+        "Aunt",
+        "Friend"
+      ],
+      "correct_answer": "Aunt",
+      "page_reference": 2,
+      "explanations": {
+        "Mother": "Primary relations include mother, father, son, daughter, husband, wife, brother, and sister.",
+        "Brother": "Brothers are classified under primary relations within the family structure.",
+        "Aunt": "The sources define uncle, aunt, nephew, and niece as secondary relatives.",
+        "Friend": "Friends and neighborhood relations are classified as tertiary relatives."
+      }
+    },
+    {
+      "id": 3,
+      "question": "According to the sources, what are 'norms and values' often referred to in the context of society?",
+      "options": [
+        "Primary relations",
+        "Collective conscience and unwritten constitution",
+        "Economic structure",
+        "Political hierarchy"
+      ],
+      "correct_answer": "Collective conscience and unwritten constitution",
+      "page_reference": 2,
+      "explanations": {
+        "Primary relations": "These refer to immediate family bonds, not the guiding principles of society.",
+        "Collective conscience and unwritten constitution": "The sources describe norms and values as the collective conscience and unwritten constitution of any society, attached with rewards and punishments.",
+        "Economic structure": "Karl Marx considered economy the basic structure, but it is not the definition of norms and values.",
+        "Political hierarchy": "This relates to power and authority, which are regulated by norms but are not the norms themselves."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which social scientist defined society as a 'system of usage and procedures, of authority and mutual aid'?",
+      "options": [
+        "Talcott Parsons",
+        "John Dewey",
+        "MacIver and Page",
+        "Emile Durkheim"
+      ],
+      "correct_answer": "MacIver and Page",
+      "page_reference": 3,
+      "explanations": {
+        "Talcott Parsons": "Parsons used the term 'social system' and emphasized 'interaction' as the basic unit.",
+        "John Dewey": "Dewey focused on the school as a 'miniature society' and an organ for social progress.",
+        "MacIver and Page": "The sources attribute the definition of society as a system of usage, procedures, authority, and mutual aid to MacIver and Page.",
+        "Emile Durkheim": "Durkheim defined religion as a unified system of beliefs and practices related to sacred things."
+      }
+    },
+    {
+      "id": 5,
+      "question": "What is identified as the 'first school' where children begin their initial learning?",
+      "options": [
+        "Formal Primary School",
+        "The Family",
+        "The Community Center",
+        "Religious Institutions"
+      ],
+      "correct_answer": "The Family",
+      "page_reference": 6,
+      "explanations": {
+        "Formal Primary School": "This is a later stage of organized learning following initial socialization.",
+        "The Family": "The sources state that the family is the first school where children start their initial learning, with mothers often playing the role of the first teacher.",
+        "The Community Center": "Communities are socializing agencies but are not defined as the 'first' school.",
+        "Religious Institutions": "Religion provides social control and beliefs, but learning begins in the home (family) first."
+      }
+    },
+    {
+      "id": 6,
+      "question": "According to Karl Marx, which institution forms the 'basic structure' of any society upon which others depend?",
+      "options": [
+        "Religion",
+        "Education",
+        "Economy",
+        "Polity"
+      ],
+      "correct_answer": "Economy",
+      "page_reference": 8,
+      "explanations": {
+        "Religion": "Marx generally viewed religion as dependent on the economic base rather than the base itself.",
+        "Education": "Education is considered a social need and a sub-system, but not the 'basic structure' in Marxist theory.",
+        "Economy": "The sources explicitly state that Karl Marx considered the economy as the basic structure of any society on which other institutions are dependent.",
+        "Polity": "Political institutions concern power and authority, which Marx viewed as being shaped by the economic base."
+      }
+    },
+    {
+      "id": 7,
+      "question": "The concept of 'Unity in Diversity' in India is supported by the existence of a single classification model encompassing the whole country. What is this model?",
+      "options": [
+        "The Economic Class system",
+        "The Varna System",
+        "The Nordic Racial element",
+        "The Digital Identity system"
+      ],
+      "correct_answer": "The Varna System",
+      "page_reference": 19,
+      "explanations": {
+        "The Economic Class system": "Class is present in India, but it is not the traditional unifying model mentioned in the text.",
+        "The Varna System": "The sources state that the single Varna model and Varna ashram system encompass whole India into one society, explaining social groups across regions.",
+        "The Nordic Racial element": "Nordic is just one of six major racial elements identified by B.S. Guha, not a unifying social model.",
+        "The Digital Identity system": "This is a modern technological concept not discussed in the historical evolution of Indian society in the text."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Who viewed school as a 'miniature and reflection of society' rather than just an individualistic interaction between teacher and pupil?",
+      "options": [
+        "Ivan Illich",
+        "Rabindranath Tagore",
+        "John Dewey",
+        "Paulo Freire"
+      ],
+      "correct_answer": "John Dewey",
+      "page_reference": 22,
+      "explanations": {
+        "Ivan Illich": "Known for his work on 'Deschooling Society', not the 'miniature society' quote used here.",
+        "Rabindranath Tagore": "Tagore emphasized the role of education in solving world problems and human contribution.",
+        "John Dewey": "The sources state that John Dewey argued school is a miniature and reflection of society, and its objective is social progress.",
+        "Paulo Freire": "Freire's work (Pedagogy of the Oppressed) focused on the difference between oppressors and oppressed in the education process."
+      }
+    },
+    {
+      "id": 9,
+      "question": "French sociologist Pierre Bourdieu used which term to describe how education perpetuates the culture of the dominant class?",
+      "options": [
+        "Social Mobility",
+        "Organic Solidarity",
+        "Cultural Reproduction",
+        "Proselytization"
+      ],
+      "correct_answer": "Cultural Reproduction",
+      "page_reference": 31,
+      "explanations": {
+        "Social Mobility": "This refers to the movement of individuals or groups in social hierarchy, which education can *facilitate*.",
+        "Organic Solidarity": "This is a term used by Durkheim to describe education's role in nation-building through heterogeneity.",
+        "Cultural Reproduction": "The sources state that Pierre Bourdieu viewed education as perpetuating the culture of the dominant class, a phenomenon he called 'cultural reproduction'.",
+        "Proselytization": "This is the feature of religious institutions (missionaries, madarsas) to inculcate religious ideals."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a 'Social Skill' among the ten core life skills identified by WHO?",
+      "options": [
+        "Creative Thinking",
+        "Coping with Stress",
+        "Empathy",
+        "Problem Solving"
+      ],
+      "correct_answer": "Empathy",
+      "page_reference": 107,
+      "explanations": {
+        "Creative Thinking": "This is classified as a 'Thinking Skill'.",
+        "Coping with Stress": "This is classified as an 'Emotional Skill'.",
+        "Empathy": "The sources list Empathy as a Social Skill, along with Self Awareness, Effective Communication, and Interpersonal Relations.",
+        "Problem Solving": "This is classified as a 'Thinking Skill'."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In the context of language development, what is the 'diglossic' nature of language often associated with in Indian schools?",
+      "options": [
+        "The use of two different languages for the same subject",
+        "The gap between home language (dialect) and the official/standard school language",
+        "A child's inability to speak more than one language",
+        "The teaching of ancient languages like Sanskrit"
+      ],
+      "correct_answer": "The gap between home language (dialect) and the official/standard school language",
+      "page_reference": 78,
+      "explanations": {
+        "The use of two different languages for the same subject": "This is bilingualism, not the specific 'diglossic' problem described.",
+        "The gap between home language (dialect) and the official/standard school language": "The source mentions the 'diglossic nature' of Tamil as a reason for setbacks in achievement, where children's home language differs significantly from the written school form.",
+        "A child's inability to speak more than one language": "Diglossia refers to the status/use of language varieties, not individual lack of skill.",
+        "The teaching of ancient languages like Sanskrit": "While a classic language, the text uses 'diglossic' to describe the drift between spoken and written forms of modern regional languages."
+      }
+    },
+    {
+      "id": 12,
+      "question": "The 'Shiksha Karmi Project' in Rajasthan was designed to tackle which specific problem in remote villages?",
+      "options": [
+        "Lack of school buildings",
+        "Inadequate midday meal quality",
+        "Chronic teacher absenteeism",
+        "High cost of private textbooks"
+      ],
+      "correct_answer": "Chronic teacher absenteeism",
+      "page_reference": 62,
+      "explanations": {
+        "Lack of school buildings": "The project used existing buildings but faced 'empty' schools due to lack of staff.",
+        "Inadequate midday meal quality": "While a concern, it was not the primary focus of the SKP.",
+        "Chronic teacher absenteeism": "The source explicitly states that the Shiksha Karmi Project (SKP) aimed to tackle teacher absenteeism by selecting ordinary villagers to replace absent primary teachers.",
+        "High cost of private textbooks": "SKP focused on the human resource of teachers, not the cost of materials."
+      }
+    },
+    {
+      "id": 13,
+      "question": "What is the main advantage of 'Participatory Learning and Action' (PLA) techniques in community mapping?",
+      "options": [
+        "They require expensive software and GPS tools.",
+        "They use symbols that allow illiterate adults and children to participate.",
+        "They are conducted only by government officials in a formal office.",
+        "They rely strictly on written surveys and interviews."
+      ],
+      "correct_answer": "They use symbols that allow illiterate adults and children to participate",
+      "page_reference": 158,
+      "explanations": {
+        "They require expensive software and GPS tools.": "PLA uses local materials like seeds, sticks, and brick powder.",
+        "They use symbols that allow illiterate adults and children to participate.": "The sources state PLA is effective because it uses symbols, encouraging those who are not literate to contribute to the dialogue.",
+        "They are conducted only by government officials in a formal office.": "PLA is a community-based activity typically done on the ground in the village.",
+        "They rely strictly on written surveys and interviews.": "PLA is an alternative to traditional written surveys, prioritizing visual communication."
+      }
+    },
+    {
+      "id": 14,
+      "question": "The 'Chapati Community Visioning' exercise uses different sizes of cardboard circles to:",
+      "options": [
+        "Teach nutrition and healthy eating habits",
+        "Categorize the importance of community problems",
+        "Vote for the new Village Education Committee members",
+        "Measure the amount of grain needed for the midday meal"
+      ],
+      "correct_answer": "Categorize the importance of community problems",
+      "page_reference": 158,
+      "explanations": {
+        "Teach nutrition and healthy eating habits": "While the name comes from food, the exercise is about community planning, not diet.",
+        "Categorize the importance of community problems": "The source explains that residents associate the most important problems with large 'chappatis' and less significant ones with smaller ones.",
+        "Vote for the new Village Education Committee members": "VEC selection is a formal administrative process; Chapati visioning is for problem identification.",
+        "Measure the amount of grain needed for the midday meal": "The 'chappatis' in this exercise are cardboard symbols, not actual food items."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Under the Right to Education (RTE) Act 2009, what is the required proportion of parents/guardians in a School Management Committee (SMC)?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correct_answer": "75%",
+      "page_reference": 246,
+      "explanations": {
+        "25%": "The remaining 25% of the SMC consists of local authorities, teachers, and academicians.",
+        "50%": "50% of the *total* SMC must be women, but the parent proportion is higher.",
+        "75%": "The source states that three-fourths (75%) of the members of the SMC must be from the parents or guardians.",
+        "100%": "The committee includes teachers and local authority members, so parents do not make up the entire group."
+      }
+    },
+    {
+      "id": 16,
+      "question": "What is the primary difference between 'Formal' and 'Non-formal' education as defined in the glossary?",
+      "options": [
+        "Formal education is free, while non-formal education requires a fee.",
+        "Formal education has a rigid curriculum; non-formal has flexible curricula and methodology.",
+        "Non-formal education only takes place in universities.",
+        "Formal education does not use textbooks."
+      ],
+      "correct_answer": "Formal education has a rigid curriculum; non-formal has flexible curricula and methodology.",
+      "page_reference": 46,
+      "explanations": {
+        "Formal education is free, while non-formal education requires a fee.": "Fees are not the defining difference in these definitions.",
+        "Formal education has a rigid curriculum; non-formal has flexible curricula and methodology.": "The sources define formal education by its 'rigid curriculum' and non-formal as endowed with 'flexible curricula and methodology'.",
+        "Non-formal education only takes place in universities.": "Non-formal education activities mostly take place 'outside the institution', like home-based reading.",
+        "Formal education does not use textbooks.": "Formal education is systematic and organized, typically using standard school materials including textbooks."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Which state initiative involves 'Sanghas' of women who run balwadis and play an active role in enrolling children?",
+      "options": [
+        "Assam",
+        "Karnataka",
+        "Mizoram",
+        "Haryana"
+      ],
+      "correct_answer": "Karnataka",
+      "page_reference": 254,
+      "explanations": {
+        "Assam": "Assam's initiatives included mobilizing funds and motivating parents of disabled children.",
+        "Karnataka": "The sources list Karnataka as the state where Sanghas (Mahila Samakhya) are running balwadis and enrolling children into primary schools.",
+        "Mizoram": "Mizoram focused on habitation plans and Village Education Registers.",
+        "Haryana": "Haryana focused on monitoring teacher/student attendance and the delivery of incentives."
+      }
+    },
+    {
+      "id": 18,
+      "question": "According to the sources, what is the defining characteristic of a 'Community' compared to 'Society'?",
+      "options": [
+        "Community is abstract; Society is concrete.",
+        "Community is characterized by a definite territory and 'we feeling'.",
+        "Society is always smaller than a community.",
+        "Communities have no shared cultural similarities."
+      ],
+      "correct_answer": "Community is characterized by a definite territory and 'we feeling'.",
+      "page_reference": 4,
+      "explanations": {
+        "Community is abstract; Society is concrete.": "The source states the opposite: Society is an abstract concept, while community is a constituent of society.",
+        "Community is characterized by a definite territory and 'we feeling'.": "The sources define community as being characterized by a definite territory, close relationships called 'we feeling', and cultural similarity.",
+        "Society is always smaller than a community.": "Society is described as a 'broad and general concept', implying it encompasses communities.",
+        "Communities have no shared cultural similarities.": "Cultural similarity is a listed characteristic of a community."
+      }
+    },
+    {
+      "id": 19,
+      "question": "In the case of 'Ambedkar Prathmik Shala', what was the primary reason identified for the school's poor condition?",
+      "options": [
+        "Lack of government funding for grains.",
+        "Lack of community engagement and rapport with teachers.",
+        "Too many trees in the school yard.",
+        "Parents were too highly educated to care about the school."
+      ],
+      "correct_answer": "Lack of community engagement and rapport with teachers.",
+      "page_reference": 175,
+      "explanations": {
+        "Lack of government funding for grains.": "Grains were present but were reportedly being transported outside the school improperly.",
+        "Lack of community engagement and rapport with teachers.": "The case study concludes that the lack of leadership and indifference of teachers was reciprocated by the community, with no rapport existing.",
+        "Too many trees in the school yard.": "The source notes that in the large open ground, 'not one plant was sown'.",
+        "Parents were too highly educated to care about the school.": "The community consisted of migrants and laborers who felt excluded from the school process."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which life skill involves the ability to analyze information and experiences objectively?",
+      "options": [
+        "Self Awareness",
+        "Critical Thinking",
+        "Coping with Emotions",
+        "Interpersonal Relationships"
+      ],
+      "correct_answer": "Critical Thinking",
+      "page_reference": 108,
+      "explanations": {
+        "Self Awareness": "This is the ability to understand our own strengths, weaknesses, and character.",
+        "Critical Thinking": "The sources define critical thinking as enabling us to analyze information and experience objectively.",
+        "Coping with Emotions": "This involves recognizing emotions within us and responding appropriately.",
+        "Interpersonal Relationships": "This helps us relate with people in a positive way and maintain friendships."
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Health, Physical Education, and Yoga Comprehensive Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the World Health Organization (WHO), how is 'health' defined?",
+      "options": [
+        "The simple absence of disease or infirmity.",
+        "A state of being sound in the body only.",
+        "A state of complete physical, mental, and social well-being.",
+        "The level of functional efficiency at a cellular level only."
+      ],
+      "correct_answer": "A state of complete physical, mental, and social well-being.",
+      "page_reference": 5,
+      "explanations": {
+        "The simple absence of disease or infirmity.": "The sources state that WHO defines health as not merely the absence of disease.",
+        "A state of being sound in the body only.": "While the old English word 'hoelth' referred to a sound body, the modern WHO definition is broader.",
+        "A state of complete physical, mental, and social well-being.": "WHO defines health as a state of complete physical, mental, and social well-being.",
+        "The level of functional efficiency at a cellular level only.": "Functional efficiency at the cellular level is a medical definition, but the WHO definition covers physical, mental, and social wellness."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which component of fitness is considered the most important because it trains the lungs and heart to work efficiently?",
+      "options": [
+        "Strength",
+        "Stamina",
+        "Suppleness",
+        "Speed"
+      ],
+      "correct_answer": "Stamina",
+      "page_reference": 68,
+      "explanations": {
+        "Strength": "Strength involves using muscles against resistance but is not cited as the most important component.",
+        "Stamina": "Stamina is the most important component because it trains the heart and lungs and protects against heart disease.",
+        "Suppleness": "Suppleness refers to the range of movement in limbs, often improved during warm-ups.",
+        "Speed": "Speed is increased by technique and strength training to provide power."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In a school setting, what is the primary purpose of 'School Assemblies'?",
+      "options": [
+        "To provide specialized training for elite athletes.",
+        "To conduct formal written examinations for all students.",
+        "To share information and foster a sense of community.",
+        "To allow students to practice advanced calisthenics."
+      ],
+      "correct_answer": "To share information and foster a sense of community.",
+      "page_reference": 89,
+      "explanations": {
+        "To provide specialized training for elite athletes.": "Assemblies are for the general school population, not specialized athletic training.",
+        "To conduct formal written examinations for all students.": "The sources describe assemblies as venues for announcements and community building, not exams.",
+        "To share information and foster a sense of community.": "Assemblies bring students together to share information and foster a sense of community.",
+        "To allow students to practice advanced calisthenics.": "While calisthenics are mass activities, assemblies are specifically defined as venues for information and community."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which nutrient group is specifically identified as 'body building food'?",
+      "options": [
+        "Carbohydrates",
+        "Fats",
+        "Proteins",
+        "Mineral salts"
+      ],
+      "correct_answer": "Proteins",
+      "page_reference": 30,
+      "explanations": {
+        "Carbohydrates": "Carbohydrates are classified as 'energy giving food'.",
+        "Fats": "Fats are also classified as 'energy giving food'.",
+        "Proteins": "Proteins are defined as 'body building food' and are essential for growing children.",
+        "Mineral salts": "Mineral salts are classified as 'protective food'."
+      }
+    },
+    {
+      "id": 5,
+      "question": "When performing the 'ABC' primary survey of an injured victim in first aid, what does 'B' stand for?",
+      "options": [
+        "Bleeding",
+        "Bones",
+        "Breathing",
+        "Balance"
+      ],
+      "correct_answer": "Breathing",
+      "page_reference": 57,
+      "explanations": {
+        "Bleeding": "Checking for cuts and bleeding is part of the survey, but 'B' specifically refers to breathing.",
+        "Bones": "Checking for fractures is important, but not part of the initial ABC acronym.",
+        "Breathing": "In the primary survey ABC, 'B' stands for determining if the victim is breathing.",
+        "Balance": "Balance is an outcome of physical education, not a component of the ABC first aid survey."
+      }
+    },
+    {
+      "id": 6,
+      "question": "What is the specific meaning of the Latin phrase 'intra muros' from which the term 'intramurals' is derived?",
+      "options": [
+        "Between schools",
+        "Within walls",
+        "For everyone",
+        "Outside the city"
+      ],
+      "correct_answer": "Within walls",
+      "page_reference": 76,
+      "explanations": {
+        "Between schools": "Competitions between different schools are called 'extramurals'.",
+        "Within walls": "The term derives from Latin words 'intra muros' meaning 'within walls'.",
+        "For everyone": "While intramurals encourage mass participation, the literal translation is not 'for everyone'.",
+        "Outside the city": "The sources state the term refers to teams from 'within the walls' of an ancient city."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which postural deformity is characterized by a sideward deviation of the spine?",
+      "options": [
+        "Kyphosis",
+        "Lordosis",
+        "Scoliosis",
+        "Knock-knee"
+      ],
+      "correct_answer": "Scoliosis",
+      "page_reference": 36,
+      "explanations": {
+        "Kyphosis": "Kyphosis is an increase in the amount of normal convexity.",
+        "Lordosis": "Lordosis is an increase in the normal concavity of the lumbar region.",
+        "Scoliosis": "Scoliosis is defined as a sideward deviation of the spine.",
+        "Knock-knee": "Knock-knee is a condition where the knees touch but the ankles do not."
+      }
+    },
+    {
+      "id": 8,
+      "question": "According to modern research cited in the text, what is the relationship between happiness and success?",
+      "options": [
+        "Success is the primary cause of happiness.",
+        "Happiness is the primary cause of success.",
+        "There is no correlation between the two.",
+        "Success and happiness occur simultaneously and independently."
+      ],
+      "correct_answer": "Happiness is the primary cause of success.",
+      "page_reference": 5,
+      "explanations": {
+        "Success is the primary cause of happiness.": "The sources mention this was an old belief that newer research has reversed.",
+        "Happiness is the primary cause of success.": "Newer research reveals that happy people are more likely to work toward goals and find resources, making happiness a building block of success.",
+        "There is no correlation between the two.": "The text states there is a significant link, where happiness leads to success.",
+        "Success and happiness occur simultaneously and independently.": "The text emphasizes that happiness acts as the catalyst for success in work and relationships."
+      }
+    },
+    {
+      "id": 9,
+      "question": "What is the correct treatment for a victim of 'Artery Bleeding' as per the first aid tips?",
+      "options": [
+        "Raise the injured part above the level of the heart.",
+        "Throw the head backwards and apply an ice bag.",
+        "Apply pressure with thumbs on the bleeding spots at the upper part of the artery.",
+        "Apply water directly to the wound to cool it."
+      ],
+      "correct_answer": "Apply pressure with thumbs on the bleeding spots at the upper part of the artery.",
+      "page_reference": 59,
+      "explanations": {
+        "Raise the injured part above the level of the heart.": "This is the suggested treatment for vein bleeding.",
+        "Throw the head backwards and apply an ice bag.": "This is the suggested treatment for nose bleeding.",
+        "Apply pressure with thumbs on the bleeding spots at the upper part of the artery.": "The sources state for artery bleeding, you should apply pressure with thumbs on the upper part of the artery.",
+        "Apply water directly to the wound to cool it.": "The text specifically warns 'Do not apply water' in the context of burns, and for bleeding, focuses on pressure and elevation."
+      }
+    },
+    {
+      "id": 10,
+      "question": "The 'Command Method' of teaching is most appropriate for which type of activity?",
+      "options": [
+        "Developing individual creative movement in children.",
+        "Teaching mass uniform activities like drills and marching.",
+        "Learning complex, high-skill techniques like the somersault.",
+        "Encouraging informal one-on-one student interaction."
+      ],
+      "correct_answer": "Teaching mass uniform activities like drills and marching.",
+      "page_reference": 86,
+      "explanations": {
+        "Developing individual creative movement in children.": "The command method restricts creativity and individuality.",
+        "Teaching mass uniform activities like drills and marching.": "The command method is useful for teaching drills, marching, and mass activities where uniformity is required.",
+        "Learning complex, high-skill techniques like the somersault.": "The whole-part-whole method is better for difficult skills, as the command method is unsuited for sensitive individual needs.",
+        "Encouraging informal one-on-one student interaction.": "In the command method, the relationship between teacher and students remains formal."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Which type of Start is used in all medium distance races EXCEPT the 800m race?",
+      "options": [
+        "Crouch Start",
+        "Bunch Start",
+        "Sitting Start",
+        "Standing Start"
+      ],
+      "correct_answer": "Standing Start",
+      "page_reference": 102,
+      "explanations": {
+        "Crouch Start": "Crouch starts are types of sitting starts used for short distance/sprint races.",
+        "Bunch Start": "Bunch start is a variation of the sitting start for sprints.",
+        "Sitting Start": "Sitting starts are generally used for short distance races.",
+        "Standing Start": "A standing start is taken in all medium distance races except for the 800m race."
+      }
+    },
+    {
+      "id": 12,
+      "question": "In the game of Kabaddi, how many points are awarded to a team for a 'Lona'?",
+      "options": [
+        "1 point",
+        "2 points",
+        "5 points",
+        "Points equal to the number of players caught."
+      ],
+      "correct_answer": "2 points",
+      "page_reference": 109,
+      "explanations": {
+        "1 point": "A team earns 1 point each time an opposing player is out.",
+        "2 points": "A team scores a bonus of two points, called a lona, if the entire opposing team is declared out.",
+        "5 points": "The text does not mention a 5-point award.",
+        "Points equal to the number of players caught.": "While individual outs score points, the lona is a specific bonus for clearing the whole team."
+      }
+    },
+    {
+      "id": 13,
+      "question": "The word 'Yoga' is derived from the Sanskrit word 'Yuj'. What is its meaning?",
+      "options": [
+        "To exercise",
+        "To yoke, join or unite",
+        "To breathe deeply",
+        "To achieve Success"
+      ],
+      "correct_answer": "To yoke, join or unite",
+      "page_reference": 116,
+      "explanations": {
+        "To exercise": "Yoga involves postures, but the literal meaning of the root word is spiritual union.",
+        "To yoke, join or unite": "Yoga comes from 'Yuj', meaning to yoke, join or unite body with mind and mind with soul.",
+        "To breathe deeply": "Breath control (Pranayama) is a stage of yoga, not the meaning of the word 'Yoga' itself.",
+        "To achieve Success": "The aim of yoga is control over the mind to achieve a happy life, but 'Yuj' specifically means to unite."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which stage of lesson planning involves evaluation, revision, and planning after the lesson is completed?",
+      "options": [
+        "Pre-lesson preparation",
+        "Lesson planning and implementation",
+        "Post-lesson activities",
+        "Formal activities"
+      ],
+      "correct_answer": "Post-lesson activities",
+      "page_reference": 84,
+      "explanations": {
+        "Pre-lesson preparation": "This stage involves setting goals and deciding methods before the lesson.",
+        "Lesson planning and implementation": "This stage involves the actual unit title, objectives, and evaluation during the process.",
+        "Post-lesson activities": "Stage 3 consists of post-lesson activities including evaluation, revision, and future planning.",
+        "Formal activities": "Formal activities involve the actual training of skills during the lesson session."
+      }
+    },
+    {
+      "id": 15,
+      "question": "In the context of school environment, what are the '4 Rs' mentioned for waste management?",
+      "options": [
+        "Read, Reduce, Reuse, Recycle",
+        "Refuse, Reuse, Reduce, Recycle",
+        "Repair, Refuse, Repeat, Recycle",
+        "Review, Reduce, Refuse, Re-evaluate"
+      ],
+      "correct_answer": "Refuse, Reuse, Reduce, Recycle",
+      "page_reference": 24,
+      "explanations": {
+        "Read, Reduce, Reuse, Recycle": "Reading is not part of the waste management 4 Rs cited.",
+        "Refuse, Reuse, Reduce, Recycle": "The sources state we can manage waste by the 4 Rs: Refuse, Reuse, Reduce, Recycle.",
+        "Repair, Refuse, Repeat, Recycle": "Repeat and repair are not listed in the specific 4 R framework in the text.",
+        "Review, Reduce, Refuse, Re-evaluate": "Review and re-evaluate are management steps, not the specific waste disposal 4 Rs."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is a symptom of 'Small Pox' as listed in the communicable diseases table?",
+      "options": [
+        "Irritating cough and mild fever.",
+        "Cough and fever with irruption in sensory nerve roots.",
+        "Fever, headache, vomiting, and rashes.",
+        "Pain in the back and shivering."
+      ],
+      "correct_answer": "Fever, headache, vomiting, and rashes.",
+      "page_reference": 33,
+      "explanations": {
+        "Irritating cough and mild fever.": "This is a symptom of Whooping cough.",
+        "Cough and fever with irruption in sensory nerve roots.": "Irruption in sensory nerve roots is associated with Chicken pox, not Small pox.",
+        "Fever, headache, vomiting, and rashes.": "The sources list these as the symptoms for Small pox.",
+        "Pain in the back and shivering.": "These are specific symptoms listed for Chicken pox."
+      }
+    },
+    {
+      "id": 17,
+      "question": "What is 'Calisthenics'?",
+      "options": [
+        "A type of meditation involving specific chanting.",
+        "A formal sports competition between different schools.",
+        "General group activities involving free hand movements performed to rhythm.",
+        "The final stage of Samadhi in yoga practice."
+      ],
+      "correct_answer": "General group activities involving free hand movements performed to rhythm.",
+      "page_reference": 91,
+      "explanations": {
+        "A type of meditation involving specific chanting.": "Calisthenics involves physical body movements, not just meditation or chanting.",
+        "A formal sports competition between different schools.": "That describes extramural sports.",
+        "General group activities involving free hand movements performed to rhythm.": "Calisthenics are defined as mass uniform body movements involving free hand movements performed to rhythm or without it.",
+        "The final stage of Samadhi in yoga practice.": "Samadhi is the eighth stage of yoga; calisthenics is a separate physical education component."
+      }
+    },
+    {
+      "id": 18,
+      "question": "According to the sources, why is it important to provide 'Separate toilet blocks for girls' in co-educational schools?",
+      "options": [
+        "To save on cleaning costs for the school authorities.",
+        "To ensure girls feel safe from risk of harassment.",
+        "To prevent the spread of hereditary diseases.",
+        "To comply with fire safety regulations for buildings."
+      ],
+      "correct_answer": "To ensure girls feel safe from risk of harassment.",
+      "page_reference": 21,
+      "explanations": {
+        "To save on cleaning costs for the school authorities.": "Toilet blocks actually require more cleaning (twice a day).",
+        "To ensure girls feel safe from risk of harassment.": "School authorities must provide separate blocks so children feel safe without risk of harassment.",
+        "To prevent the spread of hereditary diseases.": "Toilets address communicable/infectious diseases and hygiene, not hereditary ones.",
+        "To comply with fire safety regulations for buildings.": "Separate toilets are for sanitation and safety/privacy, not building fire codes."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Which type of 'Pranayama' involves alternate nostril breathing and is useful for cleansing nasal passages?",
+      "options": [
+        "Shitali Pranayama",
+        "Ujjayi Pranayama",
+        "Kapalabhati Pranayama",
+        "Anuloma Pranayama"
+      ],
+      "correct_answer": "Anuloma Pranayama",
+      "page_reference": 128,
+      "explanations": {
+        "Shitali Pranayama": "Shitali involves inhaling through an 'o' shaped mouth to cool the body.",
+        "Ujjayi Pranayama": "Ujjayi mimics the sound of the ocean by constricting the throat.",
+        "Kapalabhati Pranayama": "Kapalabhati involves forceful exhalations using the belly.",
+        "Anuloma Pranayama": "Anuloma is about alternate nostril breathing and is useful for cleansing nasal passages."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Under SSA/School Health services, how often is 'Comprehensive health assessment' (measuring height and weight) typically performed?",
+      "options": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Annually"
+      ],
+      "correct_answer": "Monthly",
+      "page_reference": 45,
+      "explanations": {
+        "Daily": "Records are kept, but formal assessments like height/weight are not described as daily.",
+        "Weekly": "The source specifies a different interval for comprehensive assessment.",
+        "Monthly": "Comprehensive health assessment is done monthly by measuring height and weight of the child.",
+        "Annually": "Immunization is done annually, but height/weight assessments are monthly."
+      }
+    }
+  ]
+}

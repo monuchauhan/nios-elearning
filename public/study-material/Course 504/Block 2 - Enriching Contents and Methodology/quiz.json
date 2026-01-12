@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Block 2: Enriching Contents and Methodology - Mathematics Proficiency Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the Hindu-Arabic decimal system, why is the digit '0' specifically referred to as a 'place holder'?",
+      "options": [
+        "Because it is the smallest whole number and begins every count.",
+        "Because its value changes depending on which column it occupies.",
+        "Because it keeps the place of a specific power of ten intact to give proper identity to a number.",
+        "Because it is the only digit that does not have a face value."
+      ],
+      "correct_answer": "Because it keeps the place of a specific power of ten intact to give proper identity to a number.",
+      "page_reference": 3,
+      "explanations": {
+        "Option 1": "Incorrect. Counting starts from 1, and while 0 is the smallest whole number, this does not define its role as a place holder.",
+        "Option 2": "Incorrect. The text states that '0' has the same place value (zero) regardless of its position.",
+        "Option 3": "Correct. The source explains that without 0, a number like 308 would reduce to 38, causing confusion; 0 keeps the position intact.",
+        "Option 4": "Incorrect. Every digit has a face value; the face value of 0 is 0."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which of the following statements regarding number sets is FALSE according to the hierarchical relationship in mathematics?",
+      "options": [
+        "All natural numbers are integers.",
+        "All integers are rational numbers.",
+        "Zero is a positive integer.",
+        "Every rational number can be written in the form p/q where q is not zero."
+      ],
+      "correct_answer": "Zero is a positive integer.",
+      "page_reference": 6,
+      "explanations": {
+        "Option 1": "Incorrect. This is true; natural numbers (1, 2, 3...) are a subset of integers.",
+        "Option 2": "Incorrect. This is true; integers can be written as p/1, fitting the rational number definition.",
+        "Option 3": "Correct. The source explicitly states that 'Zero (0) is neither positive nor negative.'",
+        "Option 4": "Incorrect. This is the definition of a rational number provided on page 8."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What is the primary difference between a 'Prime Number' and a 'Composite Number' as defined in the source?",
+      "options": [
+        "Prime numbers are odd, while composite numbers are even.",
+        "Prime numbers have exactly two distinct factors (1 and itself), while composite numbers have more than two.",
+        "Prime numbers can be negative, while composite numbers must be positive.",
+        "Composite numbers are always multiples of prime numbers, but prime numbers are not."
+      ],
+      "correct_answer": "Prime numbers have exactly two distinct factors (1 and itself), while composite numbers have more than two.",
+      "page_reference": 13,
+      "explanations": {
+        "Option 1": "Incorrect. The number 2 is an even prime number.",
+        "Option 2": "Correct. The source defines a Prime number as having exactly two factors and a composite number as having more than two.",
+        "Option 3": "Incorrect. Prime and composite numbers are defined within the set of natural numbers greater than 1.",
+        "Option 4": "Incorrect. This is a characteristic but not the primary definition used to distinguish them in the text."
+      }
+    },
+    {
+      "id": 4,
+      "question": "If the Highest Common Factor (HCF) of two numbers is 8 and their Lowest Common Multiple (LCM) is 96, and one number is 24, what is the other number?",
+      "options": [
+        "12",
+        "32",
+        "48",
+        "64"
+      ],
+      "correct_answer": "32",
+      "page_reference": 29,
+      "explanations": {
+        "Option 1": "Incorrect. 24 * 12 = 288, while 8 * 96 = 768.",
+        "Option 2": "Correct. According to the formula: Product of two numbers = HCF × LCM. (24 × X = 8 × 96). X = 768 / 24 = 32.",
+        "Option 3": "Incorrect. This does not satisfy the product rule formula.",
+        "Option 4": "Incorrect. This does not satisfy the product rule formula."
+      }
+    },
+    {
+      "id": 5,
+      "question": "In Geometry, why are 'Point', 'Line', and 'Plane' referred to as 'Undefined terms'?",
+      "options": [
+        "Because mathematicians haven't agreed on what they mean yet.",
+        "Because their definitions would require using the very terms they are trying to define.",
+        "Because they do not exist in the physical world.",
+        "Because they are only used in 2-D shapes and not 3-D objects."
+      ],
+      "correct_answer": "Because their definitions would require using the very terms they are trying to define.",
+      "page_reference": 42,
+      "explanations": {
+        "Option 1": "Incorrect. Mathematicians have agreed on their usage via axioms, even if the terms themselves are technically 'undefined'.",
+        "Option 2": "Correct. The text states that to define these basic terms, one would have to come back to the terms themselves, hence they are 'Undefined'.",
+        "Option 3": "Incorrect. While they are abstract, they are the foundation for defining physical shapes.",
+        "Option 4": "Incorrect. These terms are fundamental to both 2-D and 3-D geometry."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which specific condition is required for two triangles to be congruent under the 'RHS' (Right-Hypotenuse-Side) condition?",
+      "options": [
+        "Two angles and the included side must be equal.",
+        "All three sides of one triangle must be equal to the sides of the other.",
+        "The hypotenuse and one side of a right-angled triangle must be equal to those of the other.",
+        "Two sides and the included angle must be equal."
+      ],
+      "correct_answer": "The hypotenuse and one side of a right-angled triangle must be equal to those of the other.",
+      "page_reference": 62,
+      "explanations": {
+        "Option 1": "Incorrect. This describes the ASA (Angle-Side-Angle) condition.",
+        "Option 2": "Incorrect. This describes the SSS (Side-Side-Side) condition.",
+        "Option 3": "Correct. The RHS congruence specifically applies to right-angled triangles where the hypotenuse and one corresponding side match.",
+        "Option 4": "Incorrect. This describes the SAS (Side-Angle-Side) condition."
+      }
+    },
+    {
+      "id": 7,
+      "question": "A cuboid has 8 vertices and 12 edges. How many 'Faces' does it possess, and what is the formula for its surface area?",
+      "options": [
+        "4 faces; Area = l * b * h",
+        "6 faces; Area = 2(lb + bh + lh)",
+        "8 faces; Area = l^2",
+        "12 faces; Area = 4 * side"
+      ],
+      "correct_answer": "6 faces; Area = 2(lb + bh + lh)",
+      "page_reference": 69,
+      "explanations": {
+        "Option 1": "Incorrect. A cuboid has 6 faces, and l*b*h is the formula for volume.",
+        "Option 2": "Correct. The source identifies 6 faces and the formula for surface area as the sum of the areas of all faces.",
+        "Option 3": "Incorrect. 8 is the number of vertices, and l^2 is area of a square.",
+        "Option 4": "Incorrect. 12 is the number of edges, and 4*side is the perimeter of a square."
+      }
+    },
+    {
+      "id": 8,
+      "question": "According to the source, why should 'non-standard units' like hand-spans or sticks be used before standard units like meters?",
+      "options": [
+        "Because standard units are too expensive for primary schools to purchase.",
+        "Because non-standard units are more accurate for small children's measurements.",
+        "Because they are familiar to children and help them realize the necessity for a standard, uniform scale.",
+        "Because the government has not yet mandated the metric system in elementary education."
+      ],
+      "correct_answer": "Because they are familiar to children and help them realize the necessity for a standard, uniform scale.",
+      "page_reference": 98,
+      "explanations": {
+        "Option 1": "Incorrect. Cost is not the pedagogical reason given.",
+        "Option 2": "Incorrect. Non-standard units are actually less accurate because they vary by person.",
+        "Option 3": "Correct. The text explains that children realize the need for standard units when they see different results (e.g., their hand vs. the teacher's).",
+        "Option 4": "Incorrect. India adopted the metric system in 1956."
+      }
+    },
+    {
+      "id": 9,
+      "question": "In the Metric System (SI Units), how many 'Base Units' are there, and which of the following is one of them?",
+      "options": [
+        "Three: Length, Weight, and Area.",
+        "Seven: Including Length, Mass, and Time.",
+        "Ten: Including Deca, Hecto, and Kilo.",
+        "Five: Only those used for 2-D measurements."
+      ],
+      "correct_answer": "Seven: Including Length, Mass, and Time.",
+      "page_reference": 112,
+      "explanations": {
+        "Option 1": "Incorrect. Area is a 'derived' unit, not a base unit.",
+        "Option 2": "Correct. The SI system includes seven base units, with length, mass, and time being three of the primary ones used in school.",
+        "Option 3": "Incorrect. Deca, Hecto, and Kilo are prefixes, not base units.",
+        "Option 4": "Incorrect. The SI system covers more than just 2-D attributes."
+      }
+    },
+    {
+      "id": 10,
+      "question": "When collecting data, what is the difference between a 'Primary Source' and a 'Secondary Source'?",
+      "options": [
+        "Primary is collected from books; Secondary is collected from people.",
+        "Primary is the raw data; Secondary is the arrayed data.",
+        "Primary is collected directly from the subject; Secondary is collected from existing records like census reports.",
+        "There is no difference; they are used interchangeably."
+      ],
+      "correct_answer": "Primary is collected directly from the subject; Secondary is collected from existing records like census reports.",
+      "page_reference": 124,
+      "explanations": {
+        "Option 1": "Incorrect. This reverses the standard definitions.",
+        "Option 2": "Incorrect. Raw and arrayed refer to the organization of data, not the source.",
+        "Option 3": "Correct. Primary source data is collected directly (e.g., asking students), while secondary comes from documents (e.g., Panchayat records).",
+        "Option 4": "Incorrect. The distinction is vital for research and data handling methodology."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In statistics, what does 'Range' measure, and how is it calculated in its simplest (exclusive) form?",
+      "options": [
+        "It measures central tendency by adding the highest and lowest scores.",
+        "It measures variability by finding the difference between the largest and smallest observations.",
+        "It measures frequency by counting the number of tally marks.",
+        "It measures the average deviation of all scores from the mean."
+      ],
+      "correct_answer": "It measures variability by finding the difference between the largest and smallest observations.",
+      "page_reference": 145,
+      "explanations": {
+        "Option 1": "Incorrect. Range is a measure of variability/dispersion, not central tendency.",
+        "Option 2": "Correct. Range is defined as the simplest measure of variability, calculated as Highest Score minus Lowest Score.",
+        "Option 3": "Incorrect. This describes frequency calculation.",
+        "Option 4": "Incorrect. This describes Average or Standard Deviation."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which measure of central tendency is the 'most typical' or 'representative' because it occurs most frequently in a distribution?",
+      "options": [
+        "Arithmetic Mean",
+        "Median",
+        "Mode",
+        "Standard Deviation"
+      ],
+      "correct_answer": "Mode",
+      "page_reference": 144,
+      "explanations": {
+        "Option 1": "Incorrect. Mean is the average of all scores.",
+        "Option 2": "Incorrect. Median is the exact middle score in an arrayed list.",
+        "Option 3": "Correct. Mode is defined as the score which occurs most frequently in the distribution.",
+        "Option 4": "Incorrect. This is a measure of variability, not central tendency."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Algebra is often called 'Generalized Arithmetic.' What is the fundamental difference between the two?",
+      "options": [
+        "Arithmetic uses only positive numbers, while Algebra uses negative numbers.",
+        "Arithmetic deals with concrete numbers, while Algebra uses symbols/letters to represent unknown quantities.",
+        "Algebra is only for high school, while Arithmetic is for elementary school.",
+        "Arithmetic is about addition, while Algebra is about multiplication."
+      ],
+      "correct_answer": "Arithmetic deals with concrete numbers, while Algebra uses symbols/letters to represent unknown quantities.",
+      "page_reference": 153,
+      "explanations": {
+        "Option 1": "Incorrect. Arithmetic includes negative numbers (integers).",
+        "Option 2": "Correct. The text defines Algebra as generalizing arithmetic principles by using letter symbols to represent numbers without fixed values.",
+        "Option 3": "Incorrect. The source is specifically about teaching Algebra at the elementary level.",
+        "Option 4": "Incorrect. Both branches use all four fundamental operations."
+      }
+    },
+    {
+      "id": 14,
+      "question": "In the algebraic expression '3xy - 5y + 2', which of the following is correctly identified?",
+      "options": [
+        "The expression is a Binomial.",
+        "The coefficient of the first term is 'x'.",
+        "The constant term is '2'.",
+        "The variables are '3', '5', and '2'."
+      ],
+      "correct_answer": "The constant term is '2'.",
+      "page_reference": 156,
+      "explanations": {
+        "Option 1": "Incorrect. This expression has three terms (3xy, -5y, 2), making it a Trinomial.",
+        "Option 2": "Incorrect. The coefficient is the numerical factor, which is '3'.",
+        "Option 3": "Correct. In this expression, '2' is the fixed numerical value (constant).",
+        "Option 4": "Incorrect. These are the constants/coefficients; the variables are 'x' and 'y'."
+      }
+    },
+    {
+      "id": 15,
+      "question": "What is the result of adding the algebraic expressions (5a + 7) and (2a - 5)?",
+      "options": [
+        "7a + 12",
+        "7a + 2",
+        "10a^2 - 35",
+        "3a + 2"
+      ],
+      "correct_answer": "7a + 2",
+      "page_reference": 163,
+      "explanations": {
+        "Option 1": "Incorrect. This happens if you add 7 and 5 instead of subtracting 5.",
+        "Option 2": "Correct. (5a + 2a) + (7 - 5) = 7a + 2.",
+        "Option 3": "Incorrect. This looks like an attempt at multiplication.",
+        "Option 4": "Incorrect. This happens if you subtract 2a from 5a."
+      }
+    },
+    {
+      "id": 16,
+      "question": "In the context of solving linear equations, what happens when you 'transpose' a term from the Left Hand Side (LHS) to the Right Hand Side (RHS)?",
+      "options": [
+        "The term becomes zero.",
+        "The variable becomes a constant.",
+        "The operation connecting the number changes (e.g., addition becomes subtraction).",
+        "The entire equation must be multiplied by -1."
+      ],
+      "correct_answer": "The operation connecting the number changes (e.g., addition becomes subtraction).",
+      "page_reference": 175,
+      "explanations": {
+        "Option 1": "Incorrect. The term's position and sign change, but it doesn't necessarily become zero.",
+        "Option 2": "Incorrect. Variables and constants retain their nature during transposition.",
+        "Option 3": "Correct. The text states that addition changes to subtraction, subtraction to addition, etc., when moving sides.",
+        "Option 4": "Incorrect. Multiplying by -1 is a different algebraic technique, not the definition of transposition."
+      }
+    },
+    {
+      "id": 17,
+      "question": "If you are drawing a 'Pie Chart' and a category represents 1/4th of the total data, what will be its central angle?",
+      "options": [
+        "45 degrees",
+        "90 degrees",
+        "180 degrees",
+        "25 degrees"
+      ],
+      "correct_answer": "90 degrees",
+      "page_reference": 134,
+      "explanations": {
+        "Option 1": "Incorrect. This is 1/8th of the circle.",
+        "Option 2": "Correct. A full circle is 360 degrees. 1/4th of 360 is (360 / 4) = 90 degrees.",
+        "Option 3": "Incorrect. This is 1/2 of the circle.",
+        "Option 4": "Incorrect. This confuses percentage with degrees."
+      }
+    },
+    {
+      "id": 18,
+      "question": "A triangle with all three sides of equal length is called an 'Equilateral Triangle.' How many 'lines of symmetry' does it possess?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Six"
+      ],
+      "correct_answer": "Three",
+      "page_reference": 67,
+      "explanations": {
+        "Option 1": "Incorrect. An isosceles triangle has one line of symmetry.",
+        "Option 2": "Incorrect. A rectangle has two lines of symmetry.",
+        "Option 3": "Correct. An equilateral triangle has 3 lines of symmetry, each joining a vertex to the midpoint of the opposite side.",
+        "Option 4": "Incorrect. A regular hexagon has six."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the formula for the volume of a cylinder, and how is it related to its base area?",
+      "options": [
+        "Volume = 1/2 * base * height",
+        "Volume = length * breadth * height",
+        "Volume = πr^2 * h; it is base area multiplied by height.",
+        "Volume = 4/3 * πr^3"
+      ],
+      "correct_answer": "Volume = πr^2 * h; it is base area multiplied by height.",
+      "page_reference": 72,
+      "explanations": {
+        "Option 1": "Incorrect. This is the formula for the area of a triangle.",
+        "Option 2": "Incorrect. This is the formula for the volume of a cuboid.",
+        "Option 3": "Correct. The text defines the volume of a cylinder as base area (circle, πr^2) multiplied by its height (h).",
+        "Option 4": "Incorrect. This is the formula for the volume of a sphere."
+      }
+    },
+    {
+      "id": 20,
+      "question": "In a 'Leap Year,' the month of February has 29 days. Which of the following century years was a leap year?",
+      "options": [
+        "1700",
+        "1800",
+        "1900",
+        "2000"
+      ],
+      "correct_answer": "2000",
+      "page_reference": 117,
+      "explanations": {
+        "Option 1": "Incorrect. Century years must be divisible by 400 to be leap years; 1700 is not.",
+        "Option 2": "Incorrect. 1800 is not divisible by 400.",
+        "Option 3": "Incorrect. 1900 is not divisible by 400.",
+        "Option 4": "Correct. The text specifies that century years must be multiples of 400, and 2000 fits this exception."
+      }
+    }
+  ]
+}

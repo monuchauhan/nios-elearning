@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Block 1: Child Growth and Development - Basics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following statements best describes the distinction between growth and development?",
+      "options": [
+        "Growth refers to qualitative changes in character, while development refers to increase in physical size.",
+        "Growth is a continuous process from conception to death, whereas development stops at maturity.",
+        "Growth refers to structural and physiological changes, while development is concerned with both growth and behavioral changes resulting from the environment.",
+        "Development is measurable in terms of weight and height, while growth is not totally observable."
+      ],
+      "correct_answer": "Growth refers to structural and physiological changes, while development is concerned with both growth and behavioral changes resulting from the environment.",
+      "page_reference": 3,
+      "explanations": {
+        "Growth refers to qualitative changes in character, while development refers to increase in physical size.": "Incorrect. This reverses the definitions; growth is quantitative (size) and development is qualitative (character).",
+        "Growth is a continuous process from conception to death, whereas development stops at maturity.": "Incorrect. The sources state that growth stops with maturity, while development continues throughout the lifespan.",
+        "Growth refers to structural and physiological changes, while development is concerned with both growth and behavioral changes resulting from the environment.": "Correct. Growth refers to structural/physical changes, while development is an inclusive term addressing maturation and behavioral changes.",
+        "Development is measurable in terms of weight and height, while growth is not totally observable.": "Incorrect. Growth is the aspect that is measurable in weight and height, while qualitative development is not totally observable."
+      }
+    },
+    {
+      "id": 2,
+      "question": "The 'proximodistal' principle of development suggests that development proceeds from:",
+      "options": [
+        "The head to the limbs (longitudinal axis).",
+        "The center of the body to the periphery.",
+        "General responses to specific activities.",
+        "The womb to the tomb."
+      ],
+      "correct_answer": "The center of the body to the periphery.",
+      "page_reference": 4,
+      "explanations": {
+        "The head to the limbs (longitudinal axis).": "Incorrect. This describes the 'cephalo-caudal' direction, not proximodistal.",
+        "The center of the body to the periphery.": "Correct. Proximodistal direction means development proceeds from the center of the body toward the extremities/periphery.",
+        "General responses to specific activities.": "Incorrect. While true of development generally, this is a separate principle, not the definition of proximodistal.",
+        "The womb to the tomb.": "Incorrect. This refers to the principle of 'Continuous Development'."
+      }
+    },
+    {
+      "id": 3,
+      "question": "According to the principles of growth and development, why might a girl in an elementary class appear taller than a boy of the same age?",
+      "options": [
+        "The principle of predictability.",
+        "The principle of individual difference.",
+        "The principle of integration.",
+        "The principle of development direction."
+      ],
+      "correct_answer": "The principle of individual difference.",
+      "page_reference": 4,
+      "explanations": {
+        "The principle of predictability.": "Incorrect. Predictability refers to using current growth rates to forecast future development.",
+        "The principle of individual difference.": "Correct. This principle states that growth rates vary between individuals and sexes; specifically, girls often mature earlier and appear taller than boys of the same age.",
+        "The principle of integration.": "Incorrect. Integration refers to the movement from whole to parts and back to a coordinated whole.",
+        "The principle of development direction.": "Incorrect. This refers to cephalo-caudal and proximodistal physical growth paths."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which internal factor is responsible for governing the chemistry of the body and secreting hormones that influence emotional actions and thoughts?",
+      "options": [
+        "Heredity factors",
+        "Intelligence",
+        "Endocrine glands",
+        "Social nature"
+      ],
+      "correct_answer": "Endocrine glands",
+      "page_reference": 7,
+      "explanations": {
+        "Heredity factors": "Incorrect. Heredity provides the initial basis for traits at conception but does not directly 'secrete' chemicals throughout life.",
+        "Intelligence": "Incorrect. Intelligence is the ability to learn and adjust, but it is not a physiological gland.",
+        "Endocrine glands": "Correct. Endocrine or ductless glands secrete hormones into the bloodstream that govern body chemistry and influence physical, social, mental, and emotional development.",
+        "Social nature": "Incorrect. Social nature refers to a person's socialization and adjustment, not physiological chemical secretions."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is considered an 'external factor' influencing development occurring specifically 'in the womb of the mother'?",
+      "options": [
+        "The biological make-up of the child.",
+        "The quality of schooling received.",
+        "The quality and quantity of nutrition received by the embryo.",
+        "The quality of peer group relationships."
+      ],
+      "correct_answer": "The quality and quantity of nutrition received by the embryo.",
+      "page_reference": 8,
+      "explanations": {
+        "The biological make-up of the child.": "Incorrect. Biological/constitutional factors are classified as internal factors.",
+        "The quality of schooling received.": "Incorrect. This is an external factor, but it occurs after birth, not in the womb.",
+        "The quality and quantity of nutrition received by the embryo.": "Correct. Nutrition received within the womb is a critical external factor during the prenatal period.",
+        "The quality of peer group relationships.": "Incorrect. This is a post-birth environmental factor."
+      }
+    },
+    {
+      "id": 6,
+      "question": "At what approximate age do infants typically develop the 'pincer grasp' (holding objects between the first two fingers)?",
+      "options": [
+        "2 to 3 months",
+        "4 to 5 months",
+        "6 months",
+        "9 to 12 months"
+      ],
+      "correct_answer": "9 to 12 months",
+      "page_reference": 10,
+      "explanations": {
+        "2 to 3 months": "Incorrect. At this age, babies are just beginning to lift their heads.",
+        "4 to 5 months": "Incorrect. Infants typically first grasp a toy with their whole hand at this age.",
+        "6 months": "Incorrect. Most babies can sit up unassisted by 6 months.",
+        "9 to 12 months": "Correct. The pincer grasp, involving the use of the first two fingers, develops between 9 and 12 months."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What is 'telegraphic speech' in the context of infant language development?",
+      "options": [
+        "Cooing and making exaggerated vowel sounds.",
+        "Blowing bubbles to practice controlling the lips.",
+        "Putting 2 to 3 words together to form simple phrases.",
+        "The first use of real words like 'mama' or 'dada'."
+      ],
+      "correct_answer": "Putting 2 to 3 words together to form simple phrases.",
+      "page_reference": 11,
+      "explanations": {
+        "Cooing and making exaggerated vowel sounds.": "Incorrect. This occurs around 2-3 months and is not telegraphic speech.",
+        "Blowing bubbles to practice controlling the lips.": "Incorrect. This is a precursor to speech occurring around 4 months.",
+        "Putting 2 to 3 words together to form simple phrases.": "Correct. Telegraphic speech occurs between 18 to 24 months when toddlers combine 2-3 words.",
+        "The first use of real words like 'mama' or 'dada'.": "Incorrect. First words usually appear between 9-12 months, preceding telegraphic speech."
+      }
+    },
+    {
+      "id": 8,
+      "question": "According to Piaget, the ability to understand that an object still exists even if it cannot be seen is called:",
+      "options": [
+        "Goal-directed behavior",
+        "Object permanence",
+        "Reflexive behavior",
+        "Mental equilibrium"
+      ],
+      "correct_answer": "Object permanence",
+      "page_reference": 12,
+      "explanations": {
+        "Goal-directed behavior": "Incorrect. This refers to thinking about how to accomplish a specific task.",
+        "Object permanence": "Correct. Piaget identifies object permanence as the realization that objects continue to exist when out of sight.",
+        "Reflexive behavior": "Incorrect. This refers to involuntary instincts newborns use to interact with the environment.",
+        "Mental equilibrium": "Incorrect. While relevant to cognitive theories, this term is not used in the source to describe hidden objects."
+      }
+    },
+    {
+      "id": 9,
+      "question": "During Early Childhood (2 to 6 years), which part of the body grows most rapidly, representing about half of the total height?",
+      "options": [
+        "The head",
+        "The trunk",
+        "The legs",
+        "The arms"
+      ],
+      "correct_answer": "The legs",
+      "page_reference": 13,
+      "explanations": {
+        "The head": "Incorrect. The growth of the head is described as slow during this period.",
+        "The trunk": "Incorrect. The growth of the trunk is intermediate during this stage.",
+        "The legs": "Correct. During early childhood, the growth of legs is rapid and they represent about half of total height.",
+        "The arms": "Incorrect. The source specifically highlights the legs as the rapidly growing segment."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which intellectual characteristic is typical of a child in Early Childhood (up to age 6)?",
+      "options": [
+        "The ability to think logically about abstract concepts.",
+        "The ability to learn by rote memorization.",
+        "The full development of the concept of natural laws.",
+        "The disappearance of all imaginative fears."
+      ],
+      "correct_answer": "The ability to learn by rote memorization.",
+      "page_reference": 14,
+      "explanations": {
+        "The ability to think logically about abstract concepts.": "Incorrect. Thinking is primarily related to concrete materials during this stage.",
+        "The ability to learn by rote memorization.": "Correct. Memory increases rapidly during early childhood, and the child can learn through rote memorization.",
+        "The full development of the concept of natural laws.": "Incorrect. This typically occurs later, by about 12 years of age.",
+        "The disappearance of all imaginative fears.": "Incorrect. Imaginative fears disappear later, by age 12; early childhood is often when imagination grows."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a characteristic of emotional expression in Early Childhood?",
+      "options": [
+        "Emotions are expressed only in the presence of concrete objects.",
+        "Emotions are long-lasting and stable.",
+        "Emotional expressions are intense regardless of the intensity of the stimulus.",
+        "Children become very skilled at hiding their true emotions."
+      ],
+      "correct_answer": "Emotional expressions are intense regardless of the intensity of the stimulus.",
+      "page_reference": 16,
+      "explanations": {
+        "Emotions are expressed only in the presence of concrete objects.": "Incorrect. This is a trait of early childhood emotions, but later childhood also sees emotions expressed in the absence of concrete objects.",
+        "Emotions are long-lasting and stable.": "Incorrect. Emotions in early childhood are temporary and shift rapidly (e.g., weeping to happy with a toffee).",
+        "Emotional expressions are intense regardless of the intensity of the stimulus.": "Correct. In early childhood, emotional expressions are intense irrespective of how strong the actual trigger was.",
+        "Children become very skilled at hiding their true emotions.": "Incorrect. Children in this stage generally fail to hide emotions and express them through activities like crying or nail-biting."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Later Childhood (6 to 12 years) is often referred to as the 'gang age' because:",
+      "options": [
+        "Children become increasingly aggressive and selfish.",
+        "Children associate primarily with parents and reject all peers.",
+        "Children associate with a peer group of the same age and show great loyalty to them.",
+        "Children begin to commit delinquent acts in large groups."
+      ],
+      "correct_answer": "Children associate with a peer group of the same age and show great loyalty to them.",
+      "page_reference": 19,
+      "explanations": {
+        "Children become increasingly aggressive and selfish.": "Incorrect. The source states children become less selfish and self-centered during this period.",
+        "Children associate primarily with parents and reject all peers.": "Incorrect. Children actually seek more independent lives outside the home circle during this stage.",
+        "Children associate with a peer group of the same age and show great loyalty to them.": "Correct. It is called the 'gang age' because children associate with peers of the same age, acting together with group loyalty.",
+        "Children begin to commit delinquent acts in large groups.": "Incorrect. While delinquency is mentioned as being higher than in adolescence, 'gang age' refers to social group formation and loyalty, not necessarily crime."
+      }
+    },
+    {
+      "id": 13,
+      "question": "In Later Childhood, which physical change is noted regarding the development of teeth?",
+      "options": [
+        "The first milk teeth begin to appear.",
+        "Shedding of milk teeth and growth of permanent teeth.",
+        "All permanent teeth are fully grown by age 8.",
+        "Teeth growth slows down to allow the jaw to broaden."
+      ],
+      "correct_answer": "Shedding of milk teeth and growth of permanent teeth.",
+      "page_reference": 17,
+      "explanations": {
+        "The first milk teeth begin to appear.": "Incorrect. This happens in infancy, not later childhood.",
+        "Shedding of milk teeth and growth of permanent teeth.": "Correct. This is a marked physical change during the 6 to 12-year period.",
+        "All permanent teeth are fully grown by age 8.": "Incorrect. The source notes the 'growth' of permanent teeth during the 6-12 period but doesn't say they are finished by age 8.",
+        "Teeth growth slows down to allow the jaw to broaden.": "Incorrect. The source describes teeth growth as a primary change affecting appearance."
+      }
+    },
+    {
+      "id": 14,
+      "question": "How does moral development typically progress during childhood (ages 2 to 12)?",
+      "options": [
+        "Children remain completely immoral until they reach adolescence.",
+        "Children conform to social norms and codes rather uncritically.",
+        "Desirable conduct is learned only through the memorization of scripture.",
+        "Peer groups have no influence on the moral behavior of children."
+      ],
+      "correct_answer": "Children conform to social norms and codes rather uncritically.",
+      "page_reference": 23,
+      "explanations": {
+        "Children remain completely immoral until they reach adolescence.": "Incorrect. Moral development is an ongoing process through maturation and experience.",
+        "Children conform to social norms and codes rather uncritically.": "Correct. During infancy and childhood, children tend to conform to social and cultural norms uncritically.",
+        "Desirable conduct is learned only through the memorization of scripture.": "Incorrect. Mere memorization does not help; values must be comprehended and internalized.",
+        "Peer groups have no influence on the moral behavior of children.": "Incorrect. Peer groups play a prominent role through their own disciplinary procedures."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Regarding the teacher's role, the principle of 'individual differences' suggests that a teacher should:",
+      "options": [
+        "Use a single, uniform teaching method for the entire class.",
+        "Ignore the child's past experiences to focus only on current lessons.",
+        "Help each child along the developmental process within their own strengths and limitations.",
+        "Ensure all children achieve exactly the same level of development at the same time."
+      ],
+      "correct_answer": "Help each child along the developmental process within their own strengths and limitations.",
+      "page_reference": 25,
+      "explanations": {
+        "Use a single, uniform teaching method for the entire class.": "Incorrect. Different methods should be adopted to cater to individual needs.",
+        "Ignore the child's past experiences to focus only on current lessons.": "Incorrect. The present can be understood in terms of the child's past history/experiences.",
+        "Help each child along the developmental process within their own strengths and limitations.": "Correct. Teachers must recognize individual differences and support each child's unique path.",
+        "Ensure all children achieve exactly the same level of development at the same time.": "Incorrect. This ignores the reality of individual differences in capacities and environment."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Biologically, what are the basic units responsible for the development of particular traits inherited from parents?",
+      "options": [
+        "Zygotes",
+        "Chromosomes",
+        "Genes",
+        "Germ cells"
+      ],
+      "correct_answer": "Genes",
+      "page_reference": 30,
+      "explanations": {
+        "Zygotes": "Incorrect. The zygote is the single cell formed by the union of male and female germ cells.",
+        "Chromosomes": "Incorrect. Chromosomes contain genes, but the genes themselves are the units responsible for specific traits.",
+        "Genes": "Correct. Each chromosome contains 40 to 100 genes, which are responsible for developing specific traits.",
+        "Germ cells": "Incorrect. These are the male/female cells that unite to form the zygote."
+      }
+    },
+    {
+      "id": 17,
+      "question": "According to David Winfield’s study on IQ correlations, which pair shows the highest coefficient of correlation (r = 0.90)?",
+      "options": [
+        "Fraternal twins",
+        "Identical twins",
+        "Siblings",
+        "Parents and children"
+      ],
+      "correct_answer": "Identical twins",
+      "page_reference": 32,
+      "explanations": {
+        "Fraternal twins": "Incorrect. Fraternal twins have a correlation of 0.70.",
+        "Identical twins": "Correct. Identical twins show the highest correlation in IQ at 0.90.",
+        "Siblings": "Incorrect. Siblings have a correlation of 0.50.",
+        "Parents and children": "Incorrect. Parents and children show a correlation of 0.31."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Freeman's study, which showed an increase in mental rating for children moved from poor to good environments, supports the argument for:",
+      "options": [
+        "The dominance of heredity.",
+        "The importance of environment.",
+        "The role of identical twins.",
+        "The principle of cephalo-caudal development."
+      ],
+      "correct_answer": "The importance of environment.",
+      "page_reference": 32,
+      "explanations": {
+        "The dominance of heredity.": "Incorrect. Freeman's study focused on how changing the environment improved IQ.",
+        "The importance of environment.": "Correct. The study of children moved to better environments showed significant IQ increases, justifying the environment's role.",
+        "The role of identical twins.": "Incorrect. While twins are studied in this context, Freeman's specific finding mentioned here relates to general environmental placement.",
+        "The principle of cephalo-caudal development.": "Incorrect. This is a physical growth principle, not an argument regarding environment/intelligence."
+      }
+    },
+    {
+      "id": 19,
+      "question": "The formula 'H X E X T = DL' implies that development is the product of:",
+      "options": [
+        "Heredity added to Environment and Time.",
+        "Heredity, Environment, and Time interacting together.",
+        "Heredity only, provided enough time passes.",
+        "Environment only, multiplied by the age of the child."
+      ],
+      "correct_answer": "Heredity, Environment, and Time interacting together.",
+      "page_reference": 34,
+      "explanations": {
+        "Heredity added to Environment and Time.": "Incorrect. The relationship is expressed as multiplication (interaction), not addition.",
+        "Heredity, Environment, and Time interacting together.": "Correct. This formula represents the development level (DL) as the result of the interaction between Heredity, Environment, and Time.",
+        "Heredity only, provided enough time passes.": "Incorrect. The source states it is meaningless to speak of heredity acting alone.",
+        "Environment only, multiplied by the age of the child.": "Incorrect. Environment without heredity 'means nothing' according to the text."
+      }
+    },
+    {
+      "id": 20,
+      "question": "What is an educational implication of the teacher's knowledge of the child's environment?",
+      "options": [
+        "Teachers should focus only on the child's genetic potential.",
+        "Teachers can ignore co-curricular activities if the library is good.",
+        "Teachers can provide a 'mental environment' through organized activities like debates and symposia to encourage development.",
+        "Environment has no impact on scholastic achievement."
+      ],
+      "correct_answer": "Teachers can provide a 'mental environment' through organized activities like debates and symposia to encourage development.",
+      "page_reference": 31,
+      "explanations": {
+        "Teachers should focus only on the child's genetic potential.": "Incorrect. Teachers must plan for both better education and a better environment.",
+        "Teachers can ignore co-curricular activities if the library is good.": "Incorrect. Enriched programs of both curricular and co-curricular activities are recommended.",
+        "Teachers can provide a 'mental environment' through organized activities like debates and symposia to encourage development.": "Correct. Proper organization of activities like debates and museums creates a 'mental environment' necessary for intellectual development.",
+        "Environment has no impact on scholastic achievement.": "Incorrect. Scholastic achievement depends heavily on the school climate."
+      }
+    }
+  ]
+}

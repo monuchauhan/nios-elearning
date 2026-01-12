@@ -1,0 +1,365 @@
+{
+  "quiz_title": "D.El.Ed Course 506: Block 2 - Personality Development of Children",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The term 'personality' is derived from the Latin word 'Persona'. What did this word originally refer to?",
+      "options": [
+        "The inner soul of a person",
+        "A mask worn by Roman actors",
+        "The social status of an individual",
+        "A person's genetic makeup"
+      ],
+      "correct_answer": "A mask worn by Roman actors",
+      "page_reference": 15,
+      "explanations": {
+        "The inner soul of a person": "While personality involves internal make-up, the etymological root 'Persona' refers specifically to an external mask.",
+        "A mask worn by Roman actors": "The sources state that 'Persona' means the mask worn by Roman actors, implying the individual as seen by others.",
+        "The social status of an individual": "Social status is a part of the social make-up of personality, but not the meaning of 'Persona'.",
+        "A person's genetic makeup": "Heredity contributes to personality, but the root word 'Persona' refers to the outward appearance or mask."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which characteristic of personality suggests that while traits are stable, they can be 'brushed up' as per changing times?",
+      "options": [
+        "Personality is unique",
+        "Personality is static",
+        "Personality is dynamic",
+        "Personality is a thinking process"
+      ],
+      "correct_answer": "Personality is dynamic",
+      "page_reference": 17,
+      "explanations": {
+        "Personality is unique": "This refers to the fact that no two individuals, even twins, have the same characteristics.",
+        "Personality is static": "The sources explicitly state that personality is NOT static.",
+        "Personality is dynamic": "The sources explain that personality is dynamic because traits can be brushed up and adjusted over time due to the interplay of heredity and environment.",
+        "Personality is a thinking process": "This refers to the 'self-consciousness' characteristic, not the ability of traits to change or be refined."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In Sigmund Freud’s anatomy of personality, which aspect is described as a 'mass of blind instincts' dominated by the pleasure principle?",
+      "options": [
+        "The Ego",
+        "The Super Ego",
+        "The Id",
+        "The Conscious Mind"
+      ],
+      "correct_answer": "The Id",
+      "page_reference": 25,
+      "explanations": {
+        "The Ego": "The Ego is described as partly conscious and acts as a mediator.",
+        "The Super Ego": "The Super Ego is described as totally conscious and represents values.",
+        "The Id": "The sources define the Id as totally unconscious, amoral, a mass of blind instincts, and dominated by the pleasure principle.",
+        "The Conscious Mind": "The Id processes are explicitly described as being unconscious."
+      }
+    },
+    {
+      "id": 4,
+      "question": "According to Alfred Adler, what is the major drive that helps an individual strive for a higher level of development?",
+      "options": [
+        "Sex impulse (Libido)",
+        "Self-assertion and overcoming feelings of inferiority",
+        "Introversion and extroversion",
+        "The collective unconscious"
+      ],
+      "correct_answer": "Self-assertion and overcoming feelings of inferiority",
+      "page_reference": 28,
+      "explanations": {
+        "Sex impulse (Libido)": "This was Freud's focus; Adler minimized the role of sex as the major drive.",
+        "Self-assertion and overcoming feelings of inferiority": "The sources state that Adler believed self-assertion is the major drive and that inferiority feelings help one strive for superiority.",
+        "Introversion and extroversion": "These are concepts introduced by Carl Jung.",
+        "The collective unconscious": "This is a primitive element of personality defined by Carl Jung."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a characteristic of an 'Introvert' as defined by Carl Jung?",
+      "options": [
+        "Fluent in speech",
+        "Governed by objective data",
+        "Easily embarrassed",
+        "Popular with people"
+      ],
+      "correct_answer": "Easily embarrassed",
+      "page_reference": 31,
+      "explanations": {
+        "Fluent in speech": "This is a characteristic of an extrovert.",
+        "Governed by objective data": "This is a characteristic of an extrovert; introverts are more influenced by subjective feelings.",
+        "Easily embarrassed": "The sources list 'easily embarrassed' as a general characteristic of an introvert.",
+        "Popular with people": "Introverts are generally listed as 'not popular with people' compared to extroverts."
+      }
+    },
+    {
+      "id": 6,
+      "question": "In Bloom's Taxonomy, which skills are categorized as 'Higher Order Thinking Skills'?",
+      "options": [
+        "Knowledge, Comprehension, and Application",
+        "Remembering, Questioning, and Planning",
+        "Analysis, Synthesis, and Evaluation",
+        "Imagining, Solving, and Deciding"
+      ],
+      "correct_answer": "Analysis, Synthesis, and Evaluation",
+      "page_reference": 85,
+      "explanations": {
+        "Knowledge, Comprehension, and Application": "These are categorized as basic or lower order thinking skills.",
+        "Remembering, Questioning, and Planning": "These are general mental processes but not the specific 'higher order' categories of Bloom's Taxonomy.",
+        "Analysis, Synthesis, and Evaluation": "The sources explicitly state that as per Bloom's Taxonomy, analysis, synthesis, and evaluation are higher order thinking skills.",
+        "Imagining, Solving, and Deciding": "These are components of the thinking process but not the taxonomy's classification for higher order skills."
+      }
+    },
+    {
+      "id": 7,
+      "question": "At which of Piaget’s stages of cognitive development does a child develop 'knowledge of conservation'?",
+      "options": [
+        "Sensory motor stage",
+        "Preoperational stage",
+        "Concrete operations stage",
+        "Formal operations stage"
+      ],
+      "correct_answer": "Concrete operations stage",
+      "page_reference": 91,
+      "explanations": {
+        "Sensory motor stage": "Infants learn about object permanence here, not conservation.",
+        "Preoperational stage": "Children at this stage lack the knowledge of conservation.",
+        "Concrete operations stage": "The sources state that the mastery of conservation marks the beginning of the stage of concrete operations.",
+        "Formal operations stage": "This stage involves abstract and propositional reasoning beyond concrete conservation."
+      }
+    },
+    {
+      "id": 8,
+      "question": "According to Bruner’s Theory, which stage is characterized by a child representing things in terms of motor responses and non-verbal activities?",
+      "options": [
+        "Iconic representation",
+        "Enactive representation",
+        "Symbolic representation",
+        "Sensory processing"
+      ],
+      "correct_answer": "Enactive representation",
+      "page_reference": 92,
+      "explanations": {
+        "Iconic representation": "This involves representing things in terms of sensory images or mental pictures.",
+        "Enactive representation": "The sources define the enactive stage as representation in terms of motor responses and non-verbal activities.",
+        "Symbolic representation": "This involves representation in terms of words, symbols, and abstract phenomena.",
+        "Sensory processing": "This is a stage from Information Processing Theory, not Bruner's stages of representation."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Which type of thinking begins with specific details or facts and progresses toward a general principle?",
+      "options": [
+        "Deductive thinking",
+        "Abstract thinking",
+        "Logical thinking",
+        "Inductive thinking"
+      ],
+      "correct_answer": "Inductive thinking",
+      "page_reference": 96,
+      "explanations": {
+        "Deductive thinking": "This moves from general premises to a necessary conclusion.",
+        "Abstract thinking": "This is characterized by the use of concepts and generalizations generally, not a specific direction of logic.",
+        "Logical thinking": "This is a general process of reasoning consistently to a conclusion.",
+        "Inductive thinking": "The sources describe inductive thinking as 'generalizing' because it starts with specific details/facts and progresses to a general principle."
+      }
+    },
+    {
+      "id": 10,
+      "question": "In Edward De Bono's Six Thinking Hats, which hat focuses specifically on feelings, intuition, and emotion?",
+      "options": [
+        "The White Hat",
+        "The Red Hat",
+        "The Yellow Hat",
+        "The Blue Hat"
+      ],
+      "correct_answer": "The Red Hat",
+      "page_reference": 118,
+      "explanations": {
+        "The White Hat": "Focuses on data and information.",
+        "The Red Hat": "The sources state the Red Hat focuses on feelings, intuition, and emotion.",
+        "The Yellow Hat": "Focuses on optimism and benefits.",
+        "The Blue Hat": "Focuses on process control and thinking about thinking (meta-cognition)."
+      }
+    },
+    {
+      "id": 11,
+      "question": "The CoRT thinking tool 'PMI' stands for:",
+      "options": [
+        "Priority, Management, Interest",
+        "Plus, Minus, Interesting",
+        "Purpose, Meaning, Intuition",
+        "Plan, Measure, Improve"
+      ],
+      "correct_answer": "Plus, Minus, Interesting",
+      "page_reference": 103,
+      "explanations": {
+        "Priority, Management, Interest": "This is incorrect; priorities are covered by the 'FIP' tool.",
+        "Plus, Minus, Interesting": "The sources define PMI as the tool where an individual lists all plus points, minus points, and interesting points of an idea.",
+        "Purpose, Meaning, Intuition": "This is incorrect; purpose is related to the 'AGO' tool.",
+        "Plan, Measure, Improve": "These are general management terms, not the CoRT PMI tool."
+      }
+    },
+    {
+      "id": 12,
+      "question": "According to the sources, what are the three 'A's of happiness for a child?",
+      "options": [
+        "Attention, Affection, and Altruism",
+        "Ambition, Ability, and Action",
+        "Acceptance by others, Affection, and Achievement",
+        "Appreciation, Assistance, and Awareness"
+      ],
+      "correct_answer": "Acceptance by others, Affection, and Achievement",
+      "page_reference": 179,
+      "explanations": {
+        "Attention, Affection, and Altruism": "Attention is important, but altruism is not listed as one of the three 'A's.",
+        "Ambition, Ability, and Action": "These are not the specific 'A's mentioned in the context of child happiness.",
+        "Acceptance by others, Affection, and Achievement": "The sources explicitly state that the three 'A's of happiness are Acceptance by others, Affection, and Achievement.",
+        "Appreciation, Assistance, and Awareness": "These are positive factors but not the specific triad listed in the source text."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Which disciplining style emphasizes the child’s right to know why rules are made and makes the punishment fit the 'crime'?",
+      "options": [
+        "Authoritarian discipline",
+        "Permissive discipline",
+        "Democratic discipline",
+        "Strict discipline"
+      ],
+      "correct_answer": "Democratic discipline",
+      "page_reference": 194,
+      "explanations": {
+        "Authoritarian discipline": "This involves established rules without explanation and emphasizes 'sparing the rod'.",
+        "Permissive discipline": "This allows children to learn from consequences without specific rules or punishment.",
+        "Democratic discipline": "The sources describe democratic discipline as emphasizing the child's right to know why rules are made and making the punishment relate to the misdeed.",
+        "Strict discipline": "This is a general term often associated with the authoritarian approach."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which component of an 'Attitude' consists of the knowledge and logical/rational beliefs an individual holds?",
+      "options": [
+        "The Feeling element",
+        "The Cognitive component",
+        "The Behavioural act",
+        "The Social norm"
+      ],
+      "correct_answer": "The Cognitive component",
+      "page_reference": 197,
+      "explanations": {
+        "The Feeling element": "This element involves emotions like liking or hating.",
+        "The Cognitive component": "The sources define the cognitive component as the element that consists of knowledge and beliefs.",
+        "The Behavioural act": "This is the third component that enables others to infer feelings and understanding.",
+        "The Social norm": "This is not listed as one of the three components of an attitude."
+      }
+    },
+    {
+      "id": 15,
+      "question": "According to Lev Vygotsky, play is essential because it creates a 'zone' for development. What is this zone called?",
+      "options": [
+        "Zone of Personal Discovery",
+        "Zone of Proximal Development",
+        "Zone of Cognitive Growth",
+        "Zone of Social Interaction"
+      ],
+      "correct_answer": "Zone of Proximal Development",
+      "page_reference": 212,
+      "explanations": {
+        "Zone of Personal Discovery": "This is not the term used by Vygotsky.",
+        "Zone of Proximal Development": "The sources state that Vygotsky believes play creates a 'zone of proximal development' (ZPD).",
+        "Zone of Cognitive Growth": "While growth happens in the ZPD, it is not the official name of the concept.",
+        "Zone of Social Interaction": "Social interaction occurs within the ZPD, but the term itself is 'proximal development'."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Which form of motivation is described as being 'self-sustaining' and resulting from the child's own choices?",
+      "options": [
+        "Extrinsic motivation",
+        "External motivation",
+        "Intrinsic motivation",
+        "Reward-based motivation"
+      ],
+      "correct_answer": "Intrinsic motivation",
+      "page_reference": 217,
+      "explanations": {
+        "Extrinsic motivation": "This relies on outside forces and rewards provided by someone else.",
+        "External motivation": "This is a synonym for extrinsic motivation and is not self-sustaining in the same way.",
+        "Intrinsic motivation": "The sources define intrinsic motivation as something that generates itself from the activity and is mostly self-sustaining.",
+        "Reward-based motivation": "This typically implies extrinsic motivation where the focus is on the external prize."
+      }
+    },
+    {
+      "id": 17,
+      "question": "In the five stages of creative thinking, which stage refers to the 'interval during which the person involved stops working actively on the problem'?",
+      "options": [
+        "Preparation",
+        "Incubation",
+        "Illumination",
+        "Verification"
+      ],
+      "correct_answer": "Incubation",
+      "page_reference": 119,
+      "explanations": {
+        "Preparation": "This is the initial stage of gathering knowledge and immersion in the problem.",
+        "Incubation": "The sources define incubation as the interval where the person stops active work and turns to other matters while the unconscious continues to work.",
+        "Illumination": "This is the stage of sudden insight or the 'flash' of a solution.",
+        "Verification": "This is the final stage of testing and refining the idea."
+      }
+    },
+    {
+      "id": 18,
+      "question": "The '4 P's' approach to factors affecting creativity includes Product, Process, Person, and:",
+      "options": [
+        "Performance",
+        "Persistence",
+        "Press (Situational Approach)",
+        "Potential"
+      ],
+      "correct_answer": "Press (Situational Approach)",
+      "page_reference": 248,
+      "explanations": {
+        "Performance": "Not one of the identified 4 P's.",
+        "Persistence": "This is a characteristic of a creative person, but not the name of the fourth 'P' category.",
+        "Press (Situational Approach)": "The sources list the 4 P's as Creative Product, Creative Process, Creative Person, and Creative Situational Approach or Press.",
+        "Potential": "This is a general term but not the specific category name used in the text."
+      }
+    },
+    {
+      "id": 19,
+      "question": "In the ideation stage of Brain Storming, the principle of 'Hitchhiking' refers to:",
+      "options": [
+        "Ignoring the ideas of others",
+        "Criticizing weak ideas to save time",
+        "Combining your ideas with those of others",
+        "Using internet resources to find answers"
+      ],
+      "correct_answer": "Combining your ideas with those of others",
+      "page_reference": 258,
+      "explanations": {
+        "Ignoring the ideas of others": "Brainstorming requires listening to all ideas.",
+        "Criticizing weak ideas to save time": "Criticism is strictly avoided in the ideation stage.",
+        "Combining your ideas with those of others": "The sources define 'hitchhiking' as allowing the combination of your ideas with that of others.",
+        "Using internet resources to find answers": "Brainstorming is about generating internal group ideas, and imitation/copying is considered the opposite of creativity."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which ability in the assessment of creativity refers to the 'ability to think of different types of responses'?",
+      "options": [
+        "Fluency",
+        "Flexibility",
+        "Originality",
+        "Elaboration"
+      ],
+      "correct_answer": "Flexibility",
+      "page_reference": 286,
+      "explanations": {
+        "Fluency": "The ability to think of a large NUMBER of responses.",
+        "Flexibility": "The sources define flexibility as the ability to think of DIFFERENT TYPES of responses.",
+        "Originality": "The ability to think in a clever and uncommon manner.",
+        "Elaboration": "The ability to add details to a given situation."
+      }
+    }
+  ]
+}

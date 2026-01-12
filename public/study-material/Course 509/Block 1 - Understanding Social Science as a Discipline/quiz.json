@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Understanding Social Science as a Discipline: Nature, Evolution, and Curriculum",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes the historical emergence of 'Social Sciences' as a formal field of study?",
+      "options": [
+        "It emerged in the 20th century alongside school curriculum development.",
+        "It evolved during the 18th century as a byproduct of modernization and industrialization.",
+        "It was established in the medieval period to study religious and state affairs.",
+        "It originated in ancient Greece with the works of Plato and Aristotle as a formal university discipline."
+      ],
+      "correct_answer": "It evolved during the 18th century as a byproduct of modernization and industrialization.",
+      "page_reference": 3,
+      "explanations": {
+        "It emerged in the 20th century alongside school curriculum development.": "Incorrect. While social studies entered the school curriculum in the 20th century, social sciences as a formal field date back to the 18th century.",
+        "It evolved during the 18th century as a byproduct of modernization and industrialization.": "Correct. The sources state that social sciences evolved as a formal field of study in the eighteenth century, driven by modernization, industrialization, and the Renaissance.",
+        "It was established in the medieval period to study religious and state affairs.": "Incorrect. While subjects with social implications existed in the medieval world, social science did not become a formal 'field of study' until the 18th century.",
+        "It originated in ancient Greece with the works of Plato and Aristotle as a formal university discipline.": "Incorrect. Although Plato and Aristotle contributed significantly to the roots of social thought, social science was not a formal 'university discipline' until the 18th century."
+      }
+    },
+    {
+      "id": 2,
+      "question": "According to James High, how does 'Social Studies' relate to 'Social Sciences'?",
+      "options": [
+        "Social studies is the parent discipline from which social sciences are derived.",
+        "Social studies is a complex study of social phenomena meant for adults.",
+        "Social studies is the 'school mirror' of the scholarly findings of social sciences.",
+        "There is no functional relationship between the two; they are distinct fields."
+      ],
+      "correct_answer": "Social studies is the 'school mirror' of the scholarly findings of social sciences.",
+      "page_reference": 15,
+      "explanations": {
+        "Social studies is the parent discipline from which social sciences are derived.": "Incorrect. Social sciences are the 'genesis' or parent discipline of social studies.",
+        "Social studies is a complex study of social phenomena meant for adults.": "Incorrect. Social sciences represent the adult approach; social studies represent a simplified 'child approach'.",
+        "Social studies is the 'school mirror' of the scholarly findings of social sciences.": "Correct. James High defines social studies as the school mirror of social sciences, where scholarly data is integrated and simplified for children.",
+        "There is no functional relationship between the two; they are distinct fields.": "Incorrect. They are described as two sides of the same coin with a strong functional relationship."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Which specific work by Adam Smith is cited as an exemplary early text of the social sciences?",
+      "options": [
+        "Spirit of the Laws",
+        "Outline of an Historical View of the Progress of the Human Kind",
+        "Idea towards a Philosophy of History",
+        "Wealth of Nations"
+      ],
+      "correct_answer": "Wealth of Nations",
+      "page_reference": 7,
+      "explanations": {
+        "Spirit of the Laws": "Incorrect. This work was written by Montesquieu.",
+        "Outline of an Historical View of the Progress of the Human Kind": "Incorrect. This work was written by Condorcet.",
+        "Idea towards a Philosophy of History": "Incorrect. This work was written by J.G. Herder.",
+        "Wealth of Nations": "Correct. Adam Smith’s 'Wealth of Nations' (1776) is listed as one of the exemplary early texts of the social sciences."
+      }
+    },
+    {
+      "id": 4,
+      "question": "In the context of the Indian school curriculum, which term is used interchangeably with 'Social Sciences' at the upper primary level (Class VI-VIII)?",
+      "options": [
+        "Environmental Studies",
+        "Social Studies",
+        "Civics",
+        "Human Rights Education"
+      ],
+      "correct_answer": "Social Studies",
+      "page_reference": 25,
+      "explanations": {
+        "Environmental Studies": "Incorrect. This term is used specifically for the lower primary level (Class I-V).",
+        "Social Studies": "Correct. At the upper primary and secondary levels, the terms 'social sciences' and 'social studies' are used interchangeably.",
+        "Civics": "Incorrect. While Civics was a component, NCF 2005 suggested replacing it with Political Science.",
+        "Human Rights Education": "Incorrect. While human rights are an instructional component, they are not the name of the core composite area."
+      }
+    },
+    {
+      "id": 5,
+      "question": "What is the primary instructional utility of 'Social Studies' as compared to 'Social Sciences'?",
+      "options": [
+        "To increase the intellectual horizon and contribute new knowledge.",
+        "To find theoretical truths about adult human relationships.",
+        "To provide a simplified aspect of social sciences for preparing students for citizenship.",
+        "To study physical objects such as sticks, stones, and stars."
+      ],
+      "correct_answer": "To provide a simplified aspect of social sciences for preparing students for citizenship.",
+      "page_reference": 22,
+      "explanations": {
+        "To increase the intellectual horizon and contribute new knowledge.": "Incorrect. This is the aim of 'Social Sciences'.",
+        "To find theoretical truths about adult human relationships.": "Incorrect. Social sciences are concerned with theoretical aspects; social studies focus on practical aspects.",
+        "To provide a simplified aspect of social sciences for preparing students for citizenship.": "Correct. Social studies is the simplified aspect of social sciences taught at the school level to promote healthy social living and citizenship.",
+        "To study physical objects such as sticks, stones, and stars.": "Incorrect. Charles Beard defines social sciences as distinct from the study of physical objects like stones and stars."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is categorized as a 'Semi Social Science'?",
+      "options": [
+        "Political Science",
+        "Geography",
+        "Psychology",
+        "Anthropology"
+      ],
+      "correct_answer": "Psychology",
+      "page_reference": 52,
+      "explanations": {
+        "Political Science": "Incorrect. This is classified as a 'Pure Social Science'.",
+        "Geography": "Incorrect. This is classified as a 'Science with Social Implication'.",
+        "Psychology": "Correct. Psychology is listed alongside Ethics, Education, Philosophy, and Art as a 'Semi Social Science'.",
+        "Anthropology": "Incorrect. This is classified as a 'Pure Social Science'."
+      }
+    },
+    {
+      "id": 7,
+      "question": "According to the sources, why is History considered 'interdisciplinary' in nature?",
+      "options": [
+        "Because it only focuses on the past events of a single nation.",
+        "Because it includes the history of many other subjects like economics, physics, and botany.",
+        "Because it is a pure science that uses mathematical formulas to determine dates.",
+        "Because it excludes the study of religious or cultural developments."
+      ],
+      "correct_answer": "Because it includes the history of many other subjects like economics, physics, and botany.",
+      "page_reference": 56,
+      "explanations": {
+        "Because it only focuses on the past events of a single nation.": "Incorrect. History covers diverse fields and global developments.",
+        "Because it includes the history of many other subjects like economics, physics, and botany.": "Correct. History is interdisciplinary because it encompasses the history of various social and non-social science subjects.",
+        "Because it is a pure science that uses mathematical formulas to determine dates.": "Incorrect. While it interacts with other fields, it is primarily a social science.",
+        "Because it excludes the study of religious or cultural developments.": "Incorrect. History explicitly includes religious and cultural history."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which British administrator is credited with writing the first comprehensive history of India, despite never visiting the country?",
+      "options": [
+        "James Prinsep",
+        "William Jones",
+        "James Mill",
+        "Alexander Cunningham"
+      ],
+      "correct_answer": "James Mill",
+      "page_reference": 96,
+      "explanations": {
+        "James Prinsep": "Incorrect. He is known for deciphering the Brahmi and Kharoshthi scripts.",
+        "William Jones": "Incorrect. He founded the Asiatic Society and began the task of writing history, but James Mill published the first comprehensive work.",
+        "James Mill": "Correct. James Mill wrote 'The History of British India' (1818) and believed not visiting India made him more objective.",
+        "Alexander Cunningham": "Incorrect. He was the first Archaeological Surveyor of India."
+      }
+    },
+    {
+      "id": 9,
+      "question": "The decipherment of the Brahmi and Kharoshthi scripts by James Prinsep led to the identification of which historical figure?",
+      "options": [
+        "Kautilya",
+        "Asoka",
+        "Harun al-Rashid",
+        "Maharaja Siyajirao Gaekward"
+      ],
+      "correct_answer": "Asoka",
+      "page_reference": 94,
+      "explanations": {
+        "Kautilya": "Incorrect. He is the author of Arthashastra, not the focus of the script decipherment.",
+        "Asoka": "Correct. James Prinsep deciphered inscriptions identifying 'Piyadasi' as King Asoka in 1837.",
+        "Harun al-Rashid": "Incorrect. Not mentioned in the source context of Indian archaeology.",
+        "Maharaja Siyajirao Gaekward": "Incorrect. He is mentioned for introducing compulsory education in Baroda."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What was the nationalist critique of British-written Indian history, as voiced by Swami Vivekananda?",
+      "options": [
+        "It was too focused on the spiritual achievements of India.",
+        "It was biased and only told of India's downfall through foreign eyes.",
+        "It placed too much importance on the resilience of the caste system.",
+        "It successfully captured the lingua franca of Sanskrit."
+      ],
+      "correct_answer": "It was biased and only told of India's downfall through foreign eyes.",
+      "page_reference": 106,
+      "explanations": {
+        "It was too focused on the spiritual achievements of India.": "Incorrect. Vivekananda argued that foreign writers did not understand Indian religion or philosophy.",
+        "It was biased and only told of India's downfall through foreign eyes.": "Correct. Vivekananda observed that histories written by the English were weakening because they focused only on India's downfall and lacked an unbiased perspective.",
+        "It placed too much importance on the resilience of the caste system.": "Incorrect. Nationalists felt British writers over-emphasized negative elements like the caste system but ignored social strength.",
+        "It successfully captured the lingua franca of Sanskrit.": "Incorrect. Nationalists felt British writers forgot to dwell on how Sanskrit functioned as a great lingua franca."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Which educational policy document emphasizes 'National Integration' as a goal and includes a 'common core' like the history of India's freedom movement?",
+      "options": [
+        "Woods Dispatch (1854)",
+        "Secondary Education Commission (1952-53)",
+        "National Policy on Education (1986)",
+        "Macaulay’s Minutes (1835)"
+      ],
+      "correct_answer": "National Policy on Education (1986)",
+      "page_reference": 116,
+      "explanations": {
+        "Woods Dispatch (1854)": "Incorrect. This focused on creating a modern education structure during the colonial period.",
+        "Secondary Education Commission (1952-53)": "Incorrect. While it mentioned social environment, the specific 'common core' language is from NPE 1986.",
+        "National Policy on Education (1986)": "Correct. NPE 1986 introduced a national curricular framework with a common core to nurture national identity.",
+        "Macaulay’s Minutes (1835)": "Incorrect. This document notoriously dismissed native literature in favor of European knowledge."
+      }
+    },
+    {
+      "id": 12,
+      "question": "What does the 'Subaltern Perspective' in social sciences specifically aim to rectify?",
+      "options": [
+        "The lack of scientific methods in the Survey of India.",
+        "The elitist bias in history, whether written by the British or Indian nationalists.",
+        "The over-emphasis on international trade in economics.",
+        "The exclusion of mathematics from the social science family."
+      ],
+      "correct_answer": "The elitist bias in history, whether written by the British or Indian nationalists.",
+      "page_reference": 131,
+      "explanations": {
+        "The lack of scientific methods in the Survey of India.": "Incorrect. The Survey of India actually used modern scientific methods.",
+        "The elitist bias in history, whether written by the British or Indian nationalists.": "Correct. The subaltern perspective views history from below and aims to rectify the elitist bias.",
+        "The over-emphasis on international trade in economics.": "Incorrect. It focuses on marginalized people struggling against hegemonic forces, not trade theory specifically.",
+        "The exclusion of mathematics from the social science family.": "Incorrect. Mathematics is a separate field, though it has functional relationships with social sciences."
+      }
+    },
+    {
+      "id": 13,
+      "question": "According to the 2011 Census data cited, which group is identified as having the lowest literacy rates in India?",
+      "options": [
+        "Urban Males",
+        "Scheduled Caste Males",
+        "Tribal Females",
+        "General Category Females"
+      ],
+      "correct_answer": "Tribal Females",
+      "page_reference": 164,
+      "explanations": {
+        "Urban Males": "Incorrect. Males generally have higher literacy rates than females.",
+        "Scheduled Caste Males": "Incorrect. Males in all categories are more literate than their female counterparts.",
+        "Tribal Females": "Correct. The 'Answers to Check Your Progress' explicitly identify tribal females as the most backward group regarding literacy.",
+        "General Category Females": "Incorrect. While females are generally less literate than males, the tribal female group is singled out as the most backward."
+      }
+    },
+    {
+      "id": 14,
+      "question": "What change regarding 'Civics' was recommended by the National Curriculum Framework (NCF) 2005?",
+      "options": [
+        "That it should be merged with Geography.",
+        "That it should be replaced by the term 'Political Science' to foster transformative citizenship.",
+        "That it should focus more on obedience and loyalty to the Raj.",
+        "That it should only be taught at the lower primary level."
+      ],
+      "correct_answer": "That it should be replaced by the term 'Political Science' to foster transformative citizenship.",
+      "page_reference": 152,
+      "explanations": {
+        "That it should be merged with Geography.": "Incorrect. Geography remains its own component at the upper primary stage.",
+        "That it should be replaced by the term 'Political Science' to foster transformative citizenship.": "Correct. NCF 2005 suggested using 'Political Science' because 'Civics' was associated with colonial obedience.",
+        "That it should focus more on obedience and loyalty to the Raj.": "Incorrect. NCF 2005 argued that 'Civics' originally had that colonial focus and should be changed to reflect deliberative citizenship.",
+        "That it should only be taught at the lower primary level.": "Incorrect. Political Science is part of the upper primary and secondary stages."
+      }
+    },
+    {
+      "id": 15,
+      "question": "How does Indian secularism differ from secularism in other contexts, as described in the sources?",
+      "options": [
+        "It is irreligious and rejects all spiritual beliefs.",
+        "It treats all religions equally rather than keeping a distance from them.",
+        "It only supports one majority religion while tolerating others.",
+        "It bans religious festivals in public spaces."
+      ],
+      "correct_answer": "It treats all religions equally rather than keeping a distance from them.",
+      "page_reference": 125,
+      "explanations": {
+        "It is irreligious and rejects all spiritual beliefs.": "Incorrect. The source states Indian secularism is 'not irreligious'.",
+        "It treats all religions equally rather than keeping a distance from them.": "Correct. Indian secularism, instead of keeping distance, treats all religions equally.",
+        "It only supports one majority religion while tolerating others.": "Incorrect. It is based on treating all religions equally.",
+        "It bans religious festivals in public spaces.": "Incorrect. The source notes that people in India celebrate festivals of different religious beliefs together."
+      }
+    },
+    {
+      "id": 16,
+      "question": "In the classroom activity regarding 'Forest', which subject is the poster of a person being taken to jail related to?",
+      "options": [
+        "Geography",
+        "Life Sciences",
+        "Economics",
+        "Law"
+      ],
+      "correct_answer": "Law",
+      "page_reference": 62,
+      "explanations": {
+        "Geography": "Incorrect. While 'Forest' is the geographic concept, the specific poster of a person in jail relates to another discipline.",
+        "Life Sciences": "Incorrect. The poster related to life sciences shows a tree providing oxygen.",
+        "Economics": "Incorrect. Economics would relate to the marketing or consumption of forest products.",
+        "Law": "Correct. The poster shows a person being taken to jail for cutting a forest, which is related to the subject 'Law' because it involves punishment."
+      }
+    },
+    {
+      "id": 17,
+      "question": "The National Curriculum Framework (NCF) 2005 aims to shift the notion of textbooks from being 'instructive' to:",
+      "options": [
+        "Descriptive",
+        "Suggestive",
+        "Authoritative",
+        "Fragmented"
+      ],
+      "correct_answer": "Suggestive",
+      "page_reference": 155,
+      "explanations": {
+        "Descriptive": "Incorrect. The shift is specifically toward being 'suggestive' to allow for interaction.",
+        "Suggestive": "Correct. The current curriculum attempts to change textbooks from being merely instructive to more suggestive.",
+        "Authoritative": "Incorrect. The goal is to move away from rigid, authoritative information toward participative debate.",
+        "Fragmented": "Incorrect. NCF 2005 promotes a multidisciplinary and integrated approach."
+      }
+    },
+    {
+      "id": 18,
+      "question": "What significant development for Indian education occurred in 1937 at the Wardha Conference?",
+      "options": [
+        "The introduction of the first three modern universities.",
+        "The formulation of Gandhiji’s Basic Education (Wardha Scheme).",
+        "The publication of the first census results.",
+        "The creation of the Archaeological Survey of India."
+      ],
+      "correct_answer": "The formulation of Gandhiji’s Basic Education (Wardha Scheme).",
+      "page_reference": 13,
+      "explanations": {
+        "The introduction of the first three modern universities.": "Incorrect. These were established in 1857.",
+        "The formulation of Gandhiji’s Basic Education (Wardha Scheme).": "Correct. Gandhiji finalized the scheme of Basic Education in 1937 at the Wardha conference.",
+        "The publication of the first census results.": "Incorrect. The first census was in 1872.",
+        "The creation of the Archaeological Survey of India.": "Incorrect. This became a distinct department spearheaded by Cunningham in the late 19th century."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the denominator shared by all social science subjects, explaining their functional relationship?",
+      "options": [
+        "The study of chemical reactions.",
+        "Human relationship.",
+        "The number system.",
+        "The life of animals."
+      ],
+      "correct_answer": "Human relationship.",
+      "page_reference": 50,
+      "explanations": {
+        "The study of chemical reactions.": "Incorrect. This is the focus of physical sciences (Chemistry).",
+        "Human relationship.": "Correct. Human relationship is a common denominator of all social science subjects.",
+        "The number system.": "Incorrect. This is the focus of mathematical sciences.",
+        "The life of animals.": "Incorrect. This is the focus of biological sciences."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which international body's commission (1996) emphasized the concept of 'Learning to live together'?",
+      "options": [
+        "UNICEF",
+        "The Delores Commission",
+        "The Asiatic Society",
+        "The Survey of India"
+      ],
+      "correct_answer": "The Delores Commission",
+      "page_reference": 34,
+      "explanations": {
+        "UNICEF": "Incorrect. While it promotes welfare, the specific 1996 'learning to live together' focus is cited for the Delores Commission.",
+        "The Delores Commission": "Correct. The Delores Commission (1996) stresses 'learning to live together' to solve socio-cultural problems.",
+        "The Asiatic Society": "Incorrect. This was an 18th/19th-century body for historical research.",
+        "The Survey of India": "Incorrect. This body explores and maps the country."
+      }
+    }
+  ]
+}

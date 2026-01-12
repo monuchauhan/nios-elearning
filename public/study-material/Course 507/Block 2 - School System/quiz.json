@@ -1,0 +1,365 @@
+{
+  "quiz_title": "D.El.Ed Course 507: Block 2 - School System and Teacher Leadership",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the United Nations Convention on the Rights of the Child (UNCRC), which is ratified by India, what is the definition of a 'child'?",
+      "options": [
+        "Every human being below the age of 14 years",
+        "Every human being below the age of 16 years",
+        "Every human being below the age of 18 years",
+        "Every human being below the age of 21 years"
+      ],
+      "correct_answer": "Every human being below the age of 18 years",
+      "page_reference": 11,
+      "explanations": {
+        "Every human being below the age of 14 years": "While the Right to Education Act focuses on the 6-14 age group, the UNCRC definition of a child is broader.",
+        "Every human being below the age of 16 years": "This age is used in some specific legal contexts, but it is not the international standard definition of a child.",
+        "Every human being below the age of 18 years": "The sources explicitly state that according to international law (UNCRC), a child means every human being below the age of 18 years.",
+        "Every human being below the age of 21 years": "21 is often the age of majority for marriage for males in India, but not the legal definition of a child."
+      }
+    },
+    {
+      "id": 2,
+      "question": "The UN Convention on the Rights of the Child (CRC) categorizes 'Education' under which set of rights?",
+      "options": [
+        "Immediate Rights",
+        "Progressive Rights",
+        "Political Rights",
+        "Civil Rights"
+      ],
+      "correct_answer": "Progressive Rights",
+      "page_reference": 15,
+      "explanations": {
+        "Immediate Rights": "These typically include civil and political rights like the right to life and non-discrimination.",
+        "Progressive Rights": "The sources state that right to education is covered under progressive human rights, which demand immediate attention but are undertaken according to the state's available resources.",
+        "Political Rights": "These are part of 'Immediate Rights' like the right to nationality, not education.",
+        "Civil Rights": "These are also categorized as 'Immediate Rights' in the CRC framework."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Which Article of the Indian Constitution makes free and compulsory education a Fundamental Right for children in the 6-14 age group?",
+      "options": [
+        "Article 24",
+        "Article 39(e)",
+        "Article 21A",
+        "Article 45"
+      ],
+      "correct_answer": "Article 21A",
+      "page_reference": 18,
+      "explanations": {
+        "Article 24": "This article protects children from hazardous employment till the age of 14.",
+        "Article 39(e)": "This protects children from being forced by economic necessity into unsuited occupations.",
+        "Article 21A": "The sources identify Article 21A as the constitutional provision for free and compulsory elementary education for children aged 6-14 years.",
+        "Article 45": "This was the original Directive Principle, which later became a Fundamental Right via Article 21A."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Under the 'Whole School Approach', what does the issue of 'Social Access' refer to?",
+      "options": [
+        "The physical distance between the home and the school building",
+        "The diversity of culture, language, and ethnicity influencing access to education",
+        "The availability of internet and social media in the classroom",
+        "The recruitment of teachers from the local neighborhood"
+      ],
+      "correct_answer": "The diversity of culture, language, and ethnicity influencing access to education",
+      "page_reference": 32,
+      "explanations": {
+        "The physical distance between the home and the school building": "This is defined as 'Physical Access'.",
+        "The diversity of culture, language, and ethnicity influencing access to education": "The sources explain that social access is influenced by Indian culture and diversity, such as parental reluctance to send girls to upper primary schools outside their village.",
+        "The availability of internet and social media in the classroom": "This is related to technological resources, not social access.",
+        "The recruitment of teachers from the local neighborhood": "This is a staffing/human resource intervention, not the definition of social access."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Which concept aims to maximize the pedagogical potential of the school building through murals, floor patterns, and colorful designs?",
+      "options": [
+        "UEE (Universal Elementary Education)",
+        "SSA (Sarva Shiksha Abhiyan)",
+        "BaLA (Building as Learning Aid)",
+        "DISE (District Information System of Education)"
+      ],
+      "correct_answer": "BaLA (Building as Learning Aid)",
+      "page_reference": 54,
+      "explanations": {
+        "UEE (Universal Elementary Education)": "This is a broad goal, not a specific building design concept.",
+        "SSA (Sarva Shiksha Abhiyan)": "This is the flagship programme that may implement BaLA, but is not the concept itself.",
+        "BaLA (Building as Learning Aid)": "The sources describe BaLA as a concept used to maximize the pedagogic potential of built spaces using educational murals, geometrical patterns on floors, etc.",
+        "DISE (District Information System of Education)": "This is a statistical data system, not a design concept."
+      }
+    },
+    {
+      "id": 6,
+      "question": "The Mid Day Meal (MDM) scheme, now a nationwide program, was first launched in which city/corporation in 1925?",
+      "options": [
+        "Delhi Municipal Corporation",
+        "Madras Municipal Corporation",
+        "Bombay Municipal Corporation",
+        "Calcutta Municipal Corporation"
+      ],
+      "correct_answer": "Madras Municipal Corporation",
+      "page_reference": 48,
+      "explanations": {
+        "Delhi Municipal Corporation": "The scheme did not originate in Delhi.",
+        "Madras Municipal Corporation": "The sources trace the genesis of the MDM scheme to 1925 in the Madras Municipal Corporation for disadvantaged children.",
+        "Bombay Municipal Corporation": "The scheme gained popularity in various states later, but did not start here in 1925.",
+        "Calcutta Municipal Corporation": "This is incorrect based on the historical timeline provided in the text."
+      }
+    },
+    {
+      "id": 7,
+      "question": "According to the SSA interventions, what is the specified radius for establishing a new Primary School relative to a habitation?",
+      "options": [
+        "Within 500 meters",
+        "Within 1 kilometer",
+        "Within 3 kilometers",
+        "Within 5 kilometers"
+      ],
+      "correct_answer": "Within 1 kilometer",
+      "page_reference": 84,
+      "explanations": {
+        "Within 500 meters": "This is a very short distance; the standard set is 1 km.",
+        "Within 1 kilometer": "The sources state that the State should establish one primary school within one kilometer of every habitation.",
+        "Within 3 kilometers": "This is the standard for Upper Primary schools in some contexts, but not the primary school radius.",
+        "Within 5 kilometers": "This would be too far for small children to have effective physical access as defined by SSA."
+      }
+    },
+    {
+      "id": 8,
+      "question": "A teacher acts as a 'Producer of Knowledge' when they perform which of the following activities?",
+      "options": [
+        "Delivering a standard lecture from a textbook",
+        "Conducting Action Research to solve specific school-level problems",
+        "Maintaining the school attendance register",
+        "Attending a mandatory in-service training session"
+      ],
+      "correct_answer": "Conducting Action Research to solve specific school-level problems",
+      "page_reference": 95,
+      "explanations": {
+        "Delivering a standard lecture from a textbook": "This is the 'Instructor' or 'Dispenser of Knowledge' role.",
+        "Conducting Action Research to solve specific school-level problems": "The sources state a teacher is a producer of knowledge when they do action research at the school level to introduce new methods.",
+        "Maintaining the school attendance register": "This is an 'Administrative' or 'Managerial' role.",
+        "Attending a mandatory in-service training session": "This is part of 'Professional Development', not the production of new knowledge."
+      }
+    },
+    {
+      "id": 9,
+      "question": "The 'Cascade Model' of teacher training is characterized by:",
+      "options": [
+        "Direct face-to-face training of all teachers by national experts",
+        "Training using distance media like audio and video conferencing",
+        "A multi-tier system where key resource persons train others who then train teachers",
+        "Self-learning modules delivered to the teacher's home"
+      ],
+      "correct_answer": "A multi-tier system where key resource persons train others who then train teachers",
+      "page_reference": 104,
+      "explanations": {
+        "Direct face-to-face training of all teachers by national experts": "This is the 'Face to Face Institutional Model'.",
+        "Training using distance media like audio and video conferencing": "This is the 'Distance Education Model'.",
+        "A multi-tier system where key resource persons train others who then train teachers": "The sources define the Cascade Model as a two or three-tier system where key resource persons train resource persons who then train teachers.",
+        "Self-learning modules delivered to the teacher's home": "This is a component of distance learning, not the definition of the cascade hierarchy."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Which leadership style is described as centralized, where the leader tells subordinates what to do and does not entertain suggestions?",
+      "options": [
+        "Laissez Faire Leadership",
+        "Easygoing Leadership",
+        "Democratic Leadership",
+        "Autocratic Leadership"
+      ],
+      "correct_answer": "Autocratic Leadership",
+      "page_reference": 158,
+      "explanations": {
+        "Laissez Faire Leadership": "This involves allowing subordinates to make their own decisions with little leader interference.",
+        "Easygoing Leadership": "This style is loose and focuses primarily on maintaining high morale and affection.",
+        "Democratic Leadership": "This style involves consulting others and drawing on their experience.",
+        "Autocratic Leadership": "The sources define this style as centralized decision-making where the leader acts as a boss and gives strong orders."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In the comparison between Management and Leadership, which of the following is associated with 'Heart' and 'Passion'?",
+      "options": [
+        "Managing",
+        "Leading",
+        "Controlling",
+        "Co-ordination"
+      ],
+      "correct_answer": "Leading",
+      "page_reference": 153,
+      "explanations": {
+        "Managing": "Management is associated with the 'Mind', 'Control', and 'Calculation'.",
+        "Leading": "The Management-Leadership continuum in the source links 'Leading' with 'Heart', 'Passion', and 'Motivation'.",
+        "Controlling": "This is a 'Managing' function based on calculation and structure.",
+        "Co-ordination": "This is also listed as a 'Managing' function rather than a 'Leading' one."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Which leadership function involves influencing others by one's own conduct regarding notions of right and wrong?",
+      "options": [
+        "Instructional Function",
+        "Transformational Function",
+        "Moral Function",
+        "Contingent Function"
+      ],
+      "correct_answer": "Moral Function",
+      "page_reference": 168,
+      "explanations": {
+        "Instructional Function": "This focuses on academic achievement and pedagogical expertise.",
+        "Transformational Function": "This focuses on facilitating change and motivating others to see beyond self-interest.",
+        "Moral Function": "The sources define the moral function as influencing others by conduct regarding notions of right and wrong.",
+        "Contingent Function": "This involves adapting behavior to fit specific changing situations."
+      }
+    },
+    {
+      "id": 13,
+      "question": "What is the primary role of the Cluster Resource Centres (CRCs) established under SSA?",
+      "options": [
+        "Developing national-level curriculum frameworks",
+        "Providing on-site academic support to teachers and visiting schools regularly",
+        "Managing the transfer and recruitment of District Education Officers",
+        "Manufacturing low-cost furniture for high schools"
+      ],
+      "correct_answer": "Providing on-site academic support to teachers and visiting schools regularly",
+      "page_reference": 190,
+      "explanations": {
+        "Developing national-level curriculum frameworks": "This is the role of NCERT.",
+        "Providing on-site academic support to teachers and visiting schools regularly": "The sources state CRCs visit schools regularly and provide academic support to teachers at the classroom level.",
+        "Managing the transfer and recruitment of District Education Officers": "This is a high-level government administrative function, not a CRC role.",
+        "Manufacturing low-cost furniture for high schools": "CRCs are academic support centers, not manufacturing units."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which agency is responsible for layng down the minimum qualifications for a person to be appointed as a teacher in India?",
+      "options": [
+        "NCERT",
+        "NCTE",
+        "NCPCR",
+        "SCERT"
+      ],
+      "correct_answer": "NCTE",
+      "page_reference": 202,
+      "explanations": {
+        "NCERT": "NCERT is the academic authority for curriculum and textbooks.",
+        "NCTE": "The sources state that under RTE, NCTE has been appointed as the authority to lay down the minimum qualifications for teachers.",
+        "NCPCR": "NCPCR is responsible for monitoring children's rights and inquiring into complaints.",
+        "SCERT": "This is a state-level body that brings qualitative improvement and conducts training based on national norms."
+      }
+    },
+    {
+      "id": 15,
+      "question": "The 'Teacher Grant' provided annually under SSA is intended for which purpose?",
+      "options": [
+        "Paying the teacher's monthly salary",
+        "Purchasing personal books for the teacher's home library",
+        "Developing low-cost, locally available teaching-learning materials",
+        "Funding the teacher's travel to international conferences"
+      ],
+      "correct_answer": "Developing low-cost, locally available teaching-learning materials",
+      "page_reference": 192,
+      "explanations": {
+        "Paying the teacher's monthly salary": "Salaries are a separate budget head and are not part of the 'Teacher Grant'.",
+        "Purchasing personal books for the teacher's home library": "The grant is for school/classroom use, not personal property.",
+        "Developing low-cost, locally available teaching-learning materials": "The source specifies that the teacher grant facilitates child-centered processes using self-developed, low-cost material.",
+        "Funding the teacher's travel to international conferences": "The grant amount (Rs 500) is meant for classroom consumables and materials."
+      }
+    },
+    {
+      "id": 16,
+      "question": "In the context of school mapping, if a school is located on a hill and becomes inaccessible during monsoons, it is failing which aspect of the Whole School Approach?",
+      "options": [
+        "Equity",
+        "Quality",
+        "Physical Access",
+        "Pedagogical Process"
+      ],
+      "correct_answer": "Physical Access",
+      "page_reference": 29,
+      "explanations": {
+        "Equity": "Equity focuses on bridging social category gaps (gender, caste).",
+        "Quality": "Quality focuses on curriculum and teaching standards.",
+        "Physical Access": "The sources highlight that schools on separate hills or those cut off by water lack 'Physical Access', making it difficult for children to reach them.",
+        "Pedagogical Process": "This refers to the methods used inside the classroom."
+      }
+    },
+    {
+      "id": 17,
+      "question": "What is the primary objective of 'DISE' (District Information System of Education)?",
+      "options": [
+        "To provide a direct line of communication between students and the Prime Minister",
+        "To collect school-based statistical data on enrolment, teachers, and infrastructure",
+        "To act as a legal court for punishing negligent teachers",
+        "To publish a monthly magazine for elementary students"
+      ],
+      "correct_answer": "To collect school-based statistical data on enrolment, teachers, and infrastructure",
+      "page_reference": 197,
+      "explanations": {
+        "To provide a direct line of communication between students and the Prime Minister": "This is not the function of DISE.",
+        "To collect school-based statistical data on enrolment, teachers, and infrastructure": "The sources define DISE as a school-based statistical system providing data on variables like enrolment, facilities, and student flows.",
+        "To act as a legal court for punishing negligent teachers": "This role belongs to the administrative/disciplinary bodies or courts, not a data system.",
+        "To publish a monthly magazine for elementary students": "DISE is for planning and administration data, not children's literature."
+      }
+    },
+    {
+      "id": 18,
+      "question": "According to the sources, why is a teacher's role as a 'Counselor' particularly important?",
+      "options": [
+        "Because it allows the teacher to decide the child's future career for them",
+        "Because it helps children find their own solutions to academic and personal problems",
+        "Because it entitles the teacher to a higher salary grade",
+        "Because it involves giving 'readymade answers' to the children"
+      ],
+      "correct_answer": "Because it helps children find their own solutions to academic and personal problems",
+      "page_reference": 95,
+      "explanations": {
+        "Because it allows the teacher to decide the child's future career for them": "A counselor guides choices, but does not impose decisions.",
+        "Because it helps children find their own solutions to academic and personal problems": "The sources state the teacher guides the child to solve his/her own problems rather than giving readymade answers.",
+        "Because it entitles the teacher to a higher salary grade": "The text lists counseling as a multifarious role, not a salary incentive.",
+        "Because it involves giving 'readymade answers' to the children": "The sources explicitly state a teacher should *not* give readymade answers."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Under SSA, how much is the one-time library grant provided for a Primary School?",
+      "options": [
+        "Rs 500",
+        "Rs 3,000",
+        "Rs 5,000",
+        "Rs 10,000"
+      ],
+      "correct_answer": "Rs 3,000",
+      "page_reference": 196,
+      "explanations": {
+        "Rs 500": "This is the annual teacher grant amount.",
+        "Rs 3,000": "The sources state that a one-time library grant of Rs 3,000 is provided for primary schools.",
+        "Rs 5,000": "This is the annual school grant for primary schools.",
+        "Rs 10,000": "This is the library grant for upper primary schools, or the TLE grant for primary schools."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which style of leadership involves avoiding risks, maintaining the status quo, and having a message that 'you cannot change the way people work'?",
+      "options": [
+        "Autocratic Leadership",
+        "Democratic Leadership",
+        "Laissez Faire Leadership",
+        "Transformational Leadership"
+      ],
+      "correct_answer": "Laissez Faire Leadership",
+      "page_reference": 161,
+      "explanations": {
+        "Autocratic Leadership": "This involves central control and orders, not necessarily a hands-off approach.",
+        "Democratic Leadership": "This is proactive and seeks participation.",
+        "Laissez Faire Leadership": "The sources describe Laissez faire leadership as pessimistic about people, avoiding risks, and focusing on maintaining the status quo.",
+        "Transformational Leadership": "This is the opposite, focusing explicitly on facilitating change."
+      }
+    }
+  ]
+}

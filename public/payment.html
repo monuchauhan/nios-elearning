@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment - NIOS D.El.Ed Prep</title>
+  <title>Payment - PrepPulse Academy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
               <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>
           </div>
-          NIOS D.El.Ed Prep
+          PrepPulse Academy
         </a>
         
         <div class="nav-links">
@@ -152,31 +152,37 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    3 complete courses (501, 502, 503)
+                    10 complete courses (501-510)
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    Video lectures in Hindi & English
+                    31 comprehensive blocks
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    Audio podcasts for each block
+                    Video lectures in Hindi & English for each block
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    20+ downloadable PDF study materials
+                    31 audio podcasts for learning on-the-go
                   </li>
                   <li class="flex items-center gap-2 mb-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
                       <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    200+ quiz questions with explanations
+                    60+ downloadable PDF study materials
+                  </li>
+                  <li class="flex items-center gap-2 mb-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    600+ quiz questions with explanations
                   </li>
                   <li class="flex items-center gap-2">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2">
@@ -197,7 +203,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <p>&copy; 2026 NIOS D.El.Ed Prep. All rights reserved.</p>
+        <p>&copy; 2026 PrepPulse Academy. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -332,7 +338,7 @@
           key: razorpayKeyId,
           amount: orderData.amount,
           currency: orderData.currency,
-          name: 'NIOS D.El.Ed Prep',
+          name: 'PrepPulse Academy',
           description: 'Complete Exam Prep Course',
           order_id: orderData.orderId,
           handler: async function(response) {
