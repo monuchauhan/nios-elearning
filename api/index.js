@@ -18,6 +18,7 @@ app.use(express.json());
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret-change-in-production';
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || '';
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || '';
 
 // Razorpay instance
 let razorpay = null;
@@ -321,6 +322,91 @@ app.post('/api/auth/google', async (req, res) => {
 // Get Google Client ID
 app.get('/api/auth/google-client-id', (req, res) => {
   res.json({ clientId: GOOGLE_CLIENT_ID });
+});
+
+// Google OAuth Callback - Exchange authorization code for tokens
+app.post('/api/auth/google/callback', async (req, res) => {
+  await ensureDb();
+  try {
+    const { code, redirect_uri } = req.body;
+    
+    if (!code) {
+      return res.status(400).json({ error: 'Authorization code required' });
+    }
+    
+    if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET) {
+      return res.status(500).json({ error: 'Google OAuth not configured on server' });
+    }
+    
+    // Exchange code for tokens
+    const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        code,
+        client_id: GOOGLE_CLIENT_ID,
+        client_secret: GOOGLE_CLIENT_SECRET,
+        redirect_uri: redirect_uri,
+        grant_type: 'authorization_code'
+      })
+    });
+    
+    const tokenData = await tokenResponse.json();
+    
+    if (tokenData.error) {
+      console.error('Google token exchange error:', tokenData);
+      return res.status(400).json({ error: tokenData.error_description || 'Failed to exchange code for token' });
+    }
+    
+    // Get user info from Google
+    const userInfoResponse = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+      headers: { 'Authorization': `Bearer ${tokenData.access_token}` }
+    });
+    
+    const userInfo = await userInfoResponse.json();
+    
+    if (!userInfo.email) {
+      return res.status(400).json({ error: 'Could not get email from Google' });
+    }
+    
+    const { email, name, id: googleId, picture } = userInfo;
+    
+    // Check if user exists
+    let user = await userOps.findByEmail(email);
+
+    if (user) {
+      // User exists - update Google ID if not set
+      if (!user.googleId) {
+        await userOps.updateGoogleId(user.id, googleId);
+      }
+    } else {
+      // Create new user with Google account
+      const userId = uuidv4();
+      user = await userOps.createWithGoogle(userId, name || email.split('@')[0], email, googleId, picture);
+    }
+
+    // Generate JWT token
+    const token = jwt.sign(
+      { id: user.id, email: user.email, name: user.name },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+
+    res.json({
+      message: 'Google sign-in successful',
+      token,
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        mobile: user.mobile || null,
+        hasPurchased: user.hasPurchased
+      }
+    });
+  } catch (error) {
+    console.error('Google OAuth callback error:', error);
+    res.status(500).json({ error: 'Google authentication failed' });
+  }
 });
 
 // ============== COURSE ROUTES ==============
