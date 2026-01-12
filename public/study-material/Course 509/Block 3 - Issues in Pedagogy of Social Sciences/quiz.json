@@ -1,0 +1,365 @@
+{
+  "quiz_title": "Pedagogy of Social Sciences: Learner, Strategies, Resources, and Assessment",
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to research cited in the source regarding India's composite heritage, what percentage of cultural traits do Hindus share with Muslims?",
+      "options": [
+        "77.46%",
+        "89.99%",
+        "91.19%",
+        "96.77%"
+      ],
+      "correct_answer": "96.77%",
+      "page_reference": 3,
+      "explanations": {
+        "77.46%": "Incorrect. This is the percentage of traits Hindus share with Jains.",
+        "89.99%": "Incorrect. This is the percentage of traits Hindus share with Sikhs.",
+        "91.19%": "Incorrect. This is the percentage of traits Hindus share with Buddhists.",
+        "96.77%": "Correct. Research reveals that Hindus share 96.77% of popular cultural traits with Muslims."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Based on the 2001 census data, which of the following is the only major Indian state where Hindus are not the majority religious group?",
+      "options": [
+        "Odisha",
+        "Jammu and Kashmir",
+        "Andhra Pradesh",
+        "Rajasthan"
+      ],
+      "correct_answer": "Jammu and Kashmir",
+      "page_reference": 4,
+      "explanations": {
+        "Odisha": "Incorrect. Hindus are the majority in all major states except for the one specified in the text.",
+        "Jammu and Kashmir": "Correct. According to the 2001 census, Hindus are the majority in all major states except for Jammu and Kashmir.",
+        "Andhra Pradesh": "Incorrect. Hindus are the majority in this state.",
+        "Rajasthan": "Incorrect. Hindus are the majority in this state."
+      }
+    },
+    {
+      "id": 3,
+      "question": "At the primary stage of Social Science learning, which set of skills is emphasized to help a child become an active learner?",
+      "options": [
+        "Abstract reasoning, hypothesis testing, and conclusion drawing",
+        "Observation, identification, and classification",
+        "Rote memorization, drill, and practice",
+        "Drafting legislation and political analysis"
+      ],
+      "correct_answer": "Observation, identification, and classification",
+      "page_reference": 7,
+      "explanations": {
+        "Abstract reasoning, hypothesis testing, and conclusion drawing": "Incorrect. These skills are characteristic of the Formal Operational stage (adolescence/adulthood).",
+        "Observation, identification, and classification": "Correct. The source states that at the primary stage, skills like observation, identification, and classification are important for becoming an active learner.",
+        "Rote memorization, drill, and practice": "Incorrect. The teacher is encouraged to focus on understanding rather than memorization, drill, and practice.",
+        "Drafting legislation and political analysis": "Incorrect. This is too advanced for the primary stage of learning."
+      }
+    },
+    {
+      "id": 4,
+      "question": "According to Lev Vygotsky (1978), how do children primarily learn to become effective members of society?",
+      "options": [
+        "Through biological maturation and aging",
+        "By avoiding interaction with peers and focusing on individual study",
+        "By internalizing the activities, habits, vocabulary, and ideas of their community",
+        "Through instinctual reflexive actions present from birth"
+      ],
+      "correct_answer": "By internalizing the activities, habits, vocabulary, and ideas of their community",
+      "page_reference": 8,
+      "explanations": {
+        "Through biological maturation and aging": "Incorrect. Vygotsky's theory emphasizes social interaction over mere biological growth.",
+        "By avoiding interaction with peers and focusing on individual study": "Incorrect. Participation in the social life of the school is described as central to the learning process.",
+        "By internalizing the activities, habits, vocabulary, and ideas of their community": "Correct. Vygotsky argued that children learn by internalizing the activities, habits, vocabulary, and ideas of the community members they grow up with.",
+        "Through instinctual reflexive actions present from birth": "Incorrect. This describes the start of Piaget's Sensory Motor stage, not Vygotsky's social learning theory."
+      }
+    },
+    {
+      "id": 5,
+      "question": "In Piaget's stages of cognitive development, the 'Pre-Operational' stage (2-7 years) is marked by which of the following characteristics?",
+      "options": [
+        "The ability to think logically about abstract concepts",
+        "The use of symbols such as words and images to represent objects",
+        "The ability to solve complex mathematical problems mentally",
+        "The elimination of egocentrism and adoption of others' viewpoints"
+      ],
+      "correct_answer": "The use of symbols such as words and images to represent objects",
+      "page_reference": 14,
+      "explanations": {
+        "The ability to think logically about abstract concepts": "Incorrect. This begins in the Formal Operational stage (11+ years).",
+        "The use of symbols such as words and images to represent objects": "Correct. During the pre-operational stage, the child begins to use symbols like images and words to represent objects and places.",
+        "The ability to solve complex mathematical problems mentally": "Incorrect. The pre-operational child is not yet able to perform tasks mentally rather than physically.",
+        "The elimination of egocentrism and adoption of others' viewpoints": "Incorrect. Thinking in the pre-operational stage is still egocentric."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Which cognitive process, appearing in the 'Concrete Operational' stage, involves the ability to recognize that quantity remains the same regardless of changes in appearance?",
+      "options": [
+        "Seriation",
+        "Transitivity",
+        "Classification",
+        "Conservation"
+      ],
+      "correct_answer": "Conservation",
+      "page_reference": 14,
+      "explanations": {
+        "Seriation": "Incorrect. This is the ability to sort objects by size or shape.",
+        "Transitivity": "Incorrect. This is the ability to recognize logical relationships in serial orders (e.g., if A > B and B > C, then A > C).",
+        "Classification": "Incorrect. This is the ability to name and identify sets of objects according to characteristics.",
+        "Conservation": "Correct. Conservation is the ability to understand that quantity, length, or number is unrelated to the arrangement or appearances of objects."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What is the primary role of the teacher when employing 'Critical Pedagogy' in a Social Science classroom?",
+      "options": [
+        "To prescribe solutions to social problems for the students to follow",
+        "To discourage students from expressing views that differ from the textbook",
+        "To encourage independent thinking and facilitate collective decision-making through open discussion",
+        "To focus strictly on historical dates and ignore current emerging social issues"
+      ],
+      "correct_answer": "To encourage independent thinking and facilitate collective decision-making through open discussion",
+      "page_reference": 17,
+      "explanations": {
+        "To prescribe solutions to social problems for the students to follow": "Incorrect. The teacher should not devise or prescribe solutions.",
+        "To discourage students from expressing views that differ from the textbook": "Incorrect. Critical pedagogy entails the acceptance of multiple views.",
+        "To encourage independent thinking and facilitate collective decision-making through open discussion": "Correct. The teacher's role is to encourage independent thinking and facilitate collective decisions by recognizing multiple views.",
+        "To focus strictly on historical dates and ignore current emerging social issues": "Incorrect. Critical pedagogy provides opportunities to reflect on issues like population growth or industrialization."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which principle of the 'Project Method' emphasizes that learning is most effective when children work in groups to prepare for life in a corporate society?",
+      "options": [
+        "The Principle of Purpose",
+        "The Principle of Social Experience",
+        "The Principle of Reality",
+        "The Principle of Utility"
+      ],
+      "correct_answer": "The Principle of Social Experience",
+      "page_reference": 29,
+      "explanations": {
+        "The Principle of Purpose": "Incorrect. This principle focuses on motivation through having a clear goal.",
+        "The Principle of Social Experience": "Correct. This principle states that the child is a social being and should be trained for corporate life by working in groups.",
+        "The Principle of Reality": "Incorrect. This refers to presenting real-life situations in the school.",
+        "The Principle of Utility": "Incorrect. This refers to knowledge being worthwhile only when it is useful and practical."
+      }
+    },
+    {
+      "id": 9,
+      "question": "How does the source distinguish 'Role Play' from 'Dramatization' in an educational context?",
+      "options": [
+        "Role Play is more rigid with pre-fixed conversations, while Drama is flexible",
+        "Dramatization requires many rehearsals and often involves costumes, while Role Play is more spontaneous",
+        "Drama is only for entertainment, whereas Role Play is only for education",
+        "Role Play requires professional actors, while Drama uses students"
+      ],
+      "correct_answer": "Dramatization requires many rehearsals and often involves costumes, while Role Play is more spontaneous",
+      "page_reference": 27,
+      "explanations": {
+        "Role Play is more rigid with pre-fixed conversations, while Drama is flexible": "Incorrect. Role Play is described as more flexible than drama.",
+        "Dramatization requires many rehearsals and often involves costumes, while Role Play is more spontaneous": "Correct. Drama involves a pre-decided set of conversations and many rehearsals, whereas Role Play is more flexible and can happen without rehearsals.",
+        "Drama is only for entertainment, whereas Role Play is only for education": "Incorrect. The source explicitly asks if drama has educational value and suggests its use for classroom learning.",
+        "Role Play requires professional actors, while Drama uses students": "Incorrect. Both strategies are designed for use with students in the classroom."
+      }
+    },
+    {
+      "id": 10,
+      "question": "In 'Cooperative Learning', the element that emphasizes that 'each group member's efforts are required and indispensable for group success' is known as:",
+      "options": [
+        "Face-to-Face Interaction",
+        "Individual Accountability",
+        "Positive Interdependence",
+        "Group Processing"
+      ],
+      "correct_answer": "Positive Interdependence",
+      "page_reference": 35,
+      "explanations": {
+        "Face-to-Face Interaction": "Incorrect. This refers to the teacher checking for understanding and connecting new learning to old.",
+        "Individual Accountability": "Incorrect. This refers to testing students individually to ensure they learn the material.",
+        "Positive Interdependence": "Correct. Positive Interdependence means that each member's efforts are indispensable for the group to succeed.",
+        "Group Processing": "Incorrect. This refers to the group reflecting on their goal achievement and working relationships."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a standard feature of a 'Concept Map' used in Social Science teaching?",
+      "options": [
+        "Concepts are arranged randomly across the page",
+        "Concepts are arranged in a hierarchical order from top to bottom",
+        "Lines must never cross or connect concepts laterally",
+        "The map must only be used at the end of a lesson for evaluation"
+      ],
+      "correct_answer": "Concepts are arranged in a hierarchical order from top to bottom",
+      "page_reference": 37,
+      "explanations": {
+        "Concepts are arranged randomly across the page": "Incorrect. They are arranged in a hierarchical order.",
+        "Concepts are arranged in a hierarchical order from top to bottom": "Correct. A feature of a concept map is that concepts are arranged hierarchically with the most general at the top.",
+        "Lines must never cross or connect concepts laterally": "Incorrect. There can be lateral links relating concepts together.",
+        "The map must only be used at the end of a lesson for evaluation": "Incorrect. It can be used at the introductory, developmental, or evaluation stage."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Conducting a school-wide mock election to teach students the concept of 'Election' is an example of which learning strategy?",
+      "options": [
+        "Problem Solving",
+        "Map Based Learning",
+        "Experiential Learning",
+        "Rote Memorization"
+      ],
+      "correct_answer": "Experiential Learning",
+      "page_reference": 45,
+      "explanations": {
+        "Problem Solving": "Incorrect. Problem solving involves identifying a specific problem and testing solutions.",
+        "Map Based Learning": "Incorrect. This refers to developing literacy in map reading.",
+        "Experiential Learning": "Correct. Conducting an election in the school is provided as an illustration of providing a concrete experience in experiential learning.",
+        "Rote Memorization": "Incorrect. Rote memorization is discouraged in favor of active, direct experience."
+      }
+    },
+    {
+      "id": 13,
+      "question": "When developing map reading skills, what is the 'Legend' or 'Index' of a map used for?",
+      "options": [
+        "To show the ratio between distance on the map and on the ground",
+        "To indicate which direction is North",
+        "To explain the meaning of symbols and colors used in the map",
+        "To provide the official title of the map"
+      ],
+      "correct_answer": "To explain the meaning of symbols and colors used in the map",
+      "page_reference": 51,
+      "explanations": {
+        "To show the ratio between distance on the map and on the ground": "Incorrect. This describes the 'Scale' of a map.",
+        "To indicate which direction is North": "Incorrect. This is the function of the 'Direction Indicator'.",
+        "To explain the meaning of symbols and colors used in the map": "Correct. The legend contains the list of symbols/colors used in a given map and their meanings.",
+        "To provide the official title of the map": "Incorrect. The theme/title is typically the heading of the map."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Which learning resource is defined as 'three-dimensional objects from real life such as coins, tools, and textiles'?",
+      "options": [
+        "Models",
+        "Diorama",
+        "Realia",
+        "Thematic Maps"
+      ],
+      "correct_answer": "Realia",
+      "page_reference": 67,
+      "explanations": {
+        "Models": "Incorrect. Models are three-dimensional aids that *represent* real things, but are usually scaled up or down.",
+        "Diorama": "Incorrect. A diorama is a partially 3D replica of a *landscape*.",
+        "Realia": "Correct. Realia refers to three-dimensional objects from real life like coins, tools, and textiles.",
+        "Thematic Maps": "Incorrect. Thematic maps focus on specific information like temperature or rainfall."
+      }
+    },
+    {
+      "id": 15,
+      "question": "The primary purpose of a 'Diorama' as a learning resource at the elementary stage is to:",
+      "options": [
+        "Provide a way to calculate map scale accurately",
+        "Provide a feeling of the life of people in a particular geographical region through observation",
+        "Replace the textbook as the only source of knowledge",
+        "Develop students' skills in mathematical graphing"
+      ],
+      "correct_answer": "Provide a feeling of the life of people in a particular geographical region through observation",
+      "page_reference": 68,
+      "explanations": {
+        "Provide a way to calculate map scale accurately": "Incorrect. This is a map skill.",
+        "Provide a feeling of the life of people in a particular geographical region through observation": "Correct. Since children at this stage learn through observation, dioramas help them have a feeling of life in regions like deserts or polar areas.",
+        "Replace the textbook as the only source of knowledge": "Incorrect. The source notes that textbooks are currently treated as the only source but should be used for further inquiry, not that dioramas replace them.",
+        "Develop students' skills in mathematical graphing": "Incorrect. This is related to the use of graphs."
+      }
+    },
+    {
+      "id": 16,
+      "question": "According to the source, what is the 'correct' purpose of assessment in Social Science?",
+      "options": [
+        "To label children as 'slow learners' or 'bright students'",
+        "To encourage cut-throat competition for marks between peers",
+        "To improve the teaching-learning process and judge the development of learner capabilities",
+        "To identify exactly what a child cannot do"
+      ],
+      "correct_answer": "To improve the teaching-learning process and judge the development of learner capabilities",
+      "page_reference": 90,
+      "explanations": {
+        "To label children as 'slow learners' or 'bright students'": "Incorrect. The purpose of assessment is NOT to label children.",
+        "To encourage cut-throat competition for marks between peers": "Incorrect. The purpose is NOT to encourage competition.",
+        "To improve the teaching-learning process and judge the development of learner capabilities": "Correct. The purpose is to improve teaching and judging the extent to which learner capabilities are developed.",
+        "To identify exactly what a child cannot do": "Incorrect. The purpose is NOT to identify what the child does not know or cannot do."
+      }
+    },
+    {
+      "id": 17,
+      "question": "In the context of 'Continuous and Comprehensive Evaluation' (CCE), what does the word 'Comprehensive' imply?",
+      "options": [
+        "Evaluation must be completed as quickly as possible",
+        "Evaluation should only cover academic subjects like Math and Science",
+        "Evaluation has to cover curricular subjects, activities, socio-personal qualities, work, and art education",
+        "Evaluation must rely solely on the final year-end examination"
+      ],
+      "correct_answer": "Evaluation has to cover curricular subjects, activities, socio-personal qualities, work, and art education",
+      "page_reference": 99,
+      "explanations": {
+        "Evaluation must be completed as quickly as possible": "Incorrect. This is not the meaning of comprehensive.",
+        "Evaluation should only cover academic subjects like Math and Science": "Incorrect. It covers more than just academic subjects.",
+        "Evaluation has to cover curricular subjects, activities, socio-personal qualities, work, and art education": "Correct. 'Comprehensive' means the evaluation covers all aspects of the student's progress.",
+        "Evaluation must rely solely on the final year-end examination": "Incorrect. CCE discourages reliance on a single external examination."
+      }
+    },
+    {
+      "id": 18,
+      "question": "What is one of the main advantages of using 'Rubrics' for performance-based assessment?",
+      "options": [
+        "They make grading more subjective and less transparent",
+        "They increase the amount of time teachers spend grading",
+        "They help students become better judges of the quality of their own work",
+        "They focus exclusively on the final score rather than the criteria"
+      ],
+      "correct_answer": "They help students become better judges of the quality of their own work",
+      "page_reference": 108,
+      "explanations": {
+        "They make grading more subjective and less transparent": "Incorrect. Rubrics make grading simpler and more transparent.",
+        "They increase the amount of time teachers spend grading": "Incorrect. They reduce the amount of time teachers spend evaluating.",
+        "They help students become better judges of the quality of their own work": "Correct. One major advantage is that rubrics help students assess the quality of their own work.",
+        "They focus exclusively on the final score rather than the criteria": "Incorrect. Rubrics evaluate based on a sum of a full range of criteria."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Which method of grading involves ranking pupils in order of achievement and assigning grades based on a predetermined proportion (e.g., top 7% get an 'A')?",
+      "options": [
+        "Direct Grading",
+        "Absolute Grading",
+        "Relative Grading",
+        "Descriptive Indicator Grading"
+      ],
+      "correct_answer": "Relative Grading",
+      "page_reference": 111,
+      "explanations": {
+        "Direct Grading": "Incorrect. Direct grading is the assessment of performance directly in qualitative terms like 'A' or 'B'.",
+        "Absolute Grading": "Incorrect. Absolute grading involves direct conversion of marks into categories regardless of other students' scores.",
+        "Relative Grading": "Correct. Relative grading (grading on the curve) involves ranking pupils and assigning letter grades based on predetermined proportions.",
+        "Descriptive Indicator Grading": "Incorrect. Descriptive indicators are qualitative statements that explain the grade."
+      }
+    },
+    {
+      "id": 20,
+      "question": "A 'Portfolio' in learner assessment is best described as:",
+      "options": [
+        "A folder containing only the student's highest test scores",
+        "A purposeful collection of student work that tells the story of their progress over time",
+        "A list of rules and regulations for classroom behavior",
+        "A collection of textbook chapters to be memorized"
+      ],
+      "correct_answer": "A purposeful collection of student work that tells the story of their progress over time",
+      "page_reference": 106,
+      "explanations": {
+        "A folder containing only the student's highest test scores": "Incorrect. It should contain all kinds of work, not just the best.",
+        "A purposeful collection of student work that tells the story of their progress over time": "Correct. Portfolio refers to a purposeful collection that shows the child's accomplishments and story of progress.",
+        "A list of rules and regulations for classroom behavior": "Incorrect. This is not what a portfolio is.",
+        "A collection of textbook chapters to be memorized": "Incorrect. Portfolios contain original student work, not textbook content."
+      }
+    }
+  ]
+}

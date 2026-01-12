@@ -1,0 +1,365 @@
+{
+  "quiz_title": "D.El.Ed Course 507: Block 3 - Managing School Community Interface",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best defines 'Community Mobilization' according to the sources?",
+      "options": [
+        "A top-down administrative process to enforce government policies.",
+        "A capacity building process where community groups plan and evaluate activities for their own development.",
+        "The act of the government providing free materials to schools.",
+        "A one-time event focused on collecting school fees from parents."
+      ],
+      "correct_answer": "A capacity building process where community groups plan and evaluate activities for their own development.",
+      "page_reference": 9,
+      "explanations": {
+        "A top-down administrative process to enforce government policies.": "Mobilization is participatory and sustained, not a top-down enforcement mechanism.",
+        "A capacity building process where community groups plan and evaluate activities for their own development.": "The source defines community mobilization as a capacity building process through which individuals or groups plan, carry out, and evaluate activities on a participatory basis.",
+        "The act of the government providing free materials to schools.": "While mobilization can bring in resources, the definition focuses on the process of people taking charge of their lives.",
+        "A one-time event focused on collecting school fees from parents.": "The sources emphasize that mobilization is a sustained process, not a singular transaction like fee collection."
+      }
+    },
+    {
+      "id": 2,
+      "question": "According to the sources, why is community mobilization important for any intervention?",
+      "options": [
+        "It eliminates the need for professional teachers.",
+        "It focuses solely on financial contributions from the wealthy.",
+        "It increases the effectiveness and efficiency of interventions and reaches the most vulnerable.",
+        "It allows the school to ignore government regulations."
+      ],
+      "correct_answer": "It increases the effectiveness and efficiency of interventions and reaches the most vulnerable.",
+      "page_reference": 10,
+      "explanations": {
+        "It eliminates the need for professional teachers.": "Mobilization supports the school system; it does not replace the professional role of the teacher.",
+        "It focuses solely on financial contributions from the wealthy.": "While it contributes additional resources, its goals include reaching the vulnerable and addressing gender disparities.",
+        "It increases the effectiveness and efficiency of interventions and reaches the most vulnerable.": "The source explicitly lists these as reasons why community mobilization is important for success.",
+        "It allows the school to ignore government regulations.": "Mobilization actually strengthens ownership and sustainability within established frameworks like the SSA."
+      }
+    },
+    {
+      "id": 3,
+      "question": "In the 'Scenario 2' story of a concerned teacher, which group was identified as a resource for 'peer learning'?",
+      "options": [
+        "The School Principal",
+        "The better performing children",
+        "Receptive proactive parents",
+        "The District Collector"
+      ],
+      "correct_answer": "The better performing children",
+      "page_reference": 17,
+      "explanations": {
+        "The School Principal": "The Principal was a resource for motivation and acknowledging effort, not direct peer learning.",
+        "The better performing children": "Better performing children were identified as a resource to introduce peer learning through 'study buddies'.",
+        "Receptive proactive parents": "Parents were used as model supporters for first-generation learners.",
+        "The District Collector": "The District Collector is mentioned in the context of local body governance, not as a peer learning resource in the scenario."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Which component of the communication process refers to the receiver’s response upon receiving a message?",
+      "options": [
+        "Noise",
+        "Channel",
+        "Feedback",
+        "Medium"
+      ],
+      "correct_answer": "Feedback",
+      "page_reference": 31,
+      "explanations": {
+        "Noise": "Noise is any disturbance that disrupts the clarity or quality of the message.",
+        "Channel": "The channel is the means used to convey the message.",
+        "Feedback": "Feedback is defined specifically as the receiver’s response on receiving the message.",
+        "Medium": "Medium relates to the channel used, not the response from the receiver."
+      }
+    },
+    {
+      "id": 5,
+      "question": "Under the Sarva Shiksha Abhiyan (SSA), what percentage of funds typically flow through community-based bodies for school expenditures?",
+      "options": [
+        "Less than 10%",
+        "Exactly 25%",
+        "More than 50%",
+        "100%"
+      ],
+      "correct_answer": "More than 50%",
+      "page_reference": 36,
+      "explanations": {
+        "Less than 10%": "The sources indicate a much higher involvement of community funds in SSA.",
+        "Exactly 25%": "This is incorrect; the sources cite a majority share.",
+        "More than 50%": "The source states that funds flowing through community-based bodies constitute more than 50% of SSA funds.",
+        "100%": "While substantial, it is not the entirety of SSA funding."
+      }
+    },
+    {
+      "id": 6,
+      "question": "What is the primary aim of the meetings (Small/Big groups) organized by the NGO Pratham?",
+      "options": [
+        "To collect donations for building new infrastructure.",
+        "Sensitization of the community towards primary education and learning levels of children.",
+        "To replace government teachers with Pratham volunteers.",
+        "To conduct political campaigns in tribal areas."
+      ],
+      "correct_answer": "Sensitization of the community towards primary education and learning levels of children.",
+      "page_reference": 42,
+      "explanations": {
+        "To collect donations for building new infrastructure.": "The meetings focus on familiarization and sensitization regarding education levels, not direct fundraising for buildings.",
+        "Sensitization of the community towards primary education and learning levels of children.": "The sources state the main aim of these meetings is familiarization of the program and sensitization of the community regarding learning levels.",
+        "To replace government teachers with Pratham volunteers.": "The sources mention Pratham develops remedial and bridge programs, not the replacement of the existing school staff.",
+        "To conduct political campaigns in tribal areas.": "Pratham is a non-governmental organization focused on quality education."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Which of the following are known as the 'Five Ms of Management'?",
+      "options": [
+        "Motivation, Mindset, Mastery, Morale, Money",
+        "Manpower, Materials, Machinery, Methods, Money",
+        "Management, Marketing, Mentoring, Meetings, Milestones",
+        "Monitoring, Maintenance, Modeling, Mandates, Maps"
+      ],
+      "correct_answer": "Manpower, Materials, Machinery, Methods, Money",
+      "page_reference": 60,
+      "explanations": {
+        "Motivation, Mindset, Mastery, Morale, Money": "While relevant to management, these are not the specific 'Five Ms' listed in the text.",
+        "Manpower, Materials, Machinery, Methods, Money": "The source explicitly identifies these five resources as the 'Five Ms of Management'.",
+        "Management, Marketing, Mentoring, Meetings, Milestones": "These are activities or outcomes, not the core input resources identified in the unit.",
+        "Monitoring, Maintenance, Modeling, Mandates, Maps": "These are components or tools, not the fundamental 'Five Ms'."
+      }
+    },
+    {
+      "id": 8,
+      "question": "What is the first step in the management process, which involves analyzing the school's internal and external environment?",
+      "options": [
+        "Strategy Formulation",
+        "Strategy Evaluation",
+        "Situation Analysis",
+        "Strategy Implementation"
+      ],
+      "correct_answer": "Situation Analysis",
+      "page_reference": 63,
+      "explanations": {
+        "Strategy Formulation": "This is the second step, involving the design of strategies.",
+        "Strategy Evaluation": "This is the final step, determining if goals were met.",
+        "Situation Analysis": "Situation analysis is identified as the first step in the management process, providing information to create a vision/mission.",
+        "Strategy Implementation": "This is the third step, involving putting strategies into practice."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Which management function involves identifying and grouping activities and assigning them to individuals?",
+      "options": [
+        "Planning",
+        "Organizing",
+        "Directing",
+        "Controlling"
+      ],
+      "correct_answer": "Organizing",
+      "page_reference": 69,
+      "explanations": {
+        "Planning": "Planning involves setting objectives and courses of action.",
+        "Organizing": "The organizing function is defined as identifying and grouping activities and assigning them to individuals.",
+        "Directing": "Directing is concerned with the execution of plans and 'moving into action'.",
+        "Controlling": "Controlling ensures performance does not deviate from standards."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What are the three elements of 'Coordination' as defined in the source?",
+      "options": [
+        "Planning, Budgeting, and Organizing",
+        "Choice, Information, and Feedback",
+        "Balancing, Timing, and Integrating",
+        "Human, Physical, and Capital"
+      ],
+      "correct_answer": "Balancing, Timing, and Integrating",
+      "page_reference": 74,
+      "explanations": {
+        "Planning, Budgeting, and Organizing": "These are separate functions of management, not the elements of coordination.",
+        "Choice, Information, and Feedback": "These are characteristics or requirements of decision-making.",
+        "Balancing, Timing, and Integrating": "The sources explicitly state that balancing, timing, and integrating are the three elements of coordination.",
+        "Human, Physical, and Capital": "These are types of resources involved in management."
+      }
+    },
+    {
+      "id": 11,
+      "question": "In 'Participatory Management', who holds the final responsibility for making and answering for decisions?",
+      "options": [
+        "The entire community",
+        "Only the junior employees",
+        "The designated managers",
+        "The government inspectors"
+      ],
+      "correct_answer": "The designated managers",
+      "page_reference": 79,
+      "explanations": {
+        "The entire community": "The community provides input and influence, but doesn't hold the final executive responsibility.",
+        "Only the junior employees": "Junior employees are encouraged to participate, but the responsibility remains with the management.",
+        "The designated managers": "The source states that in participatory management, the designated managers still have the final responsibility for making decisions.",
+        "The government inspectors": "Inspectors monitor from the outside; they are not the internal designated managers mentioned here."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Why is 'Human Resource' considered unique compared to 'Material Resource' in the production process?",
+      "options": [
+        "It is more expensive than machinery.",
+        "It is an active source that creates all other goods and services.",
+        "It carries no financial risk in any occupation.",
+        "It is only found in government institutions."
+      ],
+      "correct_answer": "It is an active source that creates all other goods and services.",
+      "page_reference": 91,
+      "explanations": {
+        "It is more expensive than machinery.": "The text does not define it by price, but by its active role in creation.",
+        "It is an active source that creates all other goods and services.": "The sources note that it is the 'human resource' which is an active source that creates goods and services for further production.",
+        "It carries no financial risk in any occupation.": "Farmers (human resources) are used as an example of those who take significant financial risks.",
+        "It is only found in government institutions.": "Human resource is essential across all occupations and economies."
+      }
+    },
+    {
+      "id": 13,
+      "question": "The UNDP ranks countries in the Human Development Index (HDI) based on which three criteria?",
+      "options": [
+        "Per-capita income, literacy rate, and gender parity index.",
+        "Military strength, land area, and population size.",
+        "Amount of taxes collected, number of schools, and machinery produced.",
+        "Number of government institutions, external aid, and surplus profit."
+      ],
+      "correct_answer": "Per-capita income, literacy rate, and gender parity index.",
+      "page_reference": 97,
+      "explanations": {
+        "Per-capita income, literacy rate, and gender parity index.": "The source states the UNDP ranks countries based on development with respect to these three factors.",
+        "Military strength, land area, and population size.": "These are not listed as factors in the HDI in the provided text.",
+        "Amount of taxes collected, number of schools, and machinery produced.": "While these relate to a country's wealth, they are not the HDI criteria.",
+        "Number of government institutions, external aid, and surplus profit.": "These are sources of revenue or political structures, not the specific HDI metrics."
+      }
+    },
+    {
+      "id": 14,
+      "question": "In the context of school management types, 'government-aided' schools receive funds primarily based on which principle?",
+      "options": [
+        "Surplus-profit principle",
+        "Deficit-base principle",
+        "100% scholarship principle",
+        "Social demand principle"
+      ],
+      "correct_answer": "Deficit-base principle",
+      "page_reference": 110,
+      "explanations": {
+        "Surplus-profit principle": "This is not mentioned; government-aided schools rely on grants to cover gaps.",
+        "Deficit-base principle": "The source states that in government-aided schools, grant-in-aid is given on a deficit-base principle, deducting income received from fees.",
+        "100% scholarship principle": "Grants are given as per grant-in-aid rules, not a total scholarship for every student.",
+        "Social demand principle": "Social demand is an approach for planning education, not the specific funding rule for aided schools."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Which management approach suggests that education is an investment that forms 'human capital' analogous to industrial production?",
+      "options": [
+        "Social Justice Approach",
+        "Social Demand Approach",
+        "Human Capital Theory Approach",
+        "Cost-Benefit Analysis Approach"
+      ],
+      "correct_answer": "Human Capital Theory Approach",
+      "page_reference": 124,
+      "explanations": {
+        "Social Justice Approach": "This focuses on protecting the interests of disadvantaged sections.",
+        "Social Demand Approach": "This responds to standard of living and social expectations.",
+        "Human Capital Theory Approach": "The source defines this approach by Schultz (1960), stating learning results in human capital and is an investment.",
+        "Cost-Benefit Analysis Approach": "While related, this specific analogy to industrial production and human capital formation is central to Schultz's theory."
+      }
+    },
+    {
+      "id": 16,
+      "question": "In education economics, what is 'Opportunity Cost'?",
+      "options": [
+        "The direct cost of tuition fees paid by a family.",
+        "The income a family foregoes by sending a member to school instead of work.",
+        "The amount the government spends on school infrastructure.",
+        "The surplus money a school saves in a bank account."
+      ],
+      "correct_answer": "The income a family foregoes by sending a member to school instead of work.",
+      "page_reference": 140,
+      "explanations": {
+        "The direct cost of tuition fees paid by a family.": "This is categorized as a 'direct cost'.",
+        "The income a family foregoes by sending a member to school instead of work.": "The source defines opportunity cost as the income families forego by sending members to school.",
+        "The amount the government spends on school infrastructure.": "These are 'resource costs' to the community or government outlay.",
+        "The surplus money a school saves in a bank account.": "This is referred to as 'savings'."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Under Section 21 of the RTE Act 2009, which body is constituted to prepare school development plans and monitor school working?",
+      "options": [
+        "Village Panchayat",
+        "Zila Parishad",
+        "School Management Committee",
+        "Block Development Office"
+      ],
+      "correct_answer": "School Management Committee",
+      "page_reference": 146,
+      "explanations": {
+        "Village Panchayat": "Panchayats have broader local responsibilities, but Section 21 specifically mandates the SMC for the school.",
+        "Zila Parishad": "This is a district-level local body.",
+        "School Management Committee": "The source states that Section 21 of the RTE Act 2009 makes provision to constitute the School Management Committee (SMC).",
+        "Block Development Office": "This office handles the distribution of development funds to panchayats, not school-specific monitoring."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Which type of 'Noise' in communication occurs when a speaker uses words the receiver cannot understand?",
+      "options": [
+        "Physical Noise",
+        "Psychological Noise",
+        "Physiological Noise",
+        "Semantic Noise"
+      ],
+      "correct_answer": "Semantic Noise",
+      "page_reference": 32,
+      "explanations": {
+        "Physical Noise": "This refers to external sounds like construction.",
+        "Psychological Noise": "This occurs when the listener's mind is distracted.",
+        "Physiological Noise": "This occurs due to physical difficulties, like hearing problems.",
+        "Semantic Noise": "The source states semantic noise happens when the speaker uses words that the receiver cannot understand."
+      }
+    },
+    {
+      "id": 19,
+      "question": "What is the primary source of income for 'private unaided' schools?",
+      "options": [
+        "Government grants-in-aid",
+        "Interest from endowment funds",
+        "Fees charged from students",
+        "Voluntary contributions from the local Panchayat"
+      ],
+      "correct_answer": "Fees charged from students",
+      "page_reference": 112,
+      "explanations": {
+        "Government grants-in-aid": "Private unaided schools do not receive any grants-in-aid from the government.",
+        "Interest from endowment funds": "While they can have endowments, their major regular income comes from fees.",
+        "Fees charged from students": "The source states that private unaided schools receive their major income from fees charged from students.",
+        "Voluntary contributions from the local Panchayat": "These schools are generally self-financing and do not rely on local body funds."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Which management component is specifically described as being 'the core of management'?",
+      "options": [
+        "Resource Allocation",
+        "Decision Making",
+        "Situation Analysis",
+        "Coordination"
+      ],
+      "correct_answer": "Decision Making",
+      "page_reference": 62,
+      "explanations": {
+        "Resource Allocation": "This is part of the management process but not labeled its 'core'.",
+        "Decision Making": "The source explicitly states that the 'Core of management is decision making'.",
+        "Situation Analysis": "This is identified as the first step, but not the core.",
+        "Coordination": "This is a basic responsibility and function, but the text highlights decision-making as the core."
+      }
+    }
+  ]
+}
