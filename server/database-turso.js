@@ -60,15 +60,30 @@ async function initDatabase() {
       id TEXT PRIMARY KEY,
       user_id TEXT NOT NULL,
       course_id TEXT NOT NULL,
+      order_id TEXT,
       payment_id TEXT NOT NULL,
+      signature TEXT,
       amount INTEGER NOT NULL,
       coupon_code TEXT,
       discount INTEGER DEFAULT 0,
+      payment_method TEXT,
+      payment_details TEXT,
+      status TEXT DEFAULT 'completed',
       purchased_at TEXT DEFAULT (datetime('now')),
       FOREIGN KEY (user_id) REFERENCES users(id),
       UNIQUE(user_id, course_id)
     )
   `);
+
+  // Add new columns to existing purchases table (migrations)
+  const purchaseColumns = ['order_id', 'signature', 'payment_method', 'payment_details', 'status'];
+  for (const col of purchaseColumns) {
+    try {
+      await database.execute(`ALTER TABLE purchases ADD COLUMN ${col} TEXT`);
+    } catch (e) {
+      // Column already exists, ignore
+    }
+  }
 
   // Create course_progress table
   await database.execute(`
@@ -254,15 +269,20 @@ const purchaseOps = {
       id: row.id,
       userId: row.user_id,
       courseId: row.course_id,
+      orderId: row.order_id,
       paymentId: row.payment_id,
+      signature: row.signature,
       amount: row.amount,
       couponCode: row.coupon_code,
       discount: row.discount,
+      paymentMethod: row.payment_method,
+      paymentDetails: row.payment_details ? JSON.parse(row.payment_details) : null,
+      status: row.status,
       purchasedAt: row.purchased_at
     };
   },
 
-  async create(id, userId, courseId, paymentId, amount, couponCode, discount) {
+  async create(id, userId, courseId, paymentData) {
     const database = getDatabase();
     
     // Check for duplicate purchase
@@ -271,10 +291,33 @@ const purchaseOps = {
       throw new Error('Course already purchased');
     }
 
+    const {
+      orderId,
+      paymentId,
+      signature,
+      amount,
+      couponCode,
+      discount,
+      paymentMethod,
+      paymentDetails
+    } = paymentData;
+
     await database.execute({
-      sql: `INSERT INTO purchases (id, user_id, course_id, payment_id, amount, coupon_code, discount) 
-            VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      args: [id, userId, courseId, paymentId, amount, couponCode || null, discount || 0]
+      sql: `INSERT INTO purchases (id, user_id, course_id, order_id, payment_id, signature, amount, coupon_code, discount, payment_method, payment_details, status) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'completed')`,
+      args: [
+        id, 
+        userId, 
+        courseId, 
+        orderId || null,
+        paymentId, 
+        signature || null,
+        amount, 
+        couponCode || null, 
+        discount || 0,
+        paymentMethod || null,
+        paymentDetails ? JSON.stringify(paymentDetails) : null
+      ]
     });
 
     // Update user's purchase status
@@ -293,10 +336,13 @@ const purchaseOps = {
       id: row.id,
       userId: row.user_id,
       courseId: row.course_id,
+      orderId: row.order_id,
       paymentId: row.payment_id,
       amount: row.amount,
       couponCode: row.coupon_code,
       discount: row.discount,
+      paymentMethod: row.payment_method,
+      status: row.status,
       purchasedAt: row.purchased_at
     }));
   }
