@@ -11069,7 +11069,7 @@ const materials = {
         "id": "vid-sub-509-1-hi",
         "title": "Block 1: Understanding Social Science as a Discipline (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://www.youtube.com/watch?v=gSp-43krcDA",
+        "url": "https://www.youtube.com/watch?v=useEEE64Q2Q",
         "language": "hindi"
       }
     ],
@@ -11887,7 +11887,7 @@ const materials = {
         "id": "vid-sub-509-3-hi",
         "title": "Block 3: Issues in Pedagogy of Social Sciences (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://www.youtube.com/watch?v=gSp-43krcDA",
+        "url": "https://www.youtube.com/watch?v=GvCiuHMeB1E",
         "language": "hindi"
       }
     ],
@@ -12296,7 +12296,7 @@ const materials = {
         "id": "vid-sub-510-1-hi",
         "title": "Block 1: Understanding Science (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://www.youtube.com/watch?v=gSp-43krcDA",
+        "url": "https://www.youtube.com/watch?v=02pJ8vMEaUA",
         "language": "hindi"
       }
     ],
@@ -12705,7 +12705,7 @@ const materials = {
         "id": "vid-sub-510-2-hi",
         "title": "Block 2: Managing & Measuring Science Learning (Hindi)",
         "description": "Video lecture in Hindi",
-        "url": "https://www.youtube.com/watch?v=-HZGtCzT3Fw",
+        "url": "https://www.youtube.com/watch?v=bM0h1fTi9BM",
         "language": "hindi"
       }
     ],
