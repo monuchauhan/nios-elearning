@@ -945,17 +945,56 @@ app.post('/api/payment/verify', authenticate, async (req, res) => {
       }
     }
 
-    // Record purchase
+    // Fetch payment details from Razorpay API
+    let paymentMethod = null;
+    let paymentDetails = null;
+    
+    if (!demoMode && razorpay_payment_id) {
+      const razorpayInstance = getRazorpay();
+      if (razorpayInstance) {
+        try {
+          const payment = await razorpayInstance.payments.fetch(razorpay_payment_id);
+          paymentMethod = payment.method; // upi, card, netbanking, wallet, etc.
+          
+          paymentDetails = {
+            method: payment.method,
+            bank: payment.bank || null,
+            wallet: payment.wallet || null,
+            vpa: payment.vpa || null, // UPI ID
+            email: payment.email || null,
+            contact: payment.contact || null,
+            fee: payment.fee || null, // Razorpay fee in paise
+            tax: payment.tax || null, // Tax on fee in paise
+            card: payment.card ? {
+              last4: payment.card.last4,
+              network: payment.card.network, // Visa, Mastercard, etc.
+              type: payment.card.type, // credit, debit
+              issuer: payment.card.issuer
+            } : null,
+            acquirer_data: payment.acquirer_data || null,
+            international: payment.international || false,
+            captured: payment.captured,
+            description: payment.description
+          };
+        } catch (fetchError) {
+          console.error('Failed to fetch payment details from Razorpay:', fetchError);
+          // Continue with purchase even if we can't fetch details
+        }
+      }
+    }
+
+    // Record purchase with all details
     const purchaseId = uuidv4();
-    await purchaseOps.create(
-      purchaseId,
-      user.id,
-      course.id,
-      razorpay_payment_id || `demo_${uuidv4().slice(0, 8)}`,
-      amount || course.price,
-      couponCode,
-      discount || 0
-    );
+    await purchaseOps.create(purchaseId, user.id, course.id, {
+      orderId: razorpay_order_id || null,
+      paymentId: razorpay_payment_id || `demo_${uuidv4().slice(0, 8)}`,
+      signature: razorpay_signature || null,
+      amount: amount !== undefined ? amount : course.price,
+      couponCode: couponCode || null,
+      discount: discount !== undefined ? discount : 0,
+      paymentMethod: paymentMethod || (demoMode ? 'demo' : 'unknown'),
+      paymentDetails: paymentDetails
+    });
 
     res.json({
       success: true,
