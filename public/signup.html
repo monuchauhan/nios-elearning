@@ -151,6 +151,7 @@
   <script>
     let googleClientId = null;
     let googleInitialized = false;
+    let useFallbackOAuth = false;
 
     // Redirect if already logged in
     if (isLoggedIn()) {
@@ -168,7 +169,8 @@
           google.accounts.id.initialize({
             client_id: googleClientId,
             callback: handleGoogleCredential,
-            cancel_on_tap_outside: false
+            cancel_on_tap_outside: false,
+            use_fedcm_for_prompt: true
           });
           googleInitialized = true;
         } else {
@@ -184,8 +186,14 @@
     }
 
     function handleGoogleSignIn() {
-      if (!googleClientId || !googleInitialized) {
+      if (!googleClientId) {
         console.error('Google Sign-In not initialized');
+        return;
+      }
+      
+      // If FedCM previously failed, use OAuth popup directly
+      if (useFallbackOAuth) {
+        openGoogleOAuthPopup();
         return;
       }
       
@@ -201,31 +209,91 @@
       // Use prompt with notification callback to handle all states
       google.accounts.id.prompt((notification) => {
         if (notification.isNotDisplayed()) {
-          // Prompt was not displayed - could be due to cooldown, browser settings, or user opted out
           console.log('Google prompt not displayed:', notification.getNotDisplayedReason());
-          resetGoogleButton();
-          
-          // Show a helpful message
-          const errorMessage = document.getElementById('error-message');
-          const reason = notification.getNotDisplayedReason();
-          if (reason === 'suppressed_by_user' || reason === 'opt_out_or_no_session') {
-            errorMessage.textContent = 'Google Sign-In was blocked. Please use email/password signup or try again in a new browser tab.';
-          } else if (reason === 'browser_not_supported') {
-            errorMessage.textContent = 'Your browser does not support Google Sign-In. Please use email/password signup.';
-          } else {
-            errorMessage.textContent = 'Google Sign-In is temporarily unavailable. Please try email/password signup or refresh the page.';
-          }
-          errorMessage.classList.remove('hidden');
+          // FedCM blocked - fall back to OAuth popup
+          useFallbackOAuth = true;
+          openGoogleOAuthPopup();
         } else if (notification.isSkippedMoment()) {
-          // User closed the prompt or clicked outside
           console.log('Google prompt skipped:', notification.getSkippedReason());
           resetGoogleButton();
         } else if (notification.isDismissedMoment()) {
-          // User dismissed the prompt
           console.log('Google prompt dismissed:', notification.getDismissedReason());
           resetGoogleButton();
         }
-        // If none of the above, the prompt is still showing or user is interacting
+      });
+    }
+    
+    // Fallback OAuth popup when FedCM is blocked
+    function openGoogleOAuthPopup() {
+      const btn = document.getElementById('google-signin-btn');
+      btn.disabled = true;
+      btn.innerHTML = `
+        <svg viewBox="0 0 24 24" class="spinner" style="animation: spin 1s linear infinite; width: 20px; height: 20px;">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="31.4 31.4"></circle>
+        </svg>
+        Connecting...
+      `;
+      
+      const redirectUri = window.location.origin + '/auth/google/callback';
+      const scope = 'openid email profile';
+      const state = btoa(JSON.stringify({ redirect: '/course' }));
+      
+      const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?` +
+        `client_id=${encodeURIComponent(googleClientId)}` +
+        `&redirect_uri=${encodeURIComponent(redirectUri)}` +
+        `&response_type=code` +
+        `&scope=${encodeURIComponent(scope)}` +
+        `&state=${encodeURIComponent(state)}` +
+        `&prompt=select_account`;
+      
+      // Open popup
+      const width = 500;
+      const height = 600;
+      const left = window.screenX + (window.outerWidth - width) / 2;
+      const top = window.screenY + (window.outerHeight - height) / 2;
+      
+      const popup = window.open(
+        authUrl,
+        'google-oauth',
+        `width=${width},height=${height},left=${left},top=${top},popup=1`
+      );
+      
+      if (!popup) {
+        // Popup blocked - redirect instead
+        window.location.href = authUrl;
+        return;
+      }
+      
+      // Listen for the callback
+      const checkClosed = setInterval(() => {
+        if (popup.closed) {
+          clearInterval(checkClosed);
+          resetGoogleButton();
+        }
+      }, 500);
+      
+      // Listen for message from callback page
+      window.addEventListener('message', function handler(event) {
+        if (event.origin !== window.location.origin) return;
+        
+        if (event.data.type === 'google-oauth-success') {
+          clearInterval(checkClosed);
+          popup.close();
+          window.removeEventListener('message', handler);
+          
+          // Save auth and redirect
+          saveAuth(event.data.token, event.data.user);
+          window.location.href = '/course';
+        } else if (event.data.type === 'google-oauth-error') {
+          clearInterval(checkClosed);
+          popup.close();
+          window.removeEventListener('message', handler);
+          resetGoogleButton();
+          
+          const errorMessage = document.getElementById('error-message');
+          errorMessage.textContent = event.data.error || 'Google sign-up failed';
+          errorMessage.classList.remove('hidden');
+        }
       });
     }
     
