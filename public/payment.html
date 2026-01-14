@@ -395,7 +395,7 @@
             razorpay_signature: razorpayResponse.razorpay_signature,
             amount: orderAmount / 100, // Convert paise to rupees
             couponCode: appliedCoupon,
-            discount: appliedCoupon ? discountAmount : 0
+            discount: appliedCoupon ? discount : 0
           })
         });
 
