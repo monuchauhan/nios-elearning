@@ -5,7 +5,7 @@ const course = {
   "id": "nios-deled",
   "title": "NIOS D.El.Ed Complete Course",
   "description": "Comprehensive preparation course for NIOS Diploma in Elementary Education. Includes video lectures in Hindi, audio podcasts, study materials, and practice quizzes.",
-  "price": 1,
+  "price": 389,
   "originalPrice": 699,
   "currency": "INR",
   "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
