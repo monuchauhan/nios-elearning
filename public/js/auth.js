@@ -31,6 +31,28 @@ function hasPurchased() {
   return user?.hasPurchased || false;
 }
 
+// Refresh user data from server
+async function refreshUser() {
+  if (!isLoggedIn()) return null;
+  
+  try {
+    const response = await fetch('/api/auth/me', {
+      headers: {
+        'Authorization': `Bearer ${getToken()}`
+      }
+    });
+    
+    if (response.ok) {
+      const data = await response.json();
+      updateUser(data.user);
+      return data.user;
+    }
+  } catch (error) {
+    console.error('Failed to refresh user data:', error);
+  }
+  return null;
+}
+
 // Logout
 function logout() {
   localStorage.removeItem(AUTH_TOKEN_KEY);

@@ -1600,7 +1600,15 @@
     });
 
     // Initialize
-    loadLesson();
+    async function initializePage() {
+      // Refresh user data from server to get latest purchase status
+      if (isLoggedIn()) {
+        await refreshUser();
+      }
+      await loadLesson();
+    }
+    
+    initializePage();
   </script>
   <script>
     window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
